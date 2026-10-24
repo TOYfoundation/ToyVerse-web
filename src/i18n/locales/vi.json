@@ -1,0 +1,682 @@
+{
+  "meta": {
+    "description": "ToyVerse: blockchain riêng ToyChain với đồng coin TOY, ví TOYPAY, trình khám phá ToyScan, đồng euro vô hình ToyCash và trò chơi học tập TOYQUEST."
+  },
+  "ui": {
+    "skip": "Chuyển đến nội dung",
+    "menu": "Menu",
+    "mainNav": "Menu chính",
+    "allPages": "Tất cả các trang",
+    "join": "Tham gia",
+    "language": "Ngôn ngữ",
+    "languageHint": "Trang web hiện có {n} trong số 45 ngôn ngữ của ví, TOYPAY và ToyScan. Các ngôn ngữ khác sẽ sớm có.",
+    "soon": "sắp có",
+    "path": "Đường dẫn",
+    "back": "Quay lại",
+    "next": "Tiếp",
+    "pause": "Tạm dừng",
+    "auto": "Tự động",
+    "step": "Bước",
+    "flowTitle": "Mọi thứ khớp với nhau như thế nào",
+    "flowLabel": "Sơ đồ quy trình",
+    "image": "Hình {n}",
+    "ctaTitle": "Tham gia ToyVerse",
+    "ctaText": "Đặt câu hỏi, thử nghiệm sớm hoặc trở thành người bán hay người hướng dẫn.",
+    "ctaBtn": "Tham gia",
+    "disclaimer": "Không phải tư vấn đầu tư, không hứa hẹn lợi nhuận. ToyChain đang chạy dưới dạng mạng thử nghiệm trong quá trình phát triển; TOY thử nghiệm không có giá trị. ToyCash, ToyScan và vật phẩm TOYQUEST vẫn là ý tưởng. Các con số trong mô phỏng chỉ là ví dụ.",
+    "placeholder": "nhập {label}",
+    "example": "Ví dụ",
+    "chooseLanguage": "Chọn ngôn ngữ",
+    "redirect": "Đến trang chủ",
+    "machineNote": "Bản dịch này được tạo bằng AI từ tiếng Đức và chưa được người bản ngữ kiểm tra. Bản có giá trị là",
+    "machineLink": "bản tiếng Đức"
+  },
+  "scenes": ["Thành phố về đêm", "Đoàn lữ hành", "Mạng lưới ToyChain", "Trong phòng chơi", "Xưởng máy"],
+  "groups": {
+    "entdecken": { "t": "Khám phá", "u": "Bắt đầu và tổng quan" },
+    "spielen": { "t": "Chơi", "u": "TOYQUEST và thế giới của nó" },
+    "bezahlen": { "t": "Thanh toán", "u": "Ví, coin và tiền mặt" },
+    "technik": { "t": "Kỹ thuật", "u": "Chuỗi hoạt động thế nào" },
+    "mitmachen": { "t": "Tham gia", "u": "Kế hoạch, tải về, liên hệ" }
+  },
+  "status": {
+    "inWork": "Đang làm",
+    "inDev": "Đang phát triển",
+    "planned": "Đã lên kế hoạch",
+    "concept": "Ý tưởng",
+    "built": "Đã xây dựng, đang thử",
+    "afterReview": "Sau khi thẩm định"
+  },
+  "pages": {
+    "start": {
+      "t": "Trang chủ",
+      "u": "Trò chơi, ví và blockchain riêng trong thế giới Nghìn lẻ một đêm.",
+      "slides": [
+        ["Chào mừng đến ToyVerse", "Trò chơi, ví và blockchain riêng trong thế giới Nghìn lẻ một đêm."],
+        ["Chơi và học", "Trong TOYQUEST, các nhân vật giải thích cho bạn TOY được tạo ra như thế nào."],
+        ["Thanh toán không cần mạng", "TOYPAY và ToyCash sẽ hoạt động cả khi ngoại tuyến."]
+      ],
+      "discover": "Khám phá",
+      "roadmap": "Xem tiến độ",
+      "what": "Bạn muốn làm gì?",
+      "tiles": [
+        ["Chơi", "Khám phá TOYQUEST: thế giới, gia tộc, du hành thời gian."],
+        ["Thanh toán", "Hiểu về TOYPAY, TOY và ToyCash."],
+        ["Tìm hiểu", "Xem ToyChain hoạt động thế nào."]
+      ],
+      "statusTitle": "Chúng tôi đang ở đâu",
+      "statusText": "ToyChain đang được xây dựng từng bước dưới dạng mạng thử nghiệm. Đã xong {done} trên {total} cột mốc.",
+      "statusLink": "Đến lộ trình",
+      "newTitle": "Bạn mới đến?",
+      "newText": "Phần tổng quan cho thấy trò chơi, ví và chuỗi phối hợp với nhau ra sao.",
+      "newBtn": "Xem hệ sinh thái"
+    },
+    "verse": {
+      "t": "Hệ sinh thái",
+      "u": "Sáu thành phần dưới một mái nhà.",
+      "cards": [
+        ["ToyChain", "Blockchain riêng, gọn nhẹ với đồng coin TOY. Chạy trên điện thoại cũ và Raspberry Pi.", "inWork"],
+        ["TOYPAY", "Ví và nút mạng trong một, cho Android, Windows, Linux và Raspberry Pi.", "inDev"],
+        ["ToyScan", "Trình khám phá có đèn cảnh báo: liên tục kiểm tra xem các quy tắc có được tuân thủ không.", "planned"],
+        ["TOYQUEST", "Trò chơi theo phong cách Nghìn lẻ một đêm, với một thế giới học về kỹ thuật.", "inDev"],
+        ["ToyCash", "Tiền mặt euro riêng tư trên mạng, cả khi ngoại tuyến.", "concept"],
+        ["ToyPost", "Một hộp thư cho mọi kênh, hóa đơn bằng TOY và bảo vệ khỏi lừa đảo.", "built"]
+      ],
+      "after": "Ngoài ra còn có một vòng kinh tế mở, người bán, người hướng dẫn và nút mạng cộng đồng. <a href=\"{community}\">Xem thêm</a>",
+      "flow": {
+        "nodes": ["Người chơi", "TOYQUEST", "TOYPAY", "ToyCash", "Polygon", "ToyChain", "ToyScan"],
+        "steps": [
+          ["Chơi", "Bạn hoàn thành nhiệm vụ và học trong TOYQUEST cách ToyChain hoạt động."],
+          ["Đúc", "Ai muốn có thể đúc vật phẩm kiếm được qua TOYPAY."],
+          ["Vật phẩm", "Vật phẩm đã đúc nằm trên Polygon dưới dạng NFT. Bản thân ToyChain chỉ biết TOY."],
+          ["Tham gia", "Ví đồng thời là một nút mạng: nó tính toán, ký và có thể kiếm TOY."],
+          ["Kiểm tra", "ToyScan kiểm tra phát hành, giới hạn tối đa và quy tắc, rồi hiển thị kết quả dưới dạng đèn giao thông."],
+          ["Tiền mặt", "Sau này ToyCash sẽ nằm trong TOYPAY, cả khi ngoại tuyến."],
+          ["Công chứng", "Với ToyCash, ToyChain chỉ xác nhận mã kiểm tra, không có số tiền và không có tên."]
+        ]
+      }
+    },
+    "toyquest": {
+      "t": "TOYQUEST",
+      "u": "Một cuộc phiêu lưu giải thích kỹ thuật cho bạn.",
+      "rows": [
+        ["Thế giới", "Năm bản đồ ứng với năm chủ đề thiết kế; mọi tòa nhà đều có thể vào, sử dụng và mua bán."],
+        ["Chế độ", "Ngoại tuyến hoặc trực tuyến, hợp tác hoặc đối kháng, có trò chuyện bằng giọng nói, chế độ mạo hiểm và chế độ khán giả."],
+        ["Học", "Nhân vật ở nhiều nơi giải thích ToyChain từng bước: ngắn gọn, bình thường hoặc kỹ thuật với số liệu thật."],
+        ["Thật hay demo", "Nếu bạn đã bật một cấp trong TOYPAY, các địa điểm trong trò chơi sẽ hiển thị sự kiện thật của nút mạng của bạn. Nếu không, một chế độ demo được đánh dấu rõ sẽ chạy. Bản thân trò chơi không bao giờ tạo ra TOY."],
+        ["Vật phẩm", "Vật phẩm do bạn chơi mà có, không thể mua. Ai muốn có thể đúc chúng thành NFT trên Polygon. Một quỹ chung trả phí mạng."]
+      ],
+      "toZeit": "Đến du hành thời gian",
+      "toSalon": "Đến phòng chơi",
+      "flow": {
+        "nodes": ["Người chơi", "Nhiệm vụ", "Vật phẩm", "TOYPAY", "Polygon"],
+        "steps": [
+          ["Chơi", "Bạn hoàn thành nhiệm vụ, trò chơi nhỏ và thử thách."],
+          ["Kiếm được", "Vật phẩm có được trong trò chơi, không phải trong cửa hàng. Không có pay-to-win."],
+          ["Đúc", "Ai muốn có thể đúc vật phẩm. Khoản phí nhỏ bù chi phí mạng."],
+          ["NFT ra đời", "NFT được tạo trên Polygon; quỹ chung trả phí gas."],
+          ["Sở hữu", "Vật phẩm thuộc về bạn. Trong trò chơi nó vẫn hoạt động mà không cần NFT."]
+        ]
+      }
+    },
+    "zeit": {
+      "t": "Du hành thời gian",
+      "u": "Năm cấp độ từ thời cổ đại đến hiện đại.",
+      "note": "Cấp 1 đến 3 cho thấy máy móc cổ đại. Cấp 4 và 5 thêm bước nhảy sang thời cận đại như một cái nhìn về phía trước. Mỗi cấp giải quyết cùng một bước, kiểm tra chữ ký, bằng một phương pháp hiệu quả hơn. Các con số chỉ là ví dụ."
+    },
+    "maschinen": {
+      "t": "Máy móc",
+      "u": "50 cỗ máy cổ đại, tối đa 256 trong phiên bản cuối.",
+      "slider": "Máy đã mở khóa: {n} trên 256",
+      "cards": [
+        ["Thầy dạy", "Mỗi cỗ máy có một bậc thầy giải thích quy trình tương ứng của ToyChain."],
+        ["Phần thưởng", "Ai thu thập kiến thức sẽ nhận ấn tri thức, bằng bậc thầy, đồng ducat và vật phẩm trang trí. Không có TOY cho việc này."],
+        ["Sắp xếp", "Từ xưởng đến máy tự động, mỗi cỗ máy gắn với một quy trình, ví dụ đồng hồ nước và thời gian khối."]
+      ]
+    },
+    "gangs": {
+      "t": "Băng nhóm và gia tộc",
+      "u": "Một mình đã mạnh, cùng đội còn mạnh hơn.",
+      "cards": [
+        ["Băng nhóm", "Các nhân vật bổ sung cho nhau bằng đặc điểm, kỹ năng và vật phẩm."],
+        ["Thế giới mở", "Làm việc nhóm với người chơi khác cho thử thách và lên cấp."],
+        ["Năm gia tộc", "Các sultan và vua cạnh tranh hoặc hợp tác. Nhân vật phục vụ họ; lòng trung thành của bạn có giá trị."],
+        ["Nguyên tắc thật", "Một cánh cổng chỉ mở khi hai phần ba băng nhóm đóng ấn, giống như tính chung cuộc trên ToyChain."]
+      ],
+      "flow": {
+        "nodes": ["Băng của bạn", "Hiệp lực", "Thử thách", "Thế giới mở", "Gia tộc"],
+        "steps": [
+          ["Kết hợp", "Đặc điểm, kỹ năng và vật phẩm của các thành viên tăng cường cho nhau."],
+          ["Vượt thử thách", "Cả băng cùng đối mặt với một nhiệm vụ."],
+          ["Cùng người khác", "Làm việc nhóm với người chơi khác trong thế giới mở."],
+          ["Lên cấp", "Băng nhóm trở nên mạnh hơn."],
+          ["Chọn gia tộc", "Bạn gắn bó với một trong năm gia tộc. Họ cạnh tranh hoặc hợp tác."]
+        ]
+      }
+    },
+    "salon": {
+      "t": "Phòng chơi",
+      "u": "Ẩn trong trò chơi, đầy những lá bài.",
+      "rows": [
+        ["Trò chơi", "Texas Hold’em và Omaha 4 lá có giới hạn."],
+        ["Hình thức", "Ván tiền mặt và giải đấu."],
+        ["Tiền cược", "Chơi bằng đồng ducat trong trò chơi. Cược bằng ToyCoin chỉ có khi được thẩm định pháp lý cho phép."],
+        ["Trò chơi nhỏ", "20 trò chơi nhỏ cùng nhiệm vụ và cấp thưởng."]
+      ],
+      "flow": {
+        "nodes": ["Người chơi", "Phòng chơi", "Bàn", "Tiền cược"],
+        "steps": [
+          ["Bước vào", "Phòng chơi là một tòa nhà ẩn trong trò chơi."],
+          ["Chọn trò", "Texas Hold’em hoặc Omaha 4 lá có giới hạn, dạng ván tiền mặt hoặc giải đấu."],
+          ["Tiền cược", "Bạn cược bằng ducat. Không có cược tiền thật nếu chưa thẩm định pháp lý."]
+        ]
+      }
+    },
+    "toypay": {
+      "t": "TOYPAY",
+      "u": "Ví của ToyVerse và đồng thời là một nút mạng ToyChain.",
+      "cards": [
+        ["Nền tảng", "Android, Windows, Linux và Raspberry Pi, cả trên thiết bị cũ."],
+        ["Nút mạng", "Bạn chọn một cấp. Chỉ tính toán khi cắm sạc, có Wi-Fi và nhiệt độ bình thường."],
+        ["Thanh toán ngoại tuyến", "Mã hóa qua QR, NFC hoặc Bluetooth, cả khi không có mạng."],
+        ["Tài khoản doanh nghiệp", "Có chức năng quầy thu ngân cho người bán."],
+        ["Bảo mật", "Xem trước mỗi chữ ký, chống bẫy địa chỉ, danh sách cảnh báo lừa đảo, ví phần cứng."],
+        ["Ngôn ngữ", "45 ngôn ngữ và bốn chế độ, từ người mới đến chuyên gia."]
+      ],
+      "toWallet": "Kết nối với mạng thử nghiệm",
+      "toDownload": "Tải về",
+      "cardFront": ["TOYPAY", "ToyChain · Mạng thử nghiệm", "Chạm để lật"],
+      "cardBack": ["Thanh toán ngoại tuyến", "Mã hóa từ thiết bị đến thiết bị", "Xem trước mỗi chữ ký"],
+      "cardLabel": "Lật thẻ",
+      "cardTitle": "Tấm thẻ để bạn chạm vào",
+      "flow": {
+        "nodes": ["Quầy thu ngân", "Ví của bạn", "Xem trước", "Mạng", "Tài khoản doanh nghiệp"],
+        "steps": [
+          ["Gửi số tiền", "Quầy thu ngân gửi số tiền dưới dạng yêu cầu thanh toán đến ví của bạn."],
+          ["Kiểm tra", "Trước khi ký, ví cho bạn thấy chính xác điều gì sẽ xảy ra."],
+          ["Thanh toán", "Khoản thanh toán đi vào mạng và là chung cuộc sau một khối."],
+          ["Ghi có", "Tài khoản doanh nghiệp nhận được xác nhận."],
+          ["Ngoại tuyến", "Khi không có mạng, khoản thanh toán mã hóa đi thẳng từ thiết bị này sang thiết bị kia."]
+        ]
+      }
+    },
+    "toycoin": {
+      "t": "TOY",
+      "u": "Đồng tiền của ToyChain, cùng một quy tắc cho tất cả mọi người.",
+      "rows": [
+        ["Số lượng", "Tối đa 100.000.000 TOY, không bao giờ hơn. Giới hạn tối đa được ghi trong hiến pháp của ToyChain."],
+        ["Ra mắt công bằng", "Khối đầu tiên không chứa một TOY nào. Không dự trữ, không bán trước, không phần cho đội ngũ."],
+        ["Hình thành", "Mọi TOY được tạo ra dần dần nhờ công việc trong mạng: kỷ nguyên đầu 50.500 TOY, năm đầu khoảng 16,8 triệu, chu kỳ bán rã khoảng 3,76 năm, khoảng 99 % sau 25 năm."],
+        ["Phân chia", "50 % cho tất cả những ai ký khối, 40 % cho xổ số công việc, 10 % vào quỹ hoàn phí cho giao dịch miễn phí."],
+        ["Không bao giờ bị đốt", "Trên ToyChain không TOY nào bị hủy và tài khoản không bao giờ bị mất."],
+        ["Kỹ thuật", "18 chữ số thập phân, địa chỉ giống Ethereum. Chain ID mạng thử nghiệm 7630714; mạng chính 7630713 chỉ sau kiểm toán."]
+      ],
+      "chartTitle": "TOY đã phát hành qua các năm",
+      "chartYear": "Năm {y}",
+      "chartLabel": "Năm {y}: khoảng {m} triệu TOY đã phát hành (kế hoạch với hệ số 1)",
+      "chartAxis": "triệu TOY",
+      "coinTitle": "Đồng xu 3D",
+      "coinTurn": "Xoay đồng xu",
+      "warnTitle": "Chú ý: token ToyCoin cũ",
+      "warnText": "Trên Polygon và Ethereum có các token cũ hơn mang tên ToyCoin. Chúng <b>không phải TOY của ToyChain</b>, không được hoán đổi và không được chuyển qua cầu nối. Ví và ToyScan đánh dấu chúng là “Không phải TOY của ToyChain, không thể đổi”. Đừng mua chúng với hy vọng được hoán đổi.",
+      "warnPolygon": "Polygon",
+      "warnEthereum": "Ethereum",
+      "warnLink": "Xem trên trình khám phá"
+    },
+    "wallet": {
+      "t": "Kết nối với mạng thử nghiệm",
+      "u": "Khi mạng thử nghiệm công khai hoạt động, bạn thêm nó tại đây chỉ với một cú nhấp.",
+      "btn": "Thêm mạng thử nghiệm · có cùng cột mốc M10",
+      "facts": [
+        ["Mạng", "ToyChain Testnet"],
+        ["Chain ID", "7630714"],
+        ["Ký hiệu", "TOY, 18 chữ số thập phân"],
+        ["Địa chỉ", "Địa chỉ Ethereum và cụm từ khôi phục quen thuộc của bạn cũng dùng được ở đây."]
+      ],
+      "text": "Việc thêm mạng hoạt động với mọi ví có thể thêm mạng theo EIP-3085, chẳng hạn TOYPAY hoặc MetaMask. Trang này không đọc gì và không thể gửi gì. TOY thử nghiệm không có giá trị và không bao giờ được chuyển sang mạng chính.",
+      "safety": "Trang này không bao giờ hỏi cụm từ khôi phục của bạn. Ai hỏi nó là muốn lừa bạn.",
+      "flow": {
+        "nodes": ["Trang này", "Ví của bạn", "Mạng thử nghiệm ToyChain", "TOY thử nghiệm"],
+        "steps": [
+          ["Đề xuất", "Trang đề xuất mạng với tên, Chain ID và điểm truy cập."],
+          ["Xác nhận", "Ví của bạn hiển thị dữ liệu và bạn xác nhận. Khóa không bao giờ rời khỏi thiết bị của bạn."],
+          ["Tham gia", "Trên mạng thử nghiệm, thiết bị của bạn tính vé cho xổ số công việc hoặc nhận TOY thử nghiệm từ vòi."],
+          ["Thử nghiệm", "Với TOY thử nghiệm, bạn thử chuyển tiền, hạn mức miễn phí và các cấp mà không rủi ro."]
+        ]
+      }
+    },
+    "toycash": {
+      "t": "ToyCash",
+      "u": "Cảm giác tiền mặt trên mạng, được bảo chứng bằng euro.",
+      "rows": [
+        ["Nguyên tắc", "Một stablecoin euro. Chỉ bạn thấy số dư và số tiền, trong ví của mình. ToyChain chỉ xác nhận mã kiểm tra, không có số tiền và không có tên."],
+        ["Bảo chứng", "Dự trữ bằng euro, lúc đầu chỉ euro. Có đơn vị phát hành riêng, sau này nhiều người giám sát cùng nhau."],
+        ["Khởi đầu", "Trước tiên là nguyên mẫu theo nguyên tắc eCash với euro thử nghiệm, sau đó là zk-notes."],
+        ["Phiếu quà tặng", "Phiếu dùng nhiều lần, phiếu nhóm và phiếu vô danh, theo từng giai đoạn."],
+        ["Chi tiêu hai lần", "Thời hạn thu hồi, phạt gian lận và đặt giữ, theo từng giai đoạn."],
+        ["Tình trạng", "Ý tưởng. Euro thật chỉ có sau kiểm toán và thẩm định pháp lý."]
+      ],
+      "toOffline": "Thử hạn mức ngoại tuyến",
+      "flow": {
+        "nodes": ["Dự trữ euro", "Đơn vị phát hành", "Ví A", "Ví B", "ToyChain"],
+        "steps": [
+          ["Bảo chứng", "Euro được giữ sẵn làm bảo chứng."],
+          ["Phát hành", "Ví A nhận các tờ tiền đã mã hóa."],
+          ["Chuyển tiếp", "A chuyển tờ tiền cho B, cả khi ngoại tuyến."],
+          ["Quy đổi", "B đổi chúng ở đơn vị phát hành lấy tờ tiền mới. Đơn vị này kiểm tra không tờ nào bị dùng hai lần."],
+          ["Xác nhận", "Mỗi kỷ nguyên, đơn vị phát hành neo mã kiểm tra của danh sách lên ToyChain. Nhờ vậy không gì có thể bị thay đổi lén lút."]
+        ]
+      }
+    },
+    "offline": {
+      "t": "Hạn mức ngoại tuyến",
+      "u": "Hạn mức tăng dần theo mức sử dụng của bạn.",
+      "tableHead": ["Cấp", "Hạn mức", "Điều kiện"],
+      "steps": [
+        ["1", "20 €", "Bắt đầu"],
+        ["2", "50 €", "14 ngày và 10 lần thanh toán"],
+        ["3", "100 €", "60 ngày và 40 lần thanh toán"],
+        ["4", "250 €", "180 ngày và 100 lần thanh toán, chỉ với khóa gắn với thiết bị"],
+        ["5", "500 €", "365 ngày và 250 lần thanh toán, chỉ với khóa gắn với thiết bị"]
+      ],
+      "text": "Trong cấp đã mở khóa, bạn tự chọn hạn mức. Hạn mức đồng thời là tiền đặt cọc: ai chi tiêu hai lần khi ngoại tuyến sẽ mất nó cho người bị thiệt hại. Giá trị các cấp chỉ là đề xuất."
+    },
+    "toychain": {
+      "t": "ToyChain",
+      "u": "Nhẹ như Mina, địa chỉ như Ethereum.",
+      "rows": [
+        ["Kích thước", "Mỗi nút mạng tiêu chuẩn lưu trữ tối đa 256 MB."],
+        ["Thiết bị", "Chạy trên thiết bị Android cũ, Raspberry Pi, Linux và Windows."],
+        ["Địa chỉ", "Cùng địa chỉ và cùng 12 hoặc 24 từ như Ethereum."],
+        ["Tham gia", "Cấp 0 không cần số dư: thiết bị của bạn tính vé cho xổ số công việc. Với 10, 100 hoặc 1.000 TOY stake, bạn ký, lưu trữ hoặc xác thực."],
+        ["Đồng thuận", "Một ủy ban tối đa 128 thành viên ký mỗi khối. Từ hai phần ba trở lên là chung cuộc; khoảng mỗi phút một khối."],
+        ["Tài khoản", "Tài khoản không bao giờ bị mất. Tài khoản lâu không dùng sẽ ngủ và có thể đánh thức bất cứ lúc nào."],
+        ["Chỉ TOY", "Không token, không NFT, không hợp đồng thông minh trên ToyChain. Mọi chức năng đều được tích hợp cố định."],
+        ["Bảo mật", "Chỉ dùng phương pháp và thư viện đã được kiểm chứng. Khóa bổ sung hậu lượng tử (ML-DSA) được lên kế hoạch cho cột mốc M13."]
+      ],
+      "toMint": "Mô phỏng đúc",
+      "chainTitle": "Chuỗi khối 3D",
+      "chainAdd": "Thêm khối",
+      "chainHint": "Di chuyển con trỏ hoặc ngón tay trên khung cảnh để xoay. Các khối lập phương là khối ví dụ.",
+      "flow": {
+        "nodes": ["Ví", "Bể", "Ủy ban", "Khối", "Chuỗi"],
+        "steps": [
+          ["Gửi", "Giao dịch của bạn vào bể."],
+          ["Đề xuất", "Một thành viên ủy ban được chọn ngẫu nhiên tạo khối."],
+          ["Ký", "Ủy ban ký. Từ hai phần ba trở lên, khối là chung cuộc."],
+          ["Nối thêm", "Các nút lưu trạng thái và một cửa sổ ngắn, tối đa 256 MB."],
+          ["Thưởng", "TOY mới được chia cho người ký, xổ số công việc và quỹ hoàn phí."]
+        ]
+      }
+    },
+    "mint": {
+      "t": "Mô phỏng đúc",
+      "u": "Đưa thiết bị vào mạng và xem các khối hình thành.",
+      "text": "Nói đơn giản: công việc và chữ ký chạy trên băng chuyền vào bể. Khi bể đầy hoặc sau khoảng một phút (ở đây được tăng tốc), một khối được tạo. Trong kỷ nguyên đầu, mỗi khối thêm khoảng 35 TOY mới: 50 % cho người ký, 40 % cho xổ số công việc, 10 % cho quỹ hoàn phí."
+    },
+    "tx": {
+      "t": "Giao dịch",
+      "u": "10 đến 100 giao dịch miễn phí mỗi tài khoản mỗi ngày.",
+      "text": "Vượt hạn mức, bạn trả một khoản phí nhỏ hoặc tính một vé ToyWork. Phí tăng gấp đôi cho mỗi 10 giao dịch thêm trong cùng một khối, tối đa 1.024 lần. Phí được chia 40 % cho người tham gia tích cực, 40 % vào quỹ hoàn phí và 20 % cho người đề xuất khối."
+    },
+    "toyscan": {
+      "t": "ToyScan",
+      "u": "Đèn xanh khi mọi quy tắc đều được tuân thủ.",
+      "cards": [
+        ["Giới hạn tối đa", "Không bao giờ quá 100.000.000 TOY. Ở mỗi khối, tổng mọi số dư bằng tổng mọi lần phát hành."],
+        ["Ra mắt công bằng", "Khối đầu tiên chứa 0 TOY. Mỗi TOY đều truy được về một lần phát hành."],
+        ["Phát hành", "Mỗi kỷ nguyên đều được tính lại theo công thức."],
+        ["Chuỗi khác", "Hiển thị số dư của cùng địa chỉ trên các chuỗi khác, chỉ đọc. Token ToyCoin cũ được đánh dấu là “không phải TOY của ToyChain”."]
+      ],
+      "flow": {
+        "nodes": ["ToyChain", "Nút lưu trữ", "Chuỗi khác", "ToyScan", "Đèn giao thông"],
+        "steps": [
+          ["Đọc dữ liệu", "ToyScan đọc nguồn cung, kỷ nguyên và khối của ToyChain."],
+          ["Tính lại", "Một nút lưu trữ tự cộng tất cả số dư."],
+          ["Hiển thị", "Số dư của cùng địa chỉ trên chuỗi khác chỉ hiện để tham khảo."],
+          ["Đèn giao thông", "Xanh khi mọi thứ đúng. Vàng khi có điểm bất thường, đỏ khi vi phạm quy tắc, kèm bằng chứng."]
+        ]
+      }
+    },
+    "ketten": {
+      "t": "Chuỗi khác",
+      "u": "Cùng một địa chỉ ở mọi nơi, không cần cầu nối.",
+      "rows": [
+        ["Cùng địa chỉ", "Địa chỉ ToyChain của bạn cũng dùng được trên Ethereum, Polygon, Arbitrum, Base và BNB Chain. TOYPAY hiển thị số dư, token và NFT ở đó."],
+        ["Hoán đổi không cầu nối", "Hoán đổi nguyên tử với khóa băm thời gian: hoặc cả hai bên nhận được tiền, hoặc không ai nhận. Dự kiến cho cột mốc M12."],
+        ["Token ToyCoin cũ", "Các token mang tên ToyCoin trên Polygon và Ethereum không phải TOY của ToyChain và không thể đổi."],
+        ["Cầu nối", "Trong phạm vi hiện tại không có cầu nối. Nếu sau này có, nó cần một quyết định riêng, một cuộc kiểm toán và thẩm định pháp lý."]
+      ]
+    },
+    "roadmap": {
+      "t": "Lộ trình",
+      "u": "Thứ tự quan trọng hơn ngày tháng.",
+      "progress": "ToyChain giai đoạn 1: đã xong {done} trên {total} cột mốc (tính đến {date})",
+      "milestones": {
+        "M1": "Kiểu cơ bản và phát hành",
+        "M2": "Mật mã và địa chỉ",
+        "M3": "Trạng thái, giao dịch, phí",
+        "M4": "Khối và đồng thuận",
+        "M5": "Lưu trữ và 256 MB",
+        "M6": "Mạng",
+        "M7": "Giao diện (RPC)",
+        "M8": "Ví và dòng lệnh",
+        "M9": "Nền tảng và chế độ năng lượng",
+        "M10": "Mạng thử nghiệm công khai",
+        "M11": "ToyScan",
+        "M12": "Bảo vệ tài khoản, hoán đổi",
+        "M13": "Tên, khóa hậu lượng tử"
+      },
+      "cards": [
+        ["1 · Lõi ToyChain", "Nút mạng viết bằng Rust: phát hành, mật mã, giao dịch và phí đã xong; tiếp theo là đồng thuận.", "inWork"],
+        ["2 · TOYPAY làm nút mạng", "Ví có các cấp và chế độ năng lượng trên bốn nền tảng.", "planned"],
+        ["3 · Mạng thử nghiệm công khai", "Trước tiên cục bộ, sau đó công khai, kèm kiểm thử tải.", "planned"],
+        ["4 · ToyScan", "Trình khám phá có đèn cảnh báo và giao diện mở.", "planned"],
+        ["5 · TOYQUEST", "Thế giới học tập và vật phẩm trên Polygon, độc lập với lõi ToyChain.", "inDev"],
+        ["6 · ToyCash", "Nguyên mẫu với euro thử nghiệm, sau đó là ví ngoại tuyến và zk-notes.", "concept"],
+        ["7 · Mạng chính", "Chỉ sau kiểm toán bên ngoài, kiểm thử tải và thẩm định pháp lý, có thông báo công khai trước.", "afterReview"]
+      ],
+      "flow": {
+        "nodes": ["Lõi ToyChain", "TOYPAY", "Mạng thử nghiệm", "ToyScan", "Mạng chính"],
+        "steps": [
+          ["Lõi trước tiên", "Phát hành, mật mã và giao dịch đã được xây dựng và kiểm thử."],
+          ["Ví làm nút mạng", "TOYPAY đưa chuỗi lên điện thoại, máy tính và Raspberry Pi."],
+          ["Mạng thử nghiệm", "Trước tiên cục bộ, sau đó công khai, kèm kiểm thử tải và fuzzing."],
+          ["Mạng chính chỉ sau thẩm định", "Kiểm toán, kiểm thử tải và thẩm định pháp lý là bắt buộc. TOY thử nghiệm không bao giờ được chuyển sang."]
+        ]
+      }
+    },
+    "download": {
+      "t": "Tải về",
+      "u": "Các tệp sẽ xuất hiện ở đây ngay khi sẵn sàng.",
+      "items": [
+        "TOYPAY cho Android, Windows, Linux và Raspberry Pi · sắp có",
+        "Nút mạng ToyChain · có cùng mạng thử nghiệm",
+        "Sách trắng · có khi công bố mã nguồn"
+      ],
+      "until": "Cho đến lúc đó: <a href=\"{roadmap}\">xem lộ trình</a> hoặc <a href=\"{toycoin}\">tìm hiểu thêm về TOY</a>."
+    },
+    "community": {
+      "t": "Cộng đồng",
+      "u": "Một vòng kinh tế do mọi người cùng gánh vác.",
+      "cards": [
+        ["Người bán", "Người bán có tài khoản doanh nghiệp, quầy thu ngân, phiếu quà tặng và điểm thưởng."],
+        ["Người hướng dẫn", "Người chơi giàu kinh nghiệm giúp người mới và nhận ấn tri thức."],
+        ["Nút mạng cộng đồng", "Ai cung cấp một thiết bị là góp phần làm mạng mạnh hơn. Bộ Raspberry Pi và bản đồ nút mạng đang được lên kế hoạch."],
+        ["Bảng điều khiển", "ToyScan hiển thị vòng kinh tế bằng số liệu thật, không có dự báo."],
+        ["Cùng quyết định", "Sẽ có sau. Ngay cả khi đó, không ai có thể thay đổi hiến pháp của ToyChain."]
+      ],
+      "langTitle": "45 ngôn ngữ",
+      "langText": "Ví, TOYPAY và ToyScan nói cùng 45 ngôn ngữ. Trang web hiện có {n} trong số đó:"
+    },
+    "kontakt": {
+      "t": "Tham gia và liên hệ",
+      "u": "Hãy cho chúng tôi biết bạn cần gì.",
+      "cards": [
+        ["Mạng thử nghiệm", "Thêm mạng thử nghiệm vào ví ngay khi nó hoạt động.", "Đến mạng thử nghiệm"],
+        ["Tải về", "Ứng dụng và nút mạng sẽ xuất hiện ở đây ngay khi sẵn sàng.", "Đến trang tải về"],
+        ["Tham gia", "Với tư cách người thử nghiệm, người bán hoặc người hướng dẫn. Hãy viết ngắn gọn cho chúng tôi về việc bạn muốn.", ""]
+      ],
+      "formTitle": "Viết cho chúng tôi",
+      "topic": "Chủ đề",
+      "topics": ["Câu hỏi về dự án", "Tham gia thử nghiệm", "Trở thành người bán", "Báo chí"],
+      "name": "Tên của bạn",
+      "message": "Tin nhắn",
+      "send": "Soạn email",
+      "noMail": "Địa chỉ liên hệ chưa được thiết lập (src/data/site.json).",
+      "opened": "Chương trình email của bạn sẽ mở. Trang này không lưu gì cả.",
+      "security": "Vui lòng không báo lỗ hổng bảo mật qua biểu mẫu này mà gửi bí mật đến địa chỉ trong phần thông tin pháp lý, với tiêu đề “Bảo mật”."
+    },
+    "impressum": {
+      "t": "Thông tin pháp lý",
+      "u": "Thông tin nhà cung cấp theo § 5 DDG (luật Đức).",
+      "template": "Đây là mẫu. Hãy nhập thông tin thật vào src/data/site.json và nhờ kiểm tra về mặt pháp lý.",
+      "h1": "Thông tin theo § 5 DDG",
+      "h2": "Liên hệ",
+      "h3": "Đăng ký và thuế",
+      "h4": "Chịu trách nhiệm nội dung",
+      "h5": "Lưu ý",
+      "labels": {
+        "name": "tên hoặc công ty kèm loại hình pháp lý",
+        "street": "tên đường và số nhà",
+        "city": "mã bưu chính và thành phố",
+        "email": "địa chỉ email",
+        "phone": "số điện thoại",
+        "register": "sổ đăng ký và số, nếu có",
+        "vatId": "mã số VAT, nếu có"
+      },
+      "mail": "Email",
+      "phone": "Điện thoại",
+      "register": "Đăng ký",
+      "vat": "Mã số VAT",
+      "responsible": "Theo § 18 khoản 2 MStV: {name}, địa chỉ như trên.",
+      "note": "ToyVerse là một dự án đang được xây dựng. Thông tin về TOY không phải là tư vấn đầu tư."
+    },
+    "datenschutz": {
+      "t": "Quyền riêng tư",
+      "u": "Điều gì xảy ra với dữ liệu của bạn: càng ít càng tốt.",
+      "template": "Đây là mẫu. Nó phù hợp với một trang tĩnh không có cookie và không theo dõi. Hãy bổ sung nhà cung cấp lưu trữ và nhờ kiểm tra pháp lý trước khi công bố.",
+      "sections": [
+        ["Bên chịu trách nhiệm", "{name}, {street}, {city}, email: {email}."],
+        ["Lưu trữ và nhật ký máy chủ", "Trang được lưu trữ tại {host}. Khi truy cập, máy chủ xử lý dữ liệu cần thiết về kỹ thuật như địa chỉ IP, thời điểm và trang được gọi, để cung cấp trang và bảo vệ trước tấn công (Điều 6 khoản 1 điểm f GDPR)."],
+        ["Không cookie, không theo dõi", "Trang không đặt cookie, không dùng công cụ phân tích và không tải nội dung của bên thứ ba. Phông chữ nằm trên máy chủ của chúng tôi."],
+        ["Trong trình duyệt của bạn", "Các mô phỏng chỉ chạy trong trình duyệt của bạn. Không có gì được gửi đến chúng tôi."],
+        ["Liên hệ", "Biểu mẫu liên hệ chỉ mở chương trình email của bạn. Chỉ khi bạn gửi email, chúng tôi mới nhận được và chỉ dùng nó để trả lời (Điều 6 khoản 1 điểm b và f GDPR)."],
+        ["Liên kết đến trang khác", "Các liên kết, ví dụ đến trình khám phá khối, dẫn đến nhà cung cấp khác. Ở đó áp dụng chính sách quyền riêng tư của họ."],
+        ["Quyền của bạn", "Bạn có quyền được biết, chỉnh sửa, xóa, hạn chế xử lý, chuyển dữ liệu và phản đối, cũng như quyền khiếu nại với cơ quan giám sát bảo vệ dữ liệu."]
+      ]
+    }
+  },
+  "demo": {
+    "zeit": {
+      "levels": [
+        ["Xưởng cổ đại", "Bậc thầy tính toán gẩy các hạt và kiểm tra từng chữ ký bằng tay.", "sức người", "Bàn tính"],
+        ["Sức mạnh và gộp lại", "Bánh xe nước kéo búa, và nhiều con dấu trở thành một.", "sức nước", "Bánh xe nước và búa đóng dấu"],
+        ["Thời gian và đo lường", "Đồng hồ nước đặt nhịp, giống như thời gian khối khoảng một phút.", "nước và trọng lực", "Đồng hồ nước"],
+        ["Lưu trữ và đúc tiền · nhìn sang thời cận đại", "Máy ép tiền cổ đại trở thành máy ép hơi nước: đúc theo nhịp máy.", "hơi nước và than", "Máy hơi nước"],
+        ["Máy tự động và bằng chứng · nhìn sang ngày nay", "Máy tự động của Heron tuân theo quy tắc cố định. Ngày nay nhiều lõi kiểm tra chữ ký cùng lúc.", "vài watt", "Chip chín lõi"]
+      ],
+      "level": "Cấp {n}",
+      "power": "Công suất",
+      "start": "Bắt đầu",
+      "submit": "Gửi chữ ký",
+      "submit10": "10 cùng lúc",
+      "queue": "Hàng đợi",
+      "done": "Đã xử lý",
+      "rate": "Ví dụ: {r} chữ ký mỗi phút",
+      "drive": "Động lực",
+      "machine": "Cỗ máy của cấp đã chọn"
+    },
+    "gears": {
+      "title": "Cơ cấu để quay",
+      "crank": "Tay quay",
+      "label": "Bốn bánh răng ăn khớp nhau",
+      "text": "Bánh răng 4 quay nhanh gấp {x} lần tay quay, theo chiều ngược lại."
+    },
+    "npc": {
+      "title": "Gặp các nhân vật",
+      "intro": "Chạm vào một nhân vật và đặt câu hỏi. Các đoạn hội thoại chỉ là ví dụ.",
+      "hello": "Chào mừng! Bạn muốn biết điều gì?",
+      "names": ["Thương nhân", "Lính gác", "Học giả", "Sultan", "Trưởng đoàn lữ hành"],
+      "qa": [
+        [
+          ["Một vật phẩm giá bao nhiêu?", "Vật phẩm do bạn chơi mà có. Chỉ ai muốn đúc một vật phẩm thành NFT mới trả một khoản phí nhỏ cho chi phí mạng."],
+          ["Tôi có thể buôn bán với anh không?", "Mọi tòa nhà và hàng hóa đều có thể mua bán. Với tài khoản doanh nghiệp, bạn còn nhận được thanh toán tại quầy."],
+          ["TOY là gì?", "Đồng tiền của ToyChain riêng. Toàn bộ 100 triệu được tạo ra dần dần nhờ công việc trong mạng. Không có dự trữ."]
+        ],
+        [
+          ["Làm sao tìm phòng chơi?", "Tòa nhà được giấu kín. Ai đi dạo trong thành phố một cách chú ý sẽ phát hiện ra."],
+          ["Ai được chơi?", "Ngoại tuyến một mình, trực tuyến với người khác, cùng nhau hoặc đối đầu. Có thể xem ở chế độ khán giả."],
+          ["Có an toàn không?", "Đừng bao giờ đưa cụm từ khôi phục cho ai, kể cả tôi. Ai hỏi nó là kẻ lừa đảo."]
+        ],
+        [
+          ["Một khối được tạo ra thế nào?", "Các giao dịch tích tụ lại. Khoảng mỗi phút, một thành viên ủy ban tạo một khối, những người khác ký. Từ hai phần ba trở lên là chung cuộc."],
+          ["Vì sao chuỗi luôn nhỏ gọn?", "Mỗi nút lưu trữ tối đa 256 MB. Tài khoản lâu không dùng sẽ ngủ và có thể đánh thức bất cứ lúc nào. Không gì bị mất."],
+          ["ToyCash là gì?", "Tiền mặt euro kỹ thuật số mà chỉ bạn thấy số tiền. Nó sẽ hoạt động cả khi ngoại tuyến."]
+        ],
+        [
+          ["Gia tộc mang lại gì cho tôi?", "Lòng trung thành được đền đáp. Năm gia tộc cạnh tranh hoặc hợp tác, và các nhân vật phục vụ họ."],
+          ["Có bao nhiêu gia tộc?", "Năm sultan, vua và gia tộc, ứng với năm bản đồ."],
+          ["NFT anh hùng là gì?", "Sau này bạn có thể đúc anh hùng của mình thành NFT. Phí bù chi phí mạng; chi tiết vẫn chưa xác định."]
+        ],
+        [
+          ["Làm sao cùng nhau du hành?", "Theo băng nhóm hoặc cùng người chơi khác trong thế giới mở. Đặc điểm, kỹ năng và vật phẩm bổ sung cho nhau."],
+          ["Du hành thời gian là gì?", "Năm cấp độ từ cổ đại đến hiện đại cho thấy các quy trình ToyChain với phương pháp ngày càng tốt hơn."],
+          ["Tôi có thể luyện tập ở đâu?", "Ở cấp luyện tập. Ngoài ra còn có 20 trò chơi nhỏ, nhiệm vụ và cấp thưởng."]
+        ]
+      ],
+      "quotes": ["“", "”"]
+    },
+    "poker": {
+      "title": "Poker tại bàn",
+      "modes": ["Texas Hold’em", "Omaha 4 lá có giới hạn"],
+      "buyin": "Mua vào: {n} ducat",
+      "pot": "Pot",
+      "stack": "Chồng chip của bạn",
+      "net": "Lời lỗ",
+      "fold": "Bỏ bài",
+      "check": "Xem bài",
+      "call": "Theo ({n})",
+      "bet": "Cược ({n})",
+      "raise": "Tố ({n})",
+      "nextHand": "Ván tiếp",
+      "you": "Bạn",
+      "opp": ["Thương nhân", "Sultan"],
+      "hands": ["Mậu thầu", "Một đôi", "Thú", "Sám cô", "Sảnh", "Thùng", "Cù lũ", "Tứ quý", "Thùng phá sảnh"],
+      "ruleHoldem": "Hold’em: bạn dùng 5 lá tốt nhất từ 2 lá của mình và các lá trên bàn.",
+      "ruleOmaha": "Omaha: bạn phải dùng đúng 2 trong 4 lá của mình và 3 lá trên bàn.",
+      "start": "Ván mới. Mỗi người góp {n} ante. Cược, theo hoặc bỏ bài.",
+      "newCards": "{street}: có bài mới trên bàn.",
+      "allFold": "Những người khác đều bỏ bài. Bạn thắng {n} ducat.",
+      "youFold": "Bạn đã bỏ bài. ",
+      "showdown": "Lật bài: {list}. Người thắng: {win} ({n} ducat).",
+      "broke": "Bạn đã hết chip. Bạn nhận ducat mới để luyện tập.",
+      "foot": "Poker có giới hạn với mức cược cố định: cược nhỏ trước flop và ở flop, gấp đôi ở turn và river. Đối thủ là nhân vật ví dụ với chiến thuật đơn giản. Chỉ chơi bằng ducat.",
+      "unit": "ducat",
+      "npcFold": "bỏ bài",
+      "npcCall": "theo",
+      "npcBet": "cược {n}",
+      "npcCheck": "xem bài",
+      "streets": ["Flop", "Turn", "River"],
+      "best": "Bộ bài tốt nhất của bạn: {h}",
+      "royal": "Thùng phá sảnh lớn",
+      "and": " và "
+    },
+    "mint": {
+      "pool": "Bể",
+      "chain": "Chuỗi",
+      "start": "Đưa thiết bị vào mạng và xem bể đầy dần.",
+      "addPhone": "+ Điện thoại",
+      "addPi": "+ Raspberry Pi",
+      "addPc": "+ Máy tính",
+      "sign": "Gửi chữ ký",
+      "spam": "Gửi spam",
+      "reset": "Đặt lại",
+      "blocks": "Khối",
+      "minted": "Mới phát hành",
+      "devices": "Thiết bị",
+      "full": "Không đặt được quá 8 thiết bị lên bàn.",
+      "phone": "Điện thoại tính chậm, nhưng thiết bị nào cũng có giá trị. Không cần số dư, nó vẫn tham gia xổ số công việc.",
+      "pi": "Raspberry Pi làm việc đều đặn và tiết kiệm.",
+      "pc": "Máy tính làm đầy bể nhanh nhất. Nhưng chỉ sức tính toán thì không mang lại gì trong đồng thuận.",
+      "own": "Bạn đã tự góp một chữ ký.",
+      "spamMsg": "Spam hầu như không làm đầy bể, nhưng tốn phí hoặc công tính toán.",
+      "block": "Khối {k} chung cuộc: {n} đóng góp, {t} TOY mới (đồng thuận {a}, công việc {b}, quỹ hoàn phí {c}).",
+      "resetMsg": "Đã đặt lại.",
+      "label": "Máy đúc"
+    },
+    "tx": {
+      "load": "Tải của mạng: {n} %",
+      "free": "Miễn phí: {a} trên {b}",
+      "send": "Gửi",
+      "round": "Kỷ nguyên mới",
+      "sentFree": "Đã gửi, miễn phí.",
+      "sentFee": "Hết hạn mức: phí khoảng {fee} TOY (hệ số {f}), hoặc một vé ToyWork giúp miễn phí.",
+      "formula": "Hạn mức = max(10, 100 × (1 − tải))"
+    },
+    "offline": {
+      "you": "Bạn",
+      "shop": "Người bán",
+      "amount": "Số tiền: {n} €",
+      "pay": "Thanh toán ngoại tuyến",
+      "again": "Tiêu lại cùng tờ tiền",
+      "sync": "Lên mạng và đồng bộ",
+      "month": "Dùng trong một tháng",
+      "limit": "Hạn mức ngoại tuyến: {used} trên {cap} € · cấp {s} · {days} ngày, {n} lần thanh toán",
+      "freeAmt": "Còn trống: {n} €",
+      "over": "Đã đạt hạn mức: {n} € không còn vừa. Hãy lên mạng để giải phóng hạn mức.",
+      "paid": "{n} € đã được chuyển mã hóa từ thiết bị đến thiết bị, hoàn toàn không cần mạng.",
+      "first": "Hãy thanh toán ngoại tuyến một lần trước.",
+      "double": "Cùng một tờ tiền đã được tiêu lần thứ hai. Khi ngoại tuyến, chưa ai nhận ra.",
+      "nothing": "Không có gì để đồng bộ.",
+      "okNote": "Tờ {i} ({n} €) đã xác nhận",
+      "badNote": "Tờ {i} ({n} €) trùng: bị từ chối",
+      "caught": "Phát hiện chi tiêu hai lần: đơn vị phát hành từ chối tờ thứ hai và ToyChain giúp kiểm chứng điều đó. Ai chi tiêu hai lần sẽ mất tiền đặt cọc cho người bị thiệt hại và bị hạ cấp.",
+      "synced": "Đã xác nhận {n} lần thanh toán. Hạn mức ngoại tuyến của bạn lại trống.",
+      "monthMsg": "Một tháng sử dụng: 30 ngày và 60 lần thanh toán. Hạn mức của bạn tăng theo từng cấp.",
+      "label": "Hai điện thoại trao đổi ngoại tuyến một khoản thanh toán mã hóa"
+    },
+    "toyscan": {
+      "choose": "Chọn tình huống:",
+      "minted": "Đã phát hành",
+      "cap": "Giới hạn tối đa",
+      "mio": "{n} triệu TOY",
+      "bigRed": "Đèn đỏ lớn: giới hạn tối đa, ra mắt công bằng hoặc hiến pháp bị vi phạm.",
+      "criteria": [
+        "A1 Giới hạn tối đa và tổng mọi số dư",
+        "A2 Ra mắt công bằng: mỗi TOY từ một lần phát hành",
+        "A3 Phát hành theo công thức",
+        "A4 Kỷ nguyên và thời gian",
+        "A5 Hiến pháp không đổi",
+        "A6 Đồng thuận lành mạnh",
+        "A7 Giai đoạn khởi đầu đúng kế hoạch",
+        "A8 Khóa chỉ khi có bằng chứng",
+        "A9 Dữ liệu cập nhật"
+      ],
+      "scenarios": [
+        ["Mọi thứ ổn", "Đáp ứng mọi tiêu chí", "Giá trị ví dụ."],
+        ["Hơn 100 triệu", "Đỏ: vượt giới hạn tối đa", "Ở đây sẽ có nhiều TOY được phát hành hơn mức cho phép. Điều này không bao giờ được xảy ra."],
+        ["Số dư không có phát hành", "Đỏ: vi phạm ra mắt công bằng", "Một số dư không truy được về bất kỳ lần phát hành nào."],
+        ["Phát hành vượt kế hoạch", "Vàng: cần theo dõi", "Phát hành đi trước kế hoạch hơn 3 %. Không vi phạm quy tắc nhưng bất thường."],
+        ["Dữ liệu cũ", "Vàng: dữ liệu không cập nhật", "Dữ liệu mới nhất đã cũ hơn 10 phút hoặc hai nguồn không khớp nhau."]
+      ]
+    },
+    "voucher": {
+      "title": "Thử phiếu quà tặng",
+      "examples": "Ví dụ:",
+      "presets": ["Quà cho gia đình", "Khuyến mãi tại cửa hàng", "Thẻ căng tin"],
+      "own": "Hoặc tự tạo: chọn loại",
+      "types": {
+        "i": ["Vô danh", "Phiếu vô danh", "Ai cầm phiếu đều có thể đổi. Khách hàng đầu tiên nhận toàn bộ số tiền."],
+        "m": ["Nhiều lần", "Phiếu dùng nhiều lần", "Giá trị được chia cho nhiều lần đổi cho đến khi hết."],
+        "g": ["Nhóm", "Phiếu nhóm", "Chỉ các thành viên được chọn mới có thể đổi, mỗi người đúng một lần với phần bằng nhau."]
+      },
+      "value": "Giá trị: {n} €",
+      "uses": "Số lần đổi: {n}",
+      "members": "Thành viên nhóm:",
+      "create": "Tạo phiếu",
+      "serial": "Sê-ri {s}",
+      "hint": "Sau khi tạo, chạm vào một khách hàng để họ đổi phiếu.",
+      "redeemed": "Đã đổi: {u} trên {n} · Còn lại: {r} €",
+      "double": "Đổi hai lần (gian lận)",
+      "needTwo": "Hãy chọn ít nhất hai thành viên.",
+      "first": "Hãy tạo phiếu trước.",
+      "created": "Đã tạo {type}: {v} €, {n} × {s} €.",
+      "shop": "Người bán",
+      "welcome": "Chào mừng!",
+      "redeems": "{name} đổi phiếu",
+      "doneI": "Phiếu vô danh đã được đổi rồi.",
+      "doneM": "Đã dùng hết cả {n} lần đổi.",
+      "notMember": "{name} không thuộc nhóm.",
+      "already": "{name} đã đổi phần của mình rồi.",
+      "ok": "{name} đổi {n} €.",
+      "dblBoth": "Ở đây cả hai lần đổi đều được tính, vì phiếu cho phép nhiều lần.",
+      "dblCaught": "Hai thiết bị, một tờ tiền: lần đổi thứ hai bị từ chối. Phát hiện chi tiêu hai lần.",
+      "customers": ["Ali", "Leyla", "Omar", "Samira"],
+      "foot": "Tình huống ví dụ. Đơn vị phát hành ghi trạng thái từng phiếu, ToyChain giúp kiểm chứng nó. Vì vậy một bản sao chẳng có tác dụng gì.",
+      "thanks": "Cảm ơn, được rồi!",
+      "sorry": "Rất tiếc, không được.",
+      "rejected": " Đơn vị phát hành từ chối."
+    }
+  }
+}

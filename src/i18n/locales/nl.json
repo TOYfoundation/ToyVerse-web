@@ -1,0 +1,682 @@
+{
+  "meta": {
+    "description": "Het ToyVerse: een eigen blockchain ToyChain met de munt TOY, de wallet TOYPAY, de explorer ToyScan, de onzichtbare euromunt ToyCash en het leerspel TOYQUEST."
+  },
+  "ui": {
+    "skip": "Naar de inhoud",
+    "menu": "Menu",
+    "mainNav": "Hoofdmenu",
+    "allPages": "Alle pagina’s",
+    "join": "Doe mee",
+    "language": "Taal",
+    "languageHint": "De website is nu beschikbaar in {n} van de 45 talen van de wallet, TOYPAY en ToyScan. De rest volgt.",
+    "soon": "volgt",
+    "path": "Pad",
+    "back": "Terug",
+    "next": "Verder",
+    "pause": "Pauze",
+    "auto": "Auto",
+    "step": "Stap",
+    "flowTitle": "Zo grijpt alles in elkaar",
+    "flowLabel": "Stroomdiagram",
+    "image": "Afbeelding {n}",
+    "ctaTitle": "Doe mee in het ToyVerse",
+    "ctaText": "Stel je vraag, test vroeg mee of word handelaar of mentor.",
+    "ctaBtn": "Doe mee",
+    "disclaimer": "Geen beleggingsadvies, geen beloften over rendement. De ToyChain draait als testnet in ontwikkeling; testnet-TOY hebben geen waarde. ToyCash, ToyScan en de TOYQUEST-items zijn concepten. Getallen in de simulaties zijn voorbeelden.",
+    "placeholder": "{label} invullen",
+    "example": "Voorbeeld",
+    "chooseLanguage": "Kies een taal",
+    "redirect": "Naar de startpagina",
+    "machineNote": "Deze vertaling is met AI gemaakt vanuit het Duits en nog niet door moedertaalsprekers nagekeken. Bepalend is de",
+    "machineLink": "Duitse versie"
+  },
+  "scenes": ["De stad bij nacht", "De karavaan", "Het netwerk van de ToyChain", "In de speelsalon", "De machinehal"],
+  "groups": {
+    "entdecken": { "t": "Ontdekken", "u": "Start en overzicht" },
+    "spielen": { "t": "Spelen", "u": "TOYQUEST en zijn wereld" },
+    "bezahlen": { "t": "Betalen", "u": "Wallet, munt en contant geld" },
+    "technik": { "t": "Techniek", "u": "Zo werkt de chain" },
+    "mitmachen": { "t": "Meedoen", "u": "Plan, downloads, contact" }
+  },
+  "status": {
+    "inWork": "In uitvoering",
+    "inDev": "In ontwikkeling",
+    "planned": "Gepland",
+    "concept": "Concept",
+    "built": "Gebouwd, in test",
+    "afterReview": "Na toetsing"
+  },
+  "pages": {
+    "start": {
+      "t": "Start",
+      "u": "Spel, wallet en een eigen blockchain in een wereld uit Duizend-en-een-nacht.",
+      "slides": [
+        ["Welkom in het ToyVerse", "Spel, wallet en een eigen blockchain in een wereld uit Duizend-en-een-nacht."],
+        ["Spelen en leren", "In TOYQUEST leggen personages je uit hoe TOY ontstaat."],
+        ["Betalen zonder netwerk", "TOYPAY en ToyCash moeten ook offline werken."]
+      ],
+      "discover": "Ontdekken",
+      "roadmap": "Naar de stand van zaken",
+      "what": "Wat wil je doen?",
+      "tiles": [
+        ["Spelen", "Ontdek TOYQUEST: wereld, clans, tijdreis."],
+        ["Betalen", "Begrijp TOYPAY, TOY en ToyCash."],
+        ["Begrijpen", "Zie hoe de ToyChain werkt."]
+      ],
+      "statusTitle": "Waar we staan",
+      "statusText": "De ToyChain ontstaat stap voor stap als testnet. {done} van de {total} mijlpalen zijn klaar.",
+      "statusLink": "Naar de roadmap",
+      "newTitle": "Nieuw hier?",
+      "newText": "Het overzicht laat zien hoe spel, wallet en chain samenwerken.",
+      "newBtn": "Bekijk het ecosysteem"
+    },
+    "verse": {
+      "t": "Het ecosysteem",
+      "u": "Zes bouwstenen onder één dak.",
+      "cards": [
+        ["ToyChain", "Een eigen, lichte blockchain met de munt TOY. Draait op oude telefoons en Raspberry Pi.", "inWork"],
+        ["TOYPAY", "Wallet en node in één, voor Android, Windows, Linux en Raspberry Pi.", "inDev"],
+        ["ToyScan", "Explorer met waarschuwingslicht: controleert doorlopend of de regels worden nageleefd.", "planned"],
+        ["TOYQUEST", "Het spel in de stijl van Duizend-en-een-nacht, met een leerwereld over de techniek.", "inDev"],
+        ["ToyCash", "Privé contant geld in euro op het net, ook offline.", "concept"],
+        ["ToyPost", "Eén inbox voor alle kanalen, facturen in TOY en bescherming tegen fraude.", "built"]
+      ],
+      "after": "Daarnaast een open economische kringloop, handelaren, mentoren en community-nodes. <a href=\"{community}\">Meer hierover</a>",
+      "flow": {
+        "nodes": ["Speler", "TOYQUEST", "TOYPAY", "ToyCash", "Polygon", "ToyChain", "ToyScan"],
+        "steps": [
+          ["Spelen", "Je voltooit missies en leert in TOYQUEST hoe de ToyChain werkt."],
+          ["Munten", "Wie wil, munt een verdiend item via TOYPAY."],
+          ["Items", "Gemunte items staan als NFT op Polygon. De ToyChain zelf kent alleen TOY."],
+          ["Meedoen", "De wallet is tegelijk een node: hij rekent, ondertekent en kan zo TOY verdienen."],
+          ["Controleren", "ToyScan controleert uitgifte, plafond en regels en toont het resultaat als verkeerslicht."],
+          ["Contant geld", "ToyCash moet later in TOYPAY zitten, ook offline."],
+          ["Notaris", "Voor ToyCash bevestigt de ToyChain alleen controlesommen, geen bedragen en geen namen."]
+        ]
+      }
+    },
+    "toyquest": {
+      "t": "TOYQUEST",
+      "u": "Een avontuur dat je de techniek uitlegt.",
+      "rows": [
+        ["Wereld", "Vijf kaarten bij vijf designthema’s; alle gebouwen zijn te betreden, te gebruiken en te verhandelen."],
+        ["Modi", "Offline of online, coöperatief of competitief, met spraakchat, risicomodus en toeschouwersmodus."],
+        ["Leren", "Personages op veel plekken leggen de ToyChain stap voor stap uit: kort, normaal of technisch met echte getallen."],
+        ["Echt of demo", "Heb je in TOYPAY een niveau ingeschakeld, dan tonen plekken in het spel echte gebeurtenissen van je node. Anders draait een duidelijk gemarkeerde demomodus. Het spel maakt zelf nooit TOY aan."],
+        ["Items", "Items verdien je door te spelen; kopen kan niet. Wie wil, munt ze als NFT op Polygon. Een gemeenschappelijke pot betaalt de netwerkkosten."]
+      ],
+      "toZeit": "Naar de tijdreis",
+      "toSalon": "Naar de speelsalon",
+      "flow": {
+        "nodes": ["Speler", "Missie", "Item", "TOYPAY", "Polygon"],
+        "steps": [
+          ["Spelen", "Je voltooit missies, minigames en uitdagingen."],
+          ["Verdienen", "Items krijg je in het spel, niet in een winkel. Geen pay-to-win."],
+          ["Munten", "Wie wil, munt het item. De kleine vergoeding dekt de netwerkkosten."],
+          ["NFT ontstaat", "De NFT wordt op Polygon aangemaakt; de gas betaalt de gemeenschappelijke pot."],
+          ["Bezitten", "Het item is van jou. In het spel werkt het ook zonder NFT."]
+        ]
+      }
+    },
+    "zeit": {
+      "t": "Tijdreis",
+      "u": "Vijf levels van de oudheid tot nu.",
+      "note": "Level 1 tot 3 tonen antieke machines. Level 4 en 5 laten daarbij de sprong naar de nieuwe tijd zien als vooruitblik. Elk level lost dezelfde stap op, het controleren van handtekeningen, met een efficiëntere methode. De getallen zijn voorbeelden."
+    },
+    "maschinen": {
+      "t": "Machines",
+      "u": "50 antieke machines, tot 256 in de eindversie.",
+      "slider": "Machines ontgrendeld: {n} van 256",
+      "cards": [
+        ["Leermeesters", "Elke machine heeft een meester die het bijbehorende proces van de ToyChain uitlegt."],
+        ["Beloning", "Wie kennis verzamelt, krijgt kenniszegels, meesterbrieven, dukaten en cosmetica. Daar staat geen TOY tegenover."],
+        ["Indeling", "Van werkplaats tot automaat, elke machine gekoppeld aan een proces, bijvoorbeeld het wateruurwerk en de bloktijd."]
+      ]
+    },
+    "gangs": {
+      "t": "Bendes en clans",
+      "u": "Alleen sterk, samen sterker.",
+      "cards": [
+        ["Bende", "Personages vullen elkaar aan met eigenschappen, vaardigheden en items."],
+        ["Open wereld", "Teamwerk met andere spelers voor uitdagingen en level-ups."],
+        ["Vijf clans", "Sultans en koningen beconcurreren elkaar of werken samen. Personages dienen hen; jouw loyaliteit telt."],
+        ["Echte principes", "Een poort gaat pas open als twee derde van de bende zijn zegel zet, net als bij de finaliteit van de ToyChain."]
+      ],
+      "flow": {
+        "nodes": ["Jouw bende", "Synergieën", "Uitdaging", "Open wereld", "Clan"],
+        "steps": [
+          ["Combineren", "Eigenschappen, vaardigheden en items van de leden versterken elkaar."],
+          ["Uitdaging aangaan", "De bende pakt samen een opdracht aan."],
+          ["Met anderen", "Teamwerk met andere spelers in de open wereld."],
+          ["Levelen", "De bende wordt sterker."],
+          ["Clan kiezen", "Je verbindt je aan een van de vijf clans. Ze beconcurreren elkaar of werken samen."]
+        ]
+      }
+    },
+    "salon": {
+      "t": "Speelsalon",
+      "u": "Verstopt in het spel, vol kaarten.",
+      "rows": [
+        ["Spellen", "Texas Hold’em en limit 4-card Omaha."],
+        ["Vormen", "Cashgames en toernooien."],
+        ["Inzet", "Er wordt gespeeld met dukaten uit het spel. Inzetten met ToyCoin komen er pas als een juridische toetsing ze toestaat."],
+        ["Minigames", "20 minigames plus missies en bonuslevels."]
+      ],
+      "flow": {
+        "nodes": ["Speler", "Speelsalon", "Tafel", "Inzet"],
+        "steps": [
+          ["Binnengaan", "De speelsalon is een verstopt gebouw in het spel."],
+          ["Spel kiezen", "Texas Hold’em of limit 4-card Omaha, als cashgame of toernooi."],
+          ["Inzet", "Je zet dukaten in. Inzetten met echt geld zijn er niet zonder juridische toetsing."]
+        ]
+      }
+    },
+    "toypay": {
+      "t": "TOYPAY",
+      "u": "De wallet voor het ToyVerse en tegelijk een node van de ToyChain.",
+      "cards": [
+        ["Platformen", "Android, Windows, Linux en Raspberry Pi, ook op oudere apparaten."],
+        ["Node", "Je kiest een niveau. Er wordt alleen gerekend met oplader, wifi en een normale temperatuur."],
+        ["Offline betalen", "Versleuteld via QR, NFC of Bluetooth, ook zonder netwerk."],
+        ["Zakelijke rekening", "Met kassafunctie voor handelaren."],
+        ["Veiligheid", "Voorbeeld vóór elke handtekening, bescherming tegen adresvallen, waarschuwingslijst tegen phishing, hardware-wallets."],
+        ["Talen", "45 talen en vier modi, van beginner tot expert."]
+      ],
+      "toWallet": "Verbinden met het testnet",
+      "toDownload": "Download",
+      "cardFront": ["TOYPAY", "ToyChain · Testnet", "Tik om om te draaien"],
+      "cardBack": ["Offline betalen", "Versleuteld van apparaat naar apparaat", "Voorbeeld vóór elke handtekening"],
+      "cardLabel": "Kaart omdraaien",
+      "cardTitle": "Jouw kaart om aan te raken",
+      "flow": {
+        "nodes": ["Kassa van de winkel", "Jouw wallet", "Voorbeeld", "Netwerk", "Zakelijke rekening"],
+        "steps": [
+          ["Bedrag sturen", "De kassa stuurt het bedrag als betaalverzoek naar je wallet."],
+          ["Controleren", "Vóór het ondertekenen toont de wallet precies wat er gebeurt."],
+          ["Betalen", "De betaling gaat het netwerk in en is na één blok definitief."],
+          ["Bijschrijving", "De zakelijke rekening krijgt de bevestiging."],
+          ["Offline", "Zonder netwerk gaat de versleutelde betaling direct van apparaat naar apparaat."]
+        ]
+      }
+    },
+    "toycoin": {
+      "t": "TOY",
+      "u": "De munt van de ToyChain, voor iedereen met dezelfde regels.",
+      "rows": [
+        ["Hoeveelheid", "Hooguit 100.000.000 TOY, nooit meer. Het plafond staat in de grondwet van de ToyChain."],
+        ["Fair launch", "Het eerste blok bevat geen enkele TOY. Geen reserve, geen presale, geen teamaandeel."],
+        ["Ontstaan", "Alle TOY ontstaan geleidelijk door werk in het netwerk: eerste epoch 50.500 TOY, eerste jaar ongeveer 16,8 mln., halveringstijd ongeveer 3,76 jaar, ongeveer 99 % na 25 jaar."],
+        ["Verdeling", "50 % voor iedereen die blokken ondertekent, 40 % voor de werkloterij, 10 % voor de terugbetalingspot voor gratis transacties."],
+        ["Nooit verbrand", "Op de ToyChain wordt nooit TOY vernietigd en gaan rekeningen nooit verloren."],
+        ["Techniek", "18 decimalen, adressen zoals bij Ethereum. Chain-ID testnet 7630714; mainnet 7630713 pas na een audit."]
+      ],
+      "chartTitle": "Uitgegeven TOY door de jaren heen",
+      "chartYear": "Jaar {y}",
+      "chartLabel": "Jaar {y}: ongeveer {m} mln. TOY uitgegeven (plan bij factor 1)",
+      "chartAxis": "mln. TOY",
+      "coinTitle": "De munt in 3D",
+      "coinTurn": "Munt draaien",
+      "warnTitle": "Let op: oude ToyCoin-tokens",
+      "warnText": "Op Polygon en Ethereum bestaan oudere tokens met de naam ToyCoin. Ze zijn <b>geen ToyChain-TOY</b>, worden niet omgeruild en niet gebridged. De wallet en ToyScan markeren ze met ‘Geen ToyChain-TOY, niet inwisselbaar’. Koop ze niet in de verwachting van een ruil.",
+      "warnPolygon": "Polygon",
+      "warnEthereum": "Ethereum",
+      "warnLink": "Bekijken in de explorer"
+    },
+    "wallet": {
+      "t": "Verbinden met het testnet",
+      "u": "Zodra het openbare testnet draait, voeg je het hier met één klik toe.",
+      "btn": "Testnet toevoegen · volgt met mijlpaal M10",
+      "facts": [
+        ["Netwerk", "ToyChain Testnet"],
+        ["Chain-ID", "7630714"],
+        ["Symbool", "TOY, 18 decimalen"],
+        ["Adres", "Je vertrouwde Ethereum-adres en herstelzin werken hier ook."]
+      ],
+      "text": "Toevoegen werkt met elke wallet die netwerken volgens EIP-3085 kan toevoegen, zoals TOYPAY of MetaMask. De pagina leest daarbij niets uit en kan niets versturen. Testnet-TOY hebben geen waarde en worden nooit naar een mainnet overgezet.",
+      "safety": "Deze pagina vraagt nooit om je herstelzin. Wie daarom vraagt, wil je oplichten.",
+      "flow": {
+        "nodes": ["Deze pagina", "Jouw wallet", "ToyChain-testnet", "Testnet-TOY"],
+        "steps": [
+          ["Voorstellen", "De pagina stelt het netwerk voor met naam, chain-ID en toegangspunt."],
+          ["Bevestigen", "Je wallet toont de gegevens en jij bevestigt. Sleutels verlaten je apparaat nooit."],
+          ["Meedoen", "In het testnet berekent je apparaat loten voor de werkloterij of haalt het test-TOY uit de kraan."],
+          ["Uitproberen", "Met testnet-TOY probeer je zonder risico overboekingen, gratis tegoed en niveaus uit."]
+        ]
+      }
+    },
+    "toycash": {
+      "t": "ToyCash",
+      "u": "Het gevoel van contant geld op het net, gedekt door euro’s.",
+      "rows": [
+        ["Principe", "Een euro-stablecoin. Bezit en bedragen zie alleen jij, in je wallet. De ToyChain bevestigt alleen controlesommen, geen bedragen en geen namen."],
+        ["Dekking", "Euroreserves, eerst alleen euro’s. Een eigen uitgever, later meerdere bewakers samen."],
+        ["Start", "Eerst een prototype volgens het eCash-principe met test-euro’s, later zk-notes."],
+        ["Waardebonnen", "Meervoudige, groeps- en toonderbonnen, stapsgewijs."],
+        ["Dubbele uitgave", "Terughaaltermijn, fraudeboete en reservering, stapsgewijs."],
+        ["Stand", "Concept. Echte euro’s pas na een audit en juridische toetsing."]
+      ],
+      "toOffline": "Offline-limiet testen",
+      "flow": {
+        "nodes": ["Euroreserve", "Uitgever", "Wallet A", "Wallet B", "ToyChain"],
+        "steps": [
+          ["Dekking", "Euro’s liggen klaar als dekking."],
+          ["Uitgeven", "Wallet A ontvangt versleutelde biljetten."],
+          ["Doorgeven", "A geeft biljetten door aan B, ook offline."],
+          ["Inwisselen", "B wisselt ze bij de uitgever om voor nieuwe biljetten. Die controleert dat geen biljet twee keer wordt gebruikt."],
+          ["Bevestigen", "Elke epoch verankert de uitgever een controlesom van zijn lijst op de ToyChain. Zo kan niets stiekem worden veranderd."]
+        ]
+      }
+    },
+    "offline": {
+      "t": "Offline-limiet",
+      "u": "De limiet groeit langzaam mee met je gebruik.",
+      "tableHead": ["Niveau", "Limiet", "Voorwaarde"],
+      "steps": [
+        ["1", "20 €", "Start"],
+        ["2", "50 €", "14 dagen en 10 betalingen"],
+        ["3", "100 €", "60 dagen en 40 betalingen"],
+        ["4", "250 €", "180 dagen en 100 betalingen, alleen met apparaatgebonden sleutel"],
+        ["5", "500 €", "365 dagen en 250 betalingen, alleen met apparaatgebonden sleutel"]
+      ],
+      "text": "Binnen het ontgrendelde niveau kies je je limiet zelf. De limiet is ook een borg: wie offline dubbel uitgeeft, verliest die aan de gedupeerden. De niveauwaarden zijn een voorstel."
+    },
+    "toychain": {
+      "t": "ToyChain",
+      "u": "Licht als Mina, adressen als Ethereum.",
+      "rows": [
+        ["Omvang", "Elke standaardnode slaat hooguit 256 MB op."],
+        ["Apparaten", "Draait op oude Android-apparaten, Raspberry Pi, Linux en Windows."],
+        ["Adressen", "Dezelfde adressen en dezelfde 12 of 24 woorden als bij Ethereum."],
+        ["Meedoen", "Niveau 0 vraagt geen saldo: je apparaat berekent loten voor de werkloterij. Met 10, 100 of 1.000 TOY stake onderteken, bewaar of valideer je."],
+        ["Consensus", "Een comité van maximaal 128 leden ondertekent elk blok. Vanaf twee derde is het definitief; ongeveer één blok per minuut."],
+        ["Rekeningen", "Rekeningen gaan nooit verloren. Lang ongebruikte rekeningen rusten en zijn altijd weer te wekken."],
+        ["Alleen TOY", "Geen tokens, geen NFT’s, geen smart contracts op de ToyChain. Elke functie is vast ingebouwd."],
+        ["Veiligheid", "Alleen beproefde methoden en bibliotheken. Extra post-kwantumsleutels (ML-DSA) zijn gepland voor mijlpaal M13."]
+      ],
+      "toMint": "Munten simuleren",
+      "chainTitle": "De keten in 3D",
+      "chainAdd": "Blok toevoegen",
+      "chainHint": "Beweeg je aanwijzer of vinger over de scène om die te draaien. De kubussen zijn voorbeeldblokken.",
+      "flow": {
+        "nodes": ["Wallet", "Pool", "Comité", "Blok", "Keten"],
+        "steps": [
+          ["Versturen", "Je transactie belandt in de pool."],
+          ["Voorstellen", "Een willekeurig gekozen comitélid stelt het blok samen."],
+          ["Ondertekenen", "Het comité ondertekent. Vanaf twee derde is het blok definitief."],
+          ["Toevoegen", "Nodes bewaren de toestand en een kort venster, hooguit 256 MB."],
+          ["Belonen", "Nieuwe TOY gaan naar de ondertekenaars, de werkloterij en de terugbetalingspot."]
+        ]
+      }
+    },
+    "mint": {
+      "t": "Muntsimulatie",
+      "u": "Stuur apparaten het netwerk in en zie blokken ontstaan.",
+      "text": "Vereenvoudigd: werk en handtekeningen lopen over de band de pool in. Is die vol of is er ongeveer een minuut voorbij (hier versneld), dan ontstaat een blok. In de eerste epoch komt er per blok ongeveer 35 TOY bij: 50 % voor ondertekenaars, 40 % voor de werkloterij, 10 % voor de terugbetalingspot."
+    },
+    "tx": {
+      "t": "Transacties",
+      "u": "10 tot 100 gratis transacties per rekening per dag.",
+      "text": "Boven het tegoed betaal je een kleine vergoeding of bereken je een ToyWork-lot. De vergoeding verdubbelt per 10 extra transacties in hetzelfde blok, tot hooguit 1.024 keer. Vergoedingen gaan voor 40 % naar actieve deelnemers, 40 % naar de terugbetalingspot en 20 % naar wie het blok voorstelt."
+    },
+    "toyscan": {
+      "t": "ToyScan",
+      "u": "Groen licht als alle regels worden nageleefd.",
+      "cards": [
+        ["Plafond", "Nooit meer dan 100.000.000 TOY. In elk blok is de som van alle saldi gelijk aan de som van alle uitgiften."],
+        ["Fair launch", "Het eerste blok bevat 0 TOY. Elke TOY is terug te voeren op een uitgifte."],
+        ["Uitgifte", "Elke epoch wordt volgens de formule nagerekend."],
+        ["Andere ketens", "Toont saldi van hetzelfde adres op andere ketens, alleen-lezen. Oude ToyCoin-tokens zijn gemarkeerd als ‘geen ToyChain-TOY’."]
+      ],
+      "flow": {
+        "nodes": ["ToyChain", "Archiefnode", "Andere ketens", "ToyScan", "Verkeerslicht"],
+        "steps": [
+          ["Gegevens lezen", "ToyScan leest aanbod, epochs en blokken van de ToyChain."],
+          ["Narekenen", "Een archiefnode telt zelf alle saldi op."],
+          ["Tonen", "Saldi van hetzelfde adres op andere ketens verschijnen alleen ter informatie."],
+          ["Verkeerslicht", "Groen als alles klopt. Geel bij opvallende zaken, rood bij een regelovertreding, met bewijs."]
+        ]
+      }
+    },
+    "ketten": {
+      "t": "Andere ketens",
+      "u": "Overal hetzelfde adres, zonder bridge.",
+      "rows": [
+        ["Hetzelfde adres", "Je ToyChain-adres werkt ook op Ethereum, Polygon, Arbitrum, Base en BNB Chain. TOYPAY toont daar saldi, tokens en NFT’s."],
+        ["Ruilen zonder bridge", "Een atomaire ruil met hash-tijdslot: óf beide kanten krijgen hun geld, óf niemand. Gepland voor mijlpaal M12."],
+        ["Oude ToyCoin-tokens", "De tokens met de naam ToyCoin op Polygon en Ethereum zijn geen ToyChain-TOY en niet inwisselbaar."],
+        ["Bridge", "In de huidige opzet is er geen bridge. Komt er later een, dan vraagt die een eigen besluit, een audit en een juridische toetsing."]
+      ]
+    },
+    "roadmap": {
+      "t": "Roadmap",
+      "u": "De volgorde telt meer dan data.",
+      "progress": "ToyChain fase 1: {done} van de {total} mijlpalen klaar (stand {date})",
+      "milestones": {
+        "M1": "Basistypen en uitgifte",
+        "M2": "Cryptografie en adressen",
+        "M3": "Toestand, transacties, vergoedingen",
+        "M4": "Blokken en consensus",
+        "M5": "Opslag en 256 MB",
+        "M6": "Netwerk",
+        "M7": "Interface (RPC)",
+        "M8": "Wallet en opdrachtregel",
+        "M9": "Platformen en energiemodus",
+        "M10": "Openbaar testnet",
+        "M11": "ToyScan",
+        "M12": "Rekeningbescherming, ruil",
+        "M13": "Namen, post-kwantumsleutels"
+      },
+      "cards": [
+        ["1 · Kern van de ToyChain", "Node in Rust: uitgifte, cryptografie, transacties en vergoedingen zijn klaar; consensus volgt.", "inWork"],
+        ["2 · TOYPAY als node", "Wallet met niveaus en energiemodus op vier platformen.", "planned"],
+        ["3 · Openbaar testnet", "Eerst lokaal, dan openbaar, met belastingtests.", "planned"],
+        ["4 · ToyScan", "Explorer met waarschuwingslicht en open interface.", "planned"],
+        ["5 · TOYQUEST", "Leerwereld en items op Polygon, los van de kern van de ToyChain.", "inDev"],
+        ["6 · ToyCash", "Prototype met test-euro’s, daarna offline wallet en zk-notes.", "concept"],
+        ["7 · Mainnet", "Alleen na een externe audit, belastingtests en juridische toetsing, vooraf openbaar aangekondigd.", "afterReview"]
+      ],
+      "flow": {
+        "nodes": ["ToyChain-kern", "TOYPAY", "Testnet", "ToyScan", "Mainnet"],
+        "steps": [
+          ["Eerst de kern", "Uitgifte, cryptografie en transacties zijn gebouwd en getest."],
+          ["Wallet als node", "TOYPAY brengt de keten naar telefoon, pc en Raspberry Pi."],
+          ["Testnet", "Eerst lokaal, dan openbaar, met belastingtests en fuzzing."],
+          ["Mainnet pas na toetsing", "Audit, belastingtests en juridische toetsing zijn verplicht. Testnet-TOY worden nooit overgezet."]
+        ]
+      }
+    },
+    "download": {
+      "t": "Downloads",
+      "u": "Hier verschijnen de bestanden zodra ze klaar zijn.",
+      "items": [
+        "TOYPAY voor Android, Windows, Linux en Raspberry Pi · volgt",
+        "ToyChain-node · volgt met het testnet",
+        "Whitepaper · volgt met de publicatie van de broncode"
+      ],
+      "until": "Tot dan: <a href=\"{roadmap}\">bekijk de roadmap</a> of <a href=\"{toycoin}\">lees meer over TOY</a>."
+    },
+    "community": {
+      "t": "Community",
+      "u": "Een economische kringloop die iedereen samen draagt.",
+      "cards": [
+        ["Handelaren", "Handelaren met zakelijke rekening, kassa, waardebonnen en spaarpunten."],
+        ["Mentoren", "Ervaren spelers helpen nieuwkomers en krijgen daarvoor kenniszegels."],
+        ["Community-nodes", "Wie een apparaat beschikbaar stelt, versterkt het netwerk. Raspberry Pi-pakketten en een nodekaart zijn gepland."],
+        ["Dashboard", "ToyScan toont de economische kringloop met echte getallen, zonder voorspellingen."],
+        ["Inspraak", "Komt later. Ook dan kan niemand de grondwet van de ToyChain veranderen."]
+      ],
+      "langTitle": "45 talen",
+      "langText": "De wallet, TOYPAY en ToyScan spreken dezelfde 45 talen. De website is nu beschikbaar in {n} daarvan:"
+    },
+    "kontakt": {
+      "t": "Meedoen en contact",
+      "u": "Vertel ons wat je nodig hebt.",
+      "cards": [
+        ["Testnet", "Voeg het testnet aan je wallet toe zodra het draait.", "Naar het testnet"],
+        ["Downloads", "Apps en nodes verschijnen hier zodra ze klaar zijn.", "Naar de downloads"],
+        ["Meedoen", "Als tester, handelaar of mentor. Schrijf ons kort waar het om gaat.", ""]
+      ],
+      "formTitle": "Schrijf ons",
+      "topic": "Onderwerp",
+      "topics": ["Vraag over het project", "Meedoen als tester", "Handelaar worden", "Pers"],
+      "name": "Je naam",
+      "message": "Bericht",
+      "send": "E-mail voorbereiden",
+      "noMail": "Het contactadres is nog niet ingesteld (src/data/site.json).",
+      "opened": "Je e-mailprogramma gaat open. Via deze pagina wordt niets opgeslagen.",
+      "security": "Meld beveiligingslekken niet via dit formulier, maar vertrouwelijk aan het adres in het colofon, met als onderwerp ‘Beveiliging’."
+    },
+    "impressum": {
+      "t": "Colofon",
+      "u": "Aanbiedersvermelding volgens § 5 DDG (Duitse wet).",
+      "template": "Dit is een sjabloon. Vul de echte gegevens in src/data/site.json in en laat ze juridisch controleren.",
+      "h1": "Gegevens volgens § 5 DDG",
+      "h2": "Contact",
+      "h3": "Register en belasting",
+      "h4": "Verantwoordelijk voor de inhoud",
+      "h5": "Opmerking",
+      "labels": {
+        "name": "naam of bedrijf met rechtsvorm",
+        "street": "straat en huisnummer",
+        "city": "postcode en plaats",
+        "email": "e-mailadres",
+        "phone": "telefoonnummer",
+        "register": "register en nummer, indien aanwezig",
+        "vatId": "btw-nummer, indien aanwezig"
+      },
+      "mail": "E-mail",
+      "phone": "Telefoon",
+      "register": "Registerinschrijving",
+      "vat": "Btw-nummer",
+      "responsible": "Volgens § 18 lid 2 MStV: {name}, adres zoals hierboven.",
+      "note": "Het ToyVerse is een project in opbouw. Informatie over TOY is geen beleggingsadvies."
+    },
+    "datenschutz": {
+      "t": "Privacy",
+      "u": "Wat er met je gegevens gebeurt: zo weinig mogelijk.",
+      "template": "Dit is een sjabloon. Het past bij een statische website zonder cookies en zonder tracking. Vul de hostingprovider aan en laat het vóór publicatie juridisch controleren.",
+      "sections": [
+        ["Verantwoordelijke", "{name}, {street}, {city}, e-mail: {email}."],
+        ["Hosting en serverlogs", "De website wordt gehost bij {host}. Bij een bezoek verwerkt de server technisch noodzakelijke gegevens zoals IP-adres, tijdstip en opgevraagde pagina, om de website te leveren en tegen aanvallen te beschermen (art. 6 lid 1 sub f AVG)."],
+        ["Geen cookies, geen tracking", "De website plaatst geen cookies, gebruikt geen analysetools en laadt geen inhoud van derden. De lettertypen staan op de eigen server."],
+        ["In je browser", "De simulaties draaien alleen in je browser. Er wordt niets naar ons verstuurd."],
+        ["Contact", "Het contactformulier opent alleen je e-mailprogramma. Pas als je de e-mail verstuurt, ontvangen we die en gebruiken we hem alleen om te antwoorden (art. 6 lid 1 sub b en f AVG)."],
+        ["Links naar andere sites", "Links, bijvoorbeeld naar block explorers, leiden naar andere aanbieders. Daar gelden hun privacyverklaringen."],
+        ["Jouw rechten", "Je hebt recht op inzage, rectificatie, verwijdering, beperking, overdraagbaarheid en bezwaar, en op het indienen van een klacht bij een toezichthouder voor gegevensbescherming."]
+      ]
+    }
+  },
+  "demo": {
+    "zeit": {
+      "levels": [
+        ["Antieke werkplaats", "De rekenmeester schuift de kralen en controleert elke handtekening met de hand.", "spierkracht", "Telraam"],
+        ["Kracht en bundeling", "Een waterrad drijft de hamer aan, en veel zegels worden er één.", "waterkracht", "Waterrad en zegelhamer"],
+        ["Tijd en meten", "Het wateruurwerk geeft het ritme aan, net als de bloktijd van ongeveer een minuut.", "water en zwaartekracht", "Wateruurwerk"],
+        ["Archief en munten · vooruitblik nieuwe tijd", "De antieke muntpers wordt een stoompers: munten op het ritme van de machine.", "stoom en kolen", "Stoommachine"],
+        ["Automaten en bewijzen · vooruitblik heden", "Herons automaat volgde vaste regels. Nu controleren veel kernen tegelijk handtekeningen.", "een paar watt", "Chip met negen kernen"]
+      ],
+      "level": "Level {n}",
+      "power": "Vermogen",
+      "start": "Start",
+      "submit": "Handtekening indienen",
+      "submit10": "10 tegelijk",
+      "queue": "Wachtrij",
+      "done": "Verwerkt",
+      "rate": "Voorbeeld: {r} handtekeningen per minuut",
+      "drive": "Aandrijving",
+      "machine": "Machine van het gekozen level"
+    },
+    "gears": {
+      "title": "Mechaniek om aan te draaien",
+      "crank": "Slinger",
+      "label": "Vier tandwielen die in elkaar grijpen",
+      "text": "Tandwiel 4 draait {x} keer zo snel als de slinger, in tegengestelde richting."
+    },
+    "npc": {
+      "title": "Ontmoet de personages",
+      "intro": "Tik op een figuur en stel een vraag. De dialogen zijn voorbeelden.",
+      "hello": "Welkom! Wat wil je weten?",
+      "names": ["Handelaar", "Wachter", "Geleerde", "Sultan", "Karavaanleider"],
+      "qa": [
+        [
+          ["Wat kost een item?", "Items verdien je in het spel. Alleen wie er een als NFT wil munten, betaalt een kleine vergoeding voor de netwerkkosten."],
+          ["Kan ik met je handelen?", "Alle gebouwen en waren zijn verhandelbaar. Met een zakelijke rekening ontvang je zelfs betalingen aan de kassa."],
+          ["Wat is TOY?", "De munt van de eigen ToyChain. Alle 100 miljoen ontstaan geleidelijk door werk in het netwerk. Een reserve is er niet."]
+        ],
+        [
+          ["Hoe vind ik de speelsalon?", "Het gebouw is verstopt. Wie oplettend door de stad loopt, ontdekt het."],
+          ["Wie mag meespelen?", "Offline alleen, online met anderen, samen of tegen elkaar. Kijken kan in de toeschouwersmodus."],
+          ["Is het veilig?", "Geef nooit je herstelzin door, ook niet aan mij. Wie daarom vraagt, is een oplichter."]
+        ],
+        [
+          ["Hoe ontstaat een blok?", "Transacties verzamelen zich. Ongeveer elke minuut stelt een comitélid een blok samen en de anderen ondertekenen. Vanaf twee derde is het definitief."],
+          ["Waarom blijft de keten klein?", "Elke node slaat hooguit 256 MB op. Lang ongebruikte rekeningen rusten en zijn altijd weer te wekken. Er gaat niets verloren."],
+          ["Wat is ToyCash?", "Digitaal contant geld in euro waarvan alleen jij de bedragen ziet. Het moet ook offline werken."]
+        ],
+        [
+          ["Wat levert een clan me op?", "Loyaliteit wordt beloond. Vijf clans beconcurreren elkaar of werken samen, en hun personages staan in hun dienst."],
+          ["Hoeveel clans zijn er?", "Vijf sultans, koningen en clans, passend bij de vijf kaarten."],
+          ["Wat is een helden-NFT?", "Je held kun je later als NFT munten. De vergoeding dekt de netwerkkosten; de details volgen nog."]
+        ],
+        [
+          ["Hoe reis je samen?", "Als bende of met andere spelers uit de open wereld. Eigenschappen, vaardigheden en items vullen elkaar aan."],
+          ["Wat is de tijdreis?", "Vijf levels van de oudheid tot nu tonen de processen van de ToyChain met steeds betere methoden."],
+          ["Waar kan ik oefenen?", "In het trainingslevel. Daarnaast zijn er 20 minigames, missies en bonuslevels."]
+        ]
+      ],
+      "quotes": ["“", "”"]
+    },
+    "poker": {
+      "title": "Poker aan tafel",
+      "modes": ["Texas Hold’em", "Limit 4-card Omaha"],
+      "buyin": "Inleg: {n} dukaten",
+      "pot": "Pot",
+      "stack": "Jouw stapel",
+      "net": "Saldo",
+      "fold": "Passen",
+      "check": "Checken",
+      "call": "Meegaan ({n})",
+      "bet": "Inzetten ({n})",
+      "raise": "Verhogen ({n})",
+      "nextHand": "Volgende hand",
+      "you": "Jij",
+      "opp": ["Handelaar", "Sultan"],
+      "hands": ["Hoge kaart", "Een paar", "Twee paar", "Drie gelijke", "Straat", "Flush", "Full house", "Vier gelijke", "Straight flush"],
+      "ruleHoldem": "Hold’em: je gebruikt de beste 5 uit je 2 kaarten en de tafel.",
+      "ruleOmaha": "Omaha: je moet precies 2 van je 4 kaarten en 3 van de tafel gebruiken.",
+      "start": "Nieuwe hand. Iedereen betaalt {n} ante. Zet in, ga mee of pas.",
+      "newCards": "{street}: er liggen nieuwe kaarten op tafel.",
+      "allFold": "Alle anderen hebben gepast. Je wint {n} dukaten.",
+      "youFold": "Je hebt gepast. ",
+      "showdown": "Showdown: {list}. Winnaar: {win} ({n} dukaten).",
+      "broke": "Je stapel is leeg. Je krijgt nieuwe dukaten om te oefenen.",
+      "foot": "Limit-poker met vaste inzetten: kleine inzet vóór de flop en op de flop, dubbele inzet op turn en river. De tegenstanders zijn voorbeeldpersonages met een eenvoudige strategie. Er wordt alleen met dukaten gespeeld.",
+      "unit": "dukaten",
+      "npcFold": "past",
+      "npcCall": "gaat mee",
+      "npcBet": "zet {n} in",
+      "npcCheck": "checkt",
+      "streets": ["Flop", "Turn", "River"],
+      "best": "Je beste hand: {h}",
+      "royal": "Royal flush",
+      "and": " en "
+    },
+    "mint": {
+      "pool": "Pool",
+      "chain": "Keten",
+      "start": "Stuur apparaten het netwerk in en kijk hoe de pool volloopt.",
+      "addPhone": "+ Telefoon",
+      "addPi": "+ Raspberry Pi",
+      "addPc": "+ Pc",
+      "sign": "Handtekening sturen",
+      "spam": "Spam sturen",
+      "reset": "Opnieuw",
+      "blocks": "Blokken",
+      "minted": "Nieuw uitgegeven",
+      "devices": "Apparaten",
+      "full": "Meer dan 8 apparaten passen niet op tafel.",
+      "phone": "Een telefoon rekent langzaam, maar elk apparaat telt. Zonder saldo doet hij mee aan de werkloterij.",
+      "pi": "Een Raspberry Pi werkt gestaag en zuinig.",
+      "pc": "Een pc vult de pool het snelst. Maar rekenkracht alleen levert in de consensus niets op.",
+      "own": "Je hebt zelf een handtekening bijgedragen.",
+      "spamMsg": "Spam vult de pool nauwelijks, maar kost een vergoeding of rekenwerk.",
+      "block": "Blok {k} definitief: {n} bijdragen, {t} nieuwe TOY (consensus {a}, werk {b}, terugbetalingspot {c}).",
+      "resetMsg": "Teruggezet.",
+      "label": "Muntmachine"
+    },
+    "tx": {
+      "load": "Belasting van het netwerk: {n} %",
+      "free": "Gratis: {a} van {b}",
+      "send": "Versturen",
+      "round": "Nieuwe epoch",
+      "sentFree": "Verstuurd, gratis.",
+      "sentFee": "Tegoed op: vergoeding ongeveer {fee} TOY (factor {f}), of een ToyWork-lot maakt het gratis.",
+      "formula": "Tegoed = max(10, 100 × (1 − belasting))"
+    },
+    "offline": {
+      "you": "Jij",
+      "shop": "Handelaar",
+      "amount": "Bedrag: {n} €",
+      "pay": "Offline betalen",
+      "again": "Hetzelfde biljet nog eens uitgeven",
+      "sync": "Online gaan en afstemmen",
+      "month": "Een maand gebruiken",
+      "limit": "Offline-limiet: {used} van {cap} € · niveau {s} · {days} dagen, {n} betalingen",
+      "freeAmt": "Vrij: {n} €",
+      "over": "Limiet bereikt: {n} € past er niet meer bij. Ga online zodat je ruimte weer vrijkomt.",
+      "paid": "{n} € versleuteld van apparaat naar apparaat overgedragen, helemaal zonder netwerk.",
+      "first": "Betaal eerst één keer offline.",
+      "double": "Hetzelfde biljet ging een tweede keer de deur uit. Offline valt dat nog niet op.",
+      "nothing": "Er valt niets af te stemmen.",
+      "okNote": "Biljet {i} ({n} €) bevestigd",
+      "badNote": "Biljet {i} ({n} €) dubbel: geweigerd",
+      "caught": "Dubbele uitgave ontdekt: de uitgever weigert het tweede biljet en de ToyChain maakt dat controleerbaar. Wie dubbel uitgeeft, verliest zijn borg aan de gedupeerde en zakt een niveau.",
+      "synced": "{n} betaling(en) bevestigd. Je offline-ruimte is weer vrij.",
+      "monthMsg": "Een maand gebruik: 30 dagen en 60 betalingen. Je limiet groeit per niveau.",
+      "label": "Twee telefoons wisselen offline een versleutelde betaling uit"
+    },
+    "toyscan": {
+      "choose": "Kies een scenario:",
+      "minted": "Uitgegeven",
+      "cap": "Plafond",
+      "mio": "{n} mln. TOY",
+      "bigRed": "Grote rode lamp: plafond, fair launch of grondwet geschonden.",
+      "criteria": [
+        "A1 Plafond en som van alle saldi",
+        "A2 Fair launch: elke TOY uit een uitgifte",
+        "A3 Uitgifte volgens de formule",
+        "A4 Epochs en tijd",
+        "A5 Grondwet ongewijzigd",
+        "A6 Consensus gezond",
+        "A7 Startfase volgens plan",
+        "A8 Blokkades alleen met bewijs",
+        "A9 Gegevens actueel"
+      ],
+      "scenarios": [
+        ["Alles in orde", "Aan alle criteria voldaan", "Voorbeeldwaarden."],
+        ["Meer dan 100 mln.", "Rood: plafond overschreden", "Hier zou meer TOY zijn uitgegeven dan toegestaan. Dat mag nooit gebeuren."],
+        ["Saldo zonder uitgifte", "Rood: fair launch geschonden", "Een saldo is op geen enkele uitgifte terug te voeren."],
+        ["Uitgifte voor op schema", "Geel: in de gaten houden", "De uitgifte ligt meer dan 3 % voor op het plan. Geen regelovertreding, wel opvallend."],
+        ["Verouderde gegevens", "Geel: gegevens verouderd", "De laatste gegevens zijn ouder dan 10 minuten of twee bronnen zijn het oneens."]
+      ]
+    },
+    "voucher": {
+      "title": "Waardebonnen uitproberen",
+      "examples": "Voorbeelden:",
+      "presets": ["Cadeau voor de familie", "Actie in de winkel", "Kantinekaart"],
+      "own": "Of maak er zelf een: kies een soort",
+      "types": {
+        "i": ["Toonder", "Toonderbon", "Wie hem bezit, kan hem inwisselen. De eerste klant krijgt het volle bedrag."],
+        "m": ["Meervoudig", "Meervoudige bon", "De waarde wordt over meerdere inwisselingen verdeeld tot hij op is."],
+        "g": ["Groep", "Groepsbon", "Alleen de gekozen leden kunnen inwisselen, elk precies één keer met een gelijk deel."]
+      },
+      "value": "Waarde: {n} €",
+      "uses": "Inwisselingen: {n}",
+      "members": "Leden van de groep:",
+      "create": "Bon aanmaken",
+      "serial": "Serie {s}",
+      "hint": "Tik na het aanmaken op een klant om hem in te laten wisselen.",
+      "redeemed": "Ingewisseld: {u} van {n} · Rest: {r} €",
+      "double": "Dubbel inwisselen (fraude)",
+      "needTwo": "Kies minstens twee leden.",
+      "first": "Maak eerst een bon aan.",
+      "created": "{type} aangemaakt: {v} €, {n} × {s} €.",
+      "shop": "Handelaar",
+      "welcome": "Welkom!",
+      "redeems": "{name} wisselt in",
+      "doneI": "De toonderbon is al ingewisseld.",
+      "doneM": "Alle {n} inwisselingen zijn opgebruikt.",
+      "notMember": "{name} hoort niet bij de groep.",
+      "already": "{name} heeft het deel al ingewisseld.",
+      "ok": "{name} wisselt {n} € in.",
+      "dblBoth": "Hier tellen beide inwisselingen, omdat de bon er meerdere toestaat.",
+      "dblCaught": "Twee apparaten, één biljet: de tweede inwisseling wordt geweigerd. Dubbele uitgave ontdekt.",
+      "customers": ["Ali", "Leyla", "Omar", "Samira"],
+      "foot": "Voorbeeldscenario. De uitgever houdt de stand van elke bon bij en de ToyChain maakt die controleerbaar. Een kopie helpt daarom niets.",
+      "thanks": "Dank je, dat klopt!",
+      "sorry": "Dat kan helaas niet.",
+      "rejected": " De uitgever weigert."
+    }
+  }
+}

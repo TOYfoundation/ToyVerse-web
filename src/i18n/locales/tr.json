@@ -1,0 +1,682 @@
+{
+  "meta": {
+    "description": "ToyVerse: TOY coin’li kendi blok zinciri ToyChain, TOYPAY cüzdanı, ToyScan gezgini, görünmez Euro coin’i ToyCash ve eğitici oyun TOYQUEST."
+  },
+  "ui": {
+    "skip": "İçeriğe geç",
+    "menu": "Menü",
+    "mainNav": "Ana menü",
+    "allPages": "Tüm sayfalar",
+    "join": "Katıl",
+    "language": "Dil",
+    "languageHint": "Site şu anda cüzdan, TOYPAY ve ToyScan’in 45 dilinden {n} tanesinde mevcut. Diğerleri gelecek.",
+    "soon": "yakında",
+    "path": "Yol",
+    "back": "Geri",
+    "next": "İleri",
+    "pause": "Duraklat",
+    "auto": "Otomatik",
+    "step": "Adım",
+    "flowTitle": "Her şey nasıl birbirine bağlanır",
+    "flowLabel": "Akış şeması",
+    "image": "Görsel {n}",
+    "ctaTitle": "ToyVerse’e katıl",
+    "ctaText": "Soru sor, erken test et ya da satıcı veya mentor ol.",
+    "ctaBtn": "Katıl",
+    "disclaimer": "Yatırım tavsiyesi değildir, getiri vaadi yoktur. ToyChain geliştirme aşamasında bir test ağı olarak çalışır; test ağı TOY’larının değeri yoktur. ToyCash, ToyScan ve TOYQUEST eşyaları kavram aşamasındadır. Simülasyonlardaki sayılar örnektir.",
+    "placeholder": "{label} girin",
+    "example": "Örnek",
+    "chooseLanguage": "Dil seçin",
+    "redirect": "Ana sayfaya git",
+    "machineNote": "Bu çeviri Almancadan yapay zekâ ile oluşturuldu ve henüz anadili konuşanlarca kontrol edilmedi. Esas alınan metin:",
+    "machineLink": "Almanca sürüm"
+  },
+  "scenes": ["Gece şehir", "Kervan", "ToyChain ağı", "Oyun salonunda", "Makine salonu"],
+  "groups": {
+    "entdecken": { "t": "Keşfet", "u": "Başlangıç ve genel bakış" },
+    "spielen": { "t": "Oyna", "u": "TOYQUEST ve dünyası" },
+    "bezahlen": { "t": "Öde", "u": "Cüzdan, coin ve nakit" },
+    "technik": { "t": "Teknik", "u": "Zincir nasıl çalışır" },
+    "mitmachen": { "t": "Katıl", "u": "Plan, indirmeler, iletişim" }
+  },
+  "status": {
+    "inWork": "Üzerinde çalışılıyor",
+    "inDev": "Geliştiriliyor",
+    "planned": "Planlandı",
+    "concept": "Kavram",
+    "built": "Yapıldı, testte",
+    "afterReview": "İncelemeden sonra"
+  },
+  "pages": {
+    "start": {
+      "t": "Başlangıç",
+      "u": "Binbir Gece dünyasında oyun, cüzdan ve kendi blok zinciri.",
+      "slides": [
+        ["ToyVerse’e hoş geldin", "Binbir Gece dünyasında oyun, cüzdan ve kendi blok zinciri."],
+        ["Oyna ve öğren", "TOYQUEST’te karakterler sana TOY’un nasıl oluştuğunu anlatır."],
+        ["Ağ olmadan ödeme", "TOYPAY ve ToyCash çevrimdışı da çalışacak."]
+      ],
+      "discover": "Keşfet",
+      "roadmap": "Son durum",
+      "what": "Ne yapmak istersin?",
+      "tiles": [
+        ["Oyna", "TOYQUEST’i keşfet: dünya, klanlar, zaman yolculuğu."],
+        ["Öde", "TOYPAY, TOY ve ToyCash’i anla."],
+        ["Anla", "ToyChain’in nasıl çalıştığını gör."]
+      ],
+      "statusTitle": "Neredeyiz",
+      "statusText": "ToyChain adım adım bir test ağı olarak oluşuyor. {total} kilometre taşından {done} tanesi tamamlandı.",
+      "statusLink": "Yol haritasına git",
+      "newTitle": "Burada yeni misin?",
+      "newText": "Genel bakış; oyun, cüzdan ve zincirin birlikte nasıl çalıştığını gösterir.",
+      "newBtn": "Ekosistemi gör"
+    },
+    "verse": {
+      "t": "Ekosistem",
+      "u": "Tek çatı altında altı yapı taşı.",
+      "cards": [
+        ["ToyChain", "TOY coin’li, kendine ait hafif bir blok zinciri. Eski telefonlarda ve Raspberry Pi’de çalışır.", "inWork"],
+        ["TOYPAY", "Android, Windows, Linux ve Raspberry Pi için cüzdan ve düğüm bir arada.", "inDev"],
+        ["ToyScan", "Uyarı ışıklı gezgin: kurallara uyulup uyulmadığını sürekli kontrol eder.", "planned"],
+        ["TOYQUEST", "Binbir Gece tarzında, tekniği öğreten bir dünyaya sahip oyun.", "inDev"],
+        ["ToyCash", "Ağda özel Euro nakit, çevrimdışı da.", "concept"],
+        ["ToyPost", "Tüm kanallar için tek gelen kutusu, TOY ile faturalar, dolandırıcılığa karşı koruma.", "built"]
+      ],
+      "after": "Buna açık bir ekonomik döngü, satıcılar, mentorlar ve topluluk düğümleri eklenir. <a href=\"{community}\">Daha fazlası</a>",
+      "flow": {
+        "nodes": ["Oyuncu", "TOYQUEST", "TOYPAY", "ToyCash", "Polygon", "ToyChain", "ToyScan"],
+        "steps": [
+          ["Oyna", "Görevleri tamamlar ve TOYQUEST’te ToyChain’in nasıl çalıştığını öğrenirsin."],
+          ["Basım", "İsteyen, oyunda kazandığı bir eşyayı TOYPAY üzerinden basar."],
+          ["Eşyalar", "Basılan eşyalar Polygon’da NFT olarak bulunur. ToyChain yalnızca TOY’u tanır."],
+          ["Katıl", "Cüzdan aynı zamanda bir düğümdür: hesaplar, imzalar ve bu sırada TOY kazanabilir."],
+          ["Kontrol", "ToyScan ihracı, üst sınırı ve kuralları kontrol eder, sonucu trafik ışığı olarak gösterir."],
+          ["Nakit", "ToyCash ileride TOYPAY’in içinde olacak, çevrimdışı da."],
+          ["Noter", "ToyChain, ToyCash için yalnızca sağlama toplamlarını onaylar; tutar ve isim yoktur."]
+        ]
+      }
+    },
+    "toyquest": {
+      "t": "TOYQUEST",
+      "u": "Sana tekniği anlatan bir macera.",
+      "rows": [
+        ["Dünya", "Beş tasarım temasına uygun beş harita; tüm binalara girilebilir, kullanılabilir ve alınıp satılabilir."],
+        ["Modlar", "Çevrimdışı veya çevrimiçi, iş birliği veya rekabet; sesli sohbet, risk modu ve izleyici modu ile."],
+        ["Öğrenme", "Birçok yerdeki karakterler ToyChain’i adım adım anlatır: kısa, normal ya da gerçek sayılarla teknik."],
+        ["Gerçek mi demo mu", "TOYPAY’de bir seviye etkinleştirdiysen oyundaki yerler düğümünün gerçek olaylarını gösterir. Aksi halde açıkça işaretlenmiş bir demo modu çalışır. Oyunun kendisi asla TOY üretmez."],
+        ["Eşyalar", "Eşyaları oynayarak kazanırsın, satın alamazsın. İsteyen onları Polygon’da NFT olarak basar. Ağ ücretini ortak bir havuz öder."]
+      ],
+      "toZeit": "Zaman yolculuğuna",
+      "toSalon": "Oyun salonuna",
+      "flow": {
+        "nodes": ["Oyuncu", "Görev", "Eşya", "TOYPAY", "Polygon"],
+        "steps": [
+          ["Oyna", "Görevleri, mini oyunları ve meydan okumaları tamamlarsın."],
+          ["Kazan", "Eşyaları mağazada değil, oyunda kazanırsın. Pay-to-win yok."],
+          ["Basım", "İsteyen eşyayı basar. Küçük ücret ağ maliyetlerini karşılar."],
+          ["NFT oluşur", "NFT Polygon’da oluşturulur; gas ücretini ortak havuz öder."],
+          ["Sahip ol", "Eşya senindir. Oyunda NFT olmadan da çalışır."]
+        ]
+      }
+    },
+    "zeit": {
+      "t": "Zaman yolculuğu",
+      "u": "Antik çağdan günümüze beş seviye.",
+      "note": "1–3. seviyeler antik makineleri gösterir. 4. ve 5. seviyeler ek olarak yeni çağa sıçrayışı bir bakış olarak sunar. Her seviye aynı adımı, imzaların doğrulanmasını, daha verimli bir yöntemle çözer. Sayılar örnektir."
+    },
+    "maschinen": {
+      "t": "Makineler",
+      "u": "50 antik makine, son sürümde 256’ya kadar.",
+      "slider": "Açılan makineler: 256’dan {n}",
+      "cards": [
+        ["Ustalar", "Her makinenin, ToyChain’in ilgili sürecini anlatan bir ustası vardır."],
+        ["Ödül", "Bilgi toplayan bilgi mühürleri, ustalık belgeleri, dukalar ve kozmetik eşyalar alır. Bunun için TOY verilmez."],
+        ["Düzen", "Atölyeden otomata kadar her makine bir sürece bağlıdır; örneğin su saati ve blok süresi."]
+      ]
+    },
+    "gangs": {
+      "t": "Çeteler ve klanlar",
+      "u": "Tek başına güçlü, takımla daha güçlü.",
+      "cards": [
+        ["Çete", "Karakterler özellikleri, yetenekleri ve eşyalarıyla birbirini tamamlar."],
+        ["Açık dünya", "Meydan okumalar ve seviye atlamak için diğer oyuncularla takım çalışması."],
+        ["Beş klan", "Sultanlar ve krallar rekabet eder ya da iş birliği yapar. Karakterler onlara hizmet eder; senin sadakatin önemlidir."],
+        ["Gerçek ilkeler", "Bir kapı ancak çetenin üçte ikisi mührünü bastığında açılır, tıpkı ToyChain’deki kesinlik gibi."]
+      ],
+      "flow": {
+        "nodes": ["Çeten", "Sinerjiler", "Meydan okuma", "Açık dünya", "Klan"],
+        "steps": [
+          ["Birleştir", "Üyelerin özellikleri, yetenekleri ve eşyaları birbirini güçlendirir."],
+          ["Meydan okumayı çöz", "Çete bir göreve birlikte girişir."],
+          ["Başkalarıyla", "Açık dünyadaki diğer oyuncularla takım çalışması."],
+          ["Seviye atla", "Çete güçlenir."],
+          ["Klan seç", "Beş klandan birine bağlanırsın. Rekabet eder ya da iş birliği yaparlar."]
+        ]
+      }
+    },
+    "salon": {
+      "t": "Oyun salonu",
+      "u": "Oyunun içinde gizli, kartlarla dolu.",
+      "rows": [
+        ["Oyunlar", "Texas Hold’em ve limitli 4 kartlı Omaha."],
+        ["Biçimler", "Nakit oyunları ve turnuvalar."],
+        ["Bahis", "Oyundaki dukalarla oynanır. ToyCoin ile bahis ancak hukuki inceleme izin verirse gelecek."],
+        ["Mini oyunlar", "20 mini oyun, ayrıca görevler ve bonus seviyeler."]
+      ],
+      "flow": {
+        "nodes": ["Oyuncu", "Oyun salonu", "Masa", "Bahis"],
+        "steps": [
+          ["Gir", "Oyun salonu oyundaki gizli bir binadır."],
+          ["Oyun seç", "Texas Hold’em veya limitli 4 kartlı Omaha; nakit oyunu ya da turnuva olarak."],
+          ["Bahis", "Duka yatırırsın. Hukuki inceleme olmadan gerçek parayla bahis yoktur."]
+        ]
+      }
+    },
+    "toypay": {
+      "t": "TOYPAY",
+      "u": "ToyVerse’in cüzdanı ve aynı zamanda bir ToyChain düğümü.",
+      "cards": [
+        ["Platformlar", "Android, Windows, Linux ve Raspberry Pi, eski cihazlarda da."],
+        ["Düğüm", "Bir seviye seçersin. Hesaplama yalnızca şarj kablosu, Wi-Fi ve normal sıcaklıkta yapılır."],
+        ["Çevrimdışı ödeme", "QR, NFC veya Bluetooth ile şifreli, ağ olmadan da."],
+        ["İşletme hesabı", "Satıcılar için kasa işleviyle."],
+        ["Güvenlik", "Her imzadan önce önizleme, adres tuzaklarına karşı koruma, kimlik avına karşı uyarı listesi, donanım cüzdanları."],
+        ["Diller", "45 dil ve yeni başlayandan uzmana dört mod."]
+      ],
+      "toWallet": "Test ağına bağlan",
+      "toDownload": "İndir",
+      "cardFront": ["TOYPAY", "ToyChain · Test ağı", "Çevirmek için dokun"],
+      "cardBack": ["Çevrimdışı ödeme", "Cihazdan cihaza şifreli", "Her imzadan önce önizleme"],
+      "cardLabel": "Kartı çevir",
+      "cardTitle": "Dokunabileceğin kartın",
+      "flow": {
+        "nodes": ["Mağaza kasası", "Cüzdanın", "Önizleme", "Ağ", "İşletme hesabı"],
+        "steps": [
+          ["Tutarı gönder", "Kasa tutarı bir ödeme talebi olarak cüzdanına gönderir."],
+          ["Kontrol et", "Cüzdan, imzalamadan önce tam olarak ne olacağını gösterir."],
+          ["Öde", "Ödeme ağa gider ve bir bloktan sonra kesinleşir."],
+          ["Alacak kaydı", "İşletme hesabı onayı alır."],
+          ["Çevrimdışı", "Ağ yoksa şifreli ödeme doğrudan cihazdan cihaza gider."]
+        ]
+      }
+    },
+    "toycoin": {
+      "t": "TOY",
+      "u": "ToyChain’in para birimi, herkes için aynı kurallarla.",
+      "rows": [
+        ["Miktar", "En fazla 100.000.000 TOY, asla daha fazla değil. Üst sınır ToyChain anayasasında yazılıdır."],
+        ["Adil başlangıç", "İlk blokta tek bir TOY bile yoktur. Rezerv yok, ön satış yok, ekip payı yok."],
+        ["Oluşum", "Tüm TOY’lar ağdaki çalışmayla yavaş yavaş oluşur: ilk dönem 50.500 TOY, ilk yıl yaklaşık 16,8 milyon, yarılanma süresi yaklaşık 3,76 yıl, 25 yıl sonra yaklaşık %99."],
+        ["Dağıtım", "%50 blok imzalayan herkese, %40 çalışma piyangosuna, %10 ücretsiz işlemler için iade havuzuna."],
+        ["Asla yakılmaz", "ToyChain’de hiçbir TOY yok edilmez ve hesaplar asla kaybolmaz."],
+        ["Teknik", "18 ondalık basamak, Ethereum gibi adresler. Test ağı Chain ID 7630714; ana ağ 7630713 ancak denetimden sonra."]
+      ],
+      "chartTitle": "Yıllar içinde ihraç edilen TOY",
+      "chartYear": "{y}. yıl",
+      "chartLabel": "{y}. yıl: yaklaşık {m} milyon TOY ihraç edildi (faktör 1’de plan)",
+      "chartAxis": "milyon TOY",
+      "coinTitle": "3D madeni para",
+      "coinTurn": "Parayı döndür",
+      "warnTitle": "Dikkat: eski ToyCoin tokenları",
+      "warnText": "Polygon ve Ethereum’da ToyCoin adlı daha eski tokenlar vardır. Bunlar <b>ToyChain TOY’u değildir</b>; takas edilmez ve köprüyle aktarılmaz. Cüzdan ve ToyScan bunları “ToyChain TOY’u değil, takas edilemez” olarak işaretler. Takas beklentisiyle satın alma.",
+      "warnPolygon": "Polygon",
+      "warnEthereum": "Ethereum",
+      "warnLink": "Gezginde görüntüle"
+    },
+    "wallet": {
+      "t": "Test ağına bağlan",
+      "u": "Herkese açık test ağı çalışmaya başlar başlamaz buradan tek tıkla ekleyebilirsin.",
+      "btn": "Test ağını ekle · M10 kilometre taşıyla gelecek",
+      "facts": [
+        ["Ağ", "ToyChain Testnet"],
+        ["Chain ID", "7630714"],
+        ["Sembol", "TOY, 18 ondalık basamak"],
+        ["Adres", "Alışık olduğun Ethereum adresin ve kurtarma ifaden burada da çalışır."]
+      ],
+      "text": "Ekleme, EIP-3085’e göre ağ ekleyebilen her cüzdanla çalışır; örneğin TOYPAY veya MetaMask. Sayfa bu sırada hiçbir şey okumaz ve hiçbir şey gönderemez. Test ağı TOY’larının değeri yoktur ve asla bir ana ağa aktarılmaz.",
+      "safety": "Bu sayfa asla kurtarma ifadeni istemez. Onu isteyen seni dolandırmak istiyordur.",
+      "flow": {
+        "nodes": ["Bu sayfa", "Cüzdanın", "ToyChain test ağı", "Test ağı TOY’u"],
+        "steps": [
+          ["Öner", "Sayfa ağı adı, Chain ID’si ve erişim noktasıyla önerir."],
+          ["Onayla", "Cüzdanın bilgileri gösterir, sen onaylarsın. Anahtarlar cihazından asla çıkmaz."],
+          ["Katıl", "Test ağında cihazın çalışma piyangosu için bilet hesaplar ya da musluktan test TOY’u alır."],
+          ["Dene", "Test ağı TOY’larıyla transferleri, ücretsiz kotayı ve seviyeleri risksiz denersin."]
+        ]
+      }
+    },
+    "toycash": {
+      "t": "ToyCash",
+      "u": "Ağda nakit hissi, Euro ile karşılanmış.",
+      "rows": [
+        ["İlke", "Bir Euro stablecoin’i. Sahipliği ve tutarları yalnızca sen, cüzdanında görürsün. ToyChain yalnızca sağlama toplamlarını onaylar; tutar ve isim yoktur."],
+        ["Karşılık", "Euro rezervleri, önce yalnızca Euro. Kendi ihraççısı, ileride birden fazla bekçi birlikte."],
+        ["Başlangıç", "Önce test Euro’larıyla eCash ilkesine göre bir prototip, sonra zk-notes."],
+        ["Kuponlar", "Çok kullanımlık, grup ve hamiline kuponlar, aşamalı olarak."],
+        ["Çifte harcama", "Geri alma süresi, dolandırıcılık cezası ve rezervasyon, aşamalı olarak."],
+        ["Durum", "Kavram. Gerçek Euro ancak denetim ve hukuki incelemeden sonra."]
+      ],
+      "toOffline": "Çevrimdışı limiti dene",
+      "flow": {
+        "nodes": ["Euro rezervi", "İhraççı", "Cüzdan A", "Cüzdan B", "ToyChain"],
+        "steps": [
+          ["Karşılık", "Euro’lar karşılık olarak hazır tutulur."],
+          ["İhraç", "Cüzdan A şifreli banknotlar alır."],
+          ["Aktar", "A banknotları B’ye aktarır, çevrimdışı da."],
+          ["Bozdur", "B, ihraççıda bunları yeni banknotlarla değiştirir. İhraççı hiçbir banknotun iki kez kullanılmadığını kontrol eder."],
+          ["Onayla", "Her dönem ihraççı, listesinin sağlama toplamını ToyChain’e sabitler. Böylece hiçbir şey gizlice değiştirilemez."]
+        ]
+      }
+    },
+    "offline": {
+      "t": "Çevrimdışı limit",
+      "u": "Limit, kullanımınla birlikte yavaşça büyür.",
+      "tableHead": ["Seviye", "Limit", "Koşul"],
+      "steps": [
+        ["1", "20 €", "Başlangıç"],
+        ["2", "50 €", "14 gün ve 10 ödeme"],
+        ["3", "100 €", "60 gün ve 40 ödeme"],
+        ["4", "250 €", "180 gün ve 100 ödeme, yalnızca cihaza bağlı anahtarla"],
+        ["5", "500 €", "365 gün ve 250 ödeme, yalnızca cihaza bağlı anahtarla"]
+      ],
+      "text": "Açılan seviye içinde limitini kendin seçersin. Limit aynı zamanda bir teminattır: Çevrimdışı çifte harcama yapan, teminatını zarar görenlere kaptırır. Seviye değerleri bir öneridir."
+    },
+    "toychain": {
+      "t": "ToyChain",
+      "u": "Mina kadar hafif, Ethereum gibi adresler.",
+      "rows": [
+        ["Boyut", "Her standart düğüm en fazla 256 MB depolar."],
+        ["Cihazlar", "Eski Android cihazlarda, Raspberry Pi, Linux ve Windows’ta çalışır."],
+        ["Adresler", "Ethereum’dakiyle aynı adresler ve aynı 12 veya 24 kelime."],
+        ["Katıl", "Seviye 0 bakiye gerektirmez: cihazın çalışma piyangosu için bilet hesaplar. 10, 100 veya 1.000 TOY stake ile imzalar, depolar ya da doğrularsın."],
+        ["Uzlaşı", "En fazla 128 üyeli bir komite her bloğu imzalar. Üçte ikiden itibaren kesindir; yaklaşık dakikada bir blok."],
+        ["Hesaplar", "Hesaplar asla kaybolmaz. Uzun süre kullanılmayan hesaplar dinlenir ve her zaman uyandırılabilir."],
+        ["Yalnızca TOY", "ToyChain’de token yok, NFT yok, akıllı sözleşme yok. Her işlev sabit olarak yerleşiktir."],
+        ["Güvenlik", "Yalnızca denenmiş yöntemler ve kütüphaneler. Ek kuantum sonrası anahtarlar (ML-DSA) M13 kilometre taşı için planlanıyor."]
+      ],
+      "toMint": "Basımı simüle et",
+      "chainTitle": "3D zincir",
+      "chainAdd": "Blok ekle",
+      "chainHint": "Sahneyi döndürmek için imleci veya parmağını üzerinde gezdir. Küpler örnek bloklardır.",
+      "flow": {
+        "nodes": ["Cüzdan", "Havuz", "Komite", "Blok", "Zincir"],
+        "steps": [
+          ["Gönder", "İşlemin havuza düşer."],
+          ["Öner", "Rastgele seçilen bir komite üyesi bloğu oluşturur."],
+          ["İmzala", "Komite imzalar. Üçte ikiden itibaren blok kesindir."],
+          ["Ekle", "Düğümler durumu ve kısa bir pencereyi saklar, en fazla 256 MB."],
+          ["Ödüllendir", "Yeni TOY’lar imzalayanlara, çalışma piyangosuna ve iade havuzuna gider."]
+        ]
+      }
+    },
+    "mint": {
+      "t": "Basım simülasyonu",
+      "u": "Cihazları ağa gönder ve blokların oluşmasını izle.",
+      "text": "Basitçe: çalışma ve imzalar bant üzerinden havuza akar. Havuz dolunca ya da yaklaşık bir dakika geçince (burada hızlandırılmış) bir blok oluşur. İlk dönemde her blokla yaklaşık 35 yeni TOY eklenir: %50 imzalayanlara, %40 çalışma piyangosuna, %10 iade havuzuna."
+    },
+    "tx": {
+      "t": "İşlemler",
+      "u": "Hesap başına günde 10 ila 100 ücretsiz işlem.",
+      "text": "Kotanın üstünde küçük bir ücret ödersin ya da bir ToyWork bileti hesaplarsın. Ücret, aynı blokta her 10 ek işlemde ikiye katlanır, en fazla 1.024 katına kadar. Ücretlerin %40’ı aktif katılımcılara, %40’ı iade havuzuna ve %20’si bloğu önerene gider."
+    },
+    "toyscan": {
+      "t": "ToyScan",
+      "u": "Tüm kurallara uyulduğunda yeşil ışık.",
+      "cards": [
+        ["Üst sınır", "Asla 100.000.000 TOY’dan fazla değil. Her blokta tüm bakiyelerin toplamı tüm ihraçların toplamına eşittir."],
+        ["Adil başlangıç", "İlk blok 0 TOY içerir. Her TOY bir ihraca kadar izlenebilir."],
+        ["İhraç", "Her dönem formüle göre yeniden hesaplanır."],
+        ["Diğer zincirler", "Aynı adresin diğer zincirlerdeki bakiyelerini yalnızca okuma amaçlı gösterir. Eski ToyCoin tokenları “ToyChain TOY’u değil” olarak işaretlenir."]
+      ],
+      "flow": {
+        "nodes": ["ToyChain", "Arşiv düğümü", "Diğer zincirler", "ToyScan", "Trafik ışığı"],
+        "steps": [
+          ["Verileri oku", "ToyScan, ToyChain’in arzını, dönemlerini ve bloklarını okur."],
+          ["Yeniden hesapla", "Bir arşiv düğümü tüm bakiyeleri kendisi toplar."],
+          ["Göster", "Aynı adresin diğer zincirlerdeki bakiyeleri yalnızca bilgi amaçlı görünür."],
+          ["Trafik ışığı", "Her şey doğruysa yeşil. Olağandışı durumlarda sarı, kural ihlalinde kanıtla birlikte kırmızı."]
+        ]
+      }
+    },
+    "ketten": {
+      "t": "Diğer zincirler",
+      "u": "Her yerde aynı adres, köprü olmadan.",
+      "rows": [
+        ["Aynı adres", "ToyChain adresin Ethereum, Polygon, Arbitrum, Base ve BNB Chain’de de çalışır. TOYPAY orada bakiyeleri, tokenları ve NFT’leri gösterir."],
+        ["Köprüsüz takas", "Hash zaman kilitli atomik takas: ya iki taraf da parasını alır ya da hiçbiri. M12 kilometre taşı için planlanıyor."],
+        ["Eski ToyCoin tokenları", "Polygon ve Ethereum’daki ToyCoin adlı tokenlar ToyChain TOY’u değildir ve takas edilemez."],
+        ["Köprü", "Mevcut kapsamda köprü yoktur. İleride gelirse ayrı bir karar, bir denetim ve hukuki inceleme gerekir."]
+      ]
+    },
+    "roadmap": {
+      "t": "Yol haritası",
+      "u": "Sıra, tarihlerden daha önemlidir.",
+      "progress": "ToyChain 1. aşama: {total} kilometre taşından {done} tanesi tamamlandı (durum: {date})",
+      "milestones": {
+        "M1": "Temel türler ve ihraç",
+        "M2": "Kriptografi ve adresler",
+        "M3": "Durum, işlemler, ücretler",
+        "M4": "Bloklar ve uzlaşı",
+        "M5": "Depolama ve 256 MB",
+        "M6": "Ağ",
+        "M7": "Arayüz (RPC)",
+        "M8": "Cüzdan ve komut satırı",
+        "M9": "Platformlar ve enerji modu",
+        "M10": "Herkese açık test ağı",
+        "M11": "ToyScan",
+        "M12": "Hesap koruması, takas",
+        "M13": "İsimler, kuantum sonrası anahtarlar"
+      },
+      "cards": [
+        ["1 · ToyChain çekirdeği", "Rust ile düğüm: ihraç, kriptografi, işlemler ve ücretler hazır; sırada uzlaşı var.", "inWork"],
+        ["2 · Düğüm olarak TOYPAY", "Dört platformda seviyeli ve enerji modlu cüzdan.", "planned"],
+        ["3 · Herkese açık test ağı", "Önce yerel, sonra herkese açık, yük testleriyle.", "planned"],
+        ["4 · ToyScan", "Uyarı ışıklı ve açık arayüzlü gezgin.", "planned"],
+        ["5 · TOYQUEST", "Polygon’da öğrenme dünyası ve eşyalar, ToyChain çekirdeğinden bağımsız.", "inDev"],
+        ["6 · ToyCash", "Test Euro’larıyla prototip, ardından çevrimdışı cüzdan ve zk-notes.", "concept"],
+        ["7 · Ana ağ", "Yalnızca dış denetim, yük testleri ve hukuki incelemeden sonra, önceden herkese duyurularak.", "afterReview"]
+      ],
+      "flow": {
+        "nodes": ["ToyChain çekirdeği", "TOYPAY", "Test ağı", "ToyScan", "Ana ağ"],
+        "steps": [
+          ["Önce çekirdek", "İhraç, kriptografi ve işlemler yapıldı ve test edildi."],
+          ["Düğüm olarak cüzdan", "TOYPAY zinciri telefona, bilgisayara ve Raspberry Pi’ye getirir."],
+          ["Test ağı", "Önce yerel, sonra herkese açık; yük testleri ve fuzzing ile."],
+          ["Ana ağ ancak incelemeden sonra", "Denetim, yük testleri ve hukuki inceleme zorunludur. Test ağı TOY’ları asla aktarılmaz."]
+        ]
+      }
+    },
+    "download": {
+      "t": "İndirmeler",
+      "u": "Dosyalar hazır olur olmaz burada görünecek.",
+      "items": [
+        "Android, Windows, Linux ve Raspberry Pi için TOYPAY · yakında",
+        "ToyChain düğümü · test ağıyla gelecek",
+        "Teknik doküman · kaynak kodun yayımlanmasıyla gelecek"
+      ],
+      "until": "O zamana kadar: <a href=\"{roadmap}\">yol haritasına bak</a> ya da <a href=\"{toycoin}\">TOY hakkında daha fazlasını öğren</a>."
+    },
+    "community": {
+      "t": "Topluluk",
+      "u": "Herkesin birlikte taşıdığı bir ekonomik döngü.",
+      "cards": [
+        ["Satıcılar", "İşletme hesabı, kasa, kuponlar ve sadakat puanlarıyla satıcılar."],
+        ["Mentorlar", "Deneyimli oyuncular yenilere yardım eder ve karşılığında bilgi mühürleri alır."],
+        ["Topluluk düğümleri", "Bir cihaz sağlayan ağı güçlendirir. Raspberry Pi paketleri ve bir düğüm haritası planlanıyor."],
+        ["Pano", "ToyScan ekonomik döngüyü tahmin olmadan, gerçek sayılarla gösterir."],
+        ["Ortak karar", "İleride gelecek. O zaman bile kimse ToyChain anayasasını değiştiremez."]
+      ],
+      "langTitle": "45 dil",
+      "langText": "Cüzdan, TOYPAY ve ToyScan aynı 45 dili konuşur. Site şu anda bunlardan {n} tanesinde mevcut:"
+    },
+    "kontakt": {
+      "t": "Katılım ve iletişim",
+      "u": "Neye ihtiyacın olduğunu bize söyle.",
+      "cards": [
+        ["Test ağı", "Test ağı çalışmaya başlar başlamaz cüzdanına ekle.", "Test ağına"],
+        ["İndirmeler", "Uygulamalar ve düğümler hazır olur olmaz burada görünecek.", "İndirmelere"],
+        ["Katıl", "Testçi, satıcı veya mentor olarak. Konuyu bize kısaca yaz.", ""]
+      ],
+      "formTitle": "Bize yaz",
+      "topic": "Konu",
+      "topics": ["Proje hakkında soru", "Testçi olarak katılmak", "Satıcı olmak", "Basın"],
+      "name": "Adın",
+      "message": "Mesaj",
+      "send": "E-postayı hazırla",
+      "noMail": "İletişim adresi henüz girilmedi (src/data/site.json).",
+      "opened": "E-posta programın açılıyor. Bu sayfa üzerinden hiçbir şey kaydedilmez.",
+      "security": "Güvenlik açıklarını lütfen bu formla değil, künyedeki adrese gizli olarak, “Güvenlik” konusuyla bildir."
+    },
+    "impressum": {
+      "t": "Künye",
+      "u": "§ 5 DDG’ye göre sağlayıcı bilgileri (Alman hukuku).",
+      "template": "Bu bir şablondur. Gerçek bilgileri src/data/site.json dosyasına gir ve hukuki olarak kontrol ettir.",
+      "h1": "§ 5 DDG’ye göre bilgiler",
+      "h2": "İletişim",
+      "h3": "Sicil ve vergi",
+      "h4": "İçerikten sorumlu",
+      "h5": "Not",
+      "labels": {
+        "name": "ad veya hukuki biçimiyle şirket",
+        "street": "sokak ve kapı numarası",
+        "city": "posta kodu ve şehir",
+        "email": "e-posta adresi",
+        "phone": "telefon numarası",
+        "register": "varsa sicil ve numara",
+        "vatId": "varsa KDV kimlik numarası"
+      },
+      "mail": "E-posta",
+      "phone": "Telefon",
+      "register": "Sicil kaydı",
+      "vat": "KDV kimlik no.",
+      "responsible": "§ 18 (2) MStV’ye göre: {name}, adres yukarıdaki gibi.",
+      "note": "ToyVerse yapım aşamasında bir projedir. TOY hakkındaki bilgiler yatırım tavsiyesi değildir."
+    },
+    "datenschutz": {
+      "t": "Gizlilik",
+      "u": "Verilerine ne olur: mümkün olduğunca az.",
+      "template": "Bu bir şablondur. Çerezsiz ve izlemesiz statik bir siteye uygundur. Barındırma sağlayıcısını ekle ve yayımlamadan önce hukuki olarak kontrol ettir.",
+      "sections": [
+        ["Sorumlu", "{name}, {street}, {city}, e-posta: {email}."],
+        ["Barındırma ve sunucu kayıtları", "Site {host} tarafından barındırılır. Ziyaret sırasında sunucu, siteyi sunmak ve saldırılara karşı korumak için IP adresi, zaman ve çağrılan sayfa gibi teknik olarak gerekli verileri işler (GDPR md. 6/1-f)."],
+        ["Çerez yok, izleme yok", "Site çerez kullanmaz, analiz araçları kullanmaz ve üçüncü taraf içerik yüklemez. Yazı tipleri kendi sunucumuzdadır."],
+        ["Tarayıcında", "Simülasyonlar yalnızca senin tarayıcında çalışır. Bize hiçbir şey gönderilmez."],
+        ["İletişim", "İletişim formu yalnızca e-posta programını açar. E-postayı ancak sen gönderdiğinde alırız ve yalnızca yanıtlamak için kullanırız (GDPR md. 6/1-b ve f)."],
+        ["Diğer sitelere bağlantılar", "Örneğin blok gezginlerine giden bağlantılar başka sağlayıcılara yönlendirir. Orada onların gizlilik bildirimleri geçerlidir."],
+        ["Hakların", "Bilgi alma, düzeltme, silme, kısıtlama, veri taşınabilirliği ve itiraz hakkın ile bir veri koruma denetim makamına şikâyet hakkın vardır."]
+      ]
+    }
+  },
+  "demo": {
+    "zeit": {
+      "levels": [
+        ["Antik atölye", "Hesap ustası boncukları kaydırır ve her imzayı elle kontrol eder.", "kas gücü", "Abaküs"],
+        ["Güç ve birleştirme", "Bir su çarkı çekici döndürür ve birçok mühür bir olur.", "su gücü", "Su çarkı ve mühür çekici"],
+        ["Zaman ve ölçüm", "Su saati ritmi belirler, tıpkı yaklaşık bir dakikalık blok süresi gibi.", "su ve yerçekimi", "Su saati"],
+        ["Arşiv ve basım · yeni çağa bakış", "Antik para presi buharlı prese dönüşür: makinenin ritminde basım.", "buhar ve kömür", "Buhar makinesi"],
+        ["Otomatlar ve kanıtlar · günümüze bakış", "Heron’un otomatı sabit kurallara uyardı. Bugün birçok çekirdek imzaları aynı anda kontrol eder.", "birkaç watt", "Dokuz çekirdekli çip"]
+      ],
+      "level": "Seviye {n}",
+      "power": "Güç",
+      "start": "Başlat",
+      "submit": "İmza gönder",
+      "submit10": "Tek seferde 10",
+      "queue": "Kuyruk",
+      "done": "İşlenen",
+      "rate": "Örnek: dakikada {r} imza",
+      "drive": "Tahrik",
+      "machine": "Seçilen seviyenin makinesi"
+    },
+    "gears": {
+      "title": "Çevrilecek mekanizma",
+      "crank": "Kol",
+      "label": "Birbirine geçen dört dişli",
+      "text": "4. dişli koldan {x} kat daha hızlı, ters yönde döner."
+    },
+    "npc": {
+      "title": "Karakterlerle tanış",
+      "intro": "Bir figüre dokun ve ona bir soru sor. Diyaloglar örnektir.",
+      "hello": "Hoş geldin! Ne öğrenmek istersin?",
+      "names": ["Tüccar", "Bekçi", "Bilgin", "Sultan", "Kervanbaşı"],
+      "qa": [
+        [
+          ["Bir eşya ne kadar?", "Eşyaları oyunda kazanırsın. Yalnızca birini NFT olarak basmak isteyen, ağ maliyetleri için küçük bir ücret öder."],
+          ["Seninle ticaret yapabilir miyim?", "Tüm binalar ve mallar alınıp satılabilir. İşletme hesabıyla kasada bile ödeme alırsın."],
+          ["TOY nedir?", "Kendi ToyChain’in para birimi. 100 milyonun hepsi ağdaki çalışmayla yavaş yavaş oluşur. Rezerv yoktur."]
+        ],
+        [
+          ["Oyun salonunu nasıl bulurum?", "Bina gizlidir. Şehirde dikkatle dolaşan onu keşfeder."],
+          ["Kim oynayabilir?", "Çevrimdışı tek başına, çevrimiçi başkalarıyla, birlikte ya da birbirine karşı. İzleyici modunda seyredebilirsin."],
+          ["Güvenli mi?", "Kurtarma ifadeni asla kimseye verme, bana bile. Onu isteyen bir dolandırıcıdır."]
+        ],
+        [
+          ["Bir blok nasıl oluşur?", "İşlemler birikir. Yaklaşık her dakika bir komite üyesi bir blok oluşturur, diğerleri imzalar. Üçte ikiden itibaren kesindir."],
+          ["Zincir neden küçük kalıyor?", "Her düğüm en fazla 256 MB depolar. Uzun süre kullanılmayan hesaplar dinlenir ve her zaman uyandırılabilir. Hiçbir şey kaybolmaz."],
+          ["ToyCash nedir?", "Tutarlarını yalnızca senin gördüğün dijital Euro nakit. Çevrimdışı da çalışacak."]
+        ],
+        [
+          ["Bir klan bana ne kazandırır?", "Sadakat ödüllendirilir. Beş klan rekabet eder ya da iş birliği yapar ve karakterleri onların hizmetindedir."],
+          ["Kaç klan var?", "Beş harita ile uyumlu beş sultan, kral ve klan."],
+          ["Kahraman NFT’si nedir?", "Kahramanını ileride NFT olarak basabilirsin. Ücret ağ maliyetlerini karşılar; ayrıntılar henüz belli değil."]
+        ],
+        [
+          ["Birlikte nasıl yolculuk edilir?", "Çete olarak ya da açık dünyadaki diğer oyuncularla. Özellikler, yetenekler ve eşyalar birbirini tamamlar."],
+          ["Zaman yolculuğu nedir?", "Antik çağdan günümüze beş seviye, ToyChain süreçlerini giderek daha iyi yöntemlerle gösterir."],
+          ["Nerede pratik yapabilirim?", "Antrenman seviyesinde. Ayrıca 20 mini oyun, görevler ve bonus seviyeler var."]
+        ]
+      ],
+      "quotes": ["“", "”"]
+    },
+    "poker": {
+      "title": "Masada poker",
+      "modes": ["Texas Hold’em", "Limitli 4 kartlı Omaha"],
+      "buyin": "Giriş: {n} duka",
+      "pot": "Pot",
+      "stack": "Fişlerin",
+      "net": "Bakiye",
+      "fold": "Çekil",
+      "check": "Pas",
+      "call": "Gör ({n})",
+      "bet": "Bahis ({n})",
+      "raise": "Artır ({n})",
+      "nextHand": "Sonraki el",
+      "you": "Sen",
+      "opp": ["Tüccar", "Sultan"],
+      "hands": ["Yüksek kart", "Bir çift", "İki çift", "Üçlü", "Kent", "Renk", "Ful", "Kare", "Sıralı renk"],
+      "ruleHoldem": "Hold’em: 2 kartın ve masadakilerden en iyi 5 kartı kullanırsın.",
+      "ruleOmaha": "Omaha: 4 kartından tam olarak 2’sini ve masadan 3’ünü kullanmalısın.",
+      "start": "Yeni el. Herkes {n} ante öder. Bahis yap, gör ya da çekil.",
+      "newCards": "{street}: masada yeni kartlar var.",
+      "allFold": "Diğer herkes çekildi. {n} duka kazandın.",
+      "youFold": "Çekildin. ",
+      "showdown": "Kartlar açılıyor: {list}. Kazanan: {win} ({n} duka).",
+      "broke": "Fişlerin bitti. Pratik için yeni dukalar alıyorsun.",
+      "foot": "Sabit bahisli limitli poker: flop öncesi ve flopta küçük bahis, turn ve river’da iki katı. Rakipler basit stratejili örnek karakterlerdir. Yalnızca dukayla oynanır.",
+      "unit": "duka",
+      "npcFold": "çekiliyor",
+      "npcCall": "görüyor",
+      "npcBet": "{n} bahis yapıyor",
+      "npcCheck": "pas geçiyor",
+      "streets": ["Flop", "Turn", "River"],
+      "best": "En iyi elin: {h}",
+      "royal": "Floş royal",
+      "and": " ve "
+    },
+    "mint": {
+      "pool": "Havuz",
+      "chain": "Zincir",
+      "start": "Cihazları ağa gönder ve havuzun dolmasını izle.",
+      "addPhone": "+ Telefon",
+      "addPi": "+ Raspberry Pi",
+      "addPc": "+ Bilgisayar",
+      "sign": "İmza gönder",
+      "spam": "Spam gönder",
+      "reset": "Sıfırla",
+      "blocks": "Bloklar",
+      "minted": "Yeni ihraç",
+      "devices": "Cihazlar",
+      "full": "Masaya 8’den fazla cihaz sığmaz.",
+      "phone": "Bir telefon yavaş hesaplar ama her cihaz önemlidir. Bakiyesi olmadan çalışma piyangosuna katılır.",
+      "pi": "Bir Raspberry Pi istikrarlı ve tasarruflu çalışır.",
+      "pc": "Bir bilgisayar havuzu en hızlı doldurur. Ancak işlem gücü tek başına uzlaşıda bir şey kazandırmaz.",
+      "own": "Kendin bir imza ekledin.",
+      "spamMsg": "Spam havuzu pek doldurmaz ama ücret veya hesaplama işi gerektirir.",
+      "block": "Blok {k} kesinleşti: {n} katkı, {t} yeni TOY (uzlaşı {a}, çalışma {b}, iade havuzu {c}).",
+      "resetMsg": "Sıfırlandı.",
+      "label": "Basım makinesi"
+    },
+    "tx": {
+      "load": "Ağ yükü: %{n}",
+      "free": "Ücretsiz: {b} içinden {a}",
+      "send": "Gönder",
+      "round": "Yeni dönem",
+      "sentFree": "Gönderildi, ücretsiz.",
+      "sentFee": "Kota doldu: ücret yaklaşık {fee} TOY (faktör {f}) ya da bir ToyWork bileti onu ücretsiz yapar.",
+      "formula": "Kota = max(10, 100 × (1 − yük))"
+    },
+    "offline": {
+      "you": "Sen",
+      "shop": "Satıcı",
+      "amount": "Tutar: {n} €",
+      "pay": "Çevrimdışı öde",
+      "again": "Aynı banknotu tekrar harca",
+      "sync": "Çevrimiçi ol ve eşitle",
+      "month": "Bir ay kullan",
+      "limit": "Çevrimdışı limit: {cap} € içinden {used} · seviye {s} · {days} gün, {n} ödeme",
+      "freeAmt": "Serbest: {n} €",
+      "over": "Limite ulaşıldı: {n} € artık sığmıyor. Limitinin tekrar açılması için çevrimiçi ol.",
+      "paid": "{n} € cihazdan cihaza şifreli olarak aktarıldı, hiç ağ olmadan.",
+      "first": "Önce bir kez çevrimdışı öde.",
+      "double": "Aynı banknot ikinci kez çıktı. Çevrimdışıyken bu henüz fark edilmez.",
+      "nothing": "Eşitlenecek bir şey yok.",
+      "okNote": "Banknot {i} ({n} €) onaylandı",
+      "badNote": "Banknot {i} ({n} €) çift: reddedildi",
+      "caught": "Çifte harcama tespit edildi: ihraççı ikinci banknotu reddeder ve ToyChain bunu doğrulanabilir kılar. Çifte harcama yapan, teminatını zarar görene kaptırır ve seviyesi düşer.",
+      "synced": "{n} ödeme onaylandı. Çevrimdışı limitin yeniden serbest.",
+      "monthMsg": "Bir aylık kullanım: 30 gün ve 60 ödeme. Limitin seviye seviye büyür.",
+      "label": "İki telefon çevrimdışı şifreli bir ödeme alışverişi yapıyor"
+    },
+    "toyscan": {
+      "choose": "Senaryo seç:",
+      "minted": "İhraç edilen",
+      "cap": "Üst sınır",
+      "mio": "{n} milyon TOY",
+      "bigRed": "Büyük kırmızı lamba: üst sınır, adil başlangıç veya anayasa ihlal edildi.",
+      "criteria": [
+        "A1 Üst sınır ve tüm bakiyelerin toplamı",
+        "A2 Adil başlangıç: her TOY bir ihraçtan",
+        "A3 Formüle göre ihraç",
+        "A4 Dönemler ve zaman",
+        "A5 Anayasa değişmedi",
+        "A6 Uzlaşı sağlıklı",
+        "A7 Başlangıç aşaması plana uygun",
+        "A8 Kısıtlamalar yalnızca kanıtla",
+        "A9 Veriler güncel"
+      ],
+      "scenarios": [
+        ["Her şey yolunda", "Tüm kriterler karşılandı", "Örnek değerler."],
+        ["100 milyondan fazla", "Kırmızı: üst sınır aşıldı", "Burada izin verilenden fazla TOY ihraç edilmiş olurdu. Bu asla olmamalı."],
+        ["İhraçsız bakiye", "Kırmızı: adil başlangıç ihlal edildi", "Bir bakiye hiçbir ihraca kadar izlenemiyor."],
+        ["İhraç planın önünde", "Sarı: izlenmeli", "İhraç planın %3’ten fazla önünde. Kural ihlali değil ama dikkat çekici."],
+        ["Eski veriler", "Sarı: veriler güncel değil", "Son veriler 10 dakikadan eski ya da iki kaynak uyuşmuyor."]
+      ]
+    },
+    "voucher": {
+      "title": "Kuponları dene",
+      "examples": "Örnekler:",
+      "presets": ["Aile için hediye", "Mağazada kampanya", "Yemekhane kartı"],
+      "own": "Ya da kendin oluştur: tür seç",
+      "types": {
+        "i": ["Hamiline", "Hamiline kupon", "Elinde bulunduran bozdurabilir. İlk müşteri tutarın tamamını alır."],
+        "m": ["Çok kullanımlık", "Çok kullanımlık kupon", "Değer, bitene kadar birden fazla kullanıma bölünür."],
+        "g": ["Grup", "Grup kuponu", "Yalnızca seçilen üyeler bozdurabilir, her biri tam bir kez ve eşit payla."]
+      },
+      "value": "Değer: {n} €",
+      "uses": "Kullanım: {n}",
+      "members": "Grup üyeleri:",
+      "create": "Kupon oluştur",
+      "serial": "Seri {s}",
+      "hint": "Oluşturduktan sonra bozdurması için bir müşteriye dokun.",
+      "redeemed": "Kullanılan: {n} içinden {u} · Kalan: {r} €",
+      "double": "İki kez bozdur (dolandırıcılık)",
+      "needTwo": "En az iki üye seç.",
+      "first": "Önce bir kupon oluştur.",
+      "created": "{type} oluşturuldu: {v} €, {n} × {s} €.",
+      "shop": "Satıcı",
+      "welcome": "Hoş geldin!",
+      "redeems": "{name} bozduruyor",
+      "doneI": "Hamiline kupon zaten bozduruldu.",
+      "doneM": "{n} kullanımın hepsi tükendi.",
+      "notMember": "{name} gruba ait değil.",
+      "already": "{name} payını zaten bozdurdu.",
+      "ok": "{name} {n} € bozduruyor.",
+      "dblBoth": "Burada iki kullanım da sayılır, çünkü kupon birden fazlasına izin verir.",
+      "dblCaught": "İki cihaz, bir banknot: ikinci kullanım reddedilir. Çifte harcama tespit edildi.",
+      "customers": ["Ali", "Leyla", "Omar", "Samira"],
+      "foot": "Örnek senaryo. İhraççı her kuponun durumunu tutar, ToyChain bunu doğrulanabilir kılar. Bu yüzden bir kopya işe yaramaz.",
+      "thanks": "Teşekkürler, tamam!",
+      "sorry": "Maalesef olmuyor.",
+      "rejected": " İhraççı reddediyor."
+    }
+  }
+}

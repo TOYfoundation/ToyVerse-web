@@ -1,0 +1,682 @@
+{
+  "meta": {
+    "description": "ToyVerse: en egen blockkedja, ToyChain, med myntet TOY, plånboken TOYPAY, utforskaren ToyScan, det osynliga euromyntet ToyCash och lärospelet TOYQUEST."
+  },
+  "ui": {
+    "skip": "Hoppa till innehållet",
+    "menu": "Meny",
+    "mainNav": "Huvudmeny",
+    "allPages": "Alla sidor",
+    "join": "Var med",
+    "language": "Språk",
+    "languageHint": "Webbplatsen finns just nu på {n} av de 45 språken i plånboken, TOYPAY och ToyScan. Resten kommer.",
+    "soon": "kommer",
+    "path": "Sökväg",
+    "back": "Tillbaka",
+    "next": "Nästa",
+    "pause": "Paus",
+    "auto": "Auto",
+    "step": "Steg",
+    "flowTitle": "Så hänger allt ihop",
+    "flowLabel": "Flödesschema",
+    "image": "Bild {n}",
+    "ctaTitle": "Var med i ToyVerse",
+    "ctaText": "Ställ frågor, testa tidigt eller bli handlare eller mentor.",
+    "ctaBtn": "Var med",
+    "disclaimer": "Ingen investeringsrådgivning, inga löften om avkastning. ToyChain körs som testnät under utveckling; testnäts-TOY har inget värde. ToyCash, ToyScan och TOYQUEST-föremålen är koncept. Siffrorna i simuleringarna är exempel.",
+    "placeholder": "fyll i {label}",
+    "example": "Exempel",
+    "chooseLanguage": "Välj språk",
+    "redirect": "Till startsidan",
+    "machineNote": "Den här översättningen är gjord med AI från tyskan och har ännu inte granskats av modersmålstalare. Det är den",
+    "machineLink": "tyska versionen som gäller"
+  },
+  "scenes": ["Staden om natten", "Karavanen", "ToyChains nätverk", "I spelsalongen", "Maskinhallen"],
+  "groups": {
+    "entdecken": { "t": "Upptäck", "u": "Start och översikt" },
+    "spielen": { "t": "Spela", "u": "TOYQUEST och dess värld" },
+    "bezahlen": { "t": "Betala", "u": "Plånbok, mynt och kontanter" },
+    "technik": { "t": "Teknik", "u": "Så fungerar kedjan" },
+    "mitmachen": { "t": "Var med", "u": "Plan, nedladdningar, kontakt" }
+  },
+  "status": {
+    "inWork": "Pågår",
+    "inDev": "Under utveckling",
+    "planned": "Planerat",
+    "concept": "Koncept",
+    "built": "Byggt, testas",
+    "afterReview": "Efter granskning"
+  },
+  "pages": {
+    "start": {
+      "t": "Start",
+      "u": "Spel, plånbok och egen blockkedja i en värld ur Tusen och en natt.",
+      "slides": [
+        ["Välkommen till ToyVerse", "Spel, plånbok och egen blockkedja i en värld ur Tusen och en natt."],
+        ["Spela och lär dig", "I TOYQUEST förklarar figurerna hur TOY uppstår."],
+        ["Betala utan nät", "TOYPAY och ToyCash ska fungera även offline."]
+      ],
+      "discover": "Upptäck",
+      "roadmap": "Till läget",
+      "what": "Vad vill du göra?",
+      "tiles": [
+        ["Spela", "Upptäck TOYQUEST: värld, klaner, tidsresa."],
+        ["Betala", "Förstå TOYPAY, TOY och ToyCash."],
+        ["Förstå", "Se hur ToyChain fungerar."]
+      ],
+      "statusTitle": "Var vi står",
+      "statusText": "ToyChain byggs steg för steg som testnät. {done} av {total} milstolpar är klara.",
+      "statusLink": "Till färdplanen",
+      "newTitle": "Ny här?",
+      "newText": "Översikten visar hur spel, plånbok och kedja samverkar.",
+      "newBtn": "Se ekosystemet"
+    },
+    "verse": {
+      "t": "Ekosystemet",
+      "u": "Sex byggstenar under samma tak.",
+      "cards": [
+        ["ToyChain", "En egen, smal blockkedja med myntet TOY. Körs på gamla mobiler och Raspberry Pi.", "inWork"],
+        ["TOYPAY", "Plånbok och nod i ett, för Android, Windows, Linux och Raspberry Pi.", "inDev"],
+        ["ToyScan", "Utforskare med varningslampa: kontrollerar hela tiden att reglerna följs.", "planned"],
+        ["TOYQUEST", "Spelet i Tusen och en natt-stil, med en lärovärld om tekniken.", "inDev"],
+        ["ToyCash", "Privata eurokontanter på nätet, även offline.", "concept"],
+        ["ToyPost", "En inkorg för alla kanaler, fakturor i TOY och skydd mot bedrägerier.", "built"]
+      ],
+      "after": "Dessutom ett öppet ekonomiskt kretslopp, handlare, mentorer och community-noder. <a href=\"{community}\">Läs mer</a>",
+      "flow": {
+        "nodes": ["Spelare", "TOYQUEST", "TOYPAY", "ToyCash", "Polygon", "ToyChain", "ToyScan"],
+        "steps": [
+          ["Spela", "Du klarar uppdrag och lär dig i TOYQUEST hur ToyChain fungerar."],
+          ["Prägla", "Den som vill präglar ett förtjänat föremål via TOYPAY."],
+          ["Föremål", "Präglade föremål finns som NFT på Polygon. ToyChain själv känner bara till TOY."],
+          ["Var med", "Plånboken är samtidigt en nod: den räknar, signerar och kan tjäna TOY."],
+          ["Kontrollera", "ToyScan kontrollerar utgivning, tak och regler och visar resultatet som trafikljus."],
+          ["Kontanter", "ToyCash ska senare finnas i TOYPAY, även offline."],
+          ["Notarie", "För ToyCash intygar ToyChain bara kontrollsummor, inga belopp och inga namn."]
+        ]
+      }
+    },
+    "toyquest": {
+      "t": "TOYQUEST",
+      "u": "Ett äventyr som förklarar tekniken för dig.",
+      "rows": [
+        ["Värld", "Fem kartor till fem designteman; alla byggnader går att gå in i, använda och handla med."],
+        ["Lägen", "Offline eller online, samarbete eller tävling, med röstchatt, riskläge och åskådarläge."],
+        ["Lära", "Figurer på många platser förklarar ToyChain steg för steg: kort, normalt eller tekniskt med riktiga siffror."],
+        ["Riktigt eller demo", "Har du aktiverat en nivå i TOYPAY visar platserna i spelet riktiga händelser från din nod. Annars körs ett tydligt märkt demoläge. Spelet självt skapar aldrig TOY."],
+        ["Föremål", "Föremål förtjänar du genom att spela, de kan inte köpas. Den som vill präglar dem som NFT på Polygon. En gemensam pott betalar nätverksavgiften."]
+      ],
+      "toZeit": "Till tidsresan",
+      "toSalon": "Till spelsalongen",
+      "flow": {
+        "nodes": ["Spelare", "Uppdrag", "Föremål", "TOYPAY", "Polygon"],
+        "steps": [
+          ["Spela", "Du klarar uppdrag, minispel och utmaningar."],
+          ["Förtjäna", "Föremål får du i spelet, inte i en butik. Ingen pay-to-win."],
+          ["Prägla", "Den som vill präglar föremålet. Den lilla avgiften täcker nätverkskostnaderna."],
+          ["NFT skapas", "NFT:n skapas på Polygon; gasen betalas av den gemensamma potten."],
+          ["Äga", "Föremålet är ditt. I spelet fungerar det även utan NFT."]
+        ]
+      }
+    },
+    "zeit": {
+      "t": "Tidsresa",
+      "u": "Fem nivåer från antiken till nutiden.",
+      "note": "Nivå 1 till 3 visar antika maskiner. Nivå 4 och 5 visar dessutom språnget in i nyare tid som en utblick. Varje nivå löser samma steg, att kontrollera signaturer, med en effektivare metod. Siffrorna är exempel."
+    },
+    "maschinen": {
+      "t": "Maskiner",
+      "u": "50 antika maskiner, upp till 256 i slutversionen.",
+      "slider": "Upplåsta maskiner: {n} av 256",
+      "cards": [
+        ["Läromästare", "Varje maskin har en mästare som förklarar motsvarande process i ToyChain."],
+        ["Belöning", "Den som samlar kunskap får kunskapssigill, mästarbrev, dukater och kosmetika. TOY ges inte för detta."],
+        ["Ordning", "Från verkstad till automat, varje maskin kopplad till en process, till exempel vattenuret och blocktiden."]
+      ]
+    },
+    "gangs": {
+      "t": "Gäng och klaner",
+      "u": "Stark ensam, starkare i lag.",
+      "cards": [
+        ["Gäng", "Figurerna kompletterar varandra med egenskaper, förmågor och föremål."],
+        ["Öppen värld", "Lagarbete med andra spelare för utmaningar och nivåhöjningar."],
+        ["Fem klaner", "Sultaner och kungar konkurrerar eller samarbetar. Figurerna tjänar dem; din lojalitet räknas."],
+        ["Verkliga principer", "En port öppnas först när två tredjedelar av gänget satt sitt sigill, precis som vid ToyChains slutgiltighet."]
+      ],
+      "flow": {
+        "nodes": ["Ditt gäng", "Synergier", "Utmaning", "Öppen värld", "Klan"],
+        "steps": [
+          ["Kombinera", "Medlemmarnas egenskaper, förmågor och föremål förstärker varandra."],
+          ["Klara utmaningen", "Gänget tar sig an en uppgift tillsammans."],
+          ["Med andra", "Lagarbete med andra spelare i den öppna världen."],
+          ["Gå upp i nivå", "Gänget blir starkare."],
+          ["Välj klan", "Du knyter dig till en av de fem klanerna. De konkurrerar eller samarbetar."]
+        ]
+      }
+    },
+    "salon": {
+      "t": "Spelsalong",
+      "u": "Gömd i spelet, full av kort.",
+      "rows": [
+        ["Spel", "Texas Hold’em och limit 4-korts Omaha."],
+        ["Format", "Cashgames och turneringar."],
+        ["Insats", "Man spelar med dukater från spelet. Insatser med ToyCoin kommer först när en juridisk granskning tillåter dem."],
+        ["Minispel", "20 minispel plus uppdrag och bonusnivåer."]
+      ],
+      "flow": {
+        "nodes": ["Spelare", "Spelsalong", "Bord", "Insats"],
+        "steps": [
+          ["Gå in", "Spelsalongen är en gömd byggnad i spelet."],
+          ["Välj spel", "Texas Hold’em eller limit 4-korts Omaha, som cashgame eller turnering."],
+          ["Insats", "Du satsar dukater. Insatser med riktiga pengar finns inte utan juridisk granskning."]
+        ]
+      }
+    },
+    "toypay": {
+      "t": "TOYPAY",
+      "u": "Plånboken för ToyVerse och samtidigt en nod i ToyChain.",
+      "cards": [
+        ["Plattformar", "Android, Windows, Linux och Raspberry Pi, även på äldre enheter."],
+        ["Nod", "Du väljer en nivå. Beräkningar görs bara med laddsladd, wifi och normal temperatur."],
+        ["Offlinebetalning", "Krypterad via QR, NFC eller Bluetooth, även utan nät."],
+        ["Företagskonto", "Med kassafunktion för handlare."],
+        ["Säkerhet", "Förhandsvisning före varje signatur, skydd mot adressfällor, varningslista mot nätfiske, hårdvaruplånböcker."],
+        ["Språk", "45 språk och fyra lägen, från nybörjare till expert."]
+      ],
+      "toWallet": "Anslut till testnätet",
+      "toDownload": "Ladda ned",
+      "cardFront": ["TOYPAY", "ToyChain · Testnät", "Tryck för att vända"],
+      "cardBack": ["Offlinebetalning", "Krypterad från enhet till enhet", "Förhandsvisning före varje signatur"],
+      "cardLabel": "Vänd kortet",
+      "cardTitle": "Ditt kort att ta på",
+      "flow": {
+        "nodes": ["Butikens kassa", "Din plånbok", "Förhandsvisning", "Nätverk", "Företagskonto"],
+        "steps": [
+          ["Skicka belopp", "Kassan skickar beloppet som betalningsbegäran till din plånbok."],
+          ["Kontrollera", "Före signeringen visar plånboken exakt vad som händer."],
+          ["Betala", "Betalningen går ut i nätverket och är slutgiltig efter ett block."],
+          ["Insättning", "Företagskontot får bekräftelsen."],
+          ["Offline", "Utan nät går den krypterade betalningen direkt från enhet till enhet."]
+        ]
+      }
+    },
+    "toycoin": {
+      "t": "TOY",
+      "u": "ToyChains valuta, med samma regler för alla.",
+      "rows": [
+        ["Mängd", "Högst 100 000 000 TOY, aldrig mer. Taket står i ToyChains konstitution."],
+        ["Rättvis start", "Det första blocket innehåller inte en enda TOY. Ingen reserv, ingen förhandsförsäljning, ingen teamandel."],
+        ["Uppkomst", "Alla TOY uppstår gradvis genom arbete i nätverket: första epoken 50 500 TOY, första året cirka 16,8 miljoner, halveringstid cirka 3,76 år, cirka 99 % efter 25 år."],
+        ["Fördelning", "50 % till alla som signerar block, 40 % till arbetslotteriet, 10 % till återbetalningspotten för gratis transaktioner."],
+        ["Bränns aldrig", "På ToyChain förstörs aldrig någon TOY, och konton går aldrig förlorade."],
+        ["Teknik", "18 decimaler, adresser som Ethereum. Chain-ID testnät 7630714; huvudnät 7630713 först efter en revision."]
+      ],
+      "chartTitle": "Utgivna TOY genom åren",
+      "chartYear": "År {y}",
+      "chartLabel": "År {y}: cirka {m} miljoner TOY utgivna (plan med faktor 1)",
+      "chartAxis": "miljoner TOY",
+      "coinTitle": "Myntet i 3D",
+      "coinTurn": "Vrid myntet",
+      "warnTitle": "Obs: gamla ToyCoin-tokens",
+      "warnText": "På Polygon och Ethereum finns äldre tokens med namnet ToyCoin. De är <b>inte ToyChain-TOY</b>, byts inte och överförs inte via brygga. Plånboken och ToyScan märker dem med ”Inte ToyChain-TOY, kan inte bytas”. Köp dem inte i förväntan om ett byte.",
+      "warnPolygon": "Polygon",
+      "warnEthereum": "Ethereum",
+      "warnLink": "Visa i utforskaren"
+    },
+    "wallet": {
+      "t": "Anslut till testnätet",
+      "u": "Så snart det publika testnätet är igång lägger du till det här med ett klick.",
+      "btn": "Lägg till testnät · kommer med milstolpe M10",
+      "facts": [
+        ["Nätverk", "ToyChain Testnet"],
+        ["Chain-ID", "7630714"],
+        ["Symbol", "TOY, 18 decimaler"],
+        ["Adress", "Din vanliga Ethereum-adress och återställningsfras fungerar även här."]
+      ],
+      "text": "Det fungerar med alla plånböcker som kan lägga till nätverk enligt EIP-3085, till exempel TOYPAY eller MetaMask. Sidan läser inte av något och kan inte skicka något. Testnäts-TOY har inget värde och förs aldrig över till ett huvudnät.",
+      "safety": "Den här sidan frågar aldrig efter din återställningsfras. Den som frågar efter den vill lura dig.",
+      "flow": {
+        "nodes": ["Den här sidan", "Din plånbok", "ToyChain-testnät", "Testnäts-TOY"],
+        "steps": [
+          ["Föreslå", "Sidan föreslår nätverket med namn, chain-ID och åtkomstpunkt."],
+          ["Bekräfta", "Din plånbok visar uppgifterna och du bekräftar. Nycklarna lämnar aldrig din enhet."],
+          ["Var med", "I testnätet räknar din enhet lotter till arbetslotteriet eller hämtar test-TOY från kranen."],
+          ["Prova", "Med testnäts-TOY provar du överföringar, gratiskvot och nivåer utan risk."]
+        ]
+      }
+    },
+    "toycash": {
+      "t": "ToyCash",
+      "u": "Känslan av kontanter på nätet, täckt av euro.",
+      "rows": [
+        ["Princip", "En euro-stablecoin. Innehav och belopp ser bara du, i din plånbok. ToyChain intygar bara kontrollsummor, inga belopp och inga namn."],
+        ["Täckning", "Euroreserver, till en början bara euro. Egen utgivare, senare flera väktare tillsammans."],
+        ["Start", "Först en prototyp enligt eCash-principen med testeuro, senare zk-notes."],
+        ["Värdebevis", "Flergångs-, grupp- och innehavarbevis, stegvis."],
+        ["Dubbelutgift", "Återkallelsefrist, bedrägeristraff och reservation, stegvis."],
+        ["Läge", "Koncept. Riktiga euro först efter revision och juridisk granskning."]
+      ],
+      "toOffline": "Testa offlinegränsen",
+      "flow": {
+        "nodes": ["Euroreserv", "Utgivare", "Plånbok A", "Plånbok B", "ToyChain"],
+        "steps": [
+          ["Täckning", "Euro hålls i beredskap som täckning."],
+          ["Ge ut", "Plånbok A får krypterade sedlar."],
+          ["Lämna vidare", "A lämnar sedlar vidare till B, även offline."],
+          ["Lösa in", "B växlar dem hos utgivaren mot nya sedlar. Utgivaren kontrollerar att ingen sedel används två gånger."],
+          ["Intyga", "Varje epok förankrar utgivaren en kontrollsumma av sin lista på ToyChain. Då kan inget ändras i smyg."]
+        ]
+      }
+    },
+    "offline": {
+      "t": "Offlinegräns",
+      "u": "Gränsen växer långsamt med din användning.",
+      "tableHead": ["Nivå", "Gräns", "Villkor"],
+      "steps": [
+        ["1", "20 €", "Start"],
+        ["2", "50 €", "14 dagar och 10 betalningar"],
+        ["3", "100 €", "60 dagar och 40 betalningar"],
+        ["4", "250 €", "180 dagar och 100 betalningar, bara med enhetsbunden nyckel"],
+        ["5", "500 €", "365 dagar och 250 betalningar, bara med enhetsbunden nyckel"]
+      ],
+      "text": "Inom den upplåsta nivån väljer du själv din gräns. Gränsen är samtidigt en deposition: den som dubbelspenderar offline förlorar den till de drabbade. Nivåvärdena är ett förslag."
+    },
+    "toychain": {
+      "t": "ToyChain",
+      "u": "Smal som Mina, adresser som Ethereum.",
+      "rows": [
+        ["Storlek", "Varje standardnod lagrar högst 256 MB."],
+        ["Enheter", "Körs på gamla Android-enheter, Raspberry Pi, Linux och Windows."],
+        ["Adresser", "Samma adresser och samma 12 eller 24 ord som i Ethereum."],
+        ["Var med", "Nivå 0 kräver inget saldo: din enhet räknar lotter till arbetslotteriet. Med 10, 100 eller 1 000 TOY i stake signerar, lagrar eller validerar du."],
+        ["Konsensus", "En kommitté med upp till 128 medlemmar signerar varje block. Från två tredjedelar är det slutgiltigt; ungefär ett block i minuten."],
+        ["Konton", "Konton går aldrig förlorade. Konton som länge inte använts vilar och kan väckas när som helst."],
+        ["Bara TOY", "Inga tokens, inga NFT:er, inga smarta kontrakt på ToyChain. Varje funktion är fast inbyggd."],
+        ["Säkerhet", "Bara beprövade metoder och bibliotek. Extra postkvantnycklar (ML-DSA) planeras till milstolpe M13."]
+      ],
+      "toMint": "Simulera prägling",
+      "chainTitle": "Kedjan i 3D",
+      "chainAdd": "Lägg till block",
+      "chainHint": "Rör pekaren eller fingret över scenen för att vrida den. Kuberna är exempelblock.",
+      "flow": {
+        "nodes": ["Plånbok", "Pool", "Kommitté", "Block", "Kedja"],
+        "steps": [
+          ["Skicka", "Din transaktion hamnar i poolen."],
+          ["Föreslå", "En slumpvis vald kommittémedlem sätter ihop blocket."],
+          ["Signera", "Kommittén signerar. Från två tredjedelar är blocket slutgiltigt."],
+          ["Lägga till", "Noderna lagrar tillståndet och ett kort fönster, högst 256 MB."],
+          ["Belöna", "Nya TOY går till signerarna, arbetslotteriet och återbetalningspotten."]
+        ]
+      }
+    },
+    "mint": {
+      "t": "Präglingssimulering",
+      "u": "Skicka ut enheter i nätet och se block uppstå.",
+      "text": "Förenklat: arbete och signaturer åker på bandet in i poolen. När den är full eller ungefär en minut har gått (här i snabbspolning) uppstår ett block. Under första epoken tillkommer cirka 35 nya TOY per block: 50 % till signerarna, 40 % till arbetslotteriet, 10 % till återbetalningspotten."
+    },
+    "tx": {
+      "t": "Transaktioner",
+      "u": "10 till 100 gratis transaktioner per konto och dag.",
+      "text": "Över kvoten betalar du en liten avgift eller räknar fram en ToyWork-lott. Avgiften fördubblas för varje 10 extra transaktioner i samma block, högst till 1 024 gånger. Avgifterna går till 40 % till aktiva deltagare, 40 % till återbetalningspotten och 20 % till den som föreslår blocket."
+    },
+    "toyscan": {
+      "t": "ToyScan",
+      "u": "Grönt ljus när alla regler följs.",
+      "cards": [
+        ["Tak", "Aldrig mer än 100 000 000 TOY. I varje block är summan av alla saldon lika med summan av all utgivning."],
+        ["Rättvis start", "Det första blocket innehåller 0 TOY. Varje TOY kan spåras till en utgivning."],
+        ["Utgivning", "Varje epok räknas om enligt formeln."],
+        ["Andra kedjor", "Visar saldon för samma adress på andra kedjor, bara läsning. Gamla ToyCoin-tokens är märkta ”inte ToyChain-TOY”."]
+      ],
+      "flow": {
+        "nodes": ["ToyChain", "Arkivnod", "Andra kedjor", "ToyScan", "Trafikljus"],
+        "steps": [
+          ["Läsa data", "ToyScan läser utbud, epoker och block från ToyChain."],
+          ["Räkna om", "En arkivnod summerar själv alla saldon."],
+          ["Visa", "Saldon för samma adress på andra kedjor visas bara som information."],
+          ["Trafikljus", "Grönt när allt stämmer. Gult vid avvikelser, rött vid regelbrott, med bevis."]
+        ]
+      }
+    },
+    "ketten": {
+      "t": "Andra kedjor",
+      "u": "Samma adress överallt, utan brygga.",
+      "rows": [
+        ["Samma adress", "Din ToyChain-adress fungerar även på Ethereum, Polygon, Arbitrum, Base och BNB Chain. TOYPAY visar saldon, tokens och NFT:er där."],
+        ["Byte utan brygga", "Ett atomärt byte med hash-tidslås: antingen får båda sidor sina pengar, eller ingen. Planerat till milstolpe M12."],
+        ["Gamla ToyCoin-tokens", "Tokens med namnet ToyCoin på Polygon och Ethereum är inte ToyChain-TOY och kan inte bytas."],
+        ["Brygga", "I nuvarande omfattning finns ingen brygga. Om en skulle komma senare krävs ett eget beslut, en revision och en juridisk granskning."]
+      ]
+    },
+    "roadmap": {
+      "t": "Färdplan",
+      "u": "Ordningen är viktigare än datumen.",
+      "progress": "ToyChain fas 1: {done} av {total} milstolpar klara (läge {date})",
+      "milestones": {
+        "M1": "Grundtyper och utgivning",
+        "M2": "Kryptografi och adresser",
+        "M3": "Tillstånd, transaktioner, avgifter",
+        "M4": "Block och konsensus",
+        "M5": "Lagring och 256 MB",
+        "M6": "Nätverk",
+        "M7": "Gränssnitt (RPC)",
+        "M8": "Plånbok och kommandorad",
+        "M9": "Plattformar och energiläge",
+        "M10": "Publikt testnät",
+        "M11": "ToyScan",
+        "M12": "Kontoskydd, byte",
+        "M13": "Namn, postkvantnycklar"
+      },
+      "cards": [
+        ["1 · ToyChain-kärnan", "Nod i Rust: utgivning, kryptografi, transaktioner och avgifter är klara; konsensus följer.", "inWork"],
+        ["2 · TOYPAY som nod", "Plånbok med nivåer och energiläge på fyra plattformar.", "planned"],
+        ["3 · Publikt testnät", "Först lokalt, sedan publikt, med belastningstester.", "planned"],
+        ["4 · ToyScan", "Utforskare med varningslampa och öppet gränssnitt.", "planned"],
+        ["5 · TOYQUEST", "Lärovärld och föremål på Polygon, oberoende av ToyChain-kärnan.", "inDev"],
+        ["6 · ToyCash", "Prototyp med testeuro, därefter offlineplånbok och zk-notes.", "concept"],
+        ["7 · Huvudnät", "Bara efter extern revision, belastningstester och juridisk granskning, offentligt aviserat i förväg.", "afterReview"]
+      ],
+      "flow": {
+        "nodes": ["ToyChain-kärnan", "TOYPAY", "Testnät", "ToyScan", "Huvudnät"],
+        "steps": [
+          ["Kärnan först", "Utgivning, kryptografi och transaktioner är byggda och testade."],
+          ["Plånbok som nod", "TOYPAY tar kedjan till mobil, dator och Raspberry Pi."],
+          ["Testnät", "Först lokalt, sedan publikt, med belastningstester och fuzzing."],
+          ["Huvudnät först efter granskning", "Revision, belastningstester och juridisk granskning är obligatoriska. Testnäts-TOY förs aldrig över."]
+        ]
+      }
+    },
+    "download": {
+      "t": "Nedladdningar",
+      "u": "Filerna dyker upp här så snart de är klara.",
+      "items": [
+        "TOYPAY för Android, Windows, Linux och Raspberry Pi · kommer",
+        "ToyChain-nod · kommer med testnätet",
+        "Whitepaper · kommer när källkoden publiceras"
+      ],
+      "until": "Fram till dess: <a href=\"{roadmap}\">se färdplanen</a> eller <a href=\"{toycoin}\">läs mer om TOY</a>."
+    },
+    "community": {
+      "t": "Community",
+      "u": "Ett ekonomiskt kretslopp som alla bär tillsammans.",
+      "cards": [
+        ["Handlare", "Handlare med företagskonto, kassa, värdebevis och lojalitetspoäng."],
+        ["Mentorer", "Erfarna spelare hjälper nykomlingar och får kunskapssigill för det."],
+        ["Community-noder", "Den som ställer en enhet till förfogande stärker nätet. Raspberry Pi-paket och en nodkarta är planerade."],
+        ["Instrumentpanel", "ToyScan visar det ekonomiska kretsloppet med riktiga siffror, utan prognoser."],
+        ["Medbestämmande", "Kommer senare. Inte ens då kan någon ändra ToyChains konstitution."]
+      ],
+      "langTitle": "45 språk",
+      "langText": "Plånboken, TOYPAY och ToyScan talar samma 45 språk. Webbplatsen finns just nu på {n} av dem:"
+    },
+    "kontakt": {
+      "t": "Var med och kontakt",
+      "u": "Berätta vad du behöver.",
+      "cards": [
+        ["Testnät", "Lägg till testnätet i din plånbok så snart det är igång.", "Till testnätet"],
+        ["Nedladdningar", "Appar och noder dyker upp här så snart de är klara.", "Till nedladdningarna"],
+        ["Var med", "Som testare, handlare eller mentor. Skriv kort till oss vad det gäller.", ""]
+      ],
+      "formTitle": "Skriv till oss",
+      "topic": "Ämne",
+      "topics": ["Fråga om projektet", "Vara med som testare", "Bli handlare", "Press"],
+      "name": "Ditt namn",
+      "message": "Meddelande",
+      "send": "Förbered e-post",
+      "noMail": "Kontaktadressen är ännu inte angiven (src/data/site.json).",
+      "opened": "Ditt e-postprogram öppnas. Inget sparas via den här sidan.",
+      "security": "Rapportera inte säkerhetsbrister via det här formuläret, utan konfidentiellt till adressen i den juridiska informationen, med ämnet ”Säkerhet”."
+    },
+    "impressum": {
+      "t": "Juridisk information",
+      "u": "Uppgifter om leverantören enligt § 5 DDG (tysk lag).",
+      "template": "Det här är en mall. Fyll i de riktiga uppgifterna i src/data/site.json och låt dem granskas juridiskt.",
+      "h1": "Uppgifter enligt § 5 DDG",
+      "h2": "Kontakt",
+      "h3": "Register och skatt",
+      "h4": "Ansvarig för innehållet",
+      "h5": "Anmärkning",
+      "labels": {
+        "name": "namn eller företag med bolagsform",
+        "street": "gata och husnummer",
+        "city": "postnummer och ort",
+        "email": "e-postadress",
+        "phone": "telefonnummer",
+        "register": "register och nummer, om sådana finns",
+        "vatId": "momsregistreringsnummer, om sådant finns"
+      },
+      "mail": "E-post",
+      "phone": "Telefon",
+      "register": "Registrering",
+      "vat": "Momsreg.nr",
+      "responsible": "Enligt § 18 st. 2 MStV: {name}, adress som ovan.",
+      "note": "ToyVerse är ett projekt under uppbyggnad. Uppgifter om TOY är ingen investeringsrådgivning."
+    },
+    "datenschutz": {
+      "t": "Integritet",
+      "u": "Vad som händer med dina uppgifter: så lite som möjligt.",
+      "template": "Det här är en mall. Den passar en statisk webbplats utan cookies och utan spårning. Komplettera med webbhotellet och låt den granskas juridiskt före publicering.",
+      "sections": [
+        ["Personuppgiftsansvarig", "{name}, {street}, {city}, e-post: {email}."],
+        ["Webbhotell och serverloggar", "Webbplatsen ligger hos {host}. Vid besök behandlar servern tekniskt nödvändiga uppgifter som IP-adress, tidpunkt och begärd sida för att leverera webbplatsen och skydda den mot angrepp (art. 6.1 f GDPR)."],
+        ["Inga cookies, ingen spårning", "Webbplatsen sätter inga cookies, använder inga analysverktyg och laddar inget innehåll från tredje part. Typsnitten ligger på den egna servern."],
+        ["I din webbläsare", "Simuleringarna körs bara i din webbläsare. Inget skickas till oss."],
+        ["Kontakt", "Kontaktformuläret öppnar bara ditt e-postprogram. Först när du skickar e-posten får vi den, och vi använder den bara för att svara (art. 6.1 b och f GDPR)."],
+        ["Länkar till andra webbplatser", "Länkar, till exempel till blockutforskare, leder till andra leverantörer. Där gäller deras integritetsinformation."],
+        ["Dina rättigheter", "Du har rätt till tillgång, rättelse, radering, begränsning, dataportabilitet och invändning samt rätt att klaga hos en tillsynsmyndighet för dataskydd."]
+      ]
+    }
+  },
+  "demo": {
+    "zeit": {
+      "levels": [
+        ["Antik verkstad", "Räknemästaren skjuter kulorna och kontrollerar varje signatur för hand.", "muskelkraft", "Kulram"],
+        ["Kraft och samling", "Ett vattenhjul driver hammaren, och många sigill blir ett.", "vattenkraft", "Vattenhjul och sigillhammare"],
+        ["Tid och mätning", "Vattenuret anger takten, precis som blocktiden på ungefär en minut.", "vatten och tyngdkraft", "Vattenur"],
+        ["Arkiv och prägling · utblick mot nyare tid", "Den antika myntpressen blir en ångpress: prägling i maskinens takt.", "ånga och kol", "Ångmaskin"],
+        ["Automater och bevis · utblick mot nutiden", "Herons automat följde fasta regler. I dag kontrollerar många kärnor signaturer samtidigt.", "några få watt", "Chip med nio kärnor"]
+      ],
+      "level": "Nivå {n}",
+      "power": "Effekt",
+      "start": "Starta",
+      "submit": "Skicka in signatur",
+      "submit10": "10 på en gång",
+      "queue": "Kö",
+      "done": "Behandlade",
+      "rate": "Exempel: {r} signaturer per minut",
+      "drive": "Drivkraft",
+      "machine": "Maskinen för vald nivå"
+    },
+    "gears": {
+      "title": "Mekanik att veva",
+      "crank": "Vev",
+      "label": "Fyra kugghjul som griper in i varandra",
+      "text": "Kugghjul 4 snurrar {x} gånger så fort som veven, åt motsatt håll."
+    },
+    "npc": {
+      "title": "Möt figurerna",
+      "intro": "Tryck på en figur och ställ en fråga. Dialogerna är exempel.",
+      "hello": "Välkommen! Vad vill du veta?",
+      "names": ["Köpman", "Väktare", "Lärd", "Sultan", "Karavanledare"],
+      "qa": [
+        [
+          ["Vad kostar ett föremål?", "Föremål förtjänar du i spelet. Bara den som vill prägla ett som NFT betalar en liten avgift för nätverkskostnaderna."],
+          ["Kan jag handla med dig?", "Alla byggnader och varor går att handla med. Med ett företagskonto tar du till och med emot betalningar i kassan."],
+          ["Vad är TOY?", "Valutan i den egna ToyChain. Alla 100 miljoner uppstår gradvis genom arbete i nätverket. Det finns ingen reserv."]
+        ],
+        [
+          ["Hur hittar jag spelsalongen?", "Byggnaden är gömd. Den som går uppmärksamt genom staden upptäcker den."],
+          ["Vem får spela?", "Ensam offline, online med andra, tillsammans eller mot varandra. Titta kan man i åskådarläget."],
+          ["Är det säkert?", "Lämna aldrig ut din återställningsfras, inte ens till mig. Den som frågar efter den är en bedragare."]
+        ],
+        [
+          ["Hur uppstår ett block?", "Transaktionerna samlas. Ungefär varje minut sätter en kommittémedlem ihop ett block och de andra signerar. Från två tredjedelar är det slutgiltigt."],
+          ["Varför förblir kedjan liten?", "Varje nod lagrar högst 256 MB. Konton som länge inte använts vilar och kan väckas när som helst. Inget går förlorat."],
+          ["Vad är ToyCash?", "Digitala eurokontanter vars belopp bara du ser. Det ska fungera även offline."]
+        ],
+        [
+          ["Vad ger en klan mig?", "Lojalitet belönas. Fem klaner konkurrerar eller samarbetar, och deras figurer står i deras tjänst."],
+          ["Hur många klaner finns det?", "Fem sultaner, kungar och klaner, som hör till de fem kartorna."],
+          ["Vad är en hjälte-NFT?", "Din hjälte kan du senare prägla som NFT. Avgiften täcker nätverkskostnaderna; detaljerna återstår."]
+        ],
+        [
+          ["Hur reser man tillsammans?", "Som gäng eller med andra spelare i den öppna världen. Egenskaper, förmågor och föremål kompletterar varandra."],
+          ["Vad är tidsresan?", "Fem nivåer från antiken till nutiden visar ToyChains processer med allt bättre metoder."],
+          ["Var kan jag öva?", "På träningsnivån. Dessutom finns 20 minispel, uppdrag och bonusnivåer."]
+        ]
+      ],
+      "quotes": ["”", "”"]
+    },
+    "poker": {
+      "title": "Poker vid bordet",
+      "modes": ["Texas Hold’em", "Limit 4-korts Omaha"],
+      "buyin": "Inköp: {n} dukater",
+      "pot": "Pott",
+      "stack": "Din hög",
+      "net": "Resultat",
+      "fold": "Lägg dig",
+      "check": "Passa",
+      "call": "Syna ({n})",
+      "bet": "Satsa ({n})",
+      "raise": "Höj ({n})",
+      "nextHand": "Nästa hand",
+      "you": "Du",
+      "opp": ["Köpman", "Sultan"],
+      "hands": ["Högt kort", "Ett par", "Två par", "Triss", "Stege", "Färg", "Kåk", "Fyrtal", "Färgstege"],
+      "ruleHoldem": "Hold’em: du använder de bästa 5 av dina 2 kort och bordets kort.",
+      "ruleOmaha": "Omaha: du måste använda exakt 2 av dina 4 kort och 3 från bordet.",
+      "start": "Ny hand. Alla betalar {n} i ante. Satsa, syna eller lägg dig.",
+      "newCards": "{street}: nya kort ligger på bordet.",
+      "allFold": "Alla andra har lagt sig. Du vinner {n} dukater.",
+      "youFold": "Du har lagt dig. ",
+      "showdown": "Visning: {list}. Vinnare: {win} ({n} dukater).",
+      "broke": "Din hög är tom. Du får nya dukater att öva med.",
+      "foot": "Limitpoker med fasta insatser: liten insats före floppen och på floppen, dubbel på turn och river. Motspelarna är exempelfigurer med en enkel strategi. Man spelar bara med dukater.",
+      "unit": "dukater",
+      "npcFold": "lägger sig",
+      "npcCall": "synar",
+      "npcBet": "satsar {n}",
+      "npcCheck": "passar",
+      "streets": ["Flop", "Turn", "River"],
+      "best": "Din bästa hand: {h}",
+      "royal": "Royal straight flush",
+      "and": " och "
+    },
+    "mint": {
+      "pool": "Pool",
+      "chain": "Kedja",
+      "start": "Skicka ut enheter i nätet och se poolen fyllas.",
+      "addPhone": "+ Mobil",
+      "addPi": "+ Raspberry Pi",
+      "addPc": "+ Dator",
+      "sign": "Skicka signatur",
+      "spam": "Skicka spam",
+      "reset": "Återställ",
+      "blocks": "Block",
+      "minted": "Nyutgivna",
+      "devices": "Enheter",
+      "full": "Fler än 8 enheter får inte plats på bordet.",
+      "phone": "En mobil räknar långsamt, men varje enhet räknas. Utan saldo deltar den i arbetslotteriet.",
+      "pi": "En Raspberry Pi arbetar jämnt och sparsamt.",
+      "pc": "En dator fyller poolen snabbast. Men ren beräkningskraft ger ingenting i konsensus.",
+      "own": "Du bidrog själv med en signatur.",
+      "spamMsg": "Spam fyller knappt poolen men kostar avgift eller beräkningsarbete.",
+      "block": "Block {k} slutgiltigt: {n} bidrag, {t} nya TOY (konsensus {a}, arbete {b}, återbetalningspott {c}).",
+      "resetMsg": "Återställt.",
+      "label": "Präglingsmaskin"
+    },
+    "tx": {
+      "load": "Nätverkets belastning: {n} %",
+      "free": "Gratis: {a} av {b}",
+      "send": "Skicka",
+      "round": "Ny epok",
+      "sentFree": "Skickat, gratis.",
+      "sentFee": "Kvoten slut: avgift cirka {fee} TOY (faktor {f}), eller en ToyWork-lott gör den avgiftsfri.",
+      "formula": "Kvot = max(10, 100 × (1 − belastning))"
+    },
+    "offline": {
+      "you": "Du",
+      "shop": "Handlare",
+      "amount": "Belopp: {n} €",
+      "pay": "Betala offline",
+      "again": "Spendera samma sedel igen",
+      "sync": "Gå online och stäm av",
+      "month": "Använd i en månad",
+      "limit": "Offlinegräns: {used} av {cap} € · nivå {s} · {days} dagar, {n} betalningar",
+      "freeAmt": "Ledigt: {n} €",
+      "over": "Gränsen nådd: {n} € får inte plats längre. Gå online så att ditt utrymme blir ledigt igen.",
+      "paid": "{n} € överfört krypterat från enhet till enhet, helt utan nät.",
+      "first": "Betala först en gång offline.",
+      "double": "Samma sedel gick ut en andra gång. Offline märks det ännu inte.",
+      "nothing": "Det finns inget att stämma av.",
+      "okNote": "Sedel {i} ({n} €) bekräftad",
+      "badNote": "Sedel {i} ({n} €) dubbel: avvisad",
+      "caught": "Dubbelutgift upptäckt: utgivaren avvisar den andra sedeln och ToyChain gör det kontrollerbart. Den som dubbelspenderar förlorar sin deposition till den drabbade och flyttas ned en nivå.",
+      "synced": "{n} betalning(ar) bekräftade. Ditt offlineutrymme är ledigt igen.",
+      "monthMsg": "En månads användning: 30 dagar och 60 betalningar. Din gräns växer nivå för nivå.",
+      "label": "Två mobiler utbyter offline en krypterad betalning"
+    },
+    "toyscan": {
+      "choose": "Välj scenario:",
+      "minted": "Utgivet",
+      "cap": "Tak",
+      "mio": "{n} miljoner TOY",
+      "bigRed": "Stor röd lampa: taket, den rättvisa starten eller konstitutionen har brutits.",
+      "criteria": [
+        "A1 Tak och summan av alla saldon",
+        "A2 Rättvis start: varje TOY från en utgivning",
+        "A3 Utgivning enligt formeln",
+        "A4 Epoker och tid",
+        "A5 Konstitutionen oförändrad",
+        "A6 Konsensus frisk",
+        "A7 Startfas enligt plan",
+        "A8 Spärrar bara med bevis",
+        "A9 Data aktuella"
+      ],
+      "scenarios": [
+        ["Allt i ordning", "Alla kriterier uppfyllda", "Exempelvärden."],
+        ["Mer än 100 miljoner", "Rött: taket överskridet", "Här skulle mer TOY ha getts ut än tillåtet. Det får aldrig hända."],
+        ["Saldo utan utgivning", "Rött: rättvis start bruten", "Ett saldo kan inte spåras till någon utgivning."],
+        ["Utgivning före planen", "Gult: behöver bevakas", "Utgivningen ligger mer än 3 % före planen. Inget regelbrott, men avvikande."],
+        ["Gamla data", "Gult: data inte aktuella", "De senaste uppgifterna är äldre än 10 minuter eller två källor är oense."]
+      ]
+    },
+    "voucher": {
+      "title": "Prova värdebevis",
+      "examples": "Exempel:",
+      "presets": ["Present till familjen", "Kampanj i butiken", "Matsalskort"],
+      "own": "Eller bygg själv: välj typ",
+      "types": {
+        "i": ["Innehavare", "Innehavarbevis", "Den som har det kan lösa in det. Den första kunden får hela beloppet."],
+        "m": ["Flergångs", "Flergångsbevis", "Värdet fördelas på flera inlösningar tills det är slut."],
+        "g": ["Grupp", "Gruppbevis", "Bara de valda medlemmarna kan lösa in, var och en exakt en gång med lika stor andel."]
+      },
+      "value": "Värde: {n} €",
+      "uses": "Inlösningar: {n}",
+      "members": "Gruppens medlemmar:",
+      "create": "Skapa värdebevis",
+      "serial": "Serie {s}",
+      "hint": "Tryck på en kund efter att du skapat beviset, så löser kunden in det.",
+      "redeemed": "Inlöst: {u} av {n} · Kvar: {r} €",
+      "double": "Lös in dubbelt (bedrägeri)",
+      "needTwo": "Välj minst två medlemmar.",
+      "first": "Skapa först ett värdebevis.",
+      "created": "{type} skapat: {v} €, {n} × {s} €.",
+      "shop": "Handlare",
+      "welcome": "Välkommen!",
+      "redeems": "{name} löser in",
+      "doneI": "Innehavarbeviset har redan lösts in.",
+      "doneM": "Alla {n} inlösningar är förbrukade.",
+      "notMember": "{name} hör inte till gruppen.",
+      "already": "{name} har redan löst in sin andel.",
+      "ok": "{name} löser in {n} €.",
+      "dblBoth": "Här räknas båda inlösningarna, eftersom beviset tillåter flera.",
+      "dblCaught": "Två enheter, en sedel: den andra inlösningen avvisas. Dubbelutgift upptäckt.",
+      "customers": ["Ali", "Leyla", "Omar", "Samira"],
+      "foot": "Exempelscenario. Utgivaren håller reda på varje bevis, och ToyChain gör det kontrollerbart. Därför hjälper en kopia inte.",
+      "thanks": "Tack, det stämmer!",
+      "sorry": "Tyvärr går det inte.",
+      "rejected": " Utgivaren avvisar."
+    }
+  }
+}
