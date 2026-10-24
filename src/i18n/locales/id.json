@@ -1,0 +1,682 @@
+{
+  "meta": {
+    "description": "ToyVerse: blockchain sendiri ToyChain dengan koin TOY, dompet TOYPAY, penjelajah ToyScan, koin euro tak terlihat ToyCash, dan gim edukasi TOYQUEST."
+  },
+  "ui": {
+    "skip": "Lompat ke konten",
+    "menu": "Menu",
+    "mainNav": "Menu utama",
+    "allPages": "Semua halaman",
+    "join": "Bergabung",
+    "language": "Bahasa",
+    "languageHint": "Situs ini kini tersedia dalam {n} dari 45 bahasa dompet, TOYPAY, dan ToyScan. Sisanya menyusul.",
+    "soon": "segera",
+    "path": "Jalur",
+    "back": "Kembali",
+    "next": "Lanjut",
+    "pause": "Jeda",
+    "auto": "Otomatis",
+    "step": "Langkah",
+    "flowTitle": "Begini semuanya saling terhubung",
+    "flowLabel": "Diagram alur",
+    "image": "Gambar {n}",
+    "ctaTitle": "Bergabunglah di ToyVerse",
+    "ctaText": "Ajukan pertanyaan, uji lebih awal, atau jadilah pedagang atau mentor.",
+    "ctaBtn": "Bergabung",
+    "disclaimer": "Bukan nasihat investasi, tidak ada janji imbal hasil. ToyChain berjalan sebagai testnet yang sedang dikembangkan; TOY testnet tidak bernilai. ToyCash, ToyScan, dan item TOYQUEST masih berupa konsep. Angka dalam simulasi hanyalah contoh.",
+    "placeholder": "isi {label}",
+    "example": "Contoh",
+    "chooseLanguage": "Pilih bahasa",
+    "redirect": "Ke beranda",
+    "machineNote": "Terjemahan ini dibuat dengan AI dari bahasa Jerman dan belum diperiksa oleh penutur asli. Yang berlaku adalah",
+    "machineLink": "versi bahasa Jerman"
+  },
+  "scenes": ["Kota di malam hari", "Kafilah", "Jaringan ToyChain", "Di ruang permainan", "Aula mesin"],
+  "groups": {
+    "entdecken": { "t": "Jelajahi", "u": "Mulai dan ikhtisar" },
+    "spielen": { "t": "Bermain", "u": "TOYQUEST dan dunianya" },
+    "bezahlen": { "t": "Membayar", "u": "Dompet, koin, dan uang tunai" },
+    "technik": { "t": "Teknik", "u": "Cara kerja rantai" },
+    "mitmachen": { "t": "Bergabung", "u": "Rencana, unduhan, kontak" }
+  },
+  "status": {
+    "inWork": "Sedang dikerjakan",
+    "inDev": "Dalam pengembangan",
+    "planned": "Direncanakan",
+    "concept": "Konsep",
+    "built": "Sudah dibuat, dalam uji",
+    "afterReview": "Setelah pemeriksaan"
+  },
+  "pages": {
+    "start": {
+      "t": "Beranda",
+      "u": "Gim, dompet, dan blockchain sendiri di dunia Seribu Satu Malam.",
+      "slides": [
+        ["Selamat datang di ToyVerse", "Gim, dompet, dan blockchain sendiri di dunia Seribu Satu Malam."],
+        ["Bermain dan belajar", "Di TOYQUEST, para tokoh menjelaskan bagaimana TOY tercipta."],
+        ["Membayar tanpa jaringan", "TOYPAY dan ToyCash dirancang agar tetap berfungsi secara offline."]
+      ],
+      "discover": "Jelajahi",
+      "roadmap": "Lihat perkembangan",
+      "what": "Apa yang ingin kamu lakukan?",
+      "tiles": [
+        ["Bermain", "Jelajahi TOYQUEST: dunia, klan, perjalanan waktu."],
+        ["Membayar", "Pahami TOYPAY, TOY, dan ToyCash."],
+        ["Memahami", "Lihat cara kerja ToyChain."]
+      ],
+      "statusTitle": "Posisi kami saat ini",
+      "statusText": "ToyChain dibangun langkah demi langkah sebagai testnet. {done} dari {total} tonggak sudah selesai.",
+      "statusLink": "Ke peta jalan",
+      "newTitle": "Baru di sini?",
+      "newText": "Ikhtisar menunjukkan bagaimana gim, dompet, dan rantai bekerja sama.",
+      "newBtn": "Lihat ekosistem"
+    },
+    "verse": {
+      "t": "Ekosistem",
+      "u": "Enam bagian di bawah satu atap.",
+      "cards": [
+        ["ToyChain", "Blockchain sendiri yang ringan dengan koin TOY. Berjalan di ponsel lama dan Raspberry Pi.", "inWork"],
+        ["TOYPAY", "Dompet sekaligus node, untuk Android, Windows, Linux, dan Raspberry Pi.", "inDev"],
+        ["ToyScan", "Penjelajah dengan lampu peringatan: terus memeriksa apakah aturan dipatuhi.", "planned"],
+        ["TOYQUEST", "Gim bergaya Seribu Satu Malam, dengan dunia belajar tentang teknologinya.", "inDev"],
+        ["ToyCash", "Uang tunai euro pribadi di internet, juga secara offline.", "concept"],
+        ["ToyPost", "Satu kotak masuk untuk semua saluran, tagihan dalam TOY, dan perlindungan dari penipuan.", "built"]
+      ],
+      "after": "Ditambah sirkulasi ekonomi yang terbuka, pedagang, mentor, dan node komunitas. <a href=\"{community}\">Selengkapnya</a>",
+      "flow": {
+        "nodes": ["Pemain", "TOYQUEST", "TOYPAY", "ToyCash", "Polygon", "ToyChain", "ToyScan"],
+        "steps": [
+          ["Bermain", "Kamu menyelesaikan misi dan belajar di TOYQUEST cara kerja ToyChain."],
+          ["Mencetak", "Siapa pun yang mau dapat mencetak item hasil bermain melalui TOYPAY."],
+          ["Item", "Item yang dicetak berada di Polygon sebagai NFT. ToyChain sendiri hanya mengenal TOY."],
+          ["Ikut serta", "Dompet juga merupakan node: ia menghitung, menandatangani, dan bisa mendapatkan TOY."],
+          ["Memeriksa", "ToyScan memeriksa emisi, batas atas, dan aturan, lalu menampilkan hasilnya sebagai lampu lalu lintas."],
+          ["Uang tunai", "ToyCash nantinya akan ada di dalam TOYPAY, juga secara offline."],
+          ["Notaris", "Untuk ToyCash, ToyChain hanya mengesahkan checksum, tanpa jumlah dan tanpa nama."]
+        ]
+      }
+    },
+    "toyquest": {
+      "t": "TOYQUEST",
+      "u": "Petualangan yang menjelaskan teknologinya kepadamu.",
+      "rows": [
+        ["Dunia", "Lima peta untuk lima tema desain; semua bangunan bisa dimasuki, digunakan, dan diperdagangkan."],
+        ["Mode", "Offline atau online, kooperatif atau kompetitif, dengan obrolan suara, mode risiko, dan mode penonton."],
+        ["Belajar", "Tokoh di banyak tempat menjelaskan ToyChain langkah demi langkah: singkat, biasa, atau teknis dengan angka nyata."],
+        ["Nyata atau demo", "Jika kamu sudah mengaktifkan suatu tingkat di TOYPAY, tempat-tempat di gim menampilkan peristiwa nyata dari node-mu. Jika tidak, mode demo yang ditandai jelas akan berjalan. Gim itu sendiri tidak pernah membuat TOY."],
+        ["Item", "Item didapat dengan bermain, tidak bisa dibeli. Siapa pun yang mau dapat mencetaknya sebagai NFT di Polygon. Dana bersama membayar biaya jaringan."]
+      ],
+      "toZeit": "Ke perjalanan waktu",
+      "toSalon": "Ke ruang permainan",
+      "flow": {
+        "nodes": ["Pemain", "Misi", "Item", "TOYPAY", "Polygon"],
+        "steps": [
+          ["Bermain", "Kamu menyelesaikan misi, minigim, dan tantangan."],
+          ["Mendapatkan", "Item didapat di dalam gim, bukan di toko. Tidak ada pay-to-win."],
+          ["Mencetak", "Siapa pun yang mau dapat mencetak item. Biaya kecil menutup ongkos jaringan."],
+          ["NFT tercipta", "NFT dibuat di Polygon; gas dibayar oleh dana bersama."],
+          ["Memiliki", "Item itu milikmu. Di dalam gim, item tetap berfungsi tanpa NFT."]
+        ]
+      }
+    },
+    "zeit": {
+      "t": "Perjalanan waktu",
+      "u": "Lima level dari zaman kuno hingga modern.",
+      "note": "Level 1 sampai 3 menampilkan mesin kuno. Level 4 dan 5 menambahkan lompatan ke zaman baru sebagai gambaran ke depan. Setiap level menyelesaikan langkah yang sama, yaitu memeriksa tanda tangan, dengan metode yang lebih efisien. Angkanya hanyalah contoh."
+    },
+    "maschinen": {
+      "t": "Mesin",
+      "u": "50 mesin kuno, hingga 256 di versi akhir.",
+      "slider": "Mesin terbuka: {n} dari 256",
+      "cards": [
+        ["Guru", "Setiap mesin punya seorang ahli yang menjelaskan proses ToyChain yang sesuai."],
+        ["Hadiah", "Siapa yang mengumpulkan pengetahuan mendapat segel pengetahuan, sertifikat ahli, dukat, dan item kosmetik. Tidak ada TOY untuk itu."],
+        ["Urutan", "Dari bengkel hingga automaton, setiap mesin terhubung dengan suatu proses, misalnya jam air dan waktu blok."]
+      ]
+    },
+    "gangs": {
+      "t": "Geng dan klan",
+      "u": "Kuat sendirian, lebih kuat bersama tim.",
+      "cards": [
+        ["Geng", "Para tokoh saling melengkapi dengan sifat, kemampuan, dan item."],
+        ["Dunia terbuka", "Kerja sama dengan pemain lain untuk tantangan dan naik level."],
+        ["Lima klan", "Para sultan dan raja bersaing atau bekerja sama. Para tokoh melayani mereka; kesetiaanmu berarti."],
+        ["Prinsip nyata", "Sebuah gerbang baru terbuka jika dua pertiga geng membubuhkan segelnya, persis seperti finalitas di ToyChain."]
+      ],
+      "flow": {
+        "nodes": ["Gengmu", "Sinergi", "Tantangan", "Dunia terbuka", "Klan"],
+        "steps": [
+          ["Menggabungkan", "Sifat, kemampuan, dan item para anggota saling menguatkan."],
+          ["Menuntaskan tantangan", "Geng menghadapi sebuah tugas bersama-sama."],
+          ["Bersama yang lain", "Kerja sama dengan pemain lain di dunia terbuka."],
+          ["Naik level", "Geng menjadi lebih kuat."],
+          ["Memilih klan", "Kamu mengikatkan diri pada salah satu dari lima klan. Mereka bersaing atau bekerja sama."]
+        ]
+      }
+    },
+    "salon": {
+      "t": "Ruang permainan",
+      "u": "Tersembunyi di dalam gim, penuh kartu.",
+      "rows": [
+        ["Permainan", "Texas Hold’em dan Omaha 4 kartu dengan batas."],
+        ["Format", "Permainan uang dan turnamen."],
+        ["Taruhan", "Dimainkan dengan dukat dari gim. Taruhan dengan ToyCoin baru ada jika pemeriksaan hukum mengizinkannya."],
+        ["Minigim", "20 minigim plus misi dan level bonus."]
+      ],
+      "flow": {
+        "nodes": ["Pemain", "Ruang permainan", "Meja", "Taruhan"],
+        "steps": [
+          ["Masuk", "Ruang permainan adalah bangunan tersembunyi di dalam gim."],
+          ["Memilih permainan", "Texas Hold’em atau Omaha 4 kartu dengan batas, sebagai permainan uang atau turnamen."],
+          ["Taruhan", "Kamu bertaruh dengan dukat. Tidak ada taruhan uang sungguhan tanpa pemeriksaan hukum."]
+        ]
+      }
+    },
+    "toypay": {
+      "t": "TOYPAY",
+      "u": "Dompet untuk ToyVerse sekaligus node ToyChain.",
+      "cards": [
+        ["Platform", "Android, Windows, Linux, dan Raspberry Pi, juga di perangkat lama."],
+        ["Node", "Kamu memilih tingkat. Perhitungan hanya berjalan saat diisi daya, terhubung Wi-Fi, dan suhu normal."],
+        ["Pembayaran offline", "Terenkripsi lewat QR, NFC, atau Bluetooth, juga tanpa jaringan."],
+        ["Akun bisnis", "Dengan fungsi kasir untuk pedagang."],
+        ["Keamanan", "Pratinjau sebelum setiap tanda tangan, perlindungan dari jebakan alamat, daftar peringatan phishing, dompet perangkat keras."],
+        ["Bahasa", "45 bahasa dan empat mode, dari pemula hingga ahli."]
+      ],
+      "toWallet": "Hubungkan ke testnet",
+      "toDownload": "Unduh",
+      "cardFront": ["TOYPAY", "ToyChain · Testnet", "Ketuk untuk membalik"],
+      "cardBack": ["Pembayaran offline", "Terenkripsi dari perangkat ke perangkat", "Pratinjau sebelum setiap tanda tangan"],
+      "cardLabel": "Balik kartu",
+      "cardTitle": "Kartumu untuk disentuh",
+      "flow": {
+        "nodes": ["Kasir toko", "Dompetmu", "Pratinjau", "Jaringan", "Akun bisnis"],
+        "steps": [
+          ["Kirim jumlah", "Kasir mengirim jumlah sebagai permintaan pembayaran ke dompetmu."],
+          ["Periksa", "Sebelum menandatangani, dompet menunjukkan dengan tepat apa yang akan terjadi."],
+          ["Bayar", "Pembayaran masuk ke jaringan dan final setelah satu blok."],
+          ["Kredit", "Akun bisnis menerima konfirmasi."],
+          ["Offline", "Tanpa jaringan, pembayaran terenkripsi langsung berpindah dari perangkat ke perangkat."]
+        ]
+      }
+    },
+    "toycoin": {
+      "t": "TOY",
+      "u": "Mata uang ToyChain, dengan aturan yang sama untuk semua.",
+      "rows": [
+        ["Jumlah", "Paling banyak 100.000.000 TOY, tidak pernah lebih. Batas atas tertulis dalam konstitusi ToyChain."],
+        ["Peluncuran adil", "Blok pertama tidak berisi satu TOY pun. Tanpa cadangan, tanpa prapenjualan, tanpa jatah tim."],
+        ["Asal-usul", "Semua TOY tercipta sedikit demi sedikit melalui kerja di jaringan: epoch pertama 50.500 TOY, tahun pertama sekitar 16,8 juta, waktu paruh sekitar 3,76 tahun, sekitar 99 % setelah 25 tahun."],
+        ["Pembagian", "50 % untuk semua yang menandatangani blok, 40 % untuk lotre kerja, 10 % ke dana pengembalian untuk transaksi gratis."],
+        ["Tidak pernah dibakar", "Di ToyChain, tidak ada TOY yang pernah dimusnahkan, dan akun tidak pernah hilang."],
+        ["Teknik", "18 desimal, alamat seperti Ethereum. Chain ID testnet 7630714; mainnet 7630713 baru setelah audit."]
+      ],
+      "chartTitle": "TOY yang diterbitkan dari tahun ke tahun",
+      "chartYear": "Tahun {y}",
+      "chartLabel": "Tahun {y}: sekitar {m} juta TOY diterbitkan (rencana dengan faktor 1)",
+      "chartAxis": "juta TOY",
+      "coinTitle": "Koin dalam 3D",
+      "coinTurn": "Putar koin",
+      "warnTitle": "Perhatian: token ToyCoin lama",
+      "warnText": "Di Polygon dan Ethereum ada token lama bernama ToyCoin. Token itu <b>bukan TOY ToyChain</b>, tidak ditukar, dan tidak dijembatani. Dompet dan ToyScan menandainya dengan “Bukan TOY ToyChain, tidak dapat ditukar”. Jangan membelinya dengan harapan akan ditukar.",
+      "warnPolygon": "Polygon",
+      "warnEthereum": "Ethereum",
+      "warnLink": "Lihat di penjelajah"
+    },
+    "wallet": {
+      "t": "Hubungkan ke testnet",
+      "u": "Begitu testnet publik berjalan, kamu bisa menambahkannya di sini dengan satu klik.",
+      "btn": "Tambahkan testnet · hadir bersama tonggak M10",
+      "facts": [
+        ["Jaringan", "ToyChain Testnet"],
+        ["Chain ID", "7630714"],
+        ["Simbol", "TOY, 18 desimal"],
+        ["Alamat", "Alamat Ethereum dan frasa pemulihan yang biasa kamu pakai juga berfungsi di sini."]
+      ],
+      "text": "Penambahan berfungsi dengan dompet apa pun yang dapat menambahkan jaringan sesuai EIP-3085, misalnya TOYPAY atau MetaMask. Halaman ini tidak membaca apa pun dan tidak dapat mengirim apa pun. TOY testnet tidak bernilai dan tidak akan pernah dipindahkan ke mainnet.",
+      "safety": "Halaman ini tidak akan pernah meminta frasa pemulihanmu. Siapa pun yang memintanya ingin menipumu.",
+      "flow": {
+        "nodes": ["Halaman ini", "Dompetmu", "Testnet ToyChain", "TOY testnet"],
+        "steps": [
+          ["Mengusulkan", "Halaman mengusulkan jaringan dengan nama, Chain ID, dan titik akses."],
+          ["Mengonfirmasi", "Dompetmu menampilkan data dan kamu mengonfirmasi. Kunci tidak pernah meninggalkan perangkatmu."],
+          ["Ikut serta", "Di testnet, perangkatmu menghitung tiket untuk lotre kerja atau mengambil TOY uji dari keran."],
+          ["Mencoba", "Dengan TOY testnet, kamu mencoba transfer, kuota gratis, dan tingkat tanpa risiko."]
+        ]
+      }
+    },
+    "toycash": {
+      "t": "ToyCash",
+      "u": "Rasa uang tunai di internet, dijamin dengan euro.",
+      "rows": [
+        ["Prinsip", "Stablecoin euro. Kepemilikan dan jumlah hanya kamu yang melihatnya, di dompetmu. ToyChain hanya mengesahkan checksum, tanpa jumlah dan tanpa nama."],
+        ["Jaminan", "Cadangan euro, awalnya hanya euro. Penerbit sendiri, kemudian beberapa penjaga bersama-sama."],
+        ["Permulaan", "Pertama prototipe dengan prinsip eCash memakai euro uji, kemudian zk-notes."],
+        ["Voucher", "Voucher multi-guna, grup, dan atas tunjuk, secara bertahap."],
+        ["Pembelanjaan ganda", "Tenggat penarikan kembali, denda penipuan, dan reservasi, secara bertahap."],
+        ["Status", "Konsep. Euro sungguhan baru setelah audit dan pemeriksaan hukum."]
+      ],
+      "toOffline": "Coba batas offline",
+      "flow": {
+        "nodes": ["Cadangan euro", "Penerbit", "Dompet A", "Dompet B", "ToyChain"],
+        "steps": [
+          ["Jaminan", "Euro disiapkan sebagai jaminan."],
+          ["Menerbitkan", "Dompet A menerima uang kertas terenkripsi."],
+          ["Meneruskan", "A meneruskan uang kertas ke B, juga secara offline."],
+          ["Menukarkan", "B menukarkannya ke penerbit dengan uang kertas baru. Penerbit memeriksa bahwa tidak ada uang kertas yang dipakai dua kali."],
+          ["Mengesahkan", "Setiap epoch, penerbit menambatkan checksum daftarnya di ToyChain. Dengan begitu tidak ada yang bisa diubah diam-diam."]
+        ]
+      }
+    },
+    "offline": {
+      "t": "Batas offline",
+      "u": "Batasnya bertambah perlahan seiring pemakaianmu.",
+      "tableHead": ["Tingkat", "Batas", "Syarat"],
+      "steps": [
+        ["1", "20 €", "Awal"],
+        ["2", "50 €", "14 hari dan 10 pembayaran"],
+        ["3", "100 €", "60 hari dan 40 pembayaran"],
+        ["4", "250 €", "180 hari dan 100 pembayaran, hanya dengan kunci yang terikat perangkat"],
+        ["5", "500 €", "365 hari dan 250 pembayaran, hanya dengan kunci yang terikat perangkat"]
+      ],
+      "text": "Di dalam tingkat yang sudah terbuka, kamu memilih batasmu sendiri. Batas itu sekaligus jaminan: siapa pun yang membelanjakan dua kali secara offline kehilangannya untuk pihak yang dirugikan. Nilai tingkat ini masih berupa usulan."
+    },
+    "toychain": {
+      "t": "ToyChain",
+      "u": "Ramping seperti Mina, alamat seperti Ethereum.",
+      "rows": [
+        ["Ukuran", "Setiap node standar menyimpan paling banyak 256 MB."],
+        ["Perangkat", "Berjalan di perangkat Android lama, Raspberry Pi, Linux, dan Windows."],
+        ["Alamat", "Alamat yang sama dan 12 atau 24 kata yang sama seperti di Ethereum."],
+        ["Ikut serta", "Tingkat 0 tidak memerlukan saldo: perangkatmu menghitung tiket untuk lotre kerja. Dengan stake 10, 100, atau 1.000 TOY, kamu menandatangani, menyimpan, atau memvalidasi."],
+        ["Konsensus", "Komite hingga 128 anggota menandatangani setiap blok. Mulai dua pertiga, blok final; kira-kira satu blok per menit."],
+        ["Akun", "Akun tidak pernah hilang. Akun yang lama tidak dipakai akan tidur dan bisa dibangunkan kapan saja."],
+        ["Hanya TOY", "Tanpa token, tanpa NFT, tanpa kontrak pintar di ToyChain. Setiap fungsi tertanam secara tetap."],
+        ["Keamanan", "Hanya metode dan pustaka yang teruji. Kunci tambahan pasca-kuantum (ML-DSA) direncanakan untuk tonggak M13."]
+      ],
+      "toMint": "Simulasikan pencetakan",
+      "chainTitle": "Rantai dalam 3D",
+      "chainAdd": "Tambah blok",
+      "chainHint": "Gerakkan penunjuk atau jari di atas adegan untuk memutarnya. Kubus-kubus itu adalah blok contoh.",
+      "flow": {
+        "nodes": ["Dompet", "Kolam", "Komite", "Blok", "Rantai"],
+        "steps": [
+          ["Mengirim", "Transaksimu masuk ke kolam."],
+          ["Mengusulkan", "Anggota komite yang dipilih secara acak menyusun blok."],
+          ["Menandatangani", "Komite menandatangani. Mulai dua pertiga, blok menjadi final."],
+          ["Menyambung", "Node menyimpan status dan jendela pendek, paling banyak 256 MB."],
+          ["Memberi imbalan", "TOY baru diberikan kepada penanda tangan, lotre kerja, dan dana pengembalian."]
+        ]
+      }
+    },
+    "mint": {
+      "t": "Simulasi pencetakan",
+      "u": "Kirim perangkat ke jaringan dan saksikan blok tercipta.",
+      "text": "Sederhananya: kerja dan tanda tangan berjalan di ban menuju kolam. Saat kolam penuh atau sekitar satu menit berlalu (di sini dipercepat), sebuah blok tercipta. Pada epoch pertama, setiap blok menambah sekitar 35 TOY baru: 50 % untuk penanda tangan, 40 % untuk lotre kerja, 10 % untuk dana pengembalian."
+    },
+    "tx": {
+      "t": "Transaksi",
+      "u": "10 hingga 100 transaksi gratis per akun per hari.",
+      "text": "Di atas kuota, kamu membayar biaya kecil atau menghitung tiket ToyWork. Biaya berlipat dua untuk setiap 10 transaksi tambahan di blok yang sama, paling tinggi 1.024 kali lipat. Biaya dibagi 40 % untuk peserta aktif, 40 % ke dana pengembalian, dan 20 % untuk pengusul blok."
+    },
+    "toyscan": {
+      "t": "ToyScan",
+      "u": "Lampu hijau jika semua aturan dipatuhi.",
+      "cards": [
+        ["Batas atas", "Tidak pernah lebih dari 100.000.000 TOY. Di setiap blok, jumlah semua saldo sama dengan jumlah semua emisi."],
+        ["Peluncuran adil", "Blok pertama berisi 0 TOY. Setiap TOY dapat ditelusuri ke suatu emisi."],
+        ["Emisi", "Setiap epoch dihitung ulang sesuai rumus."],
+        ["Rantai lain", "Menampilkan saldo alamat yang sama di rantai lain, hanya baca. Token ToyCoin lama ditandai “bukan TOY ToyChain”."]
+      ],
+      "flow": {
+        "nodes": ["ToyChain", "Node arsip", "Rantai lain", "ToyScan", "Lampu lalu lintas"],
+        "steps": [
+          ["Membaca data", "ToyScan membaca pasokan, epoch, dan blok ToyChain."],
+          ["Menghitung ulang", "Node arsip menjumlahkan sendiri semua saldo."],
+          ["Menampilkan", "Saldo alamat yang sama di rantai lain hanya muncul sebagai informasi."],
+          ["Lampu lalu lintas", "Hijau jika semuanya cocok. Kuning jika ada kejanggalan, merah jika ada pelanggaran aturan, disertai bukti."]
+        ]
+      }
+    },
+    "ketten": {
+      "t": "Rantai lain",
+      "u": "Alamat yang sama di mana-mana, tanpa jembatan.",
+      "rows": [
+        ["Alamat yang sama", "Alamat ToyChain-mu juga berfungsi di Ethereum, Polygon, Arbitrum, Base, dan BNB Chain. TOYPAY menampilkan saldo, token, dan NFT di sana."],
+        ["Tukar tanpa jembatan", "Pertukaran atomik dengan kunci waktu hash: kedua pihak mendapat uangnya, atau tidak ada yang mendapat. Direncanakan untuk tonggak M12."],
+        ["Token ToyCoin lama", "Token bernama ToyCoin di Polygon dan Ethereum bukan TOY ToyChain dan tidak dapat ditukar."],
+        ["Jembatan", "Dalam cakupan saat ini tidak ada jembatan. Jika nanti ada, diperlukan keputusan tersendiri, audit, dan pemeriksaan hukum."]
+      ]
+    },
+    "roadmap": {
+      "t": "Peta jalan",
+      "u": "Urutan lebih penting daripada tanggal.",
+      "progress": "ToyChain fase 1: {done} dari {total} tonggak selesai (per {date})",
+      "milestones": {
+        "M1": "Tipe dasar dan emisi",
+        "M2": "Kriptografi dan alamat",
+        "M3": "Status, transaksi, biaya",
+        "M4": "Blok dan konsensus",
+        "M5": "Penyimpanan dan 256 MB",
+        "M6": "Jaringan",
+        "M7": "Antarmuka (RPC)",
+        "M8": "Dompet dan baris perintah",
+        "M9": "Platform dan mode energi",
+        "M10": "Testnet publik",
+        "M11": "ToyScan",
+        "M12": "Perlindungan akun, pertukaran",
+        "M13": "Nama, kunci pasca-kuantum"
+      },
+      "cards": [
+        ["1 · Inti ToyChain", "Node dalam Rust: emisi, kriptografi, transaksi, dan biaya sudah selesai; konsensus menyusul.", "inWork"],
+        ["2 · TOYPAY sebagai node", "Dompet dengan tingkat dan mode energi di empat platform.", "planned"],
+        ["3 · Testnet publik", "Mula-mula lokal, lalu publik, dengan uji beban.", "planned"],
+        ["4 · ToyScan", "Penjelajah dengan lampu peringatan dan antarmuka terbuka.", "planned"],
+        ["5 · TOYQUEST", "Dunia belajar dan item di Polygon, terpisah dari inti ToyChain.", "inDev"],
+        ["6 · ToyCash", "Prototipe dengan euro uji, lalu dompet offline dan zk-notes.", "concept"],
+        ["7 · Mainnet", "Hanya setelah audit eksternal, uji beban, dan pemeriksaan hukum, diumumkan secara publik sebelumnya.", "afterReview"]
+      ],
+      "flow": {
+        "nodes": ["Inti ToyChain", "TOYPAY", "Testnet", "ToyScan", "Mainnet"],
+        "steps": [
+          ["Inti dulu", "Emisi, kriptografi, dan transaksi sudah dibangun dan diuji."],
+          ["Dompet sebagai node", "TOYPAY membawa rantai ke ponsel, PC, dan Raspberry Pi."],
+          ["Testnet", "Mula-mula lokal, lalu publik, dengan uji beban dan fuzzing."],
+          ["Mainnet hanya setelah pemeriksaan", "Audit, uji beban, dan pemeriksaan hukum wajib dilakukan. TOY testnet tidak pernah dipindahkan."]
+        ]
+      }
+    },
+    "download": {
+      "t": "Unduhan",
+      "u": "Berkas akan muncul di sini begitu siap.",
+      "items": [
+        "TOYPAY untuk Android, Windows, Linux, dan Raspberry Pi · segera",
+        "Node ToyChain · hadir bersama testnet",
+        "Whitepaper · hadir saat kode sumber dipublikasikan"
+      ],
+      "until": "Sampai saat itu: <a href=\"{roadmap}\">lihat peta jalan</a> atau <a href=\"{toycoin}\">pelajari lebih lanjut tentang TOY</a>."
+    },
+    "community": {
+      "t": "Komunitas",
+      "u": "Sirkulasi ekonomi yang ditopang bersama.",
+      "cards": [
+        ["Pedagang", "Pedagang dengan akun bisnis, kasir, voucher, dan poin loyalitas."],
+        ["Mentor", "Pemain berpengalaman membantu pendatang baru dan mendapat segel pengetahuan."],
+        ["Node komunitas", "Siapa pun yang menyediakan perangkat memperkuat jaringan. Paket Raspberry Pi dan peta node sedang direncanakan."],
+        ["Dasbor", "ToyScan menampilkan sirkulasi ekonomi dengan angka nyata, tanpa prakiraan."],
+        ["Ikut menentukan", "Akan hadir nanti. Bahkan saat itu, tidak ada yang bisa mengubah konstitusi ToyChain."]
+      ],
+      "langTitle": "45 bahasa",
+      "langText": "Dompet, TOYPAY, dan ToyScan berbicara dalam 45 bahasa yang sama. Situs ini kini tersedia dalam {n} di antaranya:"
+    },
+    "kontakt": {
+      "t": "Bergabung dan kontak",
+      "u": "Beri tahu kami apa yang kamu butuhkan.",
+      "cards": [
+        ["Testnet", "Tambahkan testnet ke dompetmu begitu berjalan.", "Ke testnet"],
+        ["Unduhan", "Aplikasi dan node akan muncul di sini begitu siap.", "Ke unduhan"],
+        ["Bergabung", "Sebagai penguji, pedagang, atau mentor. Tulis singkat kepada kami tentang keperluanmu.", ""]
+      ],
+      "formTitle": "Tulis kepada kami",
+      "topic": "Topik",
+      "topics": ["Pertanyaan tentang proyek", "Ikut sebagai penguji", "Menjadi pedagang", "Pers"],
+      "name": "Namamu",
+      "message": "Pesan",
+      "send": "Siapkan email",
+      "noMail": "Alamat kontak belum diatur (src/data/site.json).",
+      "opened": "Program email-mu akan terbuka. Halaman ini tidak menyimpan apa pun.",
+      "security": "Mohon jangan laporkan celah keamanan melalui formulir ini, tetapi secara rahasia ke alamat di halaman informasi hukum, dengan subjek “Keamanan”."
+    },
+    "impressum": {
+      "t": "Informasi hukum",
+      "u": "Identitas penyedia menurut § 5 DDG (hukum Jerman).",
+      "template": "Ini adalah templat. Masukkan data sebenarnya di src/data/site.json dan minta pemeriksaan hukum.",
+      "h1": "Keterangan menurut § 5 DDG",
+      "h2": "Kontak",
+      "h3": "Registrasi dan pajak",
+      "h4": "Penanggung jawab konten",
+      "h5": "Catatan",
+      "labels": {
+        "name": "nama atau perusahaan dengan bentuk badan hukum",
+        "street": "jalan dan nomor rumah",
+        "city": "kode pos dan kota",
+        "email": "alamat email",
+        "phone": "nomor telepon",
+        "register": "registrasi dan nomor, jika ada",
+        "vatId": "nomor PPN, jika ada"
+      },
+      "mail": "Email",
+      "phone": "Telepon",
+      "register": "Entri registrasi",
+      "vat": "Nomor PPN",
+      "responsible": "Menurut § 18 ayat 2 MStV: {name}, alamat seperti di atas.",
+      "note": "ToyVerse adalah proyek yang sedang dibangun. Informasi tentang TOY bukan nasihat investasi."
+    },
+    "datenschutz": {
+      "t": "Privasi",
+      "u": "Apa yang terjadi pada datamu: sesedikit mungkin.",
+      "template": "Ini adalah templat. Cocok untuk situs statis tanpa cookie dan tanpa pelacakan. Lengkapi penyedia hosting dan minta pemeriksaan hukum sebelum dipublikasikan.",
+      "sections": [
+        ["Pengendali", "{name}, {street}, {city}, email: {email}."],
+        ["Hosting dan log server", "Situs ini di-hosting oleh {host}. Saat dikunjungi, server memproses data yang secara teknis diperlukan seperti alamat IP, waktu, dan halaman yang dibuka, untuk menyajikan situs dan melindunginya dari serangan (Pasal 6 ayat 1 huruf f GDPR)."],
+        ["Tanpa cookie, tanpa pelacakan", "Situs ini tidak memasang cookie, tidak memakai alat analitik, dan tidak memuat konten pihak ketiga. Fon tersimpan di server kami sendiri."],
+        ["Di peramban-mu", "Simulasi hanya berjalan di peramban-mu. Tidak ada yang dikirim kepada kami."],
+        ["Kontak", "Formulir kontak hanya membuka program email-mu. Kami baru menerima email setelah kamu mengirimnya dan hanya memakainya untuk membalas (Pasal 6 ayat 1 huruf b dan f GDPR)."],
+        ["Tautan ke situs lain", "Tautan, misalnya ke penjelajah blok, mengarah ke penyedia lain. Di sana berlaku pemberitahuan privasi mereka."],
+        ["Hak-hakmu", "Kamu berhak atas akses, perbaikan, penghapusan, pembatasan, portabilitas data, dan keberatan, serta berhak mengadu ke otoritas pengawas perlindungan data."]
+      ]
+    }
+  },
+  "demo": {
+    "zeit": {
+      "levels": [
+        ["Bengkel kuno", "Ahli hitung menggeser manik-manik dan memeriksa setiap tanda tangan dengan tangan.", "tenaga otot", "Sempoa"],
+        ["Tenaga dan penggabungan", "Kincir air menggerakkan palu, dan banyak segel menjadi satu.", "tenaga air", "Kincir air dan palu segel"],
+        ["Waktu dan pengukuran", "Jam air menentukan irama, seperti waktu blok sekitar satu menit.", "air dan gravitasi", "Jam air"],
+        ["Arsip dan pencetakan · pandangan ke zaman baru", "Mesin press koin kuno menjadi press uap: mencetak mengikuti irama mesin.", "uap dan batu bara", "Mesin uap"],
+        ["Automaton dan bukti · pandangan ke masa kini", "Automaton Heron mengikuti aturan tetap. Kini banyak inti memeriksa tanda tangan secara bersamaan.", "beberapa watt", "Cip sembilan inti"]
+      ],
+      "level": "Level {n}",
+      "power": "Daya",
+      "start": "Mulai",
+      "submit": "Kirim tanda tangan",
+      "submit10": "10 sekaligus",
+      "queue": "Antrean",
+      "done": "Diproses",
+      "rate": "Contoh: {r} tanda tangan per menit",
+      "drive": "Penggerak",
+      "machine": "Mesin dari level yang dipilih"
+    },
+    "gears": {
+      "title": "Mekanik untuk diputar",
+      "crank": "Engkol",
+      "label": "Empat roda gigi yang saling mengait",
+      "text": "Roda gigi 4 berputar {x} kali lebih cepat daripada engkol, ke arah berlawanan."
+    },
+    "npc": {
+      "title": "Temui para tokoh",
+      "intro": "Ketuk sebuah tokoh dan ajukan pertanyaan. Dialognya hanyalah contoh.",
+      "hello": "Selamat datang! Apa yang ingin kamu ketahui?",
+      "names": ["Pedagang", "Penjaga", "Cendekiawan", "Sultan", "Pemimpin kafilah"],
+      "qa": [
+        [
+          ["Berapa harga sebuah item?", "Item didapat di dalam gim. Hanya yang ingin mencetaknya sebagai NFT membayar biaya kecil untuk ongkos jaringan."],
+          ["Bisakah aku berdagang denganmu?", "Semua bangunan dan barang bisa diperdagangkan. Dengan akun bisnis, kamu bahkan bisa menerima pembayaran di kasir."],
+          ["Apa itu TOY?", "Mata uang ToyChain milik sendiri. Seluruh 100 juta tercipta sedikit demi sedikit melalui kerja di jaringan. Tidak ada cadangan."]
+        ],
+        [
+          ["Bagaimana menemukan ruang permainan?", "Bangunannya tersembunyi. Siapa yang berjalan di kota dengan cermat akan menemukannya."],
+          ["Siapa yang boleh ikut bermain?", "Offline sendirian, online bersama orang lain, bersama-sama atau saling melawan. Menonton bisa di mode penonton."],
+          ["Apakah ini aman?", "Jangan pernah berikan frasa pemulihanmu kepada siapa pun, termasuk aku. Siapa pun yang memintanya adalah penipu."]
+        ],
+        [
+          ["Bagaimana sebuah blok tercipta?", "Transaksi terkumpul. Kira-kira setiap menit, seorang anggota komite menyusun blok dan yang lain menandatangani. Mulai dua pertiga, blok final."],
+          ["Mengapa rantainya tetap kecil?", "Setiap node menyimpan paling banyak 256 MB. Akun yang lama tidak dipakai akan tidur dan bisa dibangunkan kapan saja. Tidak ada yang hilang."],
+          ["Apa itu ToyCash?", "Uang tunai euro digital yang jumlahnya hanya kamu yang melihat. Dirancang agar juga berfungsi secara offline."]
+        ],
+        [
+          ["Apa untungnya bergabung dengan klan?", "Kesetiaan diberi hadiah. Lima klan bersaing atau bekerja sama, dan tokoh-tokohnya mengabdi kepada mereka."],
+          ["Ada berapa klan?", "Lima sultan, raja, dan klan, sesuai dengan lima peta."],
+          ["Apa itu NFT pahlawan?", "Nanti kamu bisa mencetak pahlawanmu sebagai NFT. Biayanya menutup ongkos jaringan; detailnya masih belum ditentukan."]
+        ],
+        [
+          ["Bagaimana cara bepergian bersama?", "Sebagai geng atau bersama pemain lain di dunia terbuka. Sifat, kemampuan, dan item saling melengkapi."],
+          ["Apa itu perjalanan waktu?", "Lima level dari zaman kuno hingga modern menampilkan proses ToyChain dengan metode yang makin baik."],
+          ["Di mana aku bisa berlatih?", "Di level latihan. Selain itu ada 20 minigim, misi, dan level bonus."]
+        ]
+      ],
+      "quotes": ["“", "”"]
+    },
+    "poker": {
+      "title": "Poker di meja",
+      "modes": ["Texas Hold’em", "Omaha 4 kartu dengan batas"],
+      "buyin": "Modal masuk: {n} dukat",
+      "pot": "Pot",
+      "stack": "Tumpukanmu",
+      "net": "Selisih",
+      "fold": "Lipat",
+      "check": "Cek",
+      "call": "Ikut ({n})",
+      "bet": "Pasang ({n})",
+      "raise": "Naikkan ({n})",
+      "nextHand": "Tangan berikutnya",
+      "you": "Kamu",
+      "opp": ["Pedagang", "Sultan"],
+      "hands": ["Kartu tinggi", "Satu pasang", "Dua pasang", "Three of a kind", "Straight", "Flush", "Full house", "Four of a kind", "Straight flush"],
+      "ruleHoldem": "Hold’em: kamu memakai 5 kartu terbaik dari 2 kartumu dan kartu di meja.",
+      "ruleOmaha": "Omaha: kamu harus memakai tepat 2 dari 4 kartumu dan 3 dari meja.",
+      "start": "Tangan baru. Semua membayar ante {n}. Pasang, ikut, atau lipat.",
+      "newCards": "{street}: ada kartu baru di meja.",
+      "allFold": "Semua yang lain melipat. Kamu menang {n} dukat.",
+      "youFold": "Kamu melipat. ",
+      "showdown": "Buka kartu: {list}. Pemenang: {win} ({n} dukat).",
+      "broke": "Tumpukanmu habis. Kamu mendapat dukat baru untuk berlatih.",
+      "foot": "Poker dengan batas dan taruhan tetap: taruhan kecil sebelum flop dan di flop, dua kali lipat di turn dan river. Lawannya adalah tokoh contoh dengan strategi sederhana. Hanya dimainkan dengan dukat.",
+      "unit": "dukat",
+      "npcFold": "melipat",
+      "npcCall": "ikut",
+      "npcBet": "memasang {n}",
+      "npcCheck": "cek",
+      "streets": ["Flop", "Turn", "River"],
+      "best": "Kombinasi terbaikmu: {h}",
+      "royal": "Royal flush",
+      "and": " dan "
+    },
+    "mint": {
+      "pool": "Kolam",
+      "chain": "Rantai",
+      "start": "Kirim perangkat ke jaringan dan saksikan kolam terisi.",
+      "addPhone": "+ Ponsel",
+      "addPi": "+ Raspberry Pi",
+      "addPc": "+ PC",
+      "sign": "Kirim tanda tangan",
+      "spam": "Kirim spam",
+      "reset": "Atur ulang",
+      "blocks": "Blok",
+      "minted": "Baru diterbitkan",
+      "devices": "Perangkat",
+      "full": "Lebih dari 8 perangkat tidak muat di meja.",
+      "phone": "Ponsel menghitung pelan, tetapi setiap perangkat berarti. Tanpa saldo, ia ikut serta dalam lotre kerja.",
+      "pi": "Raspberry Pi bekerja stabil dan hemat.",
+      "pc": "PC mengisi kolam paling cepat. Namun daya hitung saja tidak berarti apa-apa dalam konsensus.",
+      "own": "Kamu sendiri menyumbang satu tanda tangan.",
+      "spamMsg": "Spam hampir tidak mengisi kolam, tetapi memerlukan biaya atau kerja hitung.",
+      "block": "Blok {k} final: {n} kontribusi, {t} TOY baru (konsensus {a}, kerja {b}, dana pengembalian {c}).",
+      "resetMsg": "Sudah diatur ulang.",
+      "label": "Mesin pencetak"
+    },
+    "tx": {
+      "load": "Beban jaringan: {n} %",
+      "free": "Gratis: {a} dari {b}",
+      "send": "Kirim",
+      "round": "Epoch baru",
+      "sentFree": "Terkirim, gratis.",
+      "sentFee": "Kuota habis: biaya sekitar {fee} TOY (faktor {f}), atau tiket ToyWork membuatnya gratis.",
+      "formula": "Kuota = max(10, 100 × (1 − beban))"
+    },
+    "offline": {
+      "you": "Kamu",
+      "shop": "Pedagang",
+      "amount": "Jumlah: {n} €",
+      "pay": "Bayar offline",
+      "again": "Belanjakan uang kertas yang sama lagi",
+      "sync": "Online dan sinkronkan",
+      "month": "Pakai selama sebulan",
+      "limit": "Batas offline: {used} dari {cap} € · tingkat {s} · {days} hari, {n} pembayaran",
+      "freeAmt": "Tersisa: {n} €",
+      "over": "Batas tercapai: {n} € tidak muat lagi. Online-lah agar batasmu kembali bebas.",
+      "paid": "{n} € dipindahkan terenkripsi dari perangkat ke perangkat, sama sekali tanpa jaringan.",
+      "first": "Bayar sekali secara offline dulu.",
+      "double": "Uang kertas yang sama keluar untuk kedua kalinya. Saat offline, ini belum ketahuan.",
+      "nothing": "Tidak ada yang perlu disinkronkan.",
+      "okNote": "Uang kertas {i} ({n} €) dikonfirmasi",
+      "badNote": "Uang kertas {i} ({n} €) ganda: ditolak",
+      "caught": "Pembelanjaan ganda terdeteksi: penerbit menolak uang kertas kedua dan ToyChain membuatnya dapat diperiksa. Siapa pun yang membelanjakan dua kali kehilangan jaminannya untuk pihak yang dirugikan dan diturunkan tingkatnya.",
+      "synced": "{n} pembayaran dikonfirmasi. Batas offline-mu bebas lagi.",
+      "monthMsg": "Pemakaian sebulan: 30 hari dan 60 pembayaran. Batasmu naik bertahap.",
+      "label": "Dua ponsel bertukar pembayaran terenkripsi secara offline"
+    },
+    "toyscan": {
+      "choose": "Pilih skenario:",
+      "minted": "Diterbitkan",
+      "cap": "Batas atas",
+      "mio": "{n} juta TOY",
+      "bigRed": "Lampu merah besar: batas atas, peluncuran adil, atau konstitusi dilanggar.",
+      "criteria": [
+        "A1 Batas atas dan jumlah semua saldo",
+        "A2 Peluncuran adil: setiap TOY dari suatu emisi",
+        "A3 Emisi sesuai rumus",
+        "A4 Epoch dan waktu",
+        "A5 Konstitusi tidak berubah",
+        "A6 Konsensus sehat",
+        "A7 Fase awal sesuai rencana",
+        "A8 Pemblokiran hanya dengan bukti",
+        "A9 Data terkini"
+      ],
+      "scenarios": [
+        ["Semua beres", "Semua kriteria terpenuhi", "Nilai contoh."],
+        ["Lebih dari 100 juta", "Merah: batas atas terlampaui", "Di sini lebih banyak TOY diterbitkan daripada yang diizinkan. Hal itu tidak boleh pernah terjadi."],
+        ["Saldo tanpa emisi", "Merah: peluncuran adil dilanggar", "Sebuah saldo tidak dapat ditelusuri ke emisi mana pun."],
+        ["Emisi mendahului rencana", "Kuning: perlu dipantau", "Penerbitan lebih dari 3 % di depan rencana. Bukan pelanggaran aturan, tetapi mencolok."],
+        ["Data usang", "Kuning: data tidak terkini", "Data terakhir lebih tua dari 10 menit atau dua sumber tidak sepakat."]
+      ]
+    },
+    "voucher": {
+      "title": "Coba voucher",
+      "examples": "Contoh:",
+      "presets": ["Hadiah untuk keluarga", "Promo di toko", "Kartu kantin"],
+      "own": "Atau buat sendiri: pilih jenis",
+      "types": {
+        "i": ["Atas tunjuk", "Voucher atas tunjuk", "Siapa pun yang memegangnya dapat menukarkannya. Pelanggan pertama mendapat jumlah penuh."],
+        "m": ["Multi-guna", "Voucher multi-guna", "Nilainya dibagi ke beberapa penukaran sampai habis."],
+        "g": ["Grup", "Voucher grup", "Hanya anggota terpilih yang dapat menukarkan, masing-masing tepat sekali dengan bagian yang sama."]
+      },
+      "value": "Nilai: {n} €",
+      "uses": "Penukaran: {n}",
+      "members": "Anggota grup:",
+      "create": "Buat voucher",
+      "serial": "Seri {s}",
+      "hint": "Setelah dibuat, ketuk seorang pelanggan agar ia menukarkannya.",
+      "redeemed": "Ditukar: {u} dari {n} · Sisa: {r} €",
+      "double": "Tukar dua kali (penipuan)",
+      "needTwo": "Pilih paling sedikit dua anggota.",
+      "first": "Buat voucher dulu.",
+      "created": "{type} dibuat: {v} €, {n} × {s} €.",
+      "shop": "Pedagang",
+      "welcome": "Selamat datang!",
+      "redeems": "{name} menukarkan",
+      "doneI": "Voucher atas tunjuk sudah ditukarkan.",
+      "doneM": "Semua {n} penukaran sudah terpakai.",
+      "notMember": "{name} bukan anggota grup.",
+      "already": "{name} sudah menukarkan bagiannya.",
+      "ok": "{name} menukarkan {n} €.",
+      "dblBoth": "Di sini kedua penukaran dihitung, karena voucher mengizinkan beberapa kali.",
+      "dblCaught": "Dua perangkat, satu uang kertas: penukaran kedua ditolak. Pembelanjaan ganda terdeteksi.",
+      "customers": ["Ali", "Leyla", "Omar", "Samira"],
+      "foot": "Skenario contoh. Penerbit mencatat status setiap voucher, ToyChain membuatnya dapat diperiksa. Karena itu salinan tidak ada gunanya.",
+      "thanks": "Terima kasih, beres!",
+      "sorry": "Maaf, tidak bisa.",
+      "rejected": " Penerbit menolak."
+    }
+  }
+}
