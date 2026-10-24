@@ -29,7 +29,8 @@
     "chooseLanguage": "Pilih bahasa",
     "redirect": "Ke beranda",
     "machineNote": "Terjemahan ini dibuat dengan AI dari bahasa Jerman dan belum diperiksa oleh penutur asli. Yang berlaku adalah",
-    "machineLink": "versi bahasa Jerman"
+    "machineLink": "versi bahasa Jerman",
+    "machineEnd": "."
   },
   "scenes": ["Kota di malam hari", "Kafilah", "Jaringan ToyChain", "Di ruang permainan", "Aula mesin"],
   "groups": {

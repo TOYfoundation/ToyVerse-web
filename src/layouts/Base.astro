@@ -15,6 +15,8 @@ interface Props {
 }
 const { lang, id } = Astro.props;
 const L = language(lang);
+// Chinese and Japanese text runs without spaces between words.
+const gap = ['Han', 'Japanisch'].includes(L.script) ? '' : ' ';
 const title = id === 'start' ? 'ToyVerse' : `${t(lang, `pages.${id}.t`)} · ToyVerse`;
 const description = id === 'start' ? t(lang, 'meta.description') : t(lang, `pages.${id}.u`);
 const hue = page(id).hue;
@@ -96,7 +98,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     <main id="inhalt">
       <div class="w">
         {lang !== SOURCE && (
-          <p class="mt">{t(lang, 'ui.machineNote')} <a href={href(SOURCE, id)} hreflang={SOURCE} lang={SOURCE}>{t(lang, 'ui.machineLink')}</a>.</p>
+          <p class="mt">{t(lang, 'ui.machineNote')}{gap}<a href={href(SOURCE, id)} hreflang={SOURCE} lang={SOURCE}>{t(lang, 'ui.machineLink')}</a>{t(lang, 'ui.machineEnd')}</p>
         )}
         <slot />
       </div>

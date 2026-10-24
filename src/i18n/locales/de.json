@@ -29,7 +29,8 @@
     "chooseLanguage": "Sprache wählen",
     "redirect": "Weiter zur Startseite",
     "machineNote": "Diese Übersetzung wurde mit KI aus dem Deutschen erstellt und noch nicht von Muttersprachlern geprüft. Maßgeblich ist die",
-    "machineLink": "deutsche Fassung"
+    "machineLink": "deutsche Fassung",
+    "machineEnd": "."
   },
   "scenes": [
     "Die Stadt bei Nacht",

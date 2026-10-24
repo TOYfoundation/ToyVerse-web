@@ -29,7 +29,8 @@
     "chooseLanguage": "Scegli la lingua",
     "redirect": "Vai alla pagina iniziale",
     "machineNote": "Questa traduzione è stata creata con l’IA a partire dal tedesco e non è ancora stata revisionata da madrelingua. Fa fede la",
-    "machineLink": "versione tedesca"
+    "machineLink": "versione tedesca",
+    "machineEnd": "."
   },
   "scenes": ["La città di notte", "La carovana", "La rete della ToyChain", "Nel salone da gioco", "La sala delle macchine"],
   "groups": {

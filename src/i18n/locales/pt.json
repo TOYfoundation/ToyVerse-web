@@ -29,7 +29,8 @@
     "chooseLanguage": "Escolher idioma",
     "redirect": "Ir para a página inicial",
     "machineNote": "Esta tradução foi feita com IA a partir do alemão e ainda não foi revisada por falantes nativos. A versão de referência é a",
-    "machineLink": "versão alemã"
+    "machineLink": "versão alemã",
+    "machineEnd": "."
   },
   "scenes": ["A cidade à noite", "A caravana", "A rede da ToyChain", "No salão de jogos", "O salão das máquinas"],
   "groups": {
