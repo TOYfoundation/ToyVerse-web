@@ -11,16 +11,36 @@ const steps = tv<string[][]>(lang, 'pages.offline.steps');
   <tbody>{steps.map((r, i) => <tr data-i={i}>{r.map((c) => <td>{c}</td>)}</tr>)}</tbody>
 </table>
 <div class="sim" id="off" data-t={JSON.stringify(T)}>
-  <svg id="os2" viewBox="0 0 360 200" role="img" aria-label={T.label} style="width:100%;height:auto">
-    <rect id="ch2" x="130" y="6" width="100" height="30" rx="8" fill="none" stroke="var(--acc)" stroke-width="2"></rect>
-    <text x="180" y="26" text-anchor="middle" font-size="12" fill="var(--ink)">ToyChain</text>
-    <path d="M60 60L140 36M300 60L220 36" stroke="var(--ln)" stroke-dasharray="3 5" fill="none"></path>
-    <rect x="14" y="60" width="80" height="130" rx="12" fill="var(--bg)" stroke="var(--ink)" stroke-width="2"></rect>
-    <rect x="266" y="60" width="80" height="130" rx="12" fill="var(--bg)" stroke="var(--ink)" stroke-width="2"></rect>
-    <text x="54" y="84" text-anchor="middle" font-size="11" fill="var(--ink)">{T.you}</text>
-    <text x="306" y="84" text-anchor="middle" font-size="11" fill="var(--ink)">{T.shop}</text>
-    <text id="t1" x="54" y="125" text-anchor="middle" font-size="12" font-weight="700" fill="var(--acc)"></text>
-    <text id="t2" x="306" y="125" text-anchor="middle" font-size="12" font-weight="700" fill="var(--acc)"></text>
+  <svg id="os2" viewBox="0 0 360 210" role="img" aria-label={T.label} style="width:100%;height:auto">
+    <defs>
+      <linearGradient id="scr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d2266"></stop><stop offset="1" stop-color="#0d1033"></stop></linearGradient>
+      <radialGradient id="cgl"><stop offset="0" stop-color="var(--acc)" stop-opacity=".45"></stop><stop offset="1" stop-color="var(--acc)" stop-opacity="0"></stop></radialGradient>
+    </defs>
+    <ellipse cx="180" cy="21" rx="70" ry="24" fill="url(#cgl)"></ellipse>
+    <rect id="ch2" x="130" y="6" width="100" height="30" rx="15" fill="var(--bg)" stroke="var(--acc)" stroke-width="2"></rect>
+    <text x="180" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">ToyChain</text>
+    <path d="M60 64L140 36M300 64L220 36" stroke="var(--ln)" stroke-dasharray="3 5" fill="none"></path>
+    <g id="pa" class="phone">
+      <rect x="14" y="62" width="80" height="140" rx="14" fill="#1b1f4a"></rect>
+      <rect x="19" y="70" width="70" height="124" rx="9" fill="url(#scr)"></rect>
+      <rect x="44" y="65" width="20" height="3" rx="1.5" fill="#000" opacity=".5"></rect>
+      <text x="54" y="88" text-anchor="middle" font-size="10" fill="#c9cdf5">{T.you}</text>
+      <circle cx="54" cy="130" r="24" fill="none" stroke="#2c3270" stroke-width="5"></circle>
+      <circle id="lr" cx="54" cy="130" r="24" fill="none" stroke="#3fd0c4" stroke-width="5" stroke-linecap="round" stroke-dasharray="0 151" transform="rotate(-90 54 130)" style="transition:stroke-dasharray .6s"></circle>
+      <text id="t1" x="54" y="178" text-anchor="middle" font-size="9" font-weight="700" fill="#fff"></text>
+      <text x="54" y="135" text-anchor="middle" font-size="13" font-weight="700" fill="#3fd0c4">€</text>
+    </g>
+    <g id="pb" class="phone">
+      <rect x="266" y="62" width="80" height="140" rx="14" fill="#1b1f4a"></rect>
+      <rect x="271" y="70" width="70" height="124" rx="9" fill="url(#scr)"></rect>
+      <rect x="296" y="65" width="20" height="3" rx="1.5" fill="#000" opacity=".5"></rect>
+      <text x="306" y="88" text-anchor="middle" font-size="10" fill="#c9cdf5">{T.shop}</text>
+      <text id="t2" x="306" y="134" text-anchor="middle" font-size="16" font-weight="700" fill="#f2b632"></text>
+    </g>
+    <g id="nfc" fill="none" stroke="#3fd0c4" stroke-width="2" stroke-linecap="round" opacity="0">
+      <path d="M112 106q8 14 0 28"></path><path d="M124 98q14 22 0 44"></path><path d="M136 90q20 30 0 60"></path>
+      <path d="M248 106q-8 14 0 28"></path><path d="M236 98q-14 22 0 44"></path><path d="M224 90q-20 30 0 60"></path>
+    </g>
     <path d="M96 120H264" stroke="var(--ln)" stroke-width="2" stroke-dasharray="2 6"></path>
   </svg>
   <label for="am" id="aml">{t(lang, 'demo.offline.amount', { n: 5 })}</label>

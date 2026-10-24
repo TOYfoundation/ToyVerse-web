@@ -6,6 +6,16 @@ import { setup, fill, num, mkn } from '../util.js';
 const $ = (id) => document.getElementById(id);
 const PER_BLOCK = 50500 / 1440;
 
+// Small device icons on the work bench (x, y is the top-left corner).
+const ICON = {
+  H: (x, y, c) =>
+    `<g class="dvc"><rect x="${x}" y="${y}" width="12" height="22" rx="3" fill="#1b1f4a" stroke="${c}" stroke-width="1.5"/><rect x="${x + 2}" y="${y + 3}" width="8" height="14" rx="1" fill="${c}" opacity=".85"/><circle cx="${x + 6}" cy="${y + 19.5}" r="1" fill="${c}"/></g>`,
+  P: (x, y, c) =>
+    `<g class="dvc"><rect x="${x - 2}" y="${y + 6}" width="18" height="15" rx="2" fill="#1f7a45" stroke="${c}" stroke-width="1.5"/><rect x="${x + 2}" y="${y + 9}" width="6" height="6" fill="#222"/><rect x="${x + 10}" y="${y + 9}" width="3" height="9" fill="#ccc"/><path d="M${x} ${y + 8}h14" stroke="${c}" stroke-dasharray="1 2"/></g>`,
+  C: (x, y, c) =>
+    `<g class="dvc"><rect x="${x - 3}" y="${y + 2}" width="20" height="14" rx="2" fill="#1b1f4a" stroke="${c}" stroke-width="1.5"/><rect x="${x - 1}" y="${y + 4}" width="16" height="10" fill="${c}" opacity=".8"/><path d="M${x + 7} ${y + 16}v4M${x + 2} ${y + 21}h10" stroke="${c}" stroke-width="2"/></g>`,
+};
+
 export function init() {
   const el = $('mint');
   if (!el) return;
@@ -16,6 +26,8 @@ export function init() {
   let time = 0;
   let blocks = 0;
   let parts = 0;
+  let shownDevices = -1;
+  let shownBlocks = -1;
   const W = { H: 3, P: 6, C: 12 };
   const PERIOD = { H: 2200, P: 1300, C: 700 };
   const COLOR = { H: '#3fd0c4', P: '#f2b632', C: '#e0883a' };
@@ -26,15 +38,23 @@ export function init() {
     const first = Math.max(1, blocks - 8);
     $('hl').setAttribute('y', 130 - h);
     $('hl').setAttribute('height', h);
+    $('hwv').setAttribute('transform', `translate(0 ${(130 - h - 4).toFixed(1)})`);
+    $('hwv').style.opacity = h > 1 ? '1' : '0';
     $('kb').textContent = blocks;
     $('km2').textContent = toy(blocks);
     $('kd').textContent = devices.length;
-    $('dv').innerHTML = devices
-      .map((q, i) => `<rect x="${4 + i * 18}" y="116" width="14" height="22" rx="3" fill="${COLOR[q.k]}"/><text x="${11 + i * 18}" y="131" text-anchor="middle" font-size="9" fill="#111">${q.k}</text>`)
-      .join('');
+    if (devices.length !== shownDevices) {
+      shownDevices = devices.length;
+      $('dv').innerHTML = devices.map((q, i) => ICON[q.k](8 + i * 20, 112, COLOR[q.k])).join('');
+    }
+    if (blocks === shownBlocks) return;
+    shownBlocks = blocks;
     let x = '';
     for (let j = first; j <= blocks; j++) {
-      x += `<rect x="${(j - first) * 22}" y="0" width="18" height="18" rx="3" fill="var(--sf)" stroke="var(--acc)" stroke-width="2"/><text x="${(j - first) * 22 + 9}" y="13" text-anchor="middle" font-size="9" fill="var(--ink)">${j}</text>`;
+      const bx = (j - first) * 24;
+      x +=
+        (j > first ? `<path d="M${bx - 6} 12h6" stroke="var(--acc)" stroke-width="2"/>` : '') +
+        `<g${j === blocks ? ' class="newb"' : ''}><path d="M${bx} 5l9-5 9 5v12l-9 5-9-5z" fill="color-mix(in srgb,var(--acc) 25%,var(--bg))" stroke="var(--acc)" stroke-width="1.5"/><path d="M${bx} 5l9 5 9-5M${bx + 9} 10v12" fill="none" stroke="var(--acc)" stroke-width="1"/><text x="${bx + 9}" y="${j > 99 ? 18 : 19}" text-anchor="middle" font-size="${j > 99 ? 6 : 7}" font-weight="700" fill="var(--ink)">${j}</text></g>`;
     }
     $('cr2').innerHTML = x;
   }
@@ -59,6 +79,9 @@ export function init() {
     press.classList.remove('dn');
     void press.getBoundingClientRect();
     press.classList.add('dn');
+    // A short golden flash where the stamp hits.
+    const f = mkn('circle', { cx: 290, cy: 163, r: 26, fill: '#ffe08a', class: 'flash' }, s);
+    setTimeout(() => f.remove(), 900);
     setTimeout(() => {
       $('mb2').setAttribute('opacity', '1');
       const c = mkn('circle', { cx: 341, cy: 156, r: 5, fill: '#f2b632', class: 'cd' }, s);

@@ -5,25 +5,50 @@ const { lang } = Astro.props;
 const T = tv<Record<string, string>>(lang, 'demo.mint');
 ---
 <div class="sim" id="mint" data-t={JSON.stringify(T)}>
-  <svg id="mm" viewBox="0 0 360 230" role="img" aria-label={T.label} style="width:100%;height:auto">
-    <defs><clipPath id="hp"><polygon points="170,60 230,60 215,130 185,130"></polygon></clipPath></defs>
-    <rect x="20" y="146" width="150" height="10" rx="5" fill="var(--ln)"></rect>
-    <line class="fl" x1="24" y1="151" x2="166" y2="151" stroke="var(--acc)" stroke-width="3" stroke-dasharray="4 10"></line>
-    <g clip-path="url(#hp)"><rect id="hl" x="165" y="130" width="70" height="0" fill="var(--acc)" opacity=".8"></rect></g>
-    <polygon points="170,60 230,60 215,130 185,130" fill="none" stroke="var(--ink)" stroke-width="2"></polygon>
-    <text x="200" y="52" text-anchor="middle" font-size="11" fill="var(--ink)">{T.pool}</text>
-    <path d="M200 130V176H290" fill="none" stroke="var(--ln)" stroke-width="8"></path>
-    <path id="pp" d="M200 130V176H290" fill="none" stroke="var(--acc)" stroke-width="3" opacity="0"></path>
-    <rect x="256" y="40" width="6" height="112" fill="var(--ln)"></rect><rect x="318" y="40" width="6" height="112" fill="var(--ln)"></rect><rect x="256" y="40" width="68" height="10" fill="var(--ln)"></rect>
-    <g id="ps"><rect x="270" y="52" width="40" height="40" fill="var(--acc)"></rect><rect x="287" y="42" width="6" height="10" fill="var(--ink)"></rect></g>
-    <rect x="268" y="146" width="44" height="32" rx="3" fill="none" stroke="var(--ink)" stroke-width="2"></rect>
-    <rect id="mb2" x="272" y="150" width="36" height="24" rx="2" fill="var(--acc)" opacity="0"></rect>
-    <path d="M312 164H341V196" fill="none" stroke="var(--ln)" stroke-width="6"></path>
-    <rect x="320" y="196" width="40" height="24" rx="3" fill="none" stroke="var(--ink)" stroke-width="2"></rect>
-    <text x="340" y="212" text-anchor="middle" font-size="9" fill="var(--ink)" id="tz">0</text>
+  <svg id="mm" viewBox="0 0 360 236" role="img" aria-label={T.label} style="width:100%;height:auto">
+    <defs>
+      <clipPath id="hp"><polygon points="170,60 230,60 215,130 185,130"></polygon></clipPath>
+      <linearGradient id="liq" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--acc)" stop-opacity=".95"></stop><stop offset="1" stop-color="var(--acc)" stop-opacity=".55"></stop></linearGradient>
+      <linearGradient id="gld" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"></stop><stop offset="1" stop-color="#c58f1f"></stop></linearGradient>
+      <radialGradient id="pglow"><stop offset="0" stop-color="var(--acc)" stop-opacity=".35"></stop><stop offset="1" stop-color="var(--acc)" stop-opacity="0"></stop></radialGradient>
+    </defs>
+    <ellipse cx="200" cy="96" rx="62" ry="50" fill="url(#pglow)"></ellipse>
+    <!-- conveyor -->
+    <rect x="16" y="146" width="158" height="12" rx="6" fill="var(--ln)"></rect>
+    <line class="fl" x1="22" y1="146" x2="168" y2="146" stroke="var(--acc)" stroke-width="2" stroke-dasharray="4 10"></line>
+    <g fill="var(--bg)" stroke="var(--mu)" stroke-width="1.5">
+      <circle cx="26" cy="158" r="5"></circle><circle cx="64" cy="158" r="5"></circle><circle cx="102" cy="158" r="5"></circle><circle cx="140" cy="158" r="5"></circle><circle cx="166" cy="158" r="5"></circle>
+    </g>
+    <!-- pool -->
+    <g clip-path="url(#hp)">
+      <rect id="hl" x="165" y="130" width="70" height="0" fill="url(#liq)"></rect>
+      <g id="hwv" transform="translate(0 130)"><path class="wv" d="M150 0q10-5 20 0t20 0t20 0t20 0t20 0t20 0v8h-120z" fill="var(--acc)" opacity=".9"></path></g>
+      <g fill="#fff" opacity=".7"><circle class="bbl" cx="192" cy="126" r="1.6"></circle><circle class="bbl" style="animation-delay:-1s" cx="204" cy="128" r="1.2"></circle><circle class="bbl" style="animation-delay:-1.8s" cx="198" cy="127" r="1"></circle></g>
+    </g>
+    <polygon points="170,60 230,60 215,130 185,130" fill="color-mix(in srgb,var(--bg) 35%,transparent)" stroke="var(--ink)" stroke-width="2" stroke-linejoin="round"></polygon>
+    <path d="M176 66L188 124" stroke="#fff" stroke-opacity=".5" stroke-width="2" stroke-linecap="round"></path>
+    <text x="200" y="52" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)">{T.pool}</text>
+    <!-- pipe -->
+    <path d="M200 130V176H290" fill="none" stroke="var(--ln)" stroke-width="8" stroke-linecap="round"></path>
+    <path id="pp" d="M200 130V176H290" fill="none" stroke="var(--acc)" stroke-width="3" opacity="0" stroke-linecap="round"></path>
+    <!-- press -->
+    <rect x="252" y="36" width="8" height="118" rx="3" fill="var(--mu)"></rect><rect x="320" y="36" width="8" height="118" rx="3" fill="var(--mu)"></rect>
+    <rect x="248" y="30" width="84" height="12" rx="4" fill="var(--ink)"></rect>
+    <g id="ps">
+      <rect x="287" y="42" width="6" height="12" fill="var(--ink)"></rect>
+      <rect x="266" y="52" width="48" height="36" rx="6" fill="url(#gld)" stroke="#8a5a14" stroke-width="2"></rect>
+      <circle cx="290" cy="70" r="11" fill="none" stroke="#8a5a14" stroke-width="2"></circle>
+      <text x="290" y="75" text-anchor="middle" font-size="14" font-weight="700" fill="#6b4200" font-family="Georgia,serif">T</text>
+    </g>
+    <rect x="266" y="146" width="48" height="34" rx="5" fill="var(--bg)" stroke="var(--ink)" stroke-width="2"></rect>
+    <rect id="mb2" x="270" y="150" width="40" height="26" rx="3" fill="url(#gld)" opacity="0"></rect>
+    <!-- coin tray -->
+    <path d="M314 164H341V196" fill="none" stroke="var(--ln)" stroke-width="6" stroke-linecap="round"></path>
+    <rect x="318" y="196" width="44" height="26" rx="6" fill="color-mix(in srgb,var(--gold) 18%,var(--bg))" stroke="#c58f1f" stroke-width="2"></rect>
+    <text x="340" y="213" text-anchor="middle" font-size="9" font-weight="700" fill="var(--ink)" id="tz">0</text>
     <g id="dv"></g>
-    <text x="20" y="193" font-size="10" fill="var(--mu)">{T.chain}</text>
-    <g id="cr2" transform="translate(20 198)"></g>
+    <text x="16" y="198" font-size="10" font-weight="600" fill="var(--mu)">{T.chain}</text>
+    <g id="cr2" transform="translate(16 204)"></g>
   </svg>
   <p id="ml" role="status" style="min-height:3rem;margin:.4rem 0">{T.start}</p>
   <div><button class="btn" data-k="H">{T.addPhone}</button><button class="btn" data-k="P">{T.addPi}</button><button class="btn" data-k="C">{T.addPc}</button></div>

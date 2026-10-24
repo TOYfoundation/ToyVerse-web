@@ -28,6 +28,13 @@ export function init() {
   const level = () => LEVELS.reduce((best, l, i) => (days >= l[1] && pays >= l[2] ? i : best), 0);
   const cap = () => LEVELS[level()][0];
   const msg = (t, bad) => say($('os'), t, bad);
+  // Restart a one-shot CSS animation on an element.
+  const pulse = (idName, cls) => {
+    const e = $(idName);
+    e.classList.remove(cls);
+    void e.getBoundingClientRect();
+    e.classList.add(cls);
+  };
   function ui() {
     const c = cap();
     $('aml').textContent = fill(T.amount, { n: $('am').value });
@@ -35,16 +42,23 @@ export function init() {
     $('cl').textContent = fill(T.limit, { used, cap: c, s: level() + 1, days, n: pays });
     $('t1').textContent = fill(T.freeAmt, { n: c - used });
     $('t2').textContent = received ? `+${received} €` : '';
+    const share = Math.min(used / c, 1);
+    $('lr').setAttribute('stroke-dasharray', `${(share * 151).toFixed(1)} 151`);
+    $('lr').setAttribute('stroke', share > 0.85 ? '#e0a020' : '#3fd0c4');
     document.querySelectorAll('#steps tbody tr').forEach((r, i) => r.classList.toggle('on', i === level()));
   }
   $('am').oninput = ui;
   $('pay').onclick = () => {
     const a = Number($('am').value);
-    if (used + a > cap()) return msg(fill(T.over, { n: a }), true);
+    if (used + a > cap()) {
+      pulse('pa', 'no');
+      return msg(fill(T.over, { n: a }), true);
+    }
     used += a;
     received += a;
     id++;
     pending.push({ i: id, a });
+    pulse('nfc', 'go');
     fly(s, A, B, '#3fd0c4');
     msg(fill(T.paid, { n: a }));
     ui();
@@ -54,6 +68,7 @@ export function init() {
     const last = pending[pending.length - 1];
     pending.push({ i: last.i, a: last.a });
     received += last.a;
+    pulse('pa', 'no');
     fly(s, A, B, '#e03131');
     msg(T.double, true);
     ui();
