@@ -5,27 +5,47 @@ const { lang } = Astro.props;
 ---
 <h2>{t(lang, 'pages.toychain.chainTitle')}</h2>
 <div class="sim">
-  <div class="sc3" id="c3"><div class="ch3" id="ch3"></div></div>
+  <div class="sc3" id="c3" tabindex="0" role="img" aria-label={t(lang, 'pages.toychain.chainHint')}><div class="ch3" id="ch3"></div></div>
   <button class="btn" id="ab">{t(lang, 'pages.toychain.chainAdd')}</button>
   <p style="color:var(--mu)">{t(lang, 'pages.toychain.chainHint')}</p>
 </div>
 <script>
+  import { drag } from '../../scripts/util.js';
   const $ = (id: string) => document.getElementById(id)!;
   const blocks = [1, 2, 3, 4, 5];
   let next = 6;
-  const draw = () => {
-    $('ch3').innerHTML = blocks.map((x) => `<div class="cu" style="--n:${x}"><b>${x}</b><b></b><b></b><b></b><b></b><b></b></div>`).join('');
+  let ry = -25;
+  let rx = -20;
+  const turn = () => {
+    rx = Math.max(-60, Math.min(30, rx));
+    $('ch3').style.setProperty('--ry', `${ry}deg`);
+    $('ch3').style.setProperty('--rx3', `${rx}deg`);
+  };
+  const draw = (fresh = 0) => {
+    $('ch3').innerHTML = blocks.map((x) => `<div class="cu${x === fresh ? ' new' : ''}" style="--n:${x}"><b>${x}</b><b></b><b></b><b></b><b></b><b></b></div>`).join('');
   };
   if (document.getElementById('c3')) {
     $('ab').onclick = () => {
-      blocks.push(next++);
+      blocks.push(next);
       if (blocks.length > 6) blocks.shift();
-      draw();
+      draw(next++);
     };
-    $('c3').onpointermove = (e: PointerEvent) => {
-      const r = $('c3').getBoundingClientRect();
-      $('ch3').style.setProperty('--ry', `${((e.clientX - r.left) / r.width - 0.5) * 140}deg`);
-    };
+    // Turn the chain with mouse or finger (with momentum) or with the arrow keys.
+    drag($('c3'), (dx: number, dy: number) => {
+      ry += dx * 0.6;
+      rx -= dy * 0.4;
+      turn();
+    });
+    $('c3').addEventListener('keydown', (e: KeyboardEvent) => {
+      const keys: Record<string, [number, number]> = { ArrowLeft: [-10, 0], ArrowRight: [10, 0], ArrowUp: [0, 6], ArrowDown: [0, -6] };
+      const d = keys[e.key];
+      if (!d) return;
+      e.preventDefault();
+      ry += d[0];
+      rx += d[1];
+      turn();
+    });
     draw();
+    turn();
   }
 </script>

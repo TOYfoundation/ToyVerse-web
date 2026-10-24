@@ -61,15 +61,71 @@ document.addEventListener('pointerout', (e) => {
   }
 });
 
+// ---- Pointer effects, batched once per frame ----
+// Spotlight on cards and stages, eyes of the characters following the pointer.
+let lastPointer = null;
+let pointerFrame = 0;
+function pointerTick() {
+  pointerFrame = 0;
+  const e = lastPointer;
+  if (!e) return;
+  const glow = e.target.closest && e.target.closest('.c, .sim, .pv');
+  if (glow) {
+    const r = glow.getBoundingClientRect();
+    glow.style.setProperty('--mx', `${e.clientX - r.left}px`);
+    glow.style.setProperty('--my', `${e.clientY - r.top}px`);
+  }
+  document.querySelectorAll('svg.n').forEach((fig) => {
+    const r = fig.getBoundingClientRect();
+    if (r.bottom < 0 || r.top > innerHeight || !r.width) return;
+    const dx = e.clientX - (r.left + r.width / 2);
+    const dy = e.clientY - (r.top + r.height * 0.3);
+    const d = Math.hypot(dx, dy) || 1;
+    const k = Math.min(1, d / 240);
+    fig.style.setProperty('--ex', ((dx / d) * k).toFixed(2));
+    fig.style.setProperty('--eyy', ((dy / d) * k).toFixed(2));
+  });
+}
+if (!reduced) {
+  document.addEventListener(
+    'pointermove',
+    (e) => {
+      lastPointer = e;
+      if (!pointerFrame) pointerFrame = requestAnimationFrame(pointerTick);
+    },
+    { passive: true },
+  );
+}
+
 // ---- Hero slider ----
 const hero = document.querySelector('.hero');
 if (hero) {
   if (!reduced) {
     hero.addEventListener('pointermove', (e) => {
       const r = hero.getBoundingClientRect();
-      hero.style.setProperty('--px', (e.clientX - r.left) / r.width - 0.5);
-      hero.style.setProperty('--py', (e.clientY - r.top) / r.height - 0.5);
+      const x = (e.clientX - r.left) / r.width;
+      const y = (e.clientY - r.top) / r.height;
+      hero.style.setProperty('--px', (x - 0.5).toFixed(3));
+      hero.style.setProperty('--py', (y - 0.5).toFixed(3));
+      hero.style.setProperty('--lx', (x * 100).toFixed(1));
+      hero.style.setProperty('--ly', (y * 100).toFixed(1));
+      hero.style.setProperty('--lo', '1');
     });
+    hero.addEventListener('pointerleave', () => hero.style.setProperty('--lo', '0'));
+    // Depth while scrolling: layers drift at different speeds, the title lifts away.
+    let scrollFrame = 0;
+    const onScroll = () => {
+      scrollFrame = 0;
+      const y = Math.min(Math.max(scrollY, 0), hero.offsetHeight);
+      hero.style.setProperty('--sy', y.toFixed(0));
+    };
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (!scrollFrame) scrollFrame = requestAnimationFrame(onScroll);
+      },
+      { passive: true },
+    );
   }
   const scenes = hero.querySelectorAll('.sd');
   const texts = hero.querySelectorAll('.sl .hw');

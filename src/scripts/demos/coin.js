@@ -1,5 +1,5 @@
 // Emission curve marker and the 3D coin (coin ported from the draft).
-import { setup, fill, num, reduced } from '../util.js';
+import { setup, fill, num, reduced, drag } from '../util.js';
 import { issuedAfterYears } from '../../lib/emission.js';
 
 const $ = (id) => document.getElementById(id);
@@ -34,6 +34,16 @@ export function init() {
     user = true;
     draw();
   };
+  // Spin the coin directly with mouse or finger; it coasts out after release.
+  drag(
+    coin,
+    (dx) => {
+      a = (((a + dx * 1.2) % 360) + 360) % 360;
+      $('ca').value = Math.round(a);
+      draw();
+    },
+    () => (user = true),
+  );
   setInterval(() => {
     if (!user) {
       a = (a + 3) % 360;

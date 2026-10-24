@@ -7,7 +7,7 @@ interface Props {
 }
 const { lang, items } = Astro.props;
 ---
-<div class="g">
+<div class={`g n${items.length}`}>
   {items.map(([h, p, s]) => (
     <div class="c">
       <h3>{h}{s ? <span class="chip">{t(lang, `status.${s}`)}</span> : null}</h3>

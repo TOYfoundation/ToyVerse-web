@@ -32,6 +32,39 @@ export function init() {
     });
     $('gt').textContent = fill(T.text, { x: num(lang, D[0][1] / D[3][1], 1) });
   }
+  // Grab anywhere on the gears and turn around the first one, like a crank.
+  const svg = $('gsv');
+  let prev = null;
+  const angle = (e) => {
+    const r = svg.getBoundingClientRect();
+    const k = r.width / 330;
+    return (Math.atan2(e.clientY - (r.top + 100 * k), e.clientX - (r.left + D[0][0] * k)) * 180) / Math.PI;
+  };
+  svg.style.touchAction = 'none';
+  svg.style.cursor = 'grab';
+  svg.addEventListener('pointerdown', (e) => {
+    prev = angle(e);
+    user = true;
+    svg.setPointerCapture(e.pointerId);
+    svg.style.cursor = 'grabbing';
+  });
+  svg.addEventListener('pointermove', (e) => {
+    if (prev === null) return;
+    const now = angle(e);
+    let d = now - prev;
+    if (d > 180) d -= 360;
+    if (d < -180) d += 360;
+    prev = now;
+    a = (((a + d) % 720) + 720) % 720;
+    $('cr').value = Math.round(a);
+    draw();
+  });
+  const release = () => {
+    prev = null;
+    svg.style.cursor = 'grab';
+  };
+  svg.addEventListener('pointerup', release);
+  svg.addEventListener('pointercancel', release);
   $('cr').oninput = function () {
     a = Number(this.value);
     user = true;

@@ -46,6 +46,52 @@ export function fly(svg, a, b, color, cb, coin) {
   }, reduced() ? 0 : 950);
 }
 
+/**
+ * Drag with mouse, finger or pen. move(dx, dy) is called with the distance
+ * since the last event; after release the motion coasts out with momentum
+ * (not with reduced motion). Vertical page scrolling stays possible.
+ */
+export function drag(el, move, start) {
+  let last = null;
+  let vx = 0;
+  let vy = 0;
+  let coast = 0;
+  el.addEventListener('pointerdown', (e) => {
+    if (e.button > 0) return;
+    cancelAnimationFrame(coast);
+    last = [e.clientX, e.clientY, performance.now()];
+    vx = vy = 0;
+    el.setPointerCapture(e.pointerId);
+    if (start) start();
+  });
+  el.addEventListener('pointermove', (e) => {
+    if (!last) return;
+    const now = performance.now();
+    const dx = e.clientX - last[0];
+    const dy = e.clientY - last[1];
+    const dt = Math.max(1, now - last[2]);
+    vx = (dx / dt) * 16;
+    vy = (dy / dt) * 16;
+    last = [e.clientX, e.clientY, now];
+    move(dx, dy);
+  });
+  const end = () => {
+    if (!last) return;
+    last = null;
+    if (reduced()) return;
+    const step = () => {
+      vx *= 0.94;
+      vy *= 0.94;
+      if (Math.abs(vx) < 0.05 && Math.abs(vy) < 0.05) return;
+      move(vx, vy);
+      coast = requestAnimationFrame(step);
+    };
+    coast = requestAnimationFrame(step);
+  };
+  el.addEventListener('pointerup', end);
+  el.addEventListener('pointercancel', end);
+}
+
 /** Message line with "bad" colouring. */
 export function say(el, text, bad) {
   el.textContent = text;

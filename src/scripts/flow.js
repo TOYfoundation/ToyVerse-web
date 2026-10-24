@@ -1,5 +1,7 @@
-// Animated step diagram, ported from the draft (function xs). Without
-// JavaScript the ordered list of steps stays visible.
+// Animated step diagram: diagram on one side, the list of steps on the other.
+// Steps and nodes are clickable, arrow keys move through the steps, and the
+// diagram plays on its own until someone interacts. Without JavaScript the
+// ordered list of steps stays visible.
 function esc(s) {
   return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 }
@@ -13,8 +15,14 @@ export function initFlows() {
     const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
     let k = 0;
     let playing = !reduced;
-    el.innerHTML = `<div class="xv"></div><div class="xc"><button class="mb xp" aria-label="${esc(E.ui.back)}"><span class="chv" aria-hidden="true"></span></button><input class="xr" type="range" min="1" max="${N}" value="1" aria-label="${esc(E.ui.step)}"><button class="mb xn" aria-label="${esc(E.ui.next)}"><span class="chv f" aria-hidden="true"></span></button><button class="mb xa"></button></div><h3 class="xt" style="font:700 1.3rem var(--ser);margin:.8rem 0 .1rem"></h3><p class="xd" aria-live="polite" style="margin:0;color:var(--mu)"></p>`;
+    let hover = -1;
+    el.innerHTML =
+      `<div class="xg"><div class="xv"></div><div class="xc"><button class="mb xp" aria-label="${esc(E.ui.back)}"><span class="chv" aria-hidden="true"></span></button>` +
+      `<input class="xr" type="range" min="1" max="${N}" value="1" aria-label="${esc(E.ui.step)}"><button class="mb xn" aria-label="${esc(E.ui.next)}"><span class="chv f" aria-hidden="true"></span></button><button class="mb xa"></button></div></div>` +
+      `<ol class="xl">${E.steps.map((s, i) => `<li><button data-s="${i}"><b>${esc(s[2])}</b><span>${esc(s[3])}</span></button></li>`).join('')}</ol>` +
+      `<p class="xd" aria-live="polite"></p>`;
     const q = (c) => el.querySelector(c);
+    const items = [...el.querySelectorAll('.xl button')];
     function draw() {
       const s = E.steps[k];
       const a = E.nodes[s[0]];
@@ -30,7 +38,8 @@ export function initFlows() {
       const nodes = E.nodes
         .map((n, i) => {
           const on = i === s[0] || i === s[1];
-          return `<rect x="${n[1] - 54}" y="${n[2] - 20}" width="108" height="40" rx="12" fill="var(--bg)" stroke="${on ? 'var(--acc)' : 'var(--ln)'}" stroke-width="${on ? 2.5 : 1.5}"${on ? ' style="filter:drop-shadow(0 0 8px var(--acc))"' : ''}/><text x="${n[1]}" y="${n[2] + 5}" text-anchor="middle" font-size="13" font-weight="600" fill="var(--ink)">${esc(n[0])}</text>`;
+          const hv = i === hover;
+          return `<g class="xnd${on ? ' on' : ''}${hv ? ' hv' : ''}" data-n="${i}"><rect x="${n[1] - 54}" y="${n[2] - 20}" width="108" height="40" rx="12" fill="${on ? 'color-mix(in srgb,var(--acc) 14%,var(--bg))' : 'var(--bg)'}" stroke="${on || hv ? 'var(--acc)' : 'var(--ln)'}" stroke-width="${on ? 2.5 : 1.5}"/><text x="${n[1]}" y="${n[2] + 5}" text-anchor="middle" font-size="13" font-weight="600" fill="var(--ink)">${esc(n[0])}</text></g>`;
         })
         .join('');
       const packet = reduced ? '' : `<circle r="6" fill="var(--acc)"><animateMotion dur="1.4s" repeatCount="indefinite" path="M${a[1]} ${a[2]}L${b[1]} ${b[2]}"/></circle>`;
@@ -42,8 +51,12 @@ export function initFlows() {
           const w = t.getComputedTextLength();
           if (w > 98) t.setAttribute('font-size', String(Math.max(8, (13 * 98) / w).toFixed(1)));
         });
-      q('.xt').textContent = `${k + 1}. ${s[2]}`;
-      q('.xd').textContent = s[3];
+      items.forEach((it, i) => {
+        it.classList.toggle('on', i === k);
+        if (i === k) it.setAttribute('aria-current', 'step');
+        else it.removeAttribute('aria-current');
+      });
+      q('.xd').textContent = `${k + 1}. ${s[2]}: ${s[3]}`;
       q('.xr').value = k + 1;
     }
     const go = (i) => {
@@ -74,9 +87,51 @@ export function initFlows() {
       playing = !playing;
       btn();
     };
+    q('.xl').addEventListener('click', (e) => {
+      const b = e.target.closest('button[data-s]');
+      if (!b) return;
+      stop();
+      go(Number(b.dataset.s));
+    });
+    q('.xl').addEventListener('keydown', (e) => {
+      const d = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
+      if (!d) return;
+      e.preventDefault();
+      stop();
+      go(k + d);
+      items[k].focus();
+    });
+    // Clicking a node jumps to the next step that involves it.
+    q('.xv').addEventListener('click', (e) => {
+      const g = e.target.closest('.xnd');
+      if (!g) return;
+      const n = Number(g.dataset.n);
+      for (let j = 1; j <= N; j++) {
+        const st = E.steps[(k + j) % N];
+        if (st[0] === n || st[1] === n) {
+          stop();
+          return go((k + j) % N);
+        }
+      }
+    });
+    q('.xv').addEventListener('pointerover', (e) => {
+      const g = e.target.closest('.xnd');
+      const n = g ? Number(g.dataset.n) : -1;
+      if (n !== hover) {
+        hover = n;
+        draw();
+      }
+    });
+    q('.xv').addEventListener('pointerleave', () => {
+      hover = -1;
+      draw();
+    });
+    // Play only while visible, so the page does not move out of sight.
+    let visible = true;
+    if ('IntersectionObserver' in window) new IntersectionObserver(([en]) => (visible = en.isIntersecting)).observe(el);
     setInterval(() => {
-      if (playing) go(k + 1);
-    }, 3200);
+      if (playing && visible && hover < 0) go(k + 1);
+    }, 3600);
     btn();
     draw();
   });

@@ -55,13 +55,11 @@ const withLinks = (s: string) => s.replace(/\{(community|roadmap|toycoin)\}/g, (
     </nav>
   )
 }
-{hasFlow && <Flow lang={lang} id={id} />}
-
 {
   id === 'start' && (
     <>
       <h2 style="margin-top:0">{t(lang, P('what'))}</h2>
-      <div class="g">
+      <div class="g n3">
         {tv<string[][]>(lang, P('tiles')).map(([h, p], i) => (
           <a class="c tilt" href={href(lang, ['toyquest', 'toypay', 'toychain'][i])}>
             <Fragment set:html={[npc(3), ICON_COIN, ICON_GEAR][i]} />
@@ -240,7 +238,7 @@ const withLinks = (s: string) => s.replace(/\{(community|roadmap|toycoin)\}/g, (
 {
   id === 'kontakt' && (
     <>
-      <div class="g">
+      <div class="g n3">
         {tv<string[][]>(lang, P('cards')).map(([h, p, b], i) => (
           <div class="c">
             <h3>{h}</h3>
@@ -256,6 +254,8 @@ const withLinks = (s: string) => s.replace(/\{(community|roadmap|toycoin)\}/g, (
 {id === 'impressum' && <Legal lang={lang} kind="impressum" />}
 {id === 'datenschutz' && <Legal lang={lang} kind="datenschutz" />}
 
+{hasFlow && <Flow lang={lang} id={id} />}
+
 {
   !['kontakt', 'impressum', 'datenschutz'].includes(id) && (
     <div class="ctab">
@@ -267,7 +267,27 @@ const withLinks = (s: string) => s.replace(/\{(community|roadmap|toycoin)\}/g, (
     </div>
   )
 }
-<div class="pg">
-  {prev ? <a class="btn al" href={href(lang, prev)}><span class="chv" aria-hidden="true"></span> {t(lang, `pages.${prev}.t`)}</a> : <span />}
-  {next ? <a class="btn" href={href(lang, next)}>{t(lang, `pages.${next}.t`)} <span class="chv f" aria-hidden="true"></span></a> : <span />}
-</div>
+<nav class="pg" aria-label={t(lang, 'ui.path')}>
+  {
+    prev ? (
+      <a class="pv" href={href(lang, prev)} rel="prev">
+        <small><span class="chv" aria-hidden="true"></span> {t(lang, 'ui.back')}</small>
+        <b>{t(lang, `pages.${prev}.t`)}</b>
+        <span>{t(lang, `pages.${prev}.u`)}</span>
+      </a>
+    ) : (
+      <span />
+    )
+  }
+  {
+    next ? (
+      <a class="pv nx" href={href(lang, next)} rel="next">
+        <small>{t(lang, 'ui.next')} <span class="chv f" aria-hidden="true"></span></small>
+        <b>{t(lang, `pages.${next}.t`)}</b>
+        <span>{t(lang, `pages.${next}.u`)}</span>
+      </a>
+    ) : (
+      <span />
+    )
+  }
+</nav>
