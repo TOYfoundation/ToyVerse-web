@@ -29,7 +29,8 @@
     "chooseLanguage": "Choisir la langue",
     "redirect": "Aller à la page d’accueil",
     "machineNote": "Cette traduction a été réalisée par IA à partir de l’allemand et n’a pas encore été relue par des locuteurs natifs. La version de référence est la",
-    "machineLink": "version allemande"
+    "machineLink": "version allemande",
+    "machineEnd": "."
   },
   "scenes": [
     "La ville la nuit",

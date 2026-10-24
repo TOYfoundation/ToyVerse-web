@@ -29,7 +29,8 @@
     "chooseLanguage": "Choose language",
     "redirect": "Continue to the start page",
     "machineNote": "This translation was created from German with AI and has not yet been reviewed by native speakers. The authoritative version is the",
-    "machineLink": "German version"
+    "machineLink": "German version",
+    "machineEnd": "."
   },
   "scenes": [
     "The city at night",

@@ -29,7 +29,8 @@
     "chooseLanguage": "Dil seçin",
     "redirect": "Ana sayfaya git",
     "machineNote": "Bu çeviri Almancadan yapay zekâ ile oluşturuldu ve henüz anadili konuşanlarca kontrol edilmedi. Esas alınan metin:",
-    "machineLink": "Almanca sürüm"
+    "machineLink": "Almanca sürüm",
+    "machineEnd": "."
   },
   "scenes": ["Gece şehir", "Kervan", "ToyChain ağı", "Oyun salonunda", "Makine salonu"],
   "groups": {

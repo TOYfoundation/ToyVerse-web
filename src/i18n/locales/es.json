@@ -29,7 +29,8 @@
     "chooseLanguage": "Elegir idioma",
     "redirect": "Ir a la página de inicio",
     "machineNote": "Esta traducción se creó con IA a partir del alemán y aún no ha sido revisada por hablantes nativos. La versión de referencia es la",
-    "machineLink": "versión alemana"
+    "machineLink": "versión alemana",
+    "machineEnd": "."
   },
   "scenes": [
     "La ciudad de noche",

@@ -29,7 +29,8 @@
     "chooseLanguage": "Välj språk",
     "redirect": "Till startsidan",
     "machineNote": "Den här översättningen är gjord med AI från tyskan och har ännu inte granskats av modersmålstalare. Det är den",
-    "machineLink": "tyska versionen som gäller"
+    "machineLink": "tyska versionen som gäller",
+    "machineEnd": "."
   },
   "scenes": ["Staden om natten", "Karavanen", "ToyChains nätverk", "I spelsalongen", "Maskinhallen"],
   "groups": {

@@ -29,7 +29,8 @@
     "chooseLanguage": "Kies een taal",
     "redirect": "Naar de startpagina",
     "machineNote": "Deze vertaling is met AI gemaakt vanuit het Duits en nog niet door moedertaalsprekers nagekeken. Bepalend is de",
-    "machineLink": "Duitse versie"
+    "machineLink": "Duitse versie",
+    "machineEnd": "."
   },
   "scenes": ["De stad bij nacht", "De karavaan", "Het netwerk van de ToyChain", "In de speelsalon", "De machinehal"],
   "groups": {

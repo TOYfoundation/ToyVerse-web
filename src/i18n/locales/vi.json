@@ -29,7 +29,8 @@
     "chooseLanguage": "Chọn ngôn ngữ",
     "redirect": "Đến trang chủ",
     "machineNote": "Bản dịch này được tạo bằng AI từ tiếng Đức và chưa được người bản ngữ kiểm tra. Bản có giá trị là",
-    "machineLink": "bản tiếng Đức"
+    "machineLink": "bản tiếng Đức",
+    "machineEnd": "."
   },
   "scenes": ["Thành phố về đêm", "Đoàn lữ hành", "Mạng lưới ToyChain", "Trong phòng chơi", "Xưởng máy"],
   "groups": {

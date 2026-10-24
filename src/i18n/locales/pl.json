@@ -29,7 +29,8 @@
     "chooseLanguage": "Wybierz język",
     "redirect": "Przejdź do strony głównej",
     "machineNote": "To tłumaczenie powstało z pomocą AI na podstawie wersji niemieckiej i nie zostało jeszcze sprawdzone przez rodzimych użytkowników języka. Wiążąca jest",
-    "machineLink": "wersja niemiecka"
+    "machineLink": "wersja niemiecka",
+    "machineEnd": "."
   },
   "scenes": ["Miasto nocą", "Karawana", "Sieć ToyChain", "W salonie gier", "Hala maszyn"],
   "groups": {

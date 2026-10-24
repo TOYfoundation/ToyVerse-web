@@ -29,7 +29,8 @@
     "chooseLanguage": "Velg språk",
     "redirect": "Til forsiden",
     "machineNote": "Denne oversettelsen er laget med KI fra tysk og er ennå ikke gjennomgått av morsmålsbrukere. Det er den",
-    "machineLink": "tyske versjonen som gjelder"
+    "machineLink": "tyske versjonen som gjelder",
+    "machineEnd": "."
   },
   "scenes": ["Byen om natten", "Karavanen", "ToyChain-nettverket", "I spillsalongen", "Maskinhallen"],
   "groups": {
