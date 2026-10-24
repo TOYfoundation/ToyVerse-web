@@ -19,6 +19,7 @@
     "step": "Adım",
     "flowTitle": "Her şey nasıl birbirine bağlanır",
     "flowLabel": "Akış şeması",
+    "related": "İlgili",
     "image": "Görsel {n}",
     "ctaTitle": "ToyVerse’e katıl",
     "ctaText": "Soru sor, erken test et ya da satıcı veya mentor ol.",
@@ -81,7 +82,8 @@
         ["ToyScan", "Uyarı ışıklı gezgin: kurallara uyulup uyulmadığını sürekli kontrol eder.", "planned"],
         ["TOYQUEST", "Binbir Gece tarzında, tekniği öğreten bir dünyaya sahip oyun.", "inDev"],
         ["ToyCash", "Ağda özel Euro nakit, çevrimdışı da.", "concept"],
-        ["ToyPost", "Tüm kanallar için tek gelen kutusu, TOY ile faturalar, dolandırıcılığa karşı koruma.", "built"]
+        ["ToyPost", "Tüm kanallar için tek gelen kutusu, TOY ile faturalar, dolandırıcılığa karşı koruma.", "built"],
+        ["ToySafe", "Koruma ve test uygulaması: tuzaklara karşı uyarır, hesap korumasına yardım eder ve düğümleri denetler.", "concept"]
       ],
       "after": "Buna açık bir ekonomik döngü, satıcılar, mentorlar ve topluluk düğümleri eklenir. <a href=\"{community}\">Daha fazlası</a>",
       "flow": {
@@ -336,6 +338,30 @@
           ["Yeniden hesapla", "Bir arşiv düğümü tüm bakiyeleri kendisi toplar."],
           ["Göster", "Aynı adresin diğer zincirlerdeki bakiyeleri yalnızca bilgi amaçlı görünür."],
           ["Trafik ışığı", "Her şey doğruysa yeşil. Olağandışı durumlarda sarı, kural ihlalinde kanıtla birlikte kırmızı."]
+        ]
+      }
+    },
+    "toysafe": {
+      "t": "ToySafe",
+      "u": "Koruma ve test uygulaması: bir şey olmadan önce uyarır.",
+      "rows": [
+        ["Güvenlik denetimi", "Cihazını ve cüzdanını denetler, koruma seviyeni bir sonraki faydalı adımla birlikte gösterir."],
+        ["Göndermeden önce", "Her yeni adresi denetler: bilinen bir adrese benziyor mu, uyarı listesinde mi, eski bir ToyCoin tokenı mı? TOYPAY sonucu önizlemede gösterir."],
+        ["Hesap koruması", "Kasa gecikmesi, acil durum anahtarı, kendi kendini kilitleme ve mirasçı adresini kurmana yardım eder. İmza yalnızca cüzdanında atılır."],
+        ["Bekçi", "Adreslerini yalnızca okuyarak izler ve her hareketi ToyScan üzerinden, istersen ToyPost ile bildirir."],
+        ["Test laboratuvarı", "Düğümler ve hizmetler için güvenlik testleri, yalnızca kendi hedeflerine veya açıkça izin verilmiş hedeflere karşı. Bulgular projeye gizli olarak iletilir."],
+        ["İlkeler", "Anahtar yok, ifade yok, kilit yok. ToySafe uyarır, sen karar verirsin."]
+      ],
+      "note": "Kavram. ToySafe kendi başına bir uygulamadır ve tek başına da çalışır. Denetimleri ayrıca doğrudan TOYPAY’e de girer.",
+      "flow": {
+        "nodes": ["Cihazın", "ToySafe", "TOYPAY", "ToyChain", "ToyScan", "ToyPost"],
+        "steps": [
+          ["Denetle", "ToySafe cihazını denetler ve koruma seviyesini bir sonraki adımla gösterir."],
+          ["Uyar", "İmzalamadan önce TOYPAY, riskler için ToySafe’e sorar. Karar sende kalır."],
+          ["Koru", "Hesap koruması ToyChain üzerinde çalışır. ToySafe hazırlar, TOYPAY imzalar."],
+          ["Oku", "ToyScan ToyChain’i yalnızca okur, anahtar olmadan."],
+          ["Gözetle", "ToyScan adreslerinin her hareketini ToySafe’e bildirir."],
+          ["Bildir", "Uyarılar ToyPost üzerinden kendi dilinde gelir, yalnızca istersen."]
         ]
       }
     },
@@ -678,6 +704,28 @@
       "thanks": "Teşekkürler, tamam!",
       "sorry": "Maalesef olmuyor.",
       "rejected": " İhraççı reddediyor."
+    },
+    "toysafe": {
+      "title": "Koruma seviyesi ve adres denetimi",
+      "intro": "Zaten kurduklarını işaretle ve örnek alıcıları denetle. Hepsi örnek, hiçbir şey gönderilmez.",
+      "levelTitle": "Koruma seviyen",
+      "checks": ["Ekran kilidi", "İfade yedeği kontrol edildi", "Büyük tutarlar için donanım cüzdanı", "Kasa gecikmesi", "Güvenlik adresli acil durum anahtarı", "Mirasçı adresi"],
+      "level": "Koruma seviyesi {n}/{m}",
+      "levels": ["korumasız", "temel", "iyi", "çok iyi"],
+      "nextStep": "Sonraki adım: {s}.",
+      "allDone": "Her şey kurulu. Yılda bir kez kontrol et.",
+      "sendTitle": "Göndermeden önce denetle",
+      "recipients": [
+        ["Bilinen kişi", "12 kez ödeme yapıldı, adres defterinde."],
+        ["Yeni adres", "Hiç kullanılmamış."],
+        ["Neredeyse aynı adres", "Başı ve sonu kişininkiyle aynı, ortası farklı."],
+        ["Uyarı listesindeki adres", "Bildirilmiş bir kimlik avı mesajından."],
+        ["Eski ToyCoin tokenı", "Polygon’daki sözleşme, ToyChain TOY’u değil."]
+      ],
+      "choose": "Bir alıcı seç.",
+      "lights": ["Yeşil", "Sarı", "Kırmızı"],
+      "results": ["Bilinen ve olağan. Önizleme her zamanki gibi.", "Yeni adres: önce küçük bir deneme tutarı gönder.", "Adres tuzağı! Kişine benziyor ama o değil. Adresin tamamını kontrol et.", "Uyarı listesinde: dolandırıcılık olarak bildirildi. Gönderme.", "Bu ToyChain TOY’u değil ve takas edilemez. Gönderme."],
+      "decide": "Karar sende kalır: ToySafe uyarır ama asla engellemez."
     }
   }
 }

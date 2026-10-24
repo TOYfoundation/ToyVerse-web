@@ -19,6 +19,7 @@
     "step": "Steg",
     "flowTitle": "Så hänger allt ihop",
     "flowLabel": "Flödesschema",
+    "related": "Hör ihop",
     "image": "Bild {n}",
     "ctaTitle": "Var med i ToyVerse",
     "ctaText": "Ställ frågor, testa tidigt eller bli handlare eller mentor.",
@@ -81,7 +82,8 @@
         ["ToyScan", "Utforskare med varningslampa: kontrollerar hela tiden att reglerna följs.", "planned"],
         ["TOYQUEST", "Spelet i Tusen och en natt-stil, med en lärovärld om tekniken.", "inDev"],
         ["ToyCash", "Privata eurokontanter på nätet, även offline.", "concept"],
-        ["ToyPost", "En inkorg för alla kanaler, fakturor i TOY och skydd mot bedrägerier.", "built"]
+        ["ToyPost", "En inkorg för alla kanaler, fakturor i TOY och skydd mot bedrägerier.", "built"],
+        ["ToySafe", "Skydds- och testapp: varnar för fällor, hjälper med kontoskydd och kontrollerar noder.", "concept"]
       ],
       "after": "Dessutom ett öppet ekonomiskt kretslopp, handlare, mentorer och community-noder. <a href=\"{community}\">Läs mer</a>",
       "flow": {
@@ -336,6 +338,30 @@
           ["Räkna om", "En arkivnod summerar själv alla saldon."],
           ["Visa", "Saldon för samma adress på andra kedjor visas bara som information."],
           ["Trafikljus", "Grönt när allt stämmer. Gult vid avvikelser, rött vid regelbrott, med bevis."]
+        ]
+      }
+    },
+    "toysafe": {
+      "t": "ToySafe",
+      "u": "Skydds- och testappen: varnar innan något händer.",
+      "rows": [
+        ["Säkerhetskontroll", "Kontrollerar din enhet och plånbok och visar din skyddsnivå med nästa vettiga steg."],
+        ["Innan du skickar", "Kontrollerar varje ny adress: liknar den en känd, står den på varningslistan eller är det en gammal ToyCoin-token? TOYPAY visar resultatet i förhandsvisningen."],
+        ["Kontoskydd", "Hjälper dig ställa in valvfördröjning, nödnyckel, självspärr och arvingeadress. Signeringen sker bara i din plånbok."],
+        ["Väktare", "Följer dina adresser bara läsande och rapporterar varje rörelse via ToyScan, om du vill via ToyPost."],
+        ["Testlabb", "Säkerhetstester för noder och tjänster, bara mot egna eller uttryckligen godkända mål. Fynd går konfidentiellt till projektet."],
+        ["Principer", "Inga nycklar, ingen fras, inga spärrar. ToySafe varnar, du bestämmer."]
+      ],
+      "note": "Koncept. ToySafe är en egen app och fungerar också ensam. Dess kontroller går dessutom direkt in i TOYPAY.",
+      "flow": {
+        "nodes": ["Din enhet", "ToySafe", "TOYPAY", "ToyChain", "ToyScan", "ToyPost"],
+        "steps": [
+          ["Kontrollera", "ToySafe kontrollerar din enhet och visar skyddsnivån med nästa steg."],
+          ["Varna", "Innan du signerar frågar TOYPAY ToySafe om risker. Beslutet är ditt."],
+          ["Skydda", "Kontoskyddet verkar på ToyChain. ToySafe förbereder, TOYPAY signerar."],
+          ["Läsa", "ToyScan läser bara ToyChain, utan nycklar."],
+          ["Vakta", "ToyScan rapporterar varje rörelse på dina adresser till ToySafe."],
+          ["Meddela", "Varningar kommer via ToyPost på ditt språk, bara om du vill."]
         ]
       }
     },
@@ -678,6 +704,28 @@
       "thanks": "Tack, det stämmer!",
       "sorry": "Tyvärr går det inte.",
       "rejected": " Utgivaren avvisar."
+    },
+    "toysafe": {
+      "title": "Skyddsnivå och adresskontroll",
+      "intro": "Bocka för det du redan har ställt in och kontrollera exempelmottagare. Allt är exempel, inget skickas.",
+      "levelTitle": "Din skyddsnivå",
+      "checks": ["Skärmlås", "Säkerhetskopia av frasen kontrollerad", "Hårdvaruplånbok för stora belopp", "Valvfördröjning", "Nödnyckel med säkerhetsadress", "Arvingeadress"],
+      "level": "Skyddsnivå {n} av {m}",
+      "levels": ["oskyddad", "grund", "bra", "mycket bra"],
+      "nextStep": "Nästa steg: {s}.",
+      "allDone": "Allt är inställt. Kontrollera det en gång om året.",
+      "sendTitle": "Kontrollera innan du skickar",
+      "recipients": [
+        ["Känd kontakt", "Redan betald 12 gånger, finns i adressboken."],
+        ["Ny adress", "Aldrig använd."],
+        ["Nästan samma adress", "Början och slut som din kontakt, mitten är annorlunda."],
+        ["Adress på varningslistan", "Från ett anmält nätfiskemeddelande."],
+        ["Gammal ToyCoin-token", "Kontrakt på Polygon, inte ToyChain-TOY."]
+      ],
+      "choose": "Välj en mottagare.",
+      "lights": ["Grönt", "Gult", "Rött"],
+      "results": ["Känd och utan anmärkning. Förhandsvisning som vanligt.", "Ny adress: skicka först ett litet testbelopp.", "Adressfälla! Den ser ut som din kontakt men är det inte. Kontrollera hela adressen.", "På varningslistan: anmäld som bedrägeri. Skicka inte.", "Det här är inte ToyChain-TOY och kan inte bytas. Skicka inte."],
+      "decide": "Beslutet är ditt: ToySafe varnar men spärrar aldrig."
     }
   }
 }

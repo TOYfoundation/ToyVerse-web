@@ -19,6 +19,7 @@
     "step": "Étape",
     "flowTitle": "Comment tout s’articule",
     "flowLabel": "Schéma de déroulement",
+    "related": "À voir aussi",
     "image": "Image {n}",
     "ctaTitle": "Rejoins le ToyVerse",
     "ctaText": "Pose tes questions, teste tôt ou deviens commerçant ou mentor.",
@@ -144,6 +145,11 @@
           "ToyPost",
           "Une boîte de réception pour tous les canaux, des factures en TOY et une protection contre la fraude.",
           "built"
+        ],
+        [
+          "ToySafe",
+          "App de protection et de test : alerte sur les pièges, aide à protéger le compte et vérifie les nœuds.",
+          "concept"
         ]
       ],
       "after": "S’y ajoutent un circuit économique ouvert, des commerçants, des mentors et des nœuds communautaires. <a href=\"{community}\">En savoir plus</a>",
@@ -767,6 +773,73 @@
         ]
       }
     },
+    "toysafe": {
+      "t": "ToySafe",
+      "u": "L’app de protection et de test : elle alerte avant qu’il n’arrive quelque chose.",
+      "rows": [
+        [
+          "Contrôle de sécurité",
+          "Vérifie ton appareil et ton portefeuille et affiche ton niveau de protection avec la prochaine étape utile."
+        ],
+        [
+          "Avant d’envoyer",
+          "Vérifie chaque nouvelle adresse : ressemble-t-elle à une adresse connue, figure-t-elle sur la liste d’alerte, est-ce un ancien jeton ToyCoin ? TOYPAY affiche le résultat dans l’aperçu."
+        ],
+        [
+          "Protection du compte",
+          "T’aide à configurer le délai de coffre, la clé d’urgence, l’autoblocage et l’adresse d’héritier. La signature se fait uniquement dans ton portefeuille."
+        ],
+        [
+          "Veilleur",
+          "Surveille tes adresses en lecture seule et signale chaque mouvement via ToyScan, si tu veux via ToyPost."
+        ],
+        [
+          "Laboratoire de test",
+          "Tests de sécurité pour nœuds et services, uniquement contre tes propres cibles ou des cibles expressément autorisées. Les découvertes sont transmises au projet en toute confidentialité."
+        ],
+        [
+          "Principes",
+          "Pas de clés, pas de phrase, pas de blocages. ToySafe alerte, tu décides."
+        ]
+      ],
+      "note": "Concept. ToySafe est une app à part entière et fonctionne aussi seule. Ses vérifications sont en plus intégrées directement dans TOYPAY.",
+      "flow": {
+        "nodes": [
+          "Ton appareil",
+          "ToySafe",
+          "TOYPAY",
+          "ToyChain",
+          "ToyScan",
+          "ToyPost"
+        ],
+        "steps": [
+          [
+            "Vérifier",
+            "ToySafe vérifie ton appareil et affiche le niveau de protection avec la prochaine étape."
+          ],
+          [
+            "Alerter",
+            "Avant la signature, TOYPAY interroge ToySafe sur les risques. La décision te revient."
+          ],
+          [
+            "Protéger",
+            "La protection du compte agit sur la ToyChain. ToySafe la prépare, TOYPAY signe."
+          ],
+          [
+            "Lire",
+            "ToyScan ne fait que lire la ToyChain, sans clés."
+          ],
+          [
+            "Surveiller",
+            "ToyScan signale à ToySafe chaque mouvement de tes adresses."
+          ],
+          [
+            "Prévenir",
+            "Les alertes t’arrivent via ToyPost dans ta langue, seulement si tu le souhaites."
+          ]
+        ]
+      }
+    },
     "ketten": {
       "t": "Autres chaînes",
       "u": "La même adresse partout, sans pont.",
@@ -1357,6 +1430,65 @@
       "thanks": "Merci, c’est bon !",
       "sorry": "Désolé, ça ne marche pas.",
       "rejected": " L’émetteur refuse."
+    },
+    "toysafe": {
+      "title": "Niveau de protection et vérification d’adresse",
+      "intro": "Coche ce que tu as déjà configuré et vérifie des destinataires d’exemple. Tout est un exemple, rien n’est envoyé.",
+      "levelTitle": "Ton niveau de protection",
+      "checks": [
+        "Verrouillage de l’écran",
+        "Sauvegarde de la phrase vérifiée",
+        "Portefeuille matériel pour les gros montants",
+        "Délai de coffre",
+        "Clé d’urgence avec adresse de sécurité",
+        "Adresse d’héritier"
+      ],
+      "level": "Niveau de protection {n} sur {m}",
+      "levels": [
+        "non protégé",
+        "base",
+        "bon",
+        "très bon"
+      ],
+      "nextStep": "Prochaine étape : {s}.",
+      "allDone": "Tout est configuré. Vérifie-le une fois par an.",
+      "sendTitle": "Vérifier avant d’envoyer",
+      "recipients": [
+        [
+          "Contact connu",
+          "Déjà payé 12 fois, dans ton carnet d’adresses."
+        ],
+        [
+          "Nouvelle adresse",
+          "Jamais utilisée."
+        ],
+        [
+          "Adresse presque identique",
+          "Même début et même fin que ton contact, le milieu diffère."
+        ],
+        [
+          "Adresse sur la liste d’alerte",
+          "Issue d’un message d’hameçonnage signalé."
+        ],
+        [
+          "Ancien jeton ToyCoin",
+          "Contrat sur Polygon, pas du TOY de la ToyChain."
+        ]
+      ],
+      "choose": "Choisis un destinataire.",
+      "lights": [
+        "Vert",
+        "Jaune",
+        "Rouge"
+      ],
+      "results": [
+        "Connu et sans anomalie. Aperçu comme d’habitude.",
+        "Nouvelle adresse : envoie d’abord un petit montant de test.",
+        "Piège d’adresse ! Elle ressemble à ton contact, mais ce n’est pas lui. Vérifie l’adresse entière.",
+        "Sur la liste d’alerte : signalée comme escroquerie. N’envoie rien.",
+        "Ce n’est pas du TOY de la ToyChain et ce n’est pas échangeable. N’envoie rien."
+      ],
+      "decide": "La décision te revient : ToySafe alerte, mais ne bloque jamais."
     }
   }
 }

@@ -11,7 +11,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check && node tools/check-i18n.mjs",
+    "check": "astro check && node tools/check-i18n.mjs && node tools/check-toyverse.mjs",
     "sync:toycoin": "node tools/sync-toycoin.mjs",
     "check:links": "node tools/check-links.mjs",
     "build:offline": "astro build && node tools/make-offline.mjs"

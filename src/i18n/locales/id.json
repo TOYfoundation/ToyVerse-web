@@ -19,6 +19,7 @@
     "step": "Langkah",
     "flowTitle": "Begini semuanya saling terhubung",
     "flowLabel": "Diagram alur",
+    "related": "Terkait",
     "image": "Gambar {n}",
     "ctaTitle": "Bergabunglah di ToyVerse",
     "ctaText": "Ajukan pertanyaan, uji lebih awal, atau jadilah pedagang atau mentor.",
@@ -81,7 +82,8 @@
         ["ToyScan", "Penjelajah dengan lampu peringatan: terus memeriksa apakah aturan dipatuhi.", "planned"],
         ["TOYQUEST", "Gim bergaya Seribu Satu Malam, dengan dunia belajar tentang teknologinya.", "inDev"],
         ["ToyCash", "Uang tunai euro pribadi di internet, juga secara offline.", "concept"],
-        ["ToyPost", "Satu kotak masuk untuk semua saluran, tagihan dalam TOY, dan perlindungan dari penipuan.", "built"]
+        ["ToyPost", "Satu kotak masuk untuk semua saluran, tagihan dalam TOY, dan perlindungan dari penipuan.", "built"],
+        ["ToySafe", "Aplikasi perlindungan dan pengujian: memperingatkan jebakan, membantu melindungi akun, dan memeriksa node.", "concept"]
       ],
       "after": "Ditambah sirkulasi ekonomi yang terbuka, pedagang, mentor, dan node komunitas. <a href=\"{community}\">Selengkapnya</a>",
       "flow": {
@@ -336,6 +338,30 @@
           ["Menghitung ulang", "Node arsip menjumlahkan sendiri semua saldo."],
           ["Menampilkan", "Saldo alamat yang sama di rantai lain hanya muncul sebagai informasi."],
           ["Lampu lalu lintas", "Hijau jika semuanya cocok. Kuning jika ada kejanggalan, merah jika ada pelanggaran aturan, disertai bukti."]
+        ]
+      }
+    },
+    "toysafe": {
+      "t": "ToySafe",
+      "u": "Aplikasi perlindungan dan pengujian: memperingatkan sebelum terjadi sesuatu.",
+      "rows": [
+        ["Pemeriksaan keamanan", "Memeriksa perangkat dan dompetmu lalu menunjukkan tingkat perlindungan beserta langkah berguna berikutnya."],
+        ["Sebelum mengirim", "Memeriksa setiap alamat baru: mirip alamat yang dikenal, ada di daftar peringatan, atau token ToyCoin lama? TOYPAY menampilkan hasilnya di pratinjau."],
+        ["Perlindungan akun", "Membantu menyiapkan penundaan brankas, kunci darurat, kunci mandiri, dan alamat ahli waris. Penandatanganan hanya terjadi di dompetmu."],
+        ["Penjaga", "Mengamati alamatmu hanya-baca dan melaporkan setiap pergerakan lewat ToyScan, jika mau lewat ToyPost."],
+        ["Laboratorium uji", "Uji keamanan untuk node dan layanan, hanya terhadap target milik sendiri atau yang diizinkan secara tegas. Temuan dikirim ke proyek secara rahasia."],
+        ["Prinsip", "Tanpa kunci, tanpa frasa, tanpa blokir. ToySafe memperingatkan, kamu yang memutuskan."]
+      ],
+      "note": "Konsep. ToySafe adalah aplikasi tersendiri dan juga bisa berjalan sendiri. Pemeriksaannya juga langsung masuk ke TOYPAY.",
+      "flow": {
+        "nodes": ["Perangkatmu", "ToySafe", "TOYPAY", "ToyChain", "ToyScan", "ToyPost"],
+        "steps": [
+          ["Periksa", "ToySafe memeriksa perangkatmu dan menunjukkan tingkat perlindungan dengan langkah berikutnya."],
+          ["Peringatkan", "Sebelum menandatangani, TOYPAY menanyakan risiko kepada ToySafe. Keputusan tetap di tanganmu."],
+          ["Lindungi", "Perlindungan akun berlaku di ToyChain. ToySafe menyiapkan, TOYPAY menandatangani."],
+          ["Baca", "ToyScan hanya membaca ToyChain, tanpa kunci."],
+          ["Jaga", "ToyScan melaporkan setiap pergerakan alamatmu kepada ToySafe."],
+          ["Beri tahu", "Peringatan datang lewat ToyPost dalam bahasamu, hanya jika kamu mau."]
         ]
       }
     },
@@ -678,6 +704,28 @@
       "thanks": "Terima kasih, beres!",
       "sorry": "Maaf, tidak bisa.",
       "rejected": " Penerbit menolak."
+    },
+    "toysafe": {
+      "title": "Tingkat perlindungan dan pemeriksaan alamat",
+      "intro": "Centang yang sudah kamu siapkan dan periksa penerima contoh. Semuanya hanya contoh, tidak ada yang dikirim.",
+      "levelTitle": "Tingkat perlindunganmu",
+      "checks": ["Kunci layar", "Cadangan frasa sudah dicek", "Dompet perangkat keras untuk jumlah besar", "Penundaan brankas", "Kunci darurat dengan alamat keamanan", "Alamat ahli waris"],
+      "level": "Tingkat perlindungan {n} dari {m}",
+      "levels": ["tanpa perlindungan", "dasar", "baik", "sangat baik"],
+      "nextStep": "Langkah berikutnya: {s}.",
+      "allDone": "Semua sudah siap. Periksa lagi setahun sekali.",
+      "sendTitle": "Periksa sebelum mengirim",
+      "recipients": [
+        ["Kontak dikenal", "Sudah dibayar 12 kali, ada di buku alamat."],
+        ["Alamat baru", "Belum pernah dipakai."],
+        ["Alamat hampir sama", "Awal dan akhirnya sama dengan kontakmu, bagian tengahnya berbeda."],
+        ["Alamat di daftar peringatan", "Dari pesan phishing yang dilaporkan."],
+        ["Token ToyCoin lama", "Kontrak di Polygon, bukan TOY ToyChain."]
+      ],
+      "choose": "Pilih penerima.",
+      "lights": ["Hijau", "Kuning", "Merah"],
+      "results": ["Dikenal dan wajar. Pratinjau seperti biasa.", "Alamat baru: kirim dulu jumlah uji yang kecil.", "Jebakan alamat! Terlihat seperti kontakmu, padahal bukan. Periksa seluruh alamatnya.", "Ada di daftar peringatan: dilaporkan sebagai penipuan. Jangan kirim.", "Ini bukan TOY ToyChain dan tidak bisa ditukar. Jangan kirim."],
+      "decide": "Keputusan tetap di tanganmu: ToySafe memperingatkan, tetapi tidak pernah memblokir."
     }
   }
 }

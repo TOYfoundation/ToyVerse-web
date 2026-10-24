@@ -19,6 +19,7 @@
     "step": "Hatua",
     "flowTitle": "Jinsi kila kitu kinavyoshikamana",
     "flowLabel": "Mchoro wa mtiririko",
+    "related": "Inahusiana",
     "image": "Picha {n}",
     "ctaTitle": "Shiriki katika ToyVerse",
     "ctaText": "Uliza maswali, jaribu mapema, au uwe mfanyabiashara au mshauri.",
@@ -144,6 +145,11 @@
           "ToyPost",
           "Sanduku moja la barua kwa njia zote, ankara kwa TOY, ulinzi dhidi ya ulaghai.",
           "built"
+        ],
+        [
+          "ToySafe",
+          "Programu ya ulinzi na ukaguzi: inaonya kuhusu mitego, inasaidia kulinda akaunti na kukagua nodi.",
+          "concept"
         ]
       ],
       "after": "Pia kuna mzunguko wazi wa uchumi, wafanyabiashara, washauri na nodi za jamii. <a href=\"{community}\">Zaidi</a>",
@@ -767,6 +773,73 @@
         ]
       }
     },
+    "toysafe": {
+      "t": "ToySafe",
+      "u": "Programu ya ulinzi na ukaguzi: inaonya kabla jambo halijatokea.",
+      "rows": [
+        [
+          "Ukaguzi wa usalama",
+          "Inakagua kifaa na pochi yako na kuonyesha kiwango chako cha ulinzi pamoja na hatua inayofaa inayofuata."
+        ],
+        [
+          "Kabla ya kutuma",
+          "Inakagua kila anwani mpya: inafanana na anwani unayoijua, iko kwenye orodha ya tahadhari au ni tokeni ya zamani ya ToyCoin? TOYPAY inaonyesha matokeo kwenye muhtasari."
+        ],
+        [
+          "Ulinzi wa akaunti",
+          "Inakusaidia kuweka ucheleweshaji wa sefu, ufunguo wa dharura, kujifungia na anwani ya mrithi. Kusaini kunafanyika kwenye pochi yako tu."
+        ],
+        [
+          "Mlinzi",
+          "Inafuatilia anwani zako kwa kusoma tu na kuripoti kila mwendo kupitia ToyScan, ukitaka kupitia ToyPost."
+        ],
+        [
+          "Maabara ya majaribio",
+          "Majaribio ya usalama kwa nodi na huduma, dhidi ya malengo yako au yaliyoruhusiwa waziwazi tu. Matokeo yanaenda kwa mradi kwa siri."
+        ],
+        [
+          "Kanuni",
+          "Hakuna funguo, hakuna maneno ya kurejesha, hakuna kufungia. ToySafe inaonya, wewe unaamua."
+        ]
+      ],
+      "note": "Dhana. ToySafe ni programu yake yenyewe na inafanya kazi hata peke yake. Ukaguzi wake pia unaingia moja kwa moja kwenye TOYPAY.",
+      "flow": {
+        "nodes": [
+          "Kifaa chako",
+          "ToySafe",
+          "TOYPAY",
+          "ToyChain",
+          "ToyScan",
+          "ToyPost"
+        ],
+        "steps": [
+          [
+            "Kagua",
+            "ToySafe inakagua kifaa chako na kuonyesha kiwango cha ulinzi pamoja na hatua inayofuata."
+          ],
+          [
+            "Onya",
+            "Kabla ya kusaini, TOYPAY inauliza ToySafe kuhusu hatari. Uamuzi unabaki kwako."
+          ],
+          [
+            "Linda",
+            "Ulinzi wa akaunti unafanya kazi kwenye ToyChain. ToySafe inaandaa, TOYPAY inasaini."
+          ],
+          [
+            "Soma",
+            "ToyScan inasoma ToyChain tu, bila funguo."
+          ],
+          [
+            "Linda zamu",
+            "ToyScan inaripoti kila mwendo wa anwani zako kwa ToySafe."
+          ],
+          [
+            "Arifu",
+            "Tahadhari zinakufikia kupitia ToyPost kwa lugha yako, ukitaka tu."
+          ]
+        ]
+      }
+    },
     "ketten": {
       "t": "Minyororo mingine",
       "u": "Anwani ileile kila mahali, bila bridge.",
@@ -1357,6 +1430,65 @@
       "thanks": "Asante, sawa kabisa!",
       "sorry": "Samahani, hilo haliwezekani.",
       "rejected": " Mtoaji anakataa."
+    },
+    "toysafe": {
+      "title": "Kiwango cha ulinzi na ukaguzi wa anwani",
+      "intro": "Weka alama kwenye ulichokwisha kuweka na ukague wapokeaji wa mfano. Kila kitu ni mfano, hakuna kinachotumwa.",
+      "levelTitle": "Kiwango chako cha ulinzi",
+      "checks": [
+        "Kufunga skrini",
+        "Nakala ya maneno ya kurejesha imekaguliwa",
+        "Pochi ya kifaa kwa kiasi kikubwa",
+        "Ucheleweshaji wa sefu",
+        "Ufunguo wa dharura wenye anwani ya usalama",
+        "Anwani ya mrithi"
+      ],
+      "level": "Kiwango cha ulinzi {n} kati ya {m}",
+      "levels": [
+        "bila ulinzi",
+        "msingi",
+        "kizuri",
+        "kizuri sana"
+      ],
+      "nextStep": "Hatua inayofuata: {s}.",
+      "allDone": "Kila kitu kimewekwa. Kikague mara moja kwa mwaka.",
+      "sendTitle": "Kagua kabla ya kutuma",
+      "recipients": [
+        [
+          "Mwasiliani unayemjua",
+          "Umemlipa mara 12, yuko kwenye kitabu cha anwani."
+        ],
+        [
+          "Anwani mpya",
+          "Haijawahi kutumika."
+        ],
+        [
+          "Anwani inayokaribia kufanana",
+          "Mwanzo na mwisho kama mwasiliani wako, katikati ni tofauti."
+        ],
+        [
+          "Anwani kwenye orodha ya tahadhari",
+          "Kutoka kwenye ujumbe wa hadaa ulioripotiwa."
+        ],
+        [
+          "Tokeni ya zamani ya ToyCoin",
+          "Mkataba kwenye Polygon, si TOY ya ToyChain."
+        ]
+      ],
+      "choose": "Chagua mpokeaji.",
+      "lights": [
+        "Kijani",
+        "Njano",
+        "Nyekundu"
+      ],
+      "results": [
+        "Unajulikana na hakuna tatizo. Muhtasari kama kawaida.",
+        "Anwani mpya: tuma kwanza kiasi kidogo cha majaribio.",
+        "Mtego wa anwani! Inaonekana kama mwasiliani wako, lakini sivyo. Kagua anwani yote.",
+        "Iko kwenye orodha ya tahadhari: imeripotiwa kuwa ulaghai. Usitume.",
+        "Hii si TOY ya ToyChain na haibadilishiki. Usitume."
+      ],
+      "decide": "Uamuzi unabaki kwako: ToySafe inaonya, lakini haizuii kamwe."
     }
   }
 }

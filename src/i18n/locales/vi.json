@@ -19,6 +19,7 @@
     "step": "Bước",
     "flowTitle": "Mọi thứ khớp với nhau như thế nào",
     "flowLabel": "Sơ đồ quy trình",
+    "related": "Liên quan",
     "image": "Hình {n}",
     "ctaTitle": "Tham gia ToyVerse",
     "ctaText": "Đặt câu hỏi, thử nghiệm sớm hoặc trở thành người bán hay người hướng dẫn.",
@@ -81,7 +82,8 @@
         ["ToyScan", "Trình khám phá có đèn cảnh báo: liên tục kiểm tra xem các quy tắc có được tuân thủ không.", "planned"],
         ["TOYQUEST", "Trò chơi theo phong cách Nghìn lẻ một đêm, với một thế giới học về kỹ thuật.", "inDev"],
         ["ToyCash", "Tiền mặt euro riêng tư trên mạng, cả khi ngoại tuyến.", "concept"],
-        ["ToyPost", "Một hộp thư cho mọi kênh, hóa đơn bằng TOY và bảo vệ khỏi lừa đảo.", "built"]
+        ["ToyPost", "Một hộp thư cho mọi kênh, hóa đơn bằng TOY và bảo vệ khỏi lừa đảo.", "built"],
+        ["ToySafe", "Ứng dụng bảo vệ và kiểm thử: cảnh báo bẫy, giúp bảo vệ tài khoản và kiểm tra nút mạng.", "concept"]
       ],
       "after": "Ngoài ra còn có một vòng kinh tế mở, người bán, người hướng dẫn và nút mạng cộng đồng. <a href=\"{community}\">Xem thêm</a>",
       "flow": {
@@ -336,6 +338,30 @@
           ["Tính lại", "Một nút lưu trữ tự cộng tất cả số dư."],
           ["Hiển thị", "Số dư của cùng địa chỉ trên chuỗi khác chỉ hiện để tham khảo."],
           ["Đèn giao thông", "Xanh khi mọi thứ đúng. Vàng khi có điểm bất thường, đỏ khi vi phạm quy tắc, kèm bằng chứng."]
+        ]
+      }
+    },
+    "toysafe": {
+      "t": "ToySafe",
+      "u": "Ứng dụng bảo vệ và kiểm thử: cảnh báo trước khi có chuyện.",
+      "rows": [
+        ["Kiểm tra an toàn", "Kiểm tra thiết bị và ví của bạn, cho thấy mức bảo vệ cùng bước tiếp theo nên làm."],
+        ["Trước khi gửi", "Kiểm tra mọi địa chỉ mới: giống một địa chỉ quen, nằm trong danh sách cảnh báo hay là token ToyCoin cũ? TOYPAY hiển thị kết quả trong phần xem trước."],
+        ["Bảo vệ tài khoản", "Giúp thiết lập độ trễ két, khóa khẩn cấp, tự khóa và địa chỉ thừa kế. Việc ký chỉ diễn ra trong ví của bạn."],
+        ["Người canh gác", "Theo dõi các địa chỉ của bạn ở chế độ chỉ đọc và báo mọi biến động qua ToyScan, nếu muốn qua ToyPost."],
+        ["Phòng kiểm thử", "Kiểm thử bảo mật cho nút mạng và dịch vụ, chỉ với mục tiêu của bạn hoặc mục tiêu được cho phép rõ ràng. Phát hiện được gửi kín cho dự án."],
+        ["Nguyên tắc", "Không khóa bí mật, không cụm từ, không chặn. ToySafe cảnh báo, bạn quyết định."]
+      ],
+      "note": "Ý tưởng. ToySafe là một ứng dụng riêng và cũng hoạt động độc lập. Các bước kiểm tra còn được đưa thẳng vào TOYPAY.",
+      "flow": {
+        "nodes": ["Thiết bị của bạn", "ToySafe", "TOYPAY", "ToyChain", "ToyScan", "ToyPost"],
+        "steps": [
+          ["Kiểm tra", "ToySafe kiểm tra thiết bị và cho thấy mức bảo vệ cùng bước tiếp theo."],
+          ["Cảnh báo", "Trước khi ký, TOYPAY hỏi ToySafe về rủi ro. Quyết định vẫn là của bạn."],
+          ["Bảo vệ", "Bảo vệ tài khoản có hiệu lực trên ToyChain. ToySafe chuẩn bị, TOYPAY ký."],
+          ["Đọc", "ToyScan chỉ đọc ToyChain, không cần khóa."],
+          ["Canh gác", "ToyScan báo cho ToySafe mọi biến động của địa chỉ bạn."],
+          ["Thông báo", "Cảnh báo đến qua ToyPost bằng ngôn ngữ của bạn, chỉ khi bạn muốn."]
         ]
       }
     },
@@ -678,6 +704,28 @@
       "thanks": "Cảm ơn, được rồi!",
       "sorry": "Rất tiếc, không được.",
       "rejected": " Đơn vị phát hành từ chối."
+    },
+    "toysafe": {
+      "title": "Mức bảo vệ và kiểm tra địa chỉ",
+      "intro": "Đánh dấu những gì bạn đã thiết lập và kiểm tra các người nhận mẫu. Tất cả chỉ là ví dụ, không gì được gửi đi.",
+      "levelTitle": "Mức bảo vệ của bạn",
+      "checks": ["Khóa màn hình", "Đã kiểm tra bản sao cụm từ", "Ví phần cứng cho số tiền lớn", "Độ trễ két", "Khóa khẩn cấp với địa chỉ an toàn", "Địa chỉ thừa kế"],
+      "level": "Mức bảo vệ {n}/{m}",
+      "levels": ["chưa bảo vệ", "cơ bản", "tốt", "rất tốt"],
+      "nextStep": "Bước tiếp theo: {s}.",
+      "allDone": "Đã thiết lập đủ. Hãy kiểm tra lại mỗi năm một lần.",
+      "sendTitle": "Kiểm tra trước khi gửi",
+      "recipients": [
+        ["Liên hệ quen", "Đã thanh toán 12 lần, có trong sổ địa chỉ."],
+        ["Địa chỉ mới", "Chưa từng dùng."],
+        ["Địa chỉ gần giống", "Đầu và cuối giống liên hệ của bạn, phần giữa khác."],
+        ["Địa chỉ trong danh sách cảnh báo", "Từ một tin nhắn lừa đảo đã bị báo cáo."],
+        ["Token ToyCoin cũ", "Hợp đồng trên Polygon, không phải TOY của ToyChain."]
+      ],
+      "choose": "Chọn một người nhận.",
+      "lights": ["Xanh", "Vàng", "Đỏ"],
+      "results": ["Quen thuộc, không có gì bất thường. Xem trước như mọi khi.", "Địa chỉ mới: hãy gửi trước một khoản thử nhỏ.", "Bẫy địa chỉ! Trông giống liên hệ của bạn nhưng không phải. Hãy kiểm tra toàn bộ địa chỉ.", "Trong danh sách cảnh báo: bị báo cáo là lừa đảo. Đừng gửi.", "Đây không phải TOY của ToyChain và không thể đổi. Đừng gửi."],
+      "decide": "Quyết định vẫn là của bạn: ToySafe cảnh báo nhưng không bao giờ chặn."
     }
   }
 }

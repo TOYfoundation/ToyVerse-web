@@ -19,6 +19,7 @@
     "step": "Ìgbésẹ̀",
     "flowTitle": "Bí ohun gbogbo ṣe so pọ̀",
     "flowLabel": "Àwòrán ìṣàn iṣẹ́",
+    "related": "Ó jọmọ́ èyí",
     "image": "Àwòrán {n}",
     "ctaTitle": "Darapọ̀ mọ́ ToyVerse",
     "ctaText": "Béèrè ìbéèrè, dánwò ní kùtùkùtù, tàbí di oníṣòwò tàbí olùtọ́sọ́nà.",
@@ -144,6 +145,11 @@
           "ToyPost",
           "Àpótí ìfìwéránṣẹ́ kan fún gbogbo ọ̀nà, ìwé owó ní TOY, ààbò lọ́wọ́ jìbìtì.",
           "built"
+        ],
+        [
+          "ToySafe",
+          "Áàpù ààbò àti àyẹ̀wò: ń kìlọ̀ nípa pańpẹ́, ń ṣèrànwọ́ fún ààbò àkọọ́lẹ̀, ó sì ń yẹ àwọn nódù wò.",
+          "concept"
         ]
       ],
       "after": "Àwọn mìíràn tún wà: àyíká ọrọ̀ ajé tí ó ṣí sílẹ̀, àwọn oníṣòwò, àwọn olùtọ́sọ́nà àti àwọn nódù àwùjọ. <a href=\"{community}\">Púpọ̀ sí i</a>",
@@ -767,6 +773,73 @@
         ]
       }
     },
+    "toysafe": {
+      "t": "ToySafe",
+      "u": "Áàpù ààbò àti àyẹ̀wò: ó ń kìlọ̀ kí nǹkan tó ṣẹlẹ̀.",
+      "rows": [
+        [
+          "Àyẹ̀wò ààbò",
+          "Ó ń yẹ ẹ̀rọ àti àpamọ́wọ́ rẹ wò, ó sì ń fi ìpele ààbò rẹ hàn pẹ̀lú ìgbésẹ̀ tí ó wúlò tí ó kàn."
+        ],
+        [
+          "Ṣáájú ìfiránṣẹ́",
+          "Ó ń yẹ àdírẹ́sì tuntun kọ̀ọ̀kan wò: ṣé ó jọ èyí tí o mọ̀, ṣé ó wà nínú àkójọ ìkìlọ̀, àbí token ToyCoin àtijọ́ ni? TOYPAY ń fi àbájáde hàn nínú àyẹ̀wò ṣáájú ìbuwọ́lù."
+        ],
+        [
+          "Ààbò àkọọ́lẹ̀",
+          "Ó ń ràn ọ́ lọ́wọ́ láti ṣètò ìdádúró àpótí-ìpamọ́, kọ́kọ́rọ́ pàjáwìrì, títi ara ẹni pa àti àdírẹ́sì ajogún. Inú àpamọ́wọ́ rẹ nìkan ni ìbuwọ́lù ti ń wáyé."
+        ],
+        [
+          "Olùṣọ́",
+          "Ó ń wo àwọn àdírẹ́sì rẹ fún kíkà nìkan, ó sì ń ròyìn gbogbo ìṣísẹ̀ nípasẹ̀ ToyScan, bí o bá fẹ́ nípasẹ̀ ToyPost."
+        ],
+        [
+          "Yàrá ìdánwò",
+          "Ìdánwò ààbò fún àwọn nódù àti iṣẹ́, kìkì lórí àfojúsùn tìrẹ tàbí èyí tí a fún ní àṣẹ kedere. Àwọn àbájáde ń lọ sí iṣẹ́ àkànṣe náà ní ìkọ̀kọ̀."
+        ],
+        [
+          "Àwọn ìlànà",
+          "Kò sí kọ́kọ́rọ́, kò sí àwọn ọ̀rọ̀ ìmúpadàbọ̀sípò, kò sí títì pa. ToySafe ń kìlọ̀, ìwọ ló ń pinnu."
+        ]
+      ],
+      "note": "Èrò ni. ToySafe jẹ́ áàpù tirẹ̀, ó sì lè ṣiṣẹ́ fúnra rẹ̀. Àwọn àyẹ̀wò rẹ̀ tún ń wọ inú TOYPAY tààrà.",
+      "flow": {
+        "nodes": [
+          "Ẹ̀rọ rẹ",
+          "ToySafe",
+          "TOYPAY",
+          "ToyChain",
+          "ToyScan",
+          "ToyPost"
+        ],
+        "steps": [
+          [
+            "Yẹ̀ ẹ́ wò",
+            "ToySafe ń yẹ ẹ̀rọ rẹ wò, ó sì ń fi ìpele ààbò hàn pẹ̀lú ìgbésẹ̀ tí ó kàn."
+          ],
+          [
+            "Kìlọ̀",
+            "Ṣáájú ìbuwọ́lù, TOYPAY ń béèrè lọ́wọ́ ToySafe nípa ewu. Ìpinnu ṣì jẹ́ tìrẹ."
+          ],
+          [
+            "Dáàbò bò",
+            "Ààbò àkọọ́lẹ̀ ń ṣiṣẹ́ lórí ToyChain. ToySafe ń pèsè rẹ̀ sílẹ̀, TOYPAY ń buwọ́lù."
+          ],
+          [
+            "Kà á",
+            "ToyScan ń ka ToyChain nìkan, láìsí kọ́kọ́rọ́."
+          ],
+          [
+            "Ṣọ́",
+            "ToyScan ń ròyìn gbogbo ìṣísẹ̀ àwọn àdírẹ́sì rẹ fún ToySafe."
+          ],
+          [
+            "Fi tó ọ létí",
+            "Àwọn ìkìlọ̀ ń dé ọ̀dọ̀ rẹ nípasẹ̀ ToyPost ní èdè rẹ, kìkì bí o bá fẹ́."
+          ]
+        ]
+      }
+    },
     "ketten": {
       "t": "Ẹ̀wọ̀n mìíràn",
       "u": "Àdírẹ́sì kan náà níbi gbogbo, láìsí bridge.",
@@ -1357,6 +1430,65 @@
       "thanks": "O ṣé, ó dára!",
       "sorry": "Ó ṣe ni láàánú, èyí kò ṣeé ṣe.",
       "rejected": " Olùgbéjáde kọ̀ ọ́."
+    },
+    "toysafe": {
+      "title": "Ìpele ààbò àti àyẹ̀wò àdírẹ́sì",
+      "intro": "Sàmì sí ohun tí o ti ṣètò tẹ́lẹ̀, kí o sì yẹ àwọn olùgbà àpẹẹrẹ wò. Àpẹẹrẹ ni gbogbo rẹ̀, a kò fi ohunkóhun ránṣẹ́.",
+      "levelTitle": "Ìpele ààbò rẹ",
+      "checks": [
+        "Títi ojú fóònù pa",
+        "A ti yẹ ẹ̀dà àwọn ọ̀rọ̀ ìmúpadàbọ̀sípò wò",
+        "Àpamọ́wọ́ hardware fún owó ńlá",
+        "Ìdádúró àpótí-ìpamọ́",
+        "Kọ́kọ́rọ́ pàjáwìrì pẹ̀lú àdírẹ́sì ààbò",
+        "Àdírẹ́sì ajogún"
+      ],
+      "level": "Ìpele ààbò {n} nínú {m}",
+      "levels": [
+        "kò ní ààbò",
+        "ìpìlẹ̀",
+        "dára",
+        "dára gan-an"
+      ],
+      "nextStep": "Ìgbésẹ̀ tí ó kàn: {s}.",
+      "allDone": "Gbogbo rẹ̀ ti wà ní ipò. Yẹ̀ ẹ́ wò lẹ́ẹ̀kan lọ́dún.",
+      "sendTitle": "Yẹ̀ ẹ́ wò ṣáájú ìfiránṣẹ́",
+      "recipients": [
+        [
+          "Ẹni tí o mọ̀",
+          "O ti sanwó fún un ní ìgbà 12, ó wà nínú ìwé àdírẹ́sì rẹ."
+        ],
+        [
+          "Àdírẹ́sì tuntun",
+          "A kò tíì lò ó rí."
+        ],
+        [
+          "Àdírẹ́sì tí ó fẹ́rẹ̀ẹ́ jọra",
+          "Ìbẹ̀rẹ̀ àti òpin rẹ̀ dàbí ti ẹni tí o mọ̀, àárín rẹ̀ yàtọ̀."
+        ],
+        [
+          "Àdírẹ́sì nínú àkójọ ìkìlọ̀",
+          "Láti inú ìfiránṣẹ́ jìbìtì tí a ròyìn."
+        ],
+        [
+          "Token ToyCoin àtijọ́",
+          "Àdéhùn lórí Polygon, kì í ṣe TOY ToyChain."
+        ]
+      ],
+      "choose": "Yan olùgbà kan.",
+      "lights": [
+        "Àwọ̀ ewé",
+        "Ìyeyè",
+        "Pupa"
+      ],
+      "results": [
+        "A mọ̀ ọ́, kò sí ìṣòro. Àyẹ̀wò bí ti tẹ́lẹ̀.",
+        "Àdírẹ́sì tuntun: kọ́kọ́ fi iye owó ìdánwò kékeré ránṣẹ́.",
+        "Pańpẹ́ àdírẹ́sì! Ó dàbí ẹni tí o mọ̀, ṣùgbọ́n kì í ṣe òun. Yẹ gbogbo àdírẹ́sì náà wò.",
+        "Ó wà nínú àkójọ ìkìlọ̀: a ròyìn rẹ̀ gẹ́gẹ́ bí jìbìtì. Má ṣe fi ránṣẹ́.",
+        "Èyí kì í ṣe TOY ToyChain, kò sì ṣeé pààrọ̀. Má ṣe fi ránṣẹ́."
+      ],
+      "decide": "Ìpinnu ṣì jẹ́ tìrẹ: ToySafe ń kìlọ̀, ṣùgbọ́n kò dí ọ lọ́wọ́ láéláé."
     }
   }
 }

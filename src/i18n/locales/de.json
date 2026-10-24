@@ -19,6 +19,7 @@
     "step": "Schritt",
     "flowTitle": "So greift alles ineinander",
     "flowLabel": "Ablaufdiagramm",
+    "related": "Passt dazu",
     "image": "Bild {n}",
     "ctaTitle": "Mach mit im ToyVerse",
     "ctaText": "Frag nach, teste früh oder werde Händler oder Mentor.",
@@ -144,6 +145,11 @@
           "ToyPost",
           "Ein Posteingang für alle Kanäle, Rechnungen in TOY, Schutz vor Betrug.",
           "built"
+        ],
+        [
+          "ToySafe",
+          "Schutz- und Prüf-App: warnt vor Fallen, hilft beim Konto-Schutz und prüft Knoten.",
+          "concept"
         ]
       ],
       "after": "Dazu kommen ein offener Wirtschaftskreislauf, Händler, Mentoren und Community-Knoten. <a href=\"{community}\">Mehr dazu</a>",
@@ -767,6 +773,73 @@
         ]
       }
     },
+    "toysafe": {
+      "t": "ToySafe",
+      "u": "Die Schutz- und Prüf-App: warnt, bevor etwas passiert.",
+      "rows": [
+        [
+          "Sicherheits-Check",
+          "Prüft Gerät und Wallet und zeigt deine Schutzstufe mit dem nächsten sinnvollen Schritt."
+        ],
+        [
+          "Vor dem Senden",
+          "Prüft jede neue Adresse: ähnlich wie eine bekannte, auf der Warnliste oder ein altes ToyCoin-Token? TOYPAY zeigt das Ergebnis in der Vorschau."
+        ],
+        [
+          "Konto-Schutz",
+          "Hilft beim Einrichten von Tresor-Verzögerung, Notfall-Schlüssel, Selbst-Sperre und Erben-Adresse. Signiert wird nur in deiner Wallet."
+        ],
+        [
+          "Wächter",
+          "Beobachtet deine Adressen nur lesend und meldet jede Bewegung über ToyScan, auf Wunsch per ToyPost."
+        ],
+        [
+          "Prüflabor",
+          "Sicherheitstests für Knoten und Dienste, nur gegen eigene oder ausdrücklich freigegebene Ziele. Funde gehen vertraulich an das Projekt."
+        ],
+        [
+          "Grundsätze",
+          "Keine Schlüssel, keine Phrase, keine Sperren. ToySafe warnt, du entscheidest."
+        ]
+      ],
+      "note": "Konzept. ToySafe ist eine eigene App und funktioniert auch allein. Ihre Prüfungen fließen zusätzlich direkt in TOYPAY ein.",
+      "flow": {
+        "nodes": [
+          "Dein Gerät",
+          "ToySafe",
+          "TOYPAY",
+          "ToyChain",
+          "ToyScan",
+          "ToyPost"
+        ],
+        "steps": [
+          [
+            "Prüfen",
+            "ToySafe prüft dein Gerät und zeigt die Schutzstufe mit dem nächsten Schritt."
+          ],
+          [
+            "Warnen",
+            "Vor dem Signieren fragt TOYPAY ToySafe nach Risiken. Die Entscheidung bleibt bei dir."
+          ],
+          [
+            "Schützen",
+            "Der Konto-Schutz wirkt auf der ToyChain. ToySafe bereitet vor, TOYPAY signiert."
+          ],
+          [
+            "Lesen",
+            "ToyScan liest die ToyChain nur, ohne Schlüssel."
+          ],
+          [
+            "Wachen",
+            "ToyScan meldet jede Bewegung deiner Adressen an ToySafe."
+          ],
+          [
+            "Melden",
+            "Warnungen kommen über ToyPost in deiner Sprache, nur wenn du willst."
+          ]
+        ]
+      }
+    },
     "ketten": {
       "t": "Andere Ketten",
       "u": "Dieselbe Adresse überall, ohne Bridge.",
@@ -1357,6 +1430,65 @@
       "thanks": "Danke, das passt!",
       "sorry": "Das geht leider nicht.",
       "rejected": " Der Emittent lehnt ab."
+    },
+    "toysafe": {
+      "title": "Schutzstufe und Adress-Prüfung",
+      "intro": "Hake ab, was du schon eingerichtet hast, und prüfe Beispiel-Empfänger. Alles ist ein Beispiel, nichts wird gesendet.",
+      "levelTitle": "Deine Schutzstufe",
+      "checks": [
+        "Bildschirmsperre",
+        "Sicherung der Phrase geprüft",
+        "Hardware-Wallet für große Beträge",
+        "Tresor-Verzögerung",
+        "Notfall-Schlüssel mit Sicherheitsadresse",
+        "Erben-Adresse"
+      ],
+      "level": "Schutzstufe {n} von {m}",
+      "levels": [
+        "ungeschützt",
+        "Basis",
+        "gut",
+        "sehr gut"
+      ],
+      "nextStep": "Nächster Schritt: {s}.",
+      "allDone": "Alles eingerichtet. Prüfe es einmal im Jahr.",
+      "sendTitle": "Vor dem Senden prüfen",
+      "recipients": [
+        [
+          "Bekannter Kontakt",
+          "Schon 12-mal bezahlt, im Adressbuch."
+        ],
+        [
+          "Neue Adresse",
+          "Noch nie benutzt."
+        ],
+        [
+          "Fast gleiche Adresse",
+          "Anfang und Ende wie dein Kontakt, die Mitte ist anders."
+        ],
+        [
+          "Adresse auf der Warnliste",
+          "Aus einer gemeldeten Phishing-Nachricht."
+        ],
+        [
+          "Altes ToyCoin-Token",
+          "Vertrag auf Polygon, kein ToyChain-TOY."
+        ]
+      ],
+      "choose": "Wähle einen Empfänger.",
+      "lights": [
+        "Grün",
+        "Gelb",
+        "Rot"
+      ],
+      "results": [
+        "Bekannt und unauffällig. Vorschau wie immer.",
+        "Neue Adresse: Sende zuerst einen kleinen Probebetrag.",
+        "Adress-Falle! Sie sieht aus wie dein Kontakt, ist es aber nicht. Prüfe die ganze Adresse.",
+        "Auf der Warnliste: als Betrug gemeldet. Nicht senden.",
+        "Das ist kein ToyChain-TOY und nicht eintauschbar. Nicht senden."
+      ],
+      "decide": "Die Entscheidung bleibt bei dir: ToySafe warnt, sperrt aber nie."
     }
   }
 }

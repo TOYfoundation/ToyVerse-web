@@ -19,6 +19,7 @@
     "step": "Stap",
     "flowTitle": "Zo grijpt alles in elkaar",
     "flowLabel": "Stroomdiagram",
+    "related": "Hoort hierbij",
     "image": "Afbeelding {n}",
     "ctaTitle": "Doe mee in het ToyVerse",
     "ctaText": "Stel je vraag, test vroeg mee of word handelaar of mentor.",
@@ -81,7 +82,8 @@
         ["ToyScan", "Explorer met waarschuwingslicht: controleert doorlopend of de regels worden nageleefd.", "planned"],
         ["TOYQUEST", "Het spel in de stijl van Duizend-en-een-nacht, met een leerwereld over de techniek.", "inDev"],
         ["ToyCash", "Privé contant geld in euro op het net, ook offline.", "concept"],
-        ["ToyPost", "Eén inbox voor alle kanalen, facturen in TOY en bescherming tegen fraude.", "built"]
+        ["ToyPost", "Eén inbox voor alle kanalen, facturen in TOY en bescherming tegen fraude.", "built"],
+        ["ToySafe", "Beveiligings- en test-app: waarschuwt voor valkuilen, helpt bij accountbescherming en controleert nodes.", "concept"]
       ],
       "after": "Daarnaast een open economische kringloop, handelaren, mentoren en community-nodes. <a href=\"{community}\">Meer hierover</a>",
       "flow": {
@@ -336,6 +338,30 @@
           ["Narekenen", "Een archiefnode telt zelf alle saldi op."],
           ["Tonen", "Saldi van hetzelfde adres op andere ketens verschijnen alleen ter informatie."],
           ["Verkeerslicht", "Groen als alles klopt. Geel bij opvallende zaken, rood bij een regelovertreding, met bewijs."]
+        ]
+      }
+    },
+    "toysafe": {
+      "t": "ToySafe",
+      "u": "De beveiligings- en test-app: waarschuwt voordat er iets gebeurt.",
+      "rows": [
+        ["Veiligheidscheck", "Controleert je apparaat en wallet en toont je beschermingsniveau met de volgende zinvolle stap."],
+        ["Voor het verzenden", "Controleert elk nieuw adres: lijkt het op een bekend adres, staat het op de waarschuwingslijst of is het een oud ToyCoin-token? TOYPAY toont het resultaat in het voorbeeld."],
+        ["Accountbescherming", "Helpt bij het instellen van kluisvertraging, noodsleutel, zelfblokkade en erfgenaamadres. Ondertekenen gebeurt alleen in je wallet."],
+        ["Wachter", "Volgt je adressen alleen-lezen en meldt elke beweging via ToyScan, desgewenst via ToyPost."],
+        ["Testlab", "Beveiligingstests voor nodes en diensten, alleen tegen eigen of uitdrukkelijk goedgekeurde doelen. Vondsten gaan vertrouwelijk naar het project."],
+        ["Principes", "Geen sleutels, geen zin, geen blokkades. ToySafe waarschuwt, jij beslist."]
+      ],
+      "note": "Concept. ToySafe is een eigen app en werkt ook zelfstandig. De controles komen daarnaast rechtstreeks in TOYPAY.",
+      "flow": {
+        "nodes": ["Je apparaat", "ToySafe", "TOYPAY", "ToyChain", "ToyScan", "ToyPost"],
+        "steps": [
+          ["Controleren", "ToySafe controleert je apparaat en toont het beschermingsniveau met de volgende stap."],
+          ["Waarschuwen", "Voor het ondertekenen vraagt TOYPAY ToySafe naar risico’s. De beslissing blijft bij jou."],
+          ["Beschermen", "Accountbescherming werkt op de ToyChain. ToySafe bereidt voor, TOYPAY ondertekent."],
+          ["Lezen", "ToyScan leest de ToyChain alleen, zonder sleutels."],
+          ["Bewaken", "ToyScan meldt elke beweging van je adressen aan ToySafe."],
+          ["Melden", "Waarschuwingen komen via ToyPost in jouw taal, alleen als je dat wilt."]
         ]
       }
     },
@@ -678,6 +704,28 @@
       "thanks": "Dank je, dat klopt!",
       "sorry": "Dat kan helaas niet.",
       "rejected": " De uitgever weigert."
+    },
+    "toysafe": {
+      "title": "Beschermingsniveau en adrescontrole",
+      "intro": "Vink aan wat je al hebt ingesteld en controleer voorbeeldontvangers. Alles is een voorbeeld, er wordt niets verzonden.",
+      "levelTitle": "Jouw beschermingsniveau",
+      "checks": ["Schermvergrendeling", "Back-up van de zin gecontroleerd", "Hardware-wallet voor grote bedragen", "Kluisvertraging", "Noodsleutel met veiligheidsadres", "Erfgenaamadres"],
+      "level": "Beschermingsniveau {n} van {m}",
+      "levels": ["onbeschermd", "basis", "goed", "zeer goed"],
+      "nextStep": "Volgende stap: {s}.",
+      "allDone": "Alles is ingesteld. Controleer het één keer per jaar.",
+      "sendTitle": "Controleren voor het verzenden",
+      "recipients": [
+        ["Bekend contact", "Al 12 keer betaald, staat in je adresboek."],
+        ["Nieuw adres", "Nog nooit gebruikt."],
+        ["Bijna hetzelfde adres", "Begin en einde zoals je contact, het midden is anders."],
+        ["Adres op de waarschuwingslijst", "Uit een gemeld phishingbericht."],
+        ["Oud ToyCoin-token", "Contract op Polygon, geen ToyChain-TOY."]
+      ],
+      "choose": "Kies een ontvanger.",
+      "lights": ["Groen", "Geel", "Rood"],
+      "results": ["Bekend en onopvallend. Voorbeeld zoals altijd.", "Nieuw adres: stuur eerst een klein testbedrag.", "Adresval! Het lijkt op je contact, maar is het niet. Controleer het hele adres.", "Op de waarschuwingslijst: gemeld als oplichting. Niet verzenden.", "Dit is geen ToyChain-TOY en niet inwisselbaar. Niet verzenden."],
+      "decide": "De beslissing blijft bij jou: ToySafe waarschuwt, maar blokkeert nooit."
     }
   }
 }
