@@ -110,8 +110,8 @@ export function init() {
     el.querySelectorAll('.lb').forEach((b, j) => b.classList.toggle('on', j === i));
     $('rt').textContent = fill(T.rate, { r: num(lang, RATE[i], 0) });
     $('en').textContent = L[2];
-    const hero = document.querySelector('.hero');
-    if (hero) hero.style.filter = `hue-rotate(${i * 50}deg) saturate(${1 + i * 0.1})`;
+    // Tint only the background scenes; a filter on the whole hero widens the page on phones.
+    document.querySelectorAll('.hero .sd svg').forEach((svg) => (svg.style.filter = `hue-rotate(${i * 50}deg) saturate(${1 + i * 0.1})`));
     speak(`${fill(T.level, { n: i + 1 })}, ${L[0]}: ${L[1]}`);
   }
   $('lv').innerHTML = T.levels.map((L, i) => `<button class="lb" data-i="${i}">${i + 1} ${esc(L[0].split(' · ')[0])}</button>`).join('');

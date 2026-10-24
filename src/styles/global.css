@@ -193,3 +193,4 @@ dl.facts dd code{font-size:.95rem}
 .flow-fallback{margin:0;padding-inline-start:1.2rem}
 .ct .dot{width:.7rem;height:.7rem;border:0;padding:0;border-radius:999px}.ct .dot.on{width:1.8rem}
 .chart svg{max-height:20rem}
+@media(max-width:33rem){.hc{display:none}.ls{margin-inline-start:auto}.logo{font-size:1.4rem}}
