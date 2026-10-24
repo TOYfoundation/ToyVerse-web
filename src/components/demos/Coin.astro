@@ -1,0 +1,42 @@
+---
+import { t } from '../../i18n';
+import { issuedAfterYears } from '../../lib/emission.js';
+interface Props { lang: string }
+const { lang } = Astro.props;
+// Emission curve, computed at build time: x = years 0..25, y = million TOY 0..100.
+const W = 640, H = 230, X0 = 48, Y0 = 200, XW = 570, YH = 170;
+const pts = Array.from({ length: 101 }, (_, i) => {
+  const y = (i / 100) * 25;
+  return `${(X0 + (y / 25) * XW).toFixed(1)},${(Y0 - (issuedAfterYears(y) / 1e8) * YH).toFixed(1)}`;
+});
+const T = {
+  label: t(lang, 'pages.toycoin.chartLabel'),
+  year: t(lang, 'pages.toycoin.chartYear'),
+  geo: { X0, Y0, XW, YH },
+};
+---
+<h2>{t(lang, 'pages.toycoin.chartTitle')}</h2>
+<div class="sim chart" id="emis" data-t={JSON.stringify(T)}>
+  <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-labelledby="emis-l">
+    <line x1={X0} y1={Y0} x2={X0 + XW} y2={Y0} stroke="var(--ln)" />
+    <line x1={X0} y1={Y0} x2={X0} y2={Y0 - YH} stroke="var(--ln)" />
+    <line x1={X0} y1={Y0 - YH} x2={X0 + XW} y2={Y0 - YH} stroke="#e03131" stroke-dasharray="4 4" />
+    {[0, 25, 50, 75, 100].map((v) => <text x={X0 - 6} y={Y0 - (v / 100) * YH + 4} text-anchor="end" font-size="13" fill="var(--mu)">{v}</text>)}
+    {[0, 5, 10, 15, 20, 25].map((y) => <text x={X0 + (y / 25) * XW} y={Y0 + 14} text-anchor="middle" font-size="13" fill="var(--mu)">{y}</text>)}
+    <text x={X0 + 4} y={Y0 - YH - 5} font-size="13" fill="var(--mu)">{t(lang, 'pages.toycoin.chartAxis')}</text>
+    <polyline points={pts.join(' ')} fill="none" stroke="var(--acc)" stroke-width="3" />
+    <circle id="emd" r="6" fill="#f2b632" stroke="var(--ink)" cx={X0} cy={Y0} />
+  </svg>
+  <label for="emy" id="emis-l">{t(lang, 'pages.toycoin.chartLabel', { y: 1, m: (issuedAfterYears(1) / 1e6).toFixed(1) })}</label>
+  <input id="emy" type="range" min="0" max="25" step="0.5" value="1" />
+</div>
+<h2>{t(lang, 'pages.toycoin.coinTitle')}</h2>
+<div class="sim">
+  <div class="cn" id="cn"></div>
+  <label for="ca">{t(lang, 'pages.toycoin.coinTurn')}</label>
+  <input id="ca" type="range" min="0" max="360" value="0" />
+</div>
+<script>
+  import { init } from '../../scripts/demos/coin.js';
+  init();
+</script>

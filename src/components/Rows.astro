@@ -1,0 +1,16 @@
+---
+// Definition list: [term, description].
+interface Props {
+  items: string[][];
+  cls?: string;
+}
+const { items, cls = '' } = Astro.props;
+---
+<dl class={`r ${cls}`}>
+  {items.map(([dt, dd]) => (
+    <div>
+      <dt>{dt}</dt>
+      <dd set:html={dd} />
+    </div>
+  ))}
+</dl>

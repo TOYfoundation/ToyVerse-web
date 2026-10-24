@@ -1,0 +1,39 @@
+---
+import site from '../../data/site.json';
+import { t, tv } from '../../i18n';
+interface Props { lang: string }
+const { lang } = Astro.props;
+const topics = tv<string[]>(lang, 'pages.kontakt.topics');
+const T = { mail: site.email, noMail: t(lang, 'pages.kontakt.noMail'), opened: t(lang, 'pages.kontakt.opened') };
+---
+<h2>{t(lang, 'pages.kontakt.formTitle')}</h2>
+<form class="sim" id="contact" data-t={JSON.stringify(T)}>
+  <label for="kt">{t(lang, 'pages.kontakt.topic')}</label>
+  <select id="kt">{topics.map((x) => <option>{x}</option>)}</select>
+  <label for="kn">{t(lang, 'pages.kontakt.name')}</label>
+  <input id="kn" type="text" autocomplete="name" />
+  <label for="km">{t(lang, 'pages.kontakt.message')}</label>
+  <textarea id="km" rows="5"></textarea>
+  <button class="btn" id="ks" type="submit">{t(lang, 'pages.kontakt.send')}</button>
+  <p id="ko" role="status" style="color:var(--mu);margin:.4rem 0 0"></p>
+</form>
+<p class="note">{t(lang, 'pages.kontakt.security')}</p>
+<script>
+  const form = document.getElementById('contact') as HTMLFormElement | null;
+  if (form) {
+    const T = JSON.parse(form.dataset.t || '{}');
+    const out = document.getElementById('ko')!;
+    const btn = document.getElementById('ks') as HTMLButtonElement;
+    const val = (id: string) => (document.getElementById(id) as HTMLInputElement).value;
+    if (!T.mail) {
+      out.textContent = T.noMail;
+      btn.disabled = true;
+    }
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!T.mail) return;
+      location.href = `mailto:${T.mail}?subject=${encodeURIComponent(val('kt'))}&body=${encodeURIComponent(`${val('km')}\n\n${val('kn')}`)}`;
+      out.textContent = T.opened;
+    });
+  }
+</script>

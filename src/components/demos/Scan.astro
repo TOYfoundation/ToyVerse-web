@@ -1,0 +1,21 @@
+---
+import { tv } from '../../i18n';
+interface Props { lang: string }
+const { lang } = Astro.props;
+const T = tv<Record<string, unknown>>(lang, 'demo.toyscan');
+---
+<div class="sim" id="scan" data-t={JSON.stringify(T)}>
+  <div style="display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap">
+    <div class="lamp" id="lm"></div>
+    <div><b id="ls"></b><div id="lw" style="color:var(--mu)"></div></div>
+  </div>
+  <p class="big-red" id="bigred">{T.bigRed as string}</p>
+  <div id="brs" style="margin-top:1rem"></div>
+  <ul class="cr" id="cr3"></ul>
+  <p style="margin:.4rem 0">{T.choose as string}</p>
+  <div id="sn2"></div>
+</div>
+<script>
+  import { init } from '../../scripts/demos/scan.js';
+  init();
+</script>

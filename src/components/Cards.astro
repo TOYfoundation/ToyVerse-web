@@ -1,0 +1,17 @@
+---
+// Grid of cards: [title, text, status key?]. Status keys are translated via status.*.
+import { t } from '../i18n';
+interface Props {
+  lang: string;
+  items: string[][];
+}
+const { lang, items } = Astro.props;
+---
+<div class="g">
+  {items.map(([h, p, s]) => (
+    <div class="c">
+      <h3>{h}{s ? <span class="chip">{t(lang, `status.${s}`)}</span> : null}</h3>
+      <p set:html={p} />
+    </div>
+  ))}
+</div>

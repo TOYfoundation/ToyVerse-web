@@ -1,0 +1,27 @@
+---
+import { t, tv } from '../../i18n';
+interface Props { lang: string }
+const { lang } = Astro.props;
+const T = tv<Record<string, any>>(lang, 'demo.poker');
+---
+<h2>{T.title}</h2>
+<div class="sim" id="poker" data-t={JSON.stringify(T)}>
+  <div id="pmod"><button class="lb on" data-m="h">{T.modes[0]}</button><button class="lb" data-m="o">{T.modes[1]}</button></div>
+  <label for="bi" id="bil">{t(lang, 'demo.poker.buyin', { n: 500 })}</label>
+  <input id="bi" type="range" min="100" max="1000" step="100" value="500" />
+  <div class="tbl">
+    <div class="opps"><div class="op" id="oa"></div><div class="op" id="ob"></div></div>
+    <div class="pot">{T.pot}: <b id="pt">0</b><div class="chs" id="chs"></div></div>
+    <div class="dk3" id="bd"></div>
+    <div class="dk3" id="hc"></div>
+    <p id="ph"></p>
+  </div>
+  <p id="pm" role="status" style="min-height:3.4rem;margin:.6rem 0"></p>
+  <div id="act"></div>
+  <p style="margin:.4rem 0 0">{T.stack}: <b id="sk"></b> · {T.net}: <b id="nt">0</b></p>
+</div>
+<p class="note">{T.foot}</p>
+<script>
+  import { init } from '../../scripts/demos/poker.js';
+  init();
+</script>

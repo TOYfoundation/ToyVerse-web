@@ -1,0 +1,31 @@
+---
+import { t, tv } from '../../i18n';
+interface Props { lang: string }
+const { lang } = Astro.props;
+const T = tv<Record<string, any>>(lang, 'demo.voucher');
+const types = ['i', 'm', 'g'];
+---
+<h2 style="margin-top:0">{T.title}</h2>
+<div class="sim" id="vch" data-t={JSON.stringify(T)}>
+  <p style="margin:0 0 .4rem">{T.examples}</p>
+  <div id="vp">{(T.presets as string[]).map((p, i) => <button class="lb" data-p={i}>{p}</button>)}</div>
+  <p style="margin:.4rem 0">{T.own}</p>
+  <div id="vt">{types.map((k) => <button class={`lb${k === 'i' ? ' on' : ''}`} data-t={k}>{T.types[k][0]}</button>)}</div>
+  <p id="vd" style="color:var(--mu);margin:.2rem 0 .6rem"></p>
+  <label for="vw" id="vwl">{t(lang, 'demo.voucher.value', { n: 50 })}</label>
+  <input id="vw" type="range" min="10" max="200" step="10" value="50" />
+  <div id="vo"></div>
+  <button class="btn" id="vc">{T.create}</button>
+  <div id="vk"></div>
+  <div class="stage" id="sg2"><div class="cus" id="cs"></div><div class="shp" id="sh"></div></div>
+  <p id="vm" role="status" style="min-height:3rem;margin:.2rem 0">{T.hint}</p>
+  <div class="bg"><i id="vb2" style="width:0"></i></div>
+  <p id="vs2" style="margin:.3rem 0"></p>
+  <button class="btn al" id="vx2">{T.double}</button>
+  <ul class="cr" id="vl"></ul>
+</div>
+<p class="note">{T.foot}</p>
+<script>
+  import { init } from '../../scripts/demos/voucher.js';
+  init();
+</script>

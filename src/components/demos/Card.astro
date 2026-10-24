@@ -1,0 +1,29 @@
+---
+import { t, tv } from '../../i18n';
+interface Props { lang: string }
+const { lang } = Astro.props;
+const f = tv<string[]>(lang, 'pages.toypay.cardFront');
+const b = tv<string[]>(lang, 'pages.toypay.cardBack');
+---
+<h2>{t(lang, 'pages.toypay.cardTitle')}</h2>
+<div class="card3d">
+  <div class="ci" id="cc" role="button" tabindex="0" aria-label={t(lang, 'pages.toypay.cardLabel')}>
+    <div class="cf"><b style="font:700 1.7rem var(--ser)">{f[0]}</b><span>{f[1]}</span><small>{f[2]}</small></div>
+    <div class="cb2"><b>{b[0]}</b><span>{b[1]}</span><small>{b[2]}</small></div>
+  </div>
+</div>
+<script>
+  const c = document.getElementById('cc');
+  let flipped = 0;
+  const flip = () => {
+    flipped = flipped ? 0 : 180;
+    c?.style.setProperty('--f', `${flipped}deg`);
+  };
+  c?.addEventListener('click', flip);
+  c?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      flip();
+    }
+  });
+</script>

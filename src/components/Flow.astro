@@ -1,0 +1,29 @@
+---
+// Step diagram "How it all fits together": nodes and edges from pages.ts,
+// labels and step texts from pages.<id>.flow in the locale files.
+import { page } from '../data/pages';
+import { t, tv } from '../i18n';
+interface Props {
+  lang: string;
+  id: string;
+}
+const { lang, id } = Astro.props;
+const f = page(id).flow!;
+const labels = tv<string[]>(lang, `pages.${id}.flow.nodes`);
+const steps = tv<[string, string][]>(lang, `pages.${id}.flow.steps`);
+if (labels.length !== f.nodes.length || steps.length !== f.edges.length) throw new Error(`Flow of ${id}: texts and layout do not match`);
+const data = {
+  h: f.h,
+  nodes: f.nodes.map(([x, y], i) => [labels[i], x, y]),
+  steps: f.edges.map(([a, b], i) => [a, b, steps[i][0], steps[i][1]]),
+  ui: { back: t(lang, 'ui.back'), next: t(lang, 'ui.next'), pause: t(lang, 'ui.pause'), auto: t(lang, 'ui.auto'), step: t(lang, 'ui.step'), label: t(lang, 'ui.flowLabel') },
+};
+---
+<h2 style="margin-top:0">{t(lang, 'ui.flowTitle')}</h2>
+<div class="sim xs" data-flow={JSON.stringify(data)}>
+  <ol class="flow-fallback">{steps.map((s) => <li><b>{s[0]}:</b> {s[1]}</li>)}</ol>
+</div>
+<script>
+  import { initFlows } from '../scripts/flow.js';
+  initFlows();
+</script>

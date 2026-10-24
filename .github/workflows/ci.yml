@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      # Installs exactly the versions in package-lock.json.
+      - run: npm ci
+      - name: Types and translations
+        run: npm run check
+      - name: Build
+        run: npm run build
+      - name: Internal links
+        run: npm run check:links
+      - name: Build and links with a base path (as on GitHub Pages)
+        env:
+          BASE_PATH: /toyverse-web/
+        run: npm run build && npm run check:links

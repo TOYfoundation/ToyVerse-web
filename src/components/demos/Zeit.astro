@@ -1,0 +1,25 @@
+---
+import { npc } from '../../lib/npc.js';
+import { t, tv } from '../../i18n';
+interface Props { lang: string }
+const { lang } = Astro.props;
+const T = tv(lang, 'demo.zeit');
+---
+<div class="sim" id="zeit" data-t={JSON.stringify(T)}>
+  <div id="lv"></div>
+  <div class="mz run" id="mz"><svg id="mz2" viewBox="0 0 360 200" role="img" aria-label={t(lang, 'demo.zeit.machine')} style="width:100%;height:auto"></svg></div>
+  <div class="lm"><div class="lmf" id="lf" set:html={npc(2)} /><p id="lt" role="status"></p></div>
+  <label for="sp3">{t(lang, 'demo.zeit.power')}: <b id="sv">1</b>×</label>
+  <input id="sp3" type="range" min="0.5" max="3" step="0.5" value="1" />
+  <div>
+    <button class="btn" id="rn">{t(lang, 'ui.pause')}</button>
+    <button class="btn al" id="jb">{t(lang, 'demo.zeit.submit')}</button>
+    <button class="btn al" id="j10">{t(lang, 'demo.zeit.submit10')}</button>
+  </div>
+  <p style="margin:.6rem 0 0">{t(lang, 'demo.zeit.queue')}: <b id="qn">0</b> · {t(lang, 'demo.zeit.done')}: <b id="dn2">0</b><br /><b id="rt"></b> · {t(lang, 'demo.zeit.drive')}: <b id="en"></b></p>
+</div>
+<p class="note">{t(lang, 'pages.zeit.note')}</p>
+<script>
+  import { init } from '../../scripts/demos/zeit.js';
+  init();
+</script>

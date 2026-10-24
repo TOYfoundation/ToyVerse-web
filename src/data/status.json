@@ -1,0 +1,71 @@
+{
+  "source": "Safehaigit/toycoin docs/STATUS.md (commit e8581aa)",
+  "date": "20.10.2026",
+  "milestones": [
+    {
+      "id": "M1",
+      "content": "Grundtypen und Emission, Genesis ohne Guthaben (`toy-types`, `toy-emission`)",
+      "done": true
+    },
+    {
+      "id": "M2",
+      "content": "Kryptografie und Adressen (`toy-crypto`)",
+      "done": true
+    },
+    {
+      "id": "M3",
+      "content": "Zustand, Transaktionen, Kontingent, Gebühren, ToyWork-Lose, Schutzregeln (`toy-state`, `toy-tx`)",
+      "done": true
+    },
+    {
+      "id": "M4",
+      "content": "Blöcke, Konsens, Startphase (`toy-consensus`)",
+      "done": false
+    },
+    {
+      "id": "M5",
+      "content": "Speicher und 256-MB-Budget (`toy-node`)",
+      "done": false
+    },
+    {
+      "id": "M6",
+      "content": "Netzwerk (`toy-node`)",
+      "done": false
+    },
+    {
+      "id": "M7",
+      "content": "JSON-RPC und `toy_`-Methoden (`toy-rpc`)",
+      "done": false
+    },
+    {
+      "id": "M8",
+      "content": "Wallet und CLI mit Stufenwahl (`toy-wallet`, `toy-cli`)",
+      "done": false
+    },
+    {
+      "id": "M9",
+      "content": "Plattformen und Energie-Modus",
+      "done": false
+    },
+    {
+      "id": "M10",
+      "content": "Testnet und Lasttests",
+      "done": false
+    },
+    {
+      "id": "M11",
+      "content": "ToyScan und andere Ketten (`toyscan/`)",
+      "done": false
+    },
+    {
+      "id": "M12",
+      "content": "Konto-Schutz, Zusatz-Transaktionen, atomarer Tausch",
+      "done": false
+    },
+    {
+      "id": "M13",
+      "content": "Namen, Einmal-Empfangsadressen, Post-Quanten-Schlüssel",
+      "done": false
+    }
+  ]
+}

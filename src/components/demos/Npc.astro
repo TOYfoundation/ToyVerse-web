@@ -1,0 +1,19 @@
+---
+import { npc } from '../../lib/npc.js';
+import { t, tv } from '../../i18n';
+interface Props { lang: string }
+const { lang } = Astro.props;
+const names = tv<string[]>(lang, 'demo.npc.names');
+---
+<h2>{t(lang, 'demo.npc.title')}</h2>
+<div class="np" id="npcs" data-t={JSON.stringify(tv(lang, 'demo.npc'))}>
+  {names.map((n, i) => <button class="nb" data-i={i} aria-label={n}><Fragment set:html={npc(i)} /><div>{n}</div></button>)}
+</div>
+<div class="sim">
+  <p id="sb" role="status" style="min-height:3.4rem;margin:0 0 .6rem">{t(lang, 'demo.npc.intro')}</p>
+  <div id="qs"></div>
+</div>
+<script>
+  import { init } from '../../scripts/demos/npc.js';
+  init();
+</script>
