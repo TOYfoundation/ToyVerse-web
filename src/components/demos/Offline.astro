@@ -1,0 +1,39 @@
+---
+import { t, tv } from '../../i18n';
+interface Props { lang: string }
+const { lang } = Astro.props;
+const T = tv<Record<string, string>>(lang, 'demo.offline');
+const head = tv<string[]>(lang, 'pages.offline.tableHead');
+const steps = tv<string[][]>(lang, 'pages.offline.steps');
+---
+<table class="st" id="steps">
+  <thead><tr>{head.map((h) => <th>{h}</th>)}</tr></thead>
+  <tbody>{steps.map((r, i) => <tr data-i={i}>{r.map((c) => <td>{c}</td>)}</tr>)}</tbody>
+</table>
+<div class="sim" id="off" data-t={JSON.stringify(T)}>
+  <svg id="os2" viewBox="0 0 360 200" role="img" aria-label={T.label} style="width:100%;height:auto">
+    <rect id="ch2" x="130" y="6" width="100" height="30" rx="8" fill="none" stroke="var(--acc)" stroke-width="2"></rect>
+    <text x="180" y="26" text-anchor="middle" font-size="12" fill="var(--ink)">ToyChain</text>
+    <path d="M60 60L140 36M300 60L220 36" stroke="var(--ln)" stroke-dasharray="3 5" fill="none"></path>
+    <rect x="14" y="60" width="80" height="130" rx="12" fill="var(--bg)" stroke="var(--ink)" stroke-width="2"></rect>
+    <rect x="266" y="60" width="80" height="130" rx="12" fill="var(--bg)" stroke="var(--ink)" stroke-width="2"></rect>
+    <text x="54" y="84" text-anchor="middle" font-size="11" fill="var(--ink)">{T.you}</text>
+    <text x="306" y="84" text-anchor="middle" font-size="11" fill="var(--ink)">{T.shop}</text>
+    <text id="t1" x="54" y="125" text-anchor="middle" font-size="12" font-weight="700" fill="var(--acc)"></text>
+    <text id="t2" x="306" y="125" text-anchor="middle" font-size="12" font-weight="700" fill="var(--acc)"></text>
+    <path d="M96 120H264" stroke="var(--ln)" stroke-width="2" stroke-dasharray="2 6"></path>
+  </svg>
+  <label for="am" id="aml">{t(lang, 'demo.offline.amount', { n: 5 })}</label>
+  <input id="am" type="range" min="1" max="50" value="5" />
+  <div class="bg"><i id="cb" style="width:0"></i></div>
+  <p id="cl" style="margin:.3rem 0"></p>
+  <div><button class="btn" id="pay">{T.pay}</button><button class="btn al" id="chs">{T.again}</button></div>
+  <div><button class="btn al" id="sy">{T.sync}</button><button class="btn al" id="mo">{T.month}</button></div>
+  <p id="os" role="status" style="min-height:3rem"></p>
+  <ul class="cr" id="pl"></ul>
+</div>
+<p>{t(lang, 'pages.offline.text')}</p>
+<script>
+  import { init } from '../../scripts/demos/offline.js';
+  init();
+</script>

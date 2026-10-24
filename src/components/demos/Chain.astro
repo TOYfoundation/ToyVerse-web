@@ -1,0 +1,31 @@
+---
+import { t } from '../../i18n';
+interface Props { lang: string }
+const { lang } = Astro.props;
+---
+<h2>{t(lang, 'pages.toychain.chainTitle')}</h2>
+<div class="sim">
+  <div class="sc3" id="c3"><div class="ch3" id="ch3"></div></div>
+  <button class="btn" id="ab">{t(lang, 'pages.toychain.chainAdd')}</button>
+  <p style="color:var(--mu)">{t(lang, 'pages.toychain.chainHint')}</p>
+</div>
+<script>
+  const $ = (id: string) => document.getElementById(id)!;
+  const blocks = [1, 2, 3, 4, 5];
+  let next = 6;
+  const draw = () => {
+    $('ch3').innerHTML = blocks.map((x) => `<div class="cu" style="--n:${x}"><b>${x}</b><b></b><b></b><b></b><b></b><b></b></div>`).join('');
+  };
+  if (document.getElementById('c3')) {
+    $('ab').onclick = () => {
+      blocks.push(next++);
+      if (blocks.length > 6) blocks.shift();
+      draw();
+    };
+    $('c3').onpointermove = (e: PointerEvent) => {
+      const r = $('c3').getBoundingClientRect();
+      $('ch3').style.setProperty('--ry', `${((e.clientX - r.left) / r.width - 0.5) * 140}deg`);
+    };
+    draw();
+  }
+</script>

@@ -1,0 +1,16 @@
+---
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import PageView from '../../components/PageView.astro';
+import { AVAILABLE } from '../../i18n';
+import { PAGES } from '../../data/pages';
+
+export function getStaticPaths() {
+  return AVAILABLE.flatMap((l) => PAGES.filter((p) => p.id !== 'start').map((p) => ({ params: { lang: l.code, page: p.id } })));
+}
+const { lang, page } = Astro.params;
+---
+<Base lang={lang} id={page}>
+  <Hero slot="hero" lang={lang} id={page} />
+  <PageView lang={lang} id={page} />
+</Base>

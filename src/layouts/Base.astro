@@ -1,0 +1,114 @@
+---
+// Page frame: head, header with menu and language switch, footer.
+import '@fontsource/amiri/400.css';
+import '@fontsource/amiri/700.css';
+import '@fontsource/chakra-petch/400.css';
+import '@fontsource/chakra-petch/600.css';
+import '@fontsource/chakra-petch/700.css';
+import '../styles/global.css';
+import { AVAILABLE, LANGUAGES, language, t } from '../i18n';
+import { GROUPS, href, page } from '../data/pages';
+
+interface Props {
+  lang: string;
+  id: string;
+}
+const { lang, id } = Astro.props;
+const L = language(lang);
+const title = id === 'start' ? 'ToyVerse' : `${t(lang, `pages.${id}.t`)} · ToyVerse`;
+const description = id === 'start' ? t(lang, 'meta.description') : t(lang, `pages.${id}.u`);
+const hue = page(id).hue;
+const canonical = new URL(href(lang, id), Astro.site);
+const groups = GROUPS.map((g) => ({
+  id: g.id,
+  t: t(lang, `groups.${g.id}.t`),
+  u: t(lang, `groups.${g.id}.u`),
+  pages: g.pages.map((p) => ({ id: p, t: t(lang, `pages.${p}.t`), u: t(lang, `pages.${p}.u`), href: href(lang, p) })),
+}));
+const available = new Set(AVAILABLE.map((l) => l.code));
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+---
+<!doctype html>
+<html lang={lang} dir={L.dir} style={`--h:${hue}`}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {AVAILABLE.map((l) => <link rel="alternate" hreflang={l.code} href={new URL(href(l.code, id), Astro.site)} />)}
+    <link rel="alternate" hreflang="x-default" href={new URL(href('de', id), Astro.site)} />
+    <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
+    <meta name="color-scheme" content="light dark" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={lang} />
+  </head>
+  <body>
+    <a class="skip" href="#inhalt">{t(lang, 'ui.skip')}</a>
+    <header class="top">
+      <div class="w">
+        <div class="bar">
+          <a class="logo" href={href(lang, 'start')}>
+            <svg class="lg" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="24" fill="none" stroke="currentColor" stroke-width="9" stroke-dasharray="6.3 6.3"></circle><circle cx="40" cy="40" r="18" fill="none" stroke="currentColor" stroke-width="3"></circle><circle cx="40" cy="40" r="5" fill="currentColor"></circle></svg>ToyVerse
+          </a>
+          <nav id="gn" aria-label={t(lang, 'ui.mainNav')}>
+            {groups.map((g, i) => <button class="gb" data-i={i} aria-expanded="false" aria-controls="menu">{g.t}</button>)}
+          </nav>
+          <details class="ls">
+            <summary aria-label={t(lang, 'ui.chooseLanguage')}>{lang.toUpperCase()}</summary>
+            <ul>
+              {LANGUAGES.map((l) => (
+                <li lang={l.code} dir={l.dir}>
+                  {available.has(l.code) ? (
+                    <a href={href(l.code, id)} hreflang={l.code} aria-current={l.code === lang ? 'true' : undefined}>{l.name}</a>
+                  ) : (
+                    <span>{l.name} <small>· {t(lang, 'ui.soon')}</small></span>
+                  )}
+                </li>
+              ))}
+              <li class="hint" lang={lang}>{t(lang, 'ui.languageHint')}</li>
+            </ul>
+          </details>
+          <a class="btn hc" href={href(lang, 'kontakt')}>{t(lang, 'ui.join')}</a>
+          <button class="mb" id="mb" aria-expanded="false" aria-controls="menu">{t(lang, 'ui.menu')}</button>
+        </div>
+        <nav id="menu" aria-label={t(lang, 'ui.allPages')}>
+          {groups.map((g) => (
+            <section>
+              <h3>{g.t}</h3>
+              <p>{g.u}</p>
+              <div class="lk">
+                {g.pages.map((p) => (
+                  <a href={p.href} class={p.id === id ? 'on' : undefined} aria-current={p.id === id ? 'page' : undefined}>
+                    <b>{p.t}</b>
+                    <span>{p.u}</span>
+                  </a>
+                ))}
+              </div>
+            </section>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <slot name="hero" />
+    <main id="inhalt"><div class="w"><slot /></div></main>
+    <footer>
+      <div class="w">
+        <div id="ft">
+          {groups.map((g) => (
+            <div>
+              <b>{g.t}</b>
+              {g.pages.map((p) => <a href={p.href}>{p.t}</a>)}
+            </div>
+          ))}
+        </div>
+        <p class="lgl">{t(lang, 'ui.disclaimer')}</p>
+      </div>
+    </footer>
+    <script>
+      import '../scripts/site.js';
+    </script>
+  </body>
+</html>

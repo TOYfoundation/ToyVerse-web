@@ -1,0 +1,51 @@
+---
+// Hero with three animated scenes (rendered at build time) and title text.
+// On the start page the three slides have their own headlines.
+import { SCENES } from '../lib/scenes.js';
+import { href, page, PAGES } from '../data/pages';
+import { t, tv } from '../i18n';
+
+interface Props {
+  lang: string;
+  id: string;
+}
+const { lang, id } = Astro.props;
+const p = page(id);
+const index = PAGES.indexOf(p);
+const scenes = [0, 1, 2].map((j) => {
+  const k = (p.scene + j) % SCENES.length;
+  return { k, svg: SCENES[k](index * 3 + j) };
+});
+const slides = id === 'start' ? tv<[string, string][]>(lang, 'pages.start.slides') : null;
+---
+<div class="hero" style={`min-height:${slides ? '26rem' : '21rem'}`} data-captions={JSON.stringify(tv(lang, 'scenes'))} data-image-label={t(lang, 'ui.image')}>
+  {scenes.map((s, j) => <div class={`sd${j ? '' : ' on'}`} data-k={s.k} set:html={s.svg} />)}
+  <div class="shade"></div>
+  {
+    slides ? (
+      <div class="sl">
+        {slides.map((s, q) => (
+          <div class={`hw${q ? '' : ' on'}`}>
+            {q === 0 ? <h1>{s[0]}</h1> : <p class="h1" role="heading" aria-level="2">{s[0]}</p>}
+            <p>{s[1]}</p>
+            <p style="margin-top:1rem">
+              <a class="btn" href={href(lang, 'verse')}>{t(lang, 'pages.start.discover')}</a>
+              <a class="btn al" href={href(lang, 'roadmap')}>{t(lang, 'pages.start.roadmap')}</a>
+            </p>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <div class="hw">
+        <h1>{t(lang, `pages.${id}.t`)}</h1>
+        <p>{t(lang, `pages.${id}.u`)}</p>
+      </div>
+    )
+  }
+  <div class="ct">
+    <button aria-label={t(lang, 'ui.back')} id="sp">‹</button>
+    <span id="dots"></span>
+    <button aria-label={t(lang, 'ui.next')} id="sn">›</button>
+    <span class="cap" id="cp"></span>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+---
+import { t, tv } from '../../i18n';
+interface Props { lang: string }
+const { lang } = Astro.props;
+---
+<div class="sim" id="mcount" data-t={JSON.stringify({ slider: t(lang, 'pages.maschinen.slider') })}>
+  <label for="mc" id="mcl">{t(lang, 'pages.maschinen.slider', { n: 50 })}</label>
+  <input id="mc" type="range" min="0" max="256" value="50" />
+  <div class="bg"><i id="mbar" style="width:19.5%"></i></div>
+</div>
+<h2>{t(lang, 'demo.gears.title')}</h2>
+<div class="sim" id="gears" data-t={JSON.stringify(tv(lang, 'demo.gears'))}>
+  <svg id="gsv" viewBox="0 0 330 200" role="img" aria-label={t(lang, 'demo.gears.label')} style="width:100%;height:auto"></svg>
+  <label for="cr">{t(lang, 'demo.gears.crank')}</label>
+  <input id="cr" type="range" min="0" max="720" value="0" />
+  <p id="gt" style="color:var(--mu);margin:.4rem 0 0"></p>
+</div>
+<script>
+  import { init } from '../../scripts/demos/gears.js';
+  init();
+</script>

@@ -1,0 +1,39 @@
+---
+// Legal notice and privacy policy. Values come from src/data/site.json;
+// empty values show a yellow placeholder so nothing incomplete goes live unnoticed.
+import site from '../data/site.json';
+import { t, tv } from '../i18n';
+interface Props { lang: string; kind: 'impressum' | 'datenschutz' }
+const { lang, kind } = Astro.props;
+type Key = 'name' | 'street' | 'city' | 'email' | 'phone' | 'register' | 'vatId' | 'host';
+const labels = tv<Record<string, string>>(lang, 'pages.impressum.labels');
+const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+const v = (k: Key) => (site[k] ? esc(site[k]) : `<mark class="td">[${esc(t(lang, 'ui.placeholder', { label: labels[k] ?? (lang === 'de' ? 'Hosting-Anbieter' : 'hosting provider') }))}]</mark>`);
+const fillHtml = (s: string) => s.replace(/\{(\w+)\}/g, (_, k: Key) => v(k));
+const sections = kind === 'datenschutz' ? tv<[string, string][]>(lang, 'pages.datenschutz.sections') : [];
+const P = (k: string) => t(lang, `pages.impressum.${k}`);
+---
+<p class="note">{t(lang, `pages.${kind}.template`)}</p>
+{
+  kind === 'impressum' ? (
+    <>
+      <h2>{P('h1')}</h2>
+      <p set:html={`${v('name')}<br>${v('street')}<br>${v('city')}`} />
+      <h2>{P('h2')}</h2>
+      <p set:html={`${P('mail')}: ${v('email')}<br>${P('phone')}: ${v('phone')}`} />
+      <h2>{P('h3')}</h2>
+      <p set:html={`${P('register')}: ${v('register')}<br>${P('vat')}: ${v('vatId')}`} />
+      <h2>{P('h4')}</h2>
+      <p set:html={fillHtml(esc(P('responsible')))} />
+      <h2>{P('h5')}</h2>
+      <p>{P('note')}</p>
+    </>
+  ) : (
+    sections.map(([h, p]) => (
+      <>
+        <h2>{h}</h2>
+        <p set:html={fillHtml(esc(p))} />
+      </>
+    ))
+  )
+}

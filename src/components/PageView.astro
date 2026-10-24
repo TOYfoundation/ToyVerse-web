@@ -1,0 +1,273 @@
+---
+// Content of every page: breadcrumb, group tabs, step diagram, page body,
+// call to action and previous/next links.
+import Cards from './Cards.astro';
+import Rows from './Rows.astro';
+import Flow from './Flow.astro';
+import Legal from './Legal.astro';
+import Zeit from './demos/Zeit.astro';
+import Gears from './demos/Gears.astro';
+import Npc from './demos/Npc.astro';
+import Poker from './demos/Poker.astro';
+import Card from './demos/Card.astro';
+import Coin from './demos/Coin.astro';
+import Voucher from './demos/Voucher.astro';
+import Offline from './demos/Offline.astro';
+import Chain from './demos/Chain.astro';
+import Mint from './demos/Mint.astro';
+import Tx from './demos/Tx.astro';
+import Scan from './demos/Scan.astro';
+import Contact from './demos/Contact.astro';
+import status from '../data/status.json';
+import { npc, ICON_COIN, ICON_GEAR } from '../lib/npc.js';
+import { AVAILABLE, LANGUAGES, t, tv } from '../i18n';
+import { groupOf, href, ORDER, page } from '../data/pages';
+
+interface Props {
+  lang: string;
+  id: string;
+}
+const { lang, id } = Astro.props;
+const P = (k: string) => `pages.${id}.${k}`;
+const g = groupOf(id);
+const pos = ORDER.indexOf(id);
+const prev = pos > 0 ? ORDER[pos - 1] : null;
+const next = pos < ORDER.length - 1 ? ORDER[pos + 1] : null;
+const hasFlow = !!page(id).flow;
+const done = status.milestones.filter((m) => m.done).length;
+const total = status.milestones.length;
+const OLD_POLYGON = '0x1854b69cd1495c9753c5F1590A35e5DdB556A5BF';
+const OLD_ETHEREUM = '0xA5B04ce6eDD139C0e58ccdBc0B75E8C67CDA678A';
+const links = { community: href(lang, 'community'), roadmap: href(lang, 'roadmap'), toycoin: href(lang, 'toycoin') };
+const withLinks = (s: string) => s.replace(/\{(community|roadmap|toycoin)\}/g, (_, k: keyof typeof links) => links[k]);
+---
+{
+  id !== 'start' && (
+    <nav class="bc" aria-label={t(lang, 'ui.path')}>
+      <a href={href(lang, 'start')}>ToyVerse</a> › <a href={href(lang, g.pages[0])}>{t(lang, `groups.${g.id}.t`)}</a> › <span aria-current="page">{t(lang, P('t'))}</span>
+    </nav>
+  )
+}
+{
+  g.pages.length > 1 && id !== 'start' && (
+    <nav class="tabs" aria-label={t(lang, `groups.${g.id}.t`)}>
+      {g.pages.map((p) => <a href={href(lang, p)} aria-current={p === id ? 'page' : undefined}>{t(lang, `pages.${p}.t`)}</a>)}
+    </nav>
+  )
+}
+{hasFlow && <Flow lang={lang} id={id} />}
+
+{
+  id === 'start' && (
+    <>
+      <h2 style="margin-top:0">{t(lang, P('what'))}</h2>
+      <div class="g">
+        {tv<string[][]>(lang, P('tiles')).map(([h, p], i) => (
+          <a class="c tilt" href={href(lang, ['toyquest', 'toypay', 'toychain'][i])}>
+            <Fragment set:html={[npc(3), ICON_COIN, ICON_GEAR][i]} />
+            <h3>{h}</h3>
+            <p>{p}</p>
+          </a>
+        ))}
+      </div>
+      <h2>{t(lang, P('statusTitle'))}</h2>
+      <p>{t(lang, P('statusText'), { done, total })}</p>
+      <div class="prog" aria-hidden="true">{status.milestones.map((m) => <span class={m.done ? 'ok' : undefined}>{m.id}</span>)}</div>
+      <a class="btn al" href={href(lang, 'roadmap')}>{t(lang, P('statusLink'))}</a>
+      <h2>{t(lang, P('newTitle'))}</h2>
+      <p>{t(lang, P('newText'))}</p>
+      <a class="btn" href={href(lang, 'verse')}>{t(lang, P('newBtn'))}</a>
+    </>
+  )
+}
+{
+  id === 'verse' && (
+    <>
+      <Cards lang={lang} items={tv(lang, P('cards'))} />
+      <p set:html={withLinks(t(lang, P('after')))} />
+    </>
+  )
+}
+{
+  id === 'toyquest' && (
+    <>
+      <Rows items={tv(lang, P('rows'))} />
+      <a class="btn" href={href(lang, 'zeit')}>{t(lang, P('toZeit'))}</a>
+      <a class="btn al" href={href(lang, 'salon')}>{t(lang, P('toSalon'))}</a>
+    </>
+  )
+}
+{id === 'zeit' && <Zeit lang={lang} />}
+{
+  id === 'maschinen' && (
+    <>
+      <Cards lang={lang} items={tv(lang, P('cards'))} />
+      <Gears lang={lang} />
+    </>
+  )
+}
+{
+  id === 'gangs' && (
+    <>
+      <Cards lang={lang} items={tv(lang, P('cards'))} />
+      <Npc lang={lang} />
+    </>
+  )
+}
+{
+  id === 'salon' && (
+    <>
+      <Rows items={tv(lang, P('rows'))} />
+      <Poker lang={lang} />
+    </>
+  )
+}
+{
+  id === 'toypay' && (
+    <>
+      <Cards lang={lang} items={tv(lang, P('cards'))} />
+      <a class="btn" href={href(lang, 'wallet')}>{t(lang, P('toWallet'))}</a>
+      <a class="btn al" href={href(lang, 'download')}>{t(lang, P('toDownload'))}</a>
+      <Card lang={lang} />
+    </>
+  )
+}
+{
+  id === 'toycoin' && (
+    <>
+      <Rows items={tv(lang, P('rows'))} />
+      <Coin lang={lang} />
+      <div class="warnbox" role="note">
+        <h3>{t(lang, P('warnTitle'))}</h3>
+        <p set:html={t(lang, P('warnText'))} />
+        <p>
+          {t(lang, P('warnPolygon'))}: <code>{OLD_POLYGON}</code> · <a href={`https://polygonscan.com/token/${OLD_POLYGON}`} rel="noopener noreferrer" target="_blank">{t(lang, P('warnLink'))}</a>
+          <br />
+          {t(lang, P('warnEthereum'))}: <code>{OLD_ETHEREUM}</code> · <a href={`https://etherscan.io/token/${OLD_ETHEREUM}`} rel="noopener noreferrer" target="_blank">{t(lang, P('warnLink'))}</a>
+        </p>
+      </div>
+    </>
+  )
+}
+{
+  id === 'wallet' && (
+    <>
+      <div class="sim">
+        <button class="btn" disabled>{t(lang, P('btn'))}</button>
+        <Rows items={tv(lang, P('facts'))} cls="facts" />
+      </div>
+      <p>{t(lang, P('text'))}</p>
+      <div class="warnbox" role="note"><p style="margin:0"><b>{t(lang, P('safety'))}</b></p></div>
+    </>
+  )
+}
+{
+  id === 'toycash' && (
+    <>
+      <Rows items={tv(lang, P('rows'))} />
+      <a class="btn" href={href(lang, 'offline')}>{t(lang, P('toOffline'))}</a>
+      <Voucher lang={lang} />
+    </>
+  )
+}
+{id === 'offline' && <Offline lang={lang} />}
+{
+  id === 'toychain' && (
+    <>
+      <Rows items={tv(lang, P('rows'))} />
+      <a class="btn" href={href(lang, 'mint')}>{t(lang, P('toMint'))}</a>
+      <Chain lang={lang} />
+    </>
+  )
+}
+{id === 'mint' && <Mint lang={lang} />}
+{id === 'tx' && <Tx lang={lang} />}
+{
+  id === 'toyscan' && (
+    <>
+      <Scan lang={lang} />
+      <Cards lang={lang} items={tv(lang, P('cards'))} />
+    </>
+  )
+}
+{id === 'ketten' && <Rows items={tv(lang, P('rows'))} />}
+{
+  id === 'roadmap' && (
+    <>
+      <div class="sim">
+        <p style="margin-top:0"><b>{t(lang, P('progress'), { done, total, date: status.date })}</b></p>
+        <ul class="cr" style="columns:2 14rem">
+          {status.milestones.map((m) => (
+            <li class={m.done ? undefined : 'mid'} style={m.done ? undefined : 'color:var(--mu)'}>
+              {m.id} · {t(lang, `pages.roadmap.milestones.${m.id}`)}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <Cards lang={lang} items={tv(lang, P('cards'))} />
+    </>
+  )
+}
+{
+  id === 'download' && (
+    <>
+      {tv<string[]>(lang, P('items')).map((x) => (
+        <p>
+          <button class="btn off" disabled>{x}</button>
+        </p>
+      ))}
+      <p set:html={withLinks(t(lang, P('until')))} />
+    </>
+  )
+}
+{
+  id === 'community' && (
+    <>
+      <Cards lang={lang} items={tv(lang, P('cards'))} />
+      <h2>{t(lang, P('langTitle'))}</h2>
+      <p>{t(lang, P('langText'))} {AVAILABLE.map((l) => l.name).join(', ')}.</p>
+      <p class="note">
+        {LANGUAGES.map((l, i) => (
+          <>
+            <span lang={l.code} dir={l.dir}>{l.name}</span>
+            {i < LANGUAGES.length - 1 ? ' · ' : ''}
+          </>
+        ))}
+      </p>
+    </>
+  )
+}
+{
+  id === 'kontakt' && (
+    <>
+      <div class="g">
+        {tv<string[][]>(lang, P('cards')).map(([h, p, b], i) => (
+          <div class="c">
+            <h3>{h}</h3>
+            <p>{p}</p>
+            {b && <a class={`btn${i ? ' al' : ''}`} href={href(lang, ['wallet', 'download'][i]!)}>{b}</a>}
+          </div>
+        ))}
+      </div>
+      <Contact lang={lang} />
+    </>
+  )
+}
+{id === 'impressum' && <Legal lang={lang} kind="impressum" />}
+{id === 'datenschutz' && <Legal lang={lang} kind="datenschutz" />}
+
+{
+  !['kontakt', 'impressum', 'datenschutz'].includes(id) && (
+    <div class="ctab">
+      <div>
+        <h2>{t(lang, 'ui.ctaTitle')}</h2>
+        <p>{t(lang, 'ui.ctaText')}</p>
+      </div>
+      <a class="btn" href={href(lang, 'kontakt')}>{t(lang, 'ui.ctaBtn')}</a>
+    </div>
+  )
+}
+<div class="pg">
+  {prev ? <a class="btn al" href={href(lang, prev)}>‹ {t(lang, `pages.${prev}.t`)}</a> : <span />}
+  {next ? <a class="btn" href={href(lang, next)}>{t(lang, `pages.${next}.t`)} ›</a> : <span />}
+</div>

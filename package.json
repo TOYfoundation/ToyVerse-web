@@ -1,0 +1,28 @@
+{
+  "name": "toyverse-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Website of the ToyVerse: ToyChain, ToyCoin (TOY), TOYPAY, ToyScan, ToyCash, TOYQUEST and ToyPost",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check && node tools/check-i18n.mjs",
+    "sync:toycoin": "node tools/sync-toycoin.mjs",
+    "check:links": "node tools/check-links.mjs"
+  },
+  "dependencies": {
+    "@fontsource/amiri": "5.3.0",
+    "@fontsource/chakra-petch": "5.3.0",
+    "astro": "7.3.8"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3"
+  }
+}

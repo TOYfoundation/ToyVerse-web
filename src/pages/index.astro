@@ -1,0 +1,26 @@
+---
+// Root: sends the visitor to the best available language (German by default).
+import { AVAILABLE, t } from '../i18n';
+import { href } from '../data/pages';
+const langs = AVAILABLE.map((l) => ({ code: l.code, name: l.name, url: href(l.code, 'start') }));
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ToyVerse</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href={new URL(href('de', 'start'), Astro.site)} />
+    <noscript><meta http-equiv="refresh" content={`0; url=${href('de', 'start')}`} /></noscript>
+    <script is:inline define:vars={{ langs }}>
+      const want = (navigator.languages || [navigator.language || 'de']).map((l) => l.toLowerCase().split('-')[0]);
+      const hit = want.map((w) => langs.find((l) => l.code === w)).find(Boolean) || langs.find((l) => l.code === 'de');
+      location.replace(hit.url);
+    </script>
+    <style>body{font-family:system-ui,sans-serif;background:#0d1030;color:#ecebfa;display:grid;place-items:center;min-height:100vh;margin:0}a{color:#b9a6ff;margin:0 .5rem}</style>
+  </head>
+  <body>
+    <p>{t('de', 'ui.chooseLanguage')}: {langs.map((l) => <a href={l.url} hreflang={l.code}>{l.name}</a>)}</p>
+  </body>
+</html>

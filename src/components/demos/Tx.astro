@@ -1,0 +1,20 @@
+---
+import { t, tv } from '../../i18n';
+interface Props { lang: string }
+const { lang } = Astro.props;
+const T = tv<Record<string, string>>(lang, 'demo.tx');
+---
+<div class="sim" id="tx" data-t={JSON.stringify(T)}>
+  <label for="ld" id="lv">{t(lang, 'demo.tx.load', { n: 50 })}</label>
+  <input id="ld" type="range" min="0" max="100" value="50" />
+  <p class="note">{T.formula}</p>
+  <p id="fr"></p>
+  <div class="bg"><i id="tb" style="width:0"></i></div>
+  <button class="btn" id="sd">{T.send}</button><button class="btn al" id="tr">{T.round}</button>
+  <p id="tm" role="status" style="color:var(--mu)"></p>
+</div>
+<p>{t(lang, 'pages.tx.text')}</p>
+<script>
+  import { init } from '../../scripts/demos/tx.js';
+  init();
+</script>
