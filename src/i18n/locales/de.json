@@ -9,7 +9,7 @@
     "allPages": "Alle Seiten",
     "join": "Mitmachen",
     "language": "Sprache",
-    "languageHint": "Die Webseite startet auf Deutsch und Englisch. Die übrigen der 45 Sprachen von Wallet, TOYPAY und ToyScan folgen.",
+    "languageHint": "Die Webseite gibt es derzeit in {n} der 45 Sprachen von Wallet, TOYPAY und ToyScan. Die übrigen folgen.",
     "soon": "folgt",
     "path": "Pfad",
     "back": "Zurück",
@@ -27,7 +27,9 @@
     "placeholder": "{label} eintragen",
     "example": "Beispiel",
     "chooseLanguage": "Sprache wählen",
-    "redirect": "Weiter zur Startseite"
+    "redirect": "Weiter zur Startseite",
+    "machineNote": "Diese Übersetzung wurde mit KI aus dem Deutschen erstellt und noch nicht von Muttersprachlern geprüft. Maßgeblich ist die",
+    "machineLink": "deutsche Fassung"
   },
   "scenes": [
     "Die Stadt bei Nacht",
@@ -906,7 +908,7 @@
         ]
       ],
       "langTitle": "45 Sprachen",
-      "langText": "Wallet, TOYPAY und ToyScan sprechen dieselben 45 Sprachen. Die Webseite startet auf Deutsch und Englisch:"
+      "langText": "Wallet, TOYPAY und ToyScan sprechen dieselben 45 Sprachen. Die Webseite gibt es derzeit in {n} davon:"
     },
     "kontakt": {
       "t": "Mitmachen und Kontakt",
@@ -1137,6 +1139,10 @@
             "Im Trainingslevel. Dazu gibt es 20 Minigames, Missionen und Bonus-Level."
           ]
         ]
+      ],
+      "quotes": [
+        "„",
+        "“"
       ]
     },
     "poker": {

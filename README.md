@@ -2,7 +2,7 @@
 
 Die Webseite des **ToyVerse**: ToyChain mit dem Coin TOY, TOYPAY, ToyScan, ToyCash, TOYQUEST und ToyPost. Für Community und Presse, mit interaktiven Simulationen.
 
-**Stand:** Grundgerüst vom 24.10.2026 auf Basis des Webseiten-Entwurfs (Version 2), Inhalte an den aktuellen Stand von `Safehaigit/toycoin` angepasst (Entscheidungen bis Nr. 133). Deutsch und Englisch fertig, die übrigen 43 der 45 Sprachen folgen.
+**Stand:** Grundgerüst vom 24.10.2026 auf Basis des Webseiten-Entwurfs (Version 2), Inhalte an den aktuellen Stand von `Safehaigit/toycoin` angepasst (Entscheidungen bis Nr. 133). Fertig: Deutsch, Englisch, Spanisch, Französisch, Portugiesisch, Italienisch (6 von 45). Die übrigen Sprachen folgen paketweise.
 
 ## Grundsätze
 
@@ -45,6 +45,8 @@ npm run sync:toycoin -- ../toycoin   # Sprachen, Begriffe und Meilensteine aus t
 1. `src/i18n/locales/de.json` als `<code>.json` kopieren (Code aus `sprachen.tsv`) und übersetzen. Begriffe nach `begriffe.tsv`.
 2. `npm run check` prüft, dass alle Schlüssel und Platzhalter stimmen.
 3. Die Seiten der Sprache entstehen beim nächsten Build automatisch, auch rechts-nach-links für Arabisch, Urdu und Persisch.
+
+Alle Sprachen außer Deutsch sind KI-Übersetzungen. Jede Seite zeigt oben einen Hinweis darauf und verlinkt die deutsche Fassung, die maßgeblich bleibt. Anführungszeichen für Zitate der Figuren stehen pro Sprache in `demo.npc.quotes`.
 
 Sicherheitswichtige Texte (Phrase, Betrug, alte Token) vor dem Veröffentlichen von Muttersprachlern prüfen lassen.
 

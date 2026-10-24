@@ -225,7 +225,7 @@ const withLinks = (s: string) => s.replace(/\{(community|roadmap|toycoin)\}/g, (
     <>
       <Cards lang={lang} items={tv(lang, P('cards'))} />
       <h2>{t(lang, P('langTitle'))}</h2>
-      <p>{t(lang, P('langText'))} {AVAILABLE.map((l) => l.name).join(', ')}.</p>
+      <p>{t(lang, P('langText'), { n: AVAILABLE.length })} {AVAILABLE.map((l) => l.name).join(', ')}.</p>
       <p class="note">
         {LANGUAGES.map((l, i) => (
           <>
