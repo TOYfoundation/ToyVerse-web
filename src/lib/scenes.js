@@ -3,6 +3,8 @@
 // returns SVG markup; a seeded random generator keeps the output identical on
 // every build. Animations come from CSS classes in global.css.
 
+import toyverse from '../data/toyverse.json';
+
 function rng(s) {
   return () => {
     s = (s * 9301 + 49297) % 233280;
@@ -127,7 +129,7 @@ function network(n) {
   }
   for (let i = 0; i < 3; i++) packets += `<circle class="pk" style="animation-delay:-${i * 2}s" cx="160" cy="150" r="4" fill="#fff"/>`;
   // Labels in the picture: chain ID of the ToyChain testnet, a block, a valid signature
-  const labels = ['chain 7630714', 'block 4096', 'sig ✓'];
+  const labels = [`chain ${toyverse.chainIds.testnet}`, 'block 4096', 'sig ✓'];
   let q = '';
   for (let i = 0; i < 16; i++) {
     q +=

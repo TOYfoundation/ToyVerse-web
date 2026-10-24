@@ -2,6 +2,7 @@
 // Copies shared data from a checkout of Safehaigit/toycoin into the website:
 //   i18n/sprachen.tsv, i18n/begriffe.tsv  -> src/i18n/
 //   docs/STATUS.md (table "Überblick Meilensteine") -> src/data/status.json
+//   shared/toyverse.json (fixed values, decision 135)  -> src/data/toyverse.json
 // Usage: node tools/sync-toycoin.mjs [path-to-toycoin]   (default: ../toycoin)
 import { readFileSync, writeFileSync, copyFileSync } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';
@@ -12,6 +13,10 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const toycoin = resolve(process.argv[2] ?? join(root, '..', 'toycoin'));
 
 for (const f of ['sprachen.tsv', 'begriffe.tsv']) copyFileSync(join(toycoin, 'i18n', f), join(root, 'src', 'i18n', f));
+
+const manifest = JSON.parse(readFileSync(join(toycoin, 'shared', 'toyverse.json'), 'utf8'));
+if (manifest.schema !== 'toyverse/1') throw new Error(`Unknown toyverse.json schema: ${manifest.schema}`);
+copyFileSync(join(toycoin, 'shared', 'toyverse.json'), join(root, 'src', 'data', 'toyverse.json'));
 
 const langs = readFileSync(join(root, 'src', 'i18n', 'sprachen.tsv'), 'utf8').split('\n').filter((l) => l.trim()).length - 1;
 if (langs !== 45) throw new Error(`Expected 45 languages, found ${langs}`);
@@ -37,4 +42,4 @@ writeFileSync(
   join(root, 'src', 'data', 'status.json'),
   JSON.stringify({ source: `Safehaigit/toycoin docs/STATUS.md (commit ${rev})`, date, milestones }, null, 2) + '\n',
 );
-console.log(`Synced 45 languages, glossary and ${milestones.length} milestones (${milestones.filter((m) => m.done).length} done) from ${rev}.`);
+console.log(`Synced 45 languages, glossary, toyverse.json and ${milestones.length} milestones (${milestones.filter((m) => m.done).length} done) from ${rev}.`);

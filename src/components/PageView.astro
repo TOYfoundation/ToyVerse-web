@@ -18,10 +18,12 @@ import Mint from './demos/Mint.astro';
 import Tx from './demos/Tx.astro';
 import Scan from './demos/Scan.astro';
 import Contact from './demos/Contact.astro';
+import Safe from './demos/Safe.astro';
 import status from '../data/status.json';
+import toyverse from '../data/toyverse.json';
 import { npc, ICON_COIN, ICON_GEAR } from '../lib/npc.js';
 import { AVAILABLE, LANGUAGES, t, tv } from '../i18n';
-import { groupOf, href, ORDER, page } from '../data/pages';
+import { groupOf, href, ORDER, page, RELATED } from '../data/pages';
 
 interface Props {
   lang: string;
@@ -36,8 +38,11 @@ const next = pos < ORDER.length - 1 ? ORDER[pos + 1] : null;
 const hasFlow = !!page(id).flow;
 const done = status.milestones.filter((m) => m.done).length;
 const total = status.milestones.length;
-const OLD_POLYGON = '0x1854b69cd1495c9753c5F1590A35e5DdB556A5BF';
-const OLD_ETHEREUM = '0xA5B04ce6eDD139C0e58ccdBc0B75E8C67CDA678A';
+// Old ToyCoin tokens (decision 63) come from the shared ToyVerse values, never typed here.
+const legacy = (chain: string) => toyverse.legacyTokens.find((x) => x.chain === chain)!.address;
+const OLD_POLYGON = legacy('Polygon');
+const OLD_ETHEREUM = legacy('Ethereum');
+const related = RELATED[id] ?? [];
 const links = { community: href(lang, 'community'), roadmap: href(lang, 'roadmap'), toycoin: href(lang, 'toycoin') };
 const withLinks = (s: string) => s.replace(/\{(community|roadmap|toycoin)\}/g, (_, k: keyof typeof links) => links[k]);
 ---
@@ -188,6 +193,15 @@ const withLinks = (s: string) => s.replace(/\{(community|roadmap|toycoin)\}/g, (
     </>
   )
 }
+{
+  id === 'toysafe' && (
+    <>
+      <Rows items={tv(lang, P('rows'))} />
+      <p class="note">{t(lang, P('note'))}</p>
+      <Safe lang={lang} />
+    </>
+  )
+}
 {id === 'ketten' && <Rows items={tv(lang, P('rows'))} />}
 {
   id === 'roadmap' && (
@@ -255,6 +269,22 @@ const withLinks = (s: string) => s.replace(/\{(community|roadmap|toycoin)\}/g, (
 {id === 'datenschutz' && <Legal lang={lang} kind="datenschutz" />}
 
 {hasFlow && <Flow lang={lang} id={id} />}
+
+{
+  related.length > 0 && (
+    <nav class="rel" aria-labelledby="rel-h">
+      <h2 id="rel-h">{t(lang, 'ui.related')}</h2>
+      <div class={`g n${related.length}`}>
+        {related.map((r) => (
+          <a class="c" href={href(lang, r)}>
+            <h3>{t(lang, `pages.${r}.t`)}</h3>
+            <p>{t(lang, `pages.${r}.u`)}</p>
+          </a>
+        ))}
+      </div>
+    </nav>
+  )
+}
 
 {
   !['kontakt', 'impressum', 'datenschutz'].includes(id) && (

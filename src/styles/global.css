@@ -20,6 +20,11 @@
 }
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B0D2A;--sf:#161A45;--ink:#ECEBFA;--mu:#A9AED8;--ln:#2C3270;--l:66%;--on:#0B0D2A;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#0B0D2A;--sf:#161A45;--ink:#ECEBFA;--mu:#A9AED8;--ln:#2C3270;--l:66%;--on:#0B0D2A;color-scheme:dark}
+/* Amiri lacks Yoruba's dotted vowels (ẹ, ọ) and combining tone marks, so mixed fonts would misplace the marks:
+   Yoruba headings use the interface font, with room for stacked marks. The logo keeps Amiri. */
+html:lang(yo){--ser:"Chakra Petch",system-ui,sans-serif}
+html:lang(yo) :is(h1,h2){line-height:1.2}
+html:lang(yo) .logo{font-family:"Amiri",Georgia,serif}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-padding-top:5rem;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--sn);overflow-x:clip}
@@ -233,6 +238,22 @@ header.top{view-transition-name:hdr}
 @keyframes pop{from{transform:scale(.3);opacity:0}}
 .lamp{width:4.5rem;height:4.5rem;border-radius:50%;background:#1fcf6b;box-shadow:0 0 30px #1fcf6b;animation:pl 1.6s infinite}
 .lamp.bad{background:#e03131;box-shadow:0 0 40px #e03131}.lamp.warn{background:var(--gold);box-shadow:0 0 30px var(--gold)}
+/* ToySafe: protection level and risk check */
+.sfg{display:grid;gap:1.4rem}@media(min-width:48rem){.sfg{grid-template-columns:1fr 1fr}}
+.sfg h3{margin-bottom:.7rem}
+.sfl{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}.sfl p{margin:0;flex:1 1 11rem}
+.sfl .ring{transition:background .4s}
+.sfc{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:.4rem}
+.sfc label{display:flex;gap:.6rem;align-items:flex-start;cursor:pointer}
+.sfc input{width:1.2rem;height:1.2rem;margin:.25rem 0 0;accent-color:var(--acc);flex:none}
+.sfp{display:grid;gap:.5rem}
+.sfp .btn{display:block;width:100%;margin:0;text-align:start;border-radius:var(--r);white-space:normal}
+.sfp .btn small{display:block;font-weight:400;color:var(--mu)}
+.sfp .btn[aria-pressed="true"]{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 12%,var(--glass))}
+.sfo{display:flex;align-items:center;gap:1rem;margin-top:1rem;min-height:3.4rem}.sfo p{margin:0;flex:1}
+.sfo .lamp{flex:none;width:3rem;height:3rem}
+.rel h2{margin-top:2.6rem}
+.rel a.c{text-decoration:none;color:inherit}
 @keyframes pl{50%{opacity:.55}}
 .card3d{perspective:900px;max-width:22rem;margin:1rem auto}
 .ci{position:relative;aspect-ratio:1.586;transform-style:preserve-3d;transform:rotateX(var(--rx,0deg)) rotateY(calc(var(--ry,0deg) + var(--f,0deg)));transition:transform .5s cubic-bezier(.2,.8,.2,1);cursor:pointer;touch-action:pan-y}

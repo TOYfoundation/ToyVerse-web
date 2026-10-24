@@ -19,6 +19,7 @@
     "step": "Step",
     "flowTitle": "How it all fits together",
     "flowLabel": "Flow diagram",
+    "related": "Related",
     "image": "Picture {n}",
     "ctaTitle": "Join the ToyVerse",
     "ctaText": "Ask questions, test early, or become a merchant or mentor.",
@@ -144,6 +145,11 @@
           "ToyPost",
           "One inbox for all channels, invoices in TOY, protection against fraud.",
           "built"
+        ],
+        [
+          "ToySafe",
+          "Security and testing app: warns about traps, helps with account protection and checks nodes.",
+          "concept"
         ]
       ],
       "after": "On top of that: an open economic cycle, merchants, mentors and community nodes. <a href=\"{community}\">More</a>",
@@ -767,6 +773,73 @@
         ]
       }
     },
+    "toysafe": {
+      "t": "ToySafe",
+      "u": "The security and testing app: warns before anything happens.",
+      "rows": [
+        [
+          "Security check",
+          "Checks your device and wallet and shows your protection level with the next useful step."
+        ],
+        [
+          "Before sending",
+          "Checks every new address: similar to a known one, on the warning list or an old ToyCoin token? TOYPAY shows the result in the preview."
+        ],
+        [
+          "Account protection",
+          "Helps you set up vault delay, emergency key, self-lock and heir address. Signing happens only in your wallet."
+        ],
+        [
+          "Watchman",
+          "Watches your addresses read-only and reports every movement via ToyScan, via ToyPost if you like."
+        ],
+        [
+          "Test lab",
+          "Security tests for nodes and services, only against your own or explicitly approved targets. Findings go to the project confidentially."
+        ],
+        [
+          "Principles",
+          "No keys, no phrase, no locks. ToySafe warns, you decide."
+        ]
+      ],
+      "note": "Concept. ToySafe is an app of its own and also works alone. Its checks also go straight into TOYPAY.",
+      "flow": {
+        "nodes": [
+          "Your device",
+          "ToySafe",
+          "TOYPAY",
+          "ToyChain",
+          "ToyScan",
+          "ToyPost"
+        ],
+        "steps": [
+          [
+            "Check",
+            "ToySafe checks your device and shows the protection level with the next step."
+          ],
+          [
+            "Warn",
+            "Before signing, TOYPAY asks ToySafe about risks. The decision stays with you."
+          ],
+          [
+            "Protect",
+            "Account protection works on the ToyChain. ToySafe prepares it, TOYPAY signs."
+          ],
+          [
+            "Read",
+            "ToyScan only reads the ToyChain, without keys."
+          ],
+          [
+            "Watch",
+            "ToyScan reports every movement of your addresses to ToySafe."
+          ],
+          [
+            "Notify",
+            "Warnings reach you via ToyPost in your language, only if you want."
+          ]
+        ]
+      }
+    },
     "ketten": {
       "t": "Other chains",
       "u": "The same address everywhere, without a bridge.",
@@ -1357,6 +1430,65 @@
       "thanks": "Thanks, that works!",
       "sorry": "Sorry, that doesn't work.",
       "rejected": " The issuer rejects it."
+    },
+    "toysafe": {
+      "title": "Protection level and address check",
+      "intro": "Tick what you have already set up and check example recipients. Everything is an example, nothing is sent.",
+      "levelTitle": "Your protection level",
+      "checks": [
+        "Screen lock",
+        "Phrase backup checked",
+        "Hardware wallet for large amounts",
+        "Vault delay",
+        "Emergency key with safety address",
+        "Heir address"
+      ],
+      "level": "Protection level {n} of {m}",
+      "levels": [
+        "unprotected",
+        "basic",
+        "good",
+        "very good"
+      ],
+      "nextStep": "Next step: {s}.",
+      "allDone": "Everything is set up. Check it once a year.",
+      "sendTitle": "Check before sending",
+      "recipients": [
+        [
+          "Known contact",
+          "Paid 12 times, in your address book."
+        ],
+        [
+          "New address",
+          "Never used before."
+        ],
+        [
+          "Almost the same address",
+          "Same start and end as your contact, different middle."
+        ],
+        [
+          "Address on the warning list",
+          "From a reported phishing message."
+        ],
+        [
+          "Old ToyCoin token",
+          "Contract on Polygon, not ToyChain TOY."
+        ]
+      ],
+      "choose": "Pick a recipient.",
+      "lights": [
+        "Green",
+        "Yellow",
+        "Red"
+      ],
+      "results": [
+        "Known and unremarkable. Preview as usual.",
+        "New address: send a small test amount first.",
+        "Address trap! It looks like your contact but it is not. Check the whole address.",
+        "On the warning list: reported as fraud. Do not send.",
+        "This is not ToyChain TOY and cannot be exchanged. Do not send."
+      ],
+      "decide": "The decision stays with you: ToySafe warns but never blocks."
     }
   }
 }

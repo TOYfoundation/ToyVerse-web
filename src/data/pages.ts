@@ -81,6 +81,16 @@ export const PAGES: PageDef[] = [
     scene: 2,
     flow: { h: 210, nodes: [[62, 40], [200, 40], [338, 40], [200, 120], [200, 190]], edges: [[0, 3], [1, 3], [2, 3], [3, 4]] },
   },
+  {
+    id: 'toysafe',
+    hue: 0,
+    scene: 2,
+    flow: {
+      h: 210,
+      nodes: [[62, 40], [200, 40], [338, 40], [338, 170], [200, 170], [62, 170]],
+      edges: [[0, 1], [1, 2], [2, 3], [3, 4], [4, 1], [1, 5]],
+    },
+  },
   { id: 'ketten', hue: 230, scene: 1 },
   {
     id: 'roadmap',
@@ -99,9 +109,37 @@ export const GROUPS: GroupDef[] = [
   { id: 'entdecken', pages: ['start', 'verse'] },
   { id: 'spielen', pages: ['toyquest', 'zeit', 'maschinen', 'gangs', 'salon'] },
   { id: 'bezahlen', pages: ['toypay', 'toycoin', 'wallet', 'toycash', 'offline'] },
-  { id: 'technik', pages: ['toychain', 'mint', 'tx', 'toyscan', 'ketten'] },
+  { id: 'technik', pages: ['toychain', 'mint', 'tx', 'toyscan', 'toysafe', 'ketten'] },
   { id: 'mitmachen', pages: ['roadmap', 'download', 'community', 'kontakt', 'impressum', 'datenschutz'] },
 ];
+
+/**
+ * "Passt dazu": pages that belong together across groups, so every part of
+ * the ToyVerse links to the parts it works with (toycoin docs/spaeter/11-toyverse.md).
+ */
+export const RELATED: Record<string, string[]> = {
+  verse: ['toychain', 'toypay', 'toyscan', 'toysafe'],
+  toyquest: ['zeit', 'gangs', 'toypay'],
+  zeit: ['maschinen', 'toychain', 'mint'],
+  maschinen: ['zeit', 'toychain', 'toyquest'],
+  gangs: ['toyquest', 'salon', 'toychain'],
+  salon: ['toyquest', 'gangs', 'community'],
+  toypay: ['toysafe', 'wallet', 'toycash', 'offline'],
+  toycoin: ['toychain', 'mint', 'toyscan', 'ketten'],
+  wallet: ['toysafe', 'toypay', 'toycoin'],
+  toycash: ['offline', 'toypay', 'toysafe'],
+  offline: ['toycash', 'toypay', 'toysafe'],
+  toychain: ['mint', 'tx', 'toyscan', 'toysafe'],
+  mint: ['toychain', 'toycoin', 'tx'],
+  tx: ['toychain', 'mint', 'wallet'],
+  toyscan: ['toysafe', 'toycoin', 'ketten'],
+  toysafe: ['toypay', 'toyscan', 'wallet', 'community'],
+  ketten: ['toycoin', 'toyscan', 'toysafe'],
+  roadmap: ['toychain', 'download', 'community'],
+  download: ['roadmap', 'toypay', 'wallet'],
+  community: ['kontakt', 'roadmap', 'toysafe'],
+  kontakt: ['community', 'wallet', 'download'],
+};
 
 /** Reading order for "previous / next". */
 export const ORDER: string[] = GROUPS.flatMap((g) => g.pages);

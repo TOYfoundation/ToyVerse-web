@@ -1,0 +1,50 @@
+---
+// ToySafe demo: protection level checklist and a risk check before sending.
+// Everything is an example; nothing is sent and no key is involved.
+import { tv } from '../../i18n';
+interface Props { lang: string }
+const { lang } = Astro.props;
+const T = tv<Record<string, any>>(lang, 'demo.toysafe');
+const checks = T.checks as string[];
+const recipients = T.recipients as [string, string][];
+---
+<h2>{T.title}</h2>
+<div class="sim" id="safe" data-t={JSON.stringify(T)}>
+  <p class="note" style="margin-top:0">{T.intro}</p>
+  <div class="sfg">
+    <div>
+      <h3>{T.levelTitle}</h3>
+      <div class="sfl">
+        <div class="ring" id="sfr" style="--p:0" aria-hidden="true"><b id="sfn">0/{checks.length}</b></div>
+        <p id="sfs" role="status"></p>
+      </div>
+      <ul class="sfc">
+        {checks.map((c, i) => (
+          <li>
+            <label><input type="checkbox" data-i={i} /> <span>{c}</span></label>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div>
+      <h3>{T.sendTitle}</h3>
+      <div class="sfp" role="group" aria-label={T.sendTitle}>
+        {recipients.map(([h, p], i) => (
+          <button class="btn al" type="button" data-r={i} aria-pressed="false">
+            <b>{h}</b>
+            <small>{p}</small>
+          </button>
+        ))}
+      </div>
+      <div class="sfo">
+        <div class="lamp" id="sfa" hidden aria-hidden="true"></div>
+        <p id="sfm" role="status">{T.choose}</p>
+      </div>
+      <p class="note">{T.decide}</p>
+    </div>
+  </div>
+</div>
+<script>
+  import { init } from '../../scripts/demos/safe.js';
+  init();
+</script>

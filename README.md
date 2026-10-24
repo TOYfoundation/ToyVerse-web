@@ -2,7 +2,7 @@
 
 Die Webseite des **ToyVerse**: ToyChain mit dem Coin TOY, TOYPAY, ToyScan, ToyCash, TOYQUEST und ToyPost. Für Community und Presse, mit interaktiven Simulationen.
 
-**Stand:** Grundgerüst vom 24.10.2026 auf Basis des Webseiten-Entwurfs (Version 2), Inhalte an den aktuellen Stand von `Safehaigit/toycoin` angepasst (Entscheidungen bis Nr. 133). Fertig: Deutsch, Englisch, Spanisch, Französisch, Portugiesisch, Italienisch, Niederländisch, Polnisch, Türkisch, Vietnamesisch, Indonesisch, Schwedisch, Norwegisch, Arabisch, Persisch, Urdu, Chinesisch, Wu-Chinesisch, Japanisch, Koreanisch (20 von 45, davon 3 von rechts nach links). Die übrigen Sprachen folgen paketweise.
+**Stand:** Grundgerüst vom 24.10.2026 auf Basis des Webseiten-Entwurfs (Version 2), Inhalte an den aktuellen Stand von `Safehaigit/toycoin` angepasst (Entscheidungen bis Nr. 135). 24 Seiten, darunter ToySafe (Schutz- und Prüf-App, Nr. 134) und auf jeder Seite „Passt dazu“-Verweise zu den Teilen, die zusammenarbeiten. Fertig: Deutsch, Englisch, Spanisch, Französisch, Portugiesisch, Italienisch, Niederländisch, Polnisch, Türkisch, Vietnamesisch, Indonesisch, Schwedisch, Norwegisch, Arabisch, Persisch, Urdu, Chinesisch, Wu-Chinesisch, Japanisch, Koreanisch, Suaheli, Yoruba (22 von 45, davon 3 von rechts nach links). Die übrigen Sprachen folgen paketweise.
 
 ## Grundsätze
 
@@ -21,6 +21,7 @@ Die Webseite des **ToyVerse**: ToyChain mit dem Coin TOY, TOYPAY, ToyScan, ToyCa
 | `src/i18n/locales/de.json`, `en.json` | alle Texte. Deutsch ist die Quelle |
 | `src/i18n/sprachen.tsv`, `begriffe.tsv` | 45 Sprachen und Begriffe, aus toycoin übernommen |
 | `src/data/status.json` | Meilensteine der ToyChain, aus toycoin `docs/STATUS.md` übernommen |
+| `src/data/toyverse.json` | feste Werte (Chain-IDs, Dezimalstellen, alte Token …) aus toycoin `shared/toyverse.json`, nie von Hand ändern. `tools/check-toyverse.mjs` prüft, dass die Texte aller Sprachen dazu passen |
 | `src/data/site.json` | Angaben für Impressum, Datenschutz und Kontakt. **Vor der Veröffentlichung ausfüllen** |
 | `src/components/` | Seitenbausteine, `demos/` die Simulationen |
 | `src/scripts/` | Browser-Skripte der Simulationen |
@@ -37,9 +38,21 @@ npm run dev            # Vorschau mit Neuladen: http://localhost:4321
 npm run check          # Typen und Übersetzungen
 npm run build          # fertige Seite in dist/
 npm run check:links    # interne Links in dist/ prüfen
-npm run sync:toycoin -- ../toycoin   # Sprachen, Begriffe und Meilensteine aus toycoin übernehmen
+npm run sync:toycoin -- ../toycoin   # Sprachen, Begriffe, Meilensteine und feste Werte aus toycoin übernehmen
 npm run build:offline  # Testversion ohne Server in offline/ToyVerse-Testversion/
 ```
+
+## Automatischer Abgleich mit toycoin
+
+Der Workflow `.github/workflows/sync-toycoin.yml` läuft täglich (und auf Knopfdruck unter „Actions“), holt `Safehaigit/toycoin`, startet `npm run sync:toycoin`, prüft alles und öffnet bei Änderungen einen Pull Request „Abgleich mit toycoin“. Zusammenführen bleibt Handarbeit.
+
+Einmalig nötig, weil die Repositories privat sind:
+
+1. Auf GitHub unter „Settings → Developer settings → Personal access tokens → Fine-grained tokens“ einen Schlüssel anlegen: nur Repository `Safehaigit/toycoin`, Recht „Contents: Read-only“.
+2. In diesem Repository unter „Settings → Secrets and variables → Actions“ als `TOYCOIN_READ_TOKEN` speichern.
+3. Unter „Settings → Actions → General“ das Häkchen „Allow GitHub Actions to create and approve pull requests“ setzen.
+
+Ohne Schlüssel überspringt der Workflow den Abgleich mit einem Hinweis.
 
 ## Testversion ohne Server
 
