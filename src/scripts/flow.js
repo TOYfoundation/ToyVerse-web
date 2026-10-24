@@ -8,10 +8,12 @@ export function initFlows() {
   document.querySelectorAll('[data-flow]').forEach((el) => {
     const E = JSON.parse(el.dataset.flow);
     const N = E.steps.length;
+    // Right-to-left pages mirror the layout so the flow reads from right to left.
+    if (getComputedStyle(el).direction === 'rtl') E.nodes = E.nodes.map(([l, x, y]) => [l, 400 - x, y]);
     const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
     let k = 0;
     let playing = !reduced;
-    el.innerHTML = `<div class="xv"></div><div class="xc"><button class="mb xp" aria-label="${esc(E.ui.back)}">‹</button><input class="xr" type="range" min="1" max="${N}" value="1" aria-label="${esc(E.ui.step)}"><button class="mb xn" aria-label="${esc(E.ui.next)}">›</button><button class="mb xa"></button></div><h3 class="xt" style="font:700 1.3rem var(--ser);margin:.8rem 0 .1rem"></h3><p class="xd" aria-live="polite" style="margin:0;color:var(--mu)"></p>`;
+    el.innerHTML = `<div class="xv"></div><div class="xc"><button class="mb xp" aria-label="${esc(E.ui.back)}"><span class="chv" aria-hidden="true"></span></button><input class="xr" type="range" min="1" max="${N}" value="1" aria-label="${esc(E.ui.step)}"><button class="mb xn" aria-label="${esc(E.ui.next)}"><span class="chv f" aria-hidden="true"></span></button><button class="mb xa"></button></div><h3 class="xt" style="font:700 1.3rem var(--ser);margin:.8rem 0 .1rem"></h3><p class="xd" aria-live="polite" style="margin:0;color:var(--mu)"></p>`;
     const q = (c) => el.querySelector(c);
     function draw() {
       const s = E.steps[k];
@@ -33,6 +35,13 @@ export function initFlows() {
         .join('');
       const packet = reduced ? '' : `<circle r="6" fill="var(--acc)"><animateMotion dur="1.4s" repeatCount="indefinite" path="M${a[1]} ${a[2]}L${b[1]} ${b[2]}"/></circle>`;
       q('.xv').innerHTML = `<svg viewBox="0 0 400 ${E.h}" role="img" aria-label="${esc(E.ui.label)}">${edges}${active}${nodes}${packet}</svg>`;
+      // Shrink labels that are wider than their box (long words in some languages).
+      q('.xv')
+        .querySelectorAll('text')
+        .forEach((t) => {
+          const w = t.getComputedTextLength();
+          if (w > 98) t.setAttribute('font-size', String(Math.max(8, (13 * 98) / w).toFixed(1)));
+        });
       q('.xt').textContent = `${k + 1}. ${s[2]}`;
       q('.xd').textContent = s[3];
       q('.xr').value = k + 1;

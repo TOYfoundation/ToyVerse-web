@@ -44,7 +44,7 @@ const withLinks = (s: string) => s.replace(/\{(community|roadmap|toycoin)\}/g, (
 {
   id !== 'start' && (
     <nav class="bc" aria-label={t(lang, 'ui.path')}>
-      <a href={href(lang, 'start')}>ToyVerse</a> › <a href={href(lang, g.pages[0])}>{t(lang, `groups.${g.id}.t`)}</a> › <span aria-current="page">{t(lang, P('t'))}</span>
+      <a href={href(lang, 'start')}>ToyVerse</a> <span class="chv f" aria-hidden="true"></span> <a href={href(lang, g.pages[0])}>{t(lang, `groups.${g.id}.t`)}</a> <span class="chv f" aria-hidden="true"></span> <span aria-current="page">{t(lang, P('t'))}</span>
     </nav>
   )
 }
@@ -268,6 +268,6 @@ const withLinks = (s: string) => s.replace(/\{(community|roadmap|toycoin)\}/g, (
   )
 }
 <div class="pg">
-  {prev ? <a class="btn al" href={href(lang, prev)}>‹ {t(lang, `pages.${prev}.t`)}</a> : <span />}
-  {next ? <a class="btn" href={href(lang, next)}>{t(lang, `pages.${next}.t`)} ›</a> : <span />}
+  {prev ? <a class="btn al" href={href(lang, prev)}><span class="chv" aria-hidden="true"></span> {t(lang, `pages.${prev}.t`)}</a> : <span />}
+  {next ? <a class="btn" href={href(lang, next)}>{t(lang, `pages.${next}.t`)} <span class="chv f" aria-hidden="true"></span></a> : <span />}
 </div>
