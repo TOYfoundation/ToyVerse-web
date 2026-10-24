@@ -1,0 +1,1362 @@
+{
+  "meta": {
+    "description": "ToyVerse: blockchain yake yenyewe ToyChain yenye sarafu TOY, pochi TOYPAY, kichunguzi ToyScan, sarafu ya euro isiyoonekana ToyCash na mchezo wa kujifunza TOYQUEST."
+  },
+  "ui": {
+    "skip": "Ruka hadi maudhui",
+    "menu": "Menyu",
+    "mainNav": "Menyu kuu",
+    "allPages": "Kurasa zote",
+    "join": "Jiunge",
+    "language": "Lugha",
+    "languageHint": "Kwa sasa tovuti hii inapatikana katika lugha {n} kati ya 45 za pochi, TOYPAY na ToyScan. Nyingine zitafuata.",
+    "soon": "inakuja",
+    "path": "Njia",
+    "back": "Nyuma",
+    "next": "Mbele",
+    "pause": "Simamisha",
+    "auto": "Otomatiki",
+    "step": "Hatua",
+    "flowTitle": "Jinsi kila kitu kinavyoshikamana",
+    "flowLabel": "Mchoro wa mtiririko",
+    "image": "Picha {n}",
+    "ctaTitle": "Shiriki katika ToyVerse",
+    "ctaText": "Uliza maswali, jaribu mapema, au uwe mfanyabiashara au mshauri.",
+    "ctaBtn": "Jiunge",
+    "disclaimer": "Huu si ushauri wa uwekezaji, hakuna ahadi za faida. ToyChain inaendeshwa kama testnet inayoendelezwa, na TOY za testnet hazina thamani. ToyCash, ToyScan na vitu vya TOYQUEST bado ni dhana. Takwimu katika maigizo ni mifano.",
+    "placeholder": "Weka {label}",
+    "example": "Mfano",
+    "chooseLanguage": "Chagua lugha",
+    "redirect": "Endelea kwenye ukurasa wa mwanzo",
+    "machineNote": "Tafsiri hii imetengenezwa kwa AI kutoka Kijerumani na bado haijakaguliwa na wazungumzaji asilia. Toleo rasmi ni",
+    "machineLink": "toleo la Kijerumani",
+    "machineEnd": "."
+  },
+  "scenes": [
+    "Mji usiku",
+    "Msafara",
+    "Mtandao wa ToyChain",
+    "Ndani ya ukumbi wa michezo",
+    "Ukumbi wa mashine"
+  ],
+  "groups": {
+    "entdecken": {
+      "t": "Gundua",
+      "u": "Mwanzo na muhtasari"
+    },
+    "spielen": {
+      "t": "Cheza",
+      "u": "TOYQUEST na ulimwengu wake"
+    },
+    "bezahlen": {
+      "t": "Lipa",
+      "u": "Pochi, sarafu na pesa taslimu"
+    },
+    "technik": {
+      "t": "Teknolojia",
+      "u": "Jinsi mnyororo unavyofanya kazi"
+    },
+    "mitmachen": {
+      "t": "Jiunge",
+      "u": "Mpango, vipakuliwa, mawasiliano"
+    }
+  },
+  "status": {
+    "inWork": "Inafanyiwa kazi",
+    "inDev": "Inaendelezwa",
+    "planned": "Imepangwa",
+    "concept": "Dhana",
+    "built": "Imejengwa, inajaribiwa",
+    "afterReview": "Baada ya ukaguzi"
+  },
+  "pages": {
+    "start": {
+      "t": "Mwanzo",
+      "u": "Mchezo, pochi na blockchain yake yenyewe katika ulimwengu wa Alfu Lela Ulela.",
+      "slides": [
+        [
+          "Karibu ToyVerse",
+          "Mchezo, pochi na blockchain yake yenyewe katika ulimwengu wa Alfu Lela Ulela."
+        ],
+        [
+          "Cheza na ujifunze",
+          "Katika TOYQUEST, NPC wanakueleza jinsi TOY inavyozaliwa."
+        ],
+        [
+          "Lipa bila mtandao",
+          "TOYPAY na ToyCash zinakusudiwa kufanya kazi hata nje ya mtandao."
+        ]
+      ],
+      "discover": "Gundua",
+      "roadmap": "Hali ilivyo",
+      "what": "Ungependa kufanya nini?",
+      "tiles": [
+        [
+          "Cheza",
+          "Gundua TOYQUEST: ulimwengu, koo, safari ya wakati."
+        ],
+        [
+          "Lipa",
+          "Elewa TOYPAY, TOY na ToyCash."
+        ],
+        [
+          "Elewa",
+          "Ona jinsi ToyChain inavyofanya kazi."
+        ]
+      ],
+      "statusTitle": "Tulipo sasa",
+      "statusText": "ToyChain inajengwa hatua kwa hatua kama testnet. Hatua kuu {done} kati ya {total} zimekamilika.",
+      "statusLink": "Kwenye ramani ya njia",
+      "newTitle": "Mgeni hapa?",
+      "newText": "Muhtasari unaonyesha jinsi mchezo, pochi na mnyororo vinavyofanya kazi pamoja.",
+      "newBtn": "Tazama mfumo mzima"
+    },
+    "verse": {
+      "t": "Mfumo mzima",
+      "u": "Vipengele sita chini ya paa moja.",
+      "cards": [
+        [
+          "ToyChain",
+          "Blockchain yake yenyewe, nyepesi, yenye sarafu TOY. Inaendeshwa kwenye simu za zamani na Raspberry Pi.",
+          "inWork"
+        ],
+        [
+          "TOYPAY",
+          "Pochi na nodi katika kimoja, kwa Android, Windows, Linux na Raspberry Pi.",
+          "inDev"
+        ],
+        [
+          "ToyScan",
+          "Kichunguzi chenye taa ya tahadhari: hukagua daima kama sheria zinafuatwa.",
+          "planned"
+        ],
+        [
+          "TOYQUEST",
+          "Mchezo kwa mtindo wa Alfu Lela Ulela, wenye ulimwengu wa kujifunza teknolojia.",
+          "inDev"
+        ],
+        [
+          "ToyCash",
+          "Pesa taslimu za euro za faragha mtandaoni, hata bila mtandao.",
+          "concept"
+        ],
+        [
+          "ToyPost",
+          "Sanduku moja la barua kwa njia zote, ankara kwa TOY, ulinzi dhidi ya ulaghai.",
+          "built"
+        ]
+      ],
+      "after": "Pia kuna mzunguko wazi wa uchumi, wafanyabiashara, washauri na nodi za jamii. <a href=\"{community}\">Zaidi</a>",
+      "flow": {
+        "nodes": [
+          "Mchezaji",
+          "TOYQUEST",
+          "TOYPAY",
+          "ToyCash",
+          "Polygon",
+          "ToyChain",
+          "ToyScan"
+        ],
+        "steps": [
+          [
+            "Cheza",
+            "Unakamilisha misheni na kujifunza katika TOYQUEST jinsi ToyChain inavyofanya kazi."
+          ],
+          [
+            "Chapa",
+            "Ukitaka, unachapa kupitia TOYPAY kitu ulichokipata kwa kucheza."
+          ],
+          [
+            "Vitu",
+            "Vitu vilivyochapwa vinakaa kama NFT kwenye Polygon. ToyChain yenyewe inajua TOY pekee."
+          ],
+          [
+            "Shiriki",
+            "Pochi pia ni nodi: inakokotoa, inasaini na inaweza kupata TOY kwa kufanya hivyo."
+          ],
+          [
+            "Kagua",
+            "ToyScan inakagua utoaji, kikomo cha juu na sheria, na kuonyesha matokeo kama taa ya trafiki."
+          ],
+          [
+            "Pesa taslimu",
+            "Baadaye ToyCash itakuwa ndani ya TOYPAY, hata nje ya mtandao."
+          ],
+          [
+            "Shahidi",
+            "Kwa ToyCash, ToyChain inashuhudia alama za ukaguzi tu, si kiasi wala majina."
+          ]
+        ]
+      }
+    },
+    "toyquest": {
+      "t": "TOYQUEST",
+      "u": "Safari ya kusisimua inayokueleza teknolojia.",
+      "rows": [
+        [
+          "Ulimwengu",
+          "Ramani tano zinazolingana na mandhari tano za muundo. Majengo yote yanaweza kuingiwa, kutumiwa na kuuzwa."
+        ],
+        [
+          "Hali za mchezo",
+          "Nje au ndani ya mtandao, kwa ushirikiano au kwa ushindani, pamoja na gumzo la sauti, hali ya hatari na hali ya mtazamaji."
+        ],
+        [
+          "Kujifunza",
+          "NPC katika maeneo mengi wanaeleza ToyChain hatua kwa hatua: kwa ufupi, kwa kawaida au kiufundi kwa takwimu halisi."
+        ],
+        [
+          "Halisi au maonyesho",
+          "Ukiwasha ngazi katika TOYPAY, maeneo ya mchezo yanaonyesha matukio halisi ya nodi yako. Vinginevyo inaendeshwa hali ya maonyesho yenye alama wazi. Mchezo wenyewe hauzalishi TOY."
+        ],
+        [
+          "Vitu",
+          "Vitu unavipata kwa kucheza, huwezi kuvinunua. Ukitaka, unavichapa kama NFT kwenye Polygon. Ada ya mtandao inalipwa na mfuko wa jamii."
+        ]
+      ],
+      "toZeit": "Kwenye safari ya wakati",
+      "toSalon": "Kwenye ukumbi wa michezo",
+      "flow": {
+        "nodes": [
+          "Mchezaji",
+          "Misheni",
+          "Kitu",
+          "TOYPAY",
+          "Polygon"
+        ],
+        "steps": [
+          [
+            "Cheza",
+            "Unakamilisha misheni, michezo midogo na changamoto."
+          ],
+          [
+            "Pata kwa kucheza",
+            "Vitu unavipata ndani ya mchezo, si dukani. Hakuna kulipa ili kushinda."
+          ],
+          [
+            "Chapa",
+            "Ukitaka, unachapa kitu. Ada ndogo inalipia gharama za mtandao."
+          ],
+          [
+            "NFT inazaliwa",
+            "NFT inatengenezwa kwenye Polygon, na gesi inalipwa na mfuko wa jamii."
+          ],
+          [
+            "Miliki",
+            "Kitu ni chako. Ndani ya mchezo kinafanya kazi hata bila NFT."
+          ]
+        ]
+      }
+    },
+    "zeit": {
+      "t": "Safari ya wakati",
+      "u": "Ngazi tano kutoka zama za kale hadi zama za kisasa.",
+      "note": "Ngazi ya 1 hadi 3 zinaonyesha mashine za kale. Ngazi ya 4 na 5 zinaonyesha pia kuruka kwenda zama mpya kama mtazamo wa mbele. Kila ngazi inatatua hatua ileile, ukaguzi wa sahihi, kwa njia bora zaidi. Takwimu ni mifano."
+    },
+    "maschinen": {
+      "t": "Mashine",
+      "u": "Mashine 50 za kale, hadi 256 katika toleo la mwisho.",
+      "slider": "Mashine zilizofunguliwa: {n} kati ya 256",
+      "cards": [
+        [
+          "Mwalimu",
+          "Kila mashine ina fundi mkuu anayeeleza mchakato husika wa ToyChain."
+        ],
+        [
+          "Zawadi",
+          "Anayekusanya maarifa anapata mihuri ya maarifa, vyeti vya ufundi, dukati na mapambo. TOY haitolewi kwa hili."
+        ],
+        [
+          "Mpangilio",
+          "Kutoka karakana hadi mashine za kujiendesha, kila mashine imeunganishwa na mchakato, kwa mfano saa ya maji na muda wa bloku."
+        ]
+      ]
+    },
+    "gangs": {
+      "t": "Magenge na koo",
+      "u": "Peke yako una nguvu, katika timu una nguvu zaidi.",
+      "cards": [
+        [
+          "Genge",
+          "Wahusika wanakamilishana kwa sifa, uwezo na vitu."
+        ],
+        [
+          "Ulimwengu wazi",
+          "Kazi ya timu na wachezaji wengine kwa changamoto na kupanda ngazi."
+        ],
+        [
+          "Koo tano",
+          "Masultani na wafalme wanashindana au kushirikiana. NPC wanawatumikia, na uaminifu wako unahesabika."
+        ],
+        [
+          "Kanuni halisi",
+          "Lango linafunguka tu theluthi mbili ya genge wakiweka mihuri yao, sawa kabisa na umalizikaji (finality) wa ToyChain."
+        ]
+      ],
+      "flow": {
+        "nodes": [
+          "Genge lako",
+          "Ushirikiano",
+          "Changamoto",
+          "Ulimwengu wazi",
+          "Ukoo"
+        ],
+        "steps": [
+          [
+            "Changanya",
+            "Sifa, uwezo na vitu vya wanachama vinaimarishana."
+          ],
+          [
+            "Tatua changamoto",
+            "Genge linakabiliana na kazi pamoja."
+          ],
+          [
+            "Pamoja na wengine",
+            "Kazi ya timu na wachezaji wengine wa ulimwengu wazi."
+          ],
+          [
+            "Panda ngazi",
+            "Genge linakuwa na nguvu zaidi."
+          ],
+          [
+            "Chagua ukoo",
+            "Unajiunga na mojawapo ya koo tano. Zinashindana au kushirikiana."
+          ]
+        ]
+      }
+    },
+    "salon": {
+      "t": "Ukumbi wa michezo",
+      "u": "Umefichwa ndani ya mchezo, umejaa karata.",
+      "rows": [
+        [
+          "Michezo",
+          "Texas Hold’em na Limit-4-Card-Omaha."
+        ],
+        [
+          "Miundo",
+          "Michezo ya meza (cash games) na mashindano."
+        ],
+        [
+          "Dau",
+          "Mchezo unachezwa kwa dukati za ndani ya mchezo. Dau za ToyCoin zitakuwepo tu ukaguzi wa kisheria ukiziruhusu."
+        ],
+        [
+          "Michezo midogo",
+          "Michezo midogo 20 pamoja na misheni na ngazi za ziada."
+        ]
+      ],
+      "flow": {
+        "nodes": [
+          "Mchezaji",
+          "Ukumbi wa michezo",
+          "Meza",
+          "Dau"
+        ],
+        "steps": [
+          [
+            "Ingia",
+            "Ukumbi wa michezo ni jengo lililofichwa ndani ya mchezo."
+          ],
+          [
+            "Chagua mchezo",
+            "Texas Hold’em au Limit-4-Card-Omaha, kama mchezo wa meza au mashindano."
+          ],
+          [
+            "Dau",
+            "Unaweka dau kwa dukati. Dau za pesa halisi hazipo bila ukaguzi wa kisheria."
+          ]
+        ]
+      }
+    },
+    "toypay": {
+      "t": "TOYPAY",
+      "u": "Pochi ya ToyVerse, na wakati huo huo nodi ya ToyChain.",
+      "cards": [
+        [
+          "Majukwaa",
+          "Android, Windows, Linux na Raspberry Pi, hata kwenye vifaa vya zamani."
+        ],
+        [
+          "Nodi",
+          "Unachagua ngazi. Ukokotoaji unafanyika tu kifaa kikiwa kwenye chaji, kwenye WiFi na kwa joto la kawaida."
+        ],
+        [
+          "Malipo nje ya mtandao",
+          "Yamesimbwa kupitia QR, NFC au Bluetooth, hata bila mtandao."
+        ],
+        [
+          "Akaunti ya biashara",
+          "Pamoja na rejista ya fedha kwa wafanyabiashara."
+        ],
+        [
+          "Usalama",
+          "Muhtasari kabla ya kila sahihi, ulinzi dhidi ya mitego ya anwani, orodha ya tahadhari dhidi ya hadaa (phishing), pochi za vifaa (hardware wallets)."
+        ],
+        [
+          "Lugha",
+          "Lugha 45 na hali nne, kutoka mwanzilishi hadi mtaalamu kamili."
+        ]
+      ],
+      "toWallet": "Unganisha na testnet",
+      "toDownload": "Pakua",
+      "cardFront": [
+        "TOYPAY",
+        "ToyChain · Testnet",
+        "Gusa ili kugeuza"
+      ],
+      "cardBack": [
+        "Malipo nje ya mtandao",
+        "Yamesimbwa kutoka kifaa hadi kifaa",
+        "Muhtasari kabla ya kila sahihi"
+      ],
+      "cardLabel": "Geuza kadi",
+      "cardTitle": "Kadi yako ya kugusa",
+      "flow": {
+        "nodes": [
+          "Rejista ya duka",
+          "Pochi yako",
+          "Muhtasari",
+          "Mtandao",
+          "Akaunti ya biashara"
+        ],
+        "steps": [
+          [
+            "Tuma kiasi",
+            "Rejista inatuma kiasi kama ombi la malipo kwa pochi yako."
+          ],
+          [
+            "Kagua",
+            "Kabla ya kusaini, pochi inakuonyesha hasa kitakachotokea."
+          ],
+          [
+            "Lipa",
+            "Malipo yanaingia kwenye mtandao na ni ya mwisho baada ya bloku moja."
+          ],
+          [
+            "Kuingizwa",
+            "Akaunti ya biashara inapokea uthibitisho."
+          ],
+          [
+            "Nje ya mtandao",
+            "Bila mtandao, malipo yaliyosimbwa yanaenda moja kwa moja kutoka kifaa hadi kifaa."
+          ]
+        ]
+      }
+    },
+    "toycoin": {
+      "t": "TOY",
+      "u": "Sarafu ya ToyChain, kwa wote kwa sheria zilezile.",
+      "rows": [
+        [
+          "Kiasi",
+          "Si zaidi ya TOY 100,000,000, kamwe. Kikomo hiki kimeandikwa katika katiba ya ToyChain."
+        ],
+        [
+          "Uzinduzi wa haki",
+          "Bloku ya kwanza haina hata TOY moja. Hakuna akiba, hakuna mauzo ya awali, hakuna mgao wa timu."
+        ],
+        [
+          "Uzalishaji",
+          "TOY zote zinazaliwa taratibu kupitia kazi kwenye mtandao: kipindi cha kwanza TOY 50,500, mwaka wa kwanza takriban milioni 16.8, nusu-maisha takriban miaka 3.76, takriban 99 % baada ya miaka 25."
+        ],
+        [
+          "Mgawanyo",
+          "50 % kwa wote wanaosaini bloku, 40 % kwa bahati nasibu ya kazi, 10 % kwa mfuko wa marejesho kwa miamala ya bure."
+        ],
+        [
+          "Haichomwi kamwe",
+          "Kwenye ToyChain hakuna TOY inayoharibiwa kamwe, na akaunti hazipotei kamwe."
+        ],
+        [
+          "Teknolojia",
+          "Desimali 18, anwani kama Ethereum. Chain-ID ya testnet ni 7630714, ya mainnet 7630713 baada ya ukaguzi (audit) tu."
+        ]
+      ],
+      "chartTitle": "TOY zilizotolewa kwa miaka",
+      "chartYear": "Mwaka {y}",
+      "chartLabel": "Mwaka {y}: takriban TOY milioni {m} zimetolewa (mpango kwa kipengele 1)",
+      "chartAxis": "TOY milioni",
+      "coinTitle": "Sarafu katika 3D",
+      "coinTurn": "Zungusha sarafu",
+      "warnTitle": "Tahadhari: tokeni za zamani za ToyCoin",
+      "warnText": "Kwenye Polygon na Ethereum kuna tokeni za zamani zenye jina ToyCoin. Hizo <b>si TOY ya ToyChain</b>, hazibadilishwi na hazivushwi kwa bridge. Pochi na ToyScan zinaziwekea alama “Si TOY ya ToyChain, haibadilishiki”. Usizinunue ukitarajia kubadilishana.",
+      "warnPolygon": "Polygon",
+      "warnEthereum": "Ethereum",
+      "warnLink": "Tazama kwenye kichunguzi"
+    },
+    "wallet": {
+      "t": "Unganisha na testnet",
+      "u": "Testnet ya umma ikishaanza, utaiongeza hapa kwa mbofyo mmoja.",
+      "btn": "Ongeza testnet · inakuja na hatua kuu M10",
+      "facts": [
+        [
+          "Mtandao",
+          "ToyChain Testnet"
+        ],
+        [
+          "Chain-ID",
+          "7630714"
+        ],
+        [
+          "Alama",
+          "TOY, desimali 18"
+        ],
+        [
+          "Anwani",
+          "Anwani yako ya kawaida ya Ethereum na maneno yako ya kurejesha yanafanya kazi hapa pia."
+        ]
+      ],
+      "text": "Kuongeza kunafanya kazi na kila pochi inayoweza kuongeza mitandao kwa EIP-3085, kama TOYPAY au MetaMask. Ukurasa huu hausomi chochote na hauwezi kutuma chochote. TOY za testnet hazina thamani na hazitahamishiwa kamwe kwenye mainnet.",
+      "safety": "Ukurasa huu hautakuuliza kamwe maneno yako ya kurejesha. Anayeyauliza anataka kukulaghai.",
+      "flow": {
+        "nodes": [
+          "Ukurasa huu",
+          "Pochi yako",
+          "Testnet ya ToyChain",
+          "TOY za testnet"
+        ],
+        "steps": [
+          [
+            "Pendekeza",
+            "Ukurasa unapendekeza mtandao pamoja na jina, Chain-ID na njia ya kuufikia."
+          ],
+          [
+            "Thibitisha",
+            "Pochi yako inaonyesha data, nawe unathibitisha. Funguo hazitoki kamwe kwenye kifaa chako."
+          ],
+          [
+            "Shiriki",
+            "Katika testnet, kifaa chako kinakokotoa tiketi za bahati nasibu ya kazi au kinachukua TOY za majaribio kutoka bomba la testnet (faucet)."
+          ],
+          [
+            "Jaribu",
+            "Kwa TOY za testnet unajaribu uhamisho, mgao wa bure na ngazi bila hatari."
+          ]
+        ]
+      }
+    },
+    "toycash": {
+      "t": "ToyCash",
+      "u": "Hisia ya pesa taslimu mtandaoni, inayodhaminiwa na euro.",
+      "rows": [
+        [
+          "Kanuni",
+          "Stablecoin ya euro. Umiliki na kiasi unaviona wewe tu katika pochi yako. ToyChain inashuhudia alama za ukaguzi tu, si kiasi wala majina."
+        ],
+        [
+          "Dhamana",
+          "Akiba za euro, mwanzoni euro pekee. Mtoaji mmoja wa mradi, baadaye walinzi kadhaa kwa pamoja."
+        ],
+        [
+          "Mwanzo",
+          "Kwanza mfano wa awali kwa kanuni ya eCash kwa euro za majaribio, baadaye zk-Notes."
+        ],
+        [
+          "Vocha",
+          "Vocha za matumizi mengi, za kikundi na za mmiliki, hatua kwa hatua."
+        ],
+        [
+          "Matumizi mara mbili",
+          "Muda wa kurejesha, adhabu ya ulaghai na uhifadhi, hatua kwa hatua."
+        ],
+        [
+          "Hali",
+          "Dhana. Euro halisi zitakuwepo tu baada ya ukaguzi (audit) na ukaguzi wa kisheria."
+        ]
+      ],
+      "toOffline": "Jaribu kikomo cha nje ya mtandao",
+      "flow": {
+        "nodes": [
+          "Akiba ya euro",
+          "Mtoaji",
+          "Pochi A",
+          "Pochi B",
+          "ToyChain"
+        ],
+        "steps": [
+          [
+            "Dhamana",
+            "Euro zimewekwa tayari kama dhamana."
+          ],
+          [
+            "Toa",
+            "Pochi A inapokea noti zilizosimbwa."
+          ],
+          [
+            "Pitisha",
+            "A inapitisha noti kwa B, hata nje ya mtandao."
+          ],
+          [
+            "Komboa",
+            "B inabadilisha noti kwa mtoaji ili kupata noti mpya. Mtoaji anakagua kwamba hakuna noti inayotumika mara mbili."
+          ],
+          [
+            "Shuhudia",
+            "Kila kipindi, mtoaji anaweka alama ya ukaguzi ya orodha yake kwenye ToyChain. Hivyo hakuna kinachoweza kubadilishwa kwa siri."
+          ]
+        ]
+      }
+    },
+    "offline": {
+      "t": "Kikomo cha nje ya mtandao",
+      "u": "Kikomo kinakua polepole kadiri unavyotumia.",
+      "tableHead": [
+        "Ngazi",
+        "Kikomo",
+        "Sharti"
+      ],
+      "steps": [
+        [
+          "1",
+          "20 €",
+          "Mwanzo"
+        ],
+        [
+          "2",
+          "50 €",
+          "Siku 14 na malipo 10"
+        ],
+        [
+          "3",
+          "100 €",
+          "Siku 60 na malipo 40"
+        ],
+        [
+          "4",
+          "250 €",
+          "Siku 180 na malipo 100, kwa ufunguo uliofungwa kwenye kifaa tu"
+        ],
+        [
+          "5",
+          "500 €",
+          "Siku 365 na malipo 250, kwa ufunguo uliofungwa kwenye kifaa tu"
+        ]
+      ],
+      "text": "Ndani ya ngazi iliyofunguliwa unachagua kikomo chako mwenyewe. Kikomo pia ni dhamana: anayetumia mara mbili nje ya mtandao anaipoteza kwa waliodhurika. Thamani za ngazi ni pendekezo."
+    },
+    "toychain": {
+      "t": "ToyChain",
+      "u": "Nyepesi kama Mina, anwani kama Ethereum.",
+      "rows": [
+        [
+          "Ukubwa",
+          "Kila nodi ya kawaida inahifadhi si zaidi ya MB 256."
+        ],
+        [
+          "Vifaa",
+          "Inaendeshwa kwenye vifaa vya zamani vya Android, Raspberry Pi, Linux na Windows."
+        ],
+        [
+          "Anwani",
+          "Anwani zilezile na maneno yaleyale 12 au 24 kama kwenye Ethereum."
+        ],
+        [
+          "Shiriki",
+          "Ngazi ya 0 haihitaji salio: kifaa chako kinakokotoa tiketi za bahati nasibu ya kazi. Kwa stake ya TOY 10, 100 au 1,000 unasaini, unahifadhi au unathibitisha."
+        ],
+        [
+          "Makubaliano",
+          "Kamati yenye hadi wanachama 128 inasaini kila bloku. Kuanzia theluthi mbili bloku ni ya mwisho, takriban bloku moja kila dakika."
+        ],
+        [
+          "Akaunti",
+          "Akaunti hazipotei kamwe. Akaunti zisizotumika kwa muda mrefu zinapumzika na zinaweza kuamshwa wakati wowote."
+        ],
+        [
+          "TOY pekee",
+          "Hakuna tokeni, hakuna NFT, hakuna mikataba janja (smart contracts) kwenye ToyChain. Kila kazi imejengwa ndani kwa kudumu."
+        ],
+        [
+          "Usalama",
+          "Mbinu na maktaba zilizokaguliwa pekee. Funguo za ziada zinazostahimili kompyuta za kwanta (ML-DSA) zimepangwa kwa hatua kuu M13."
+        ]
+      ],
+      "toMint": "Igiza uchapaji",
+      "chainTitle": "Mnyororo katika 3D",
+      "chainAdd": "Ongeza bloku",
+      "chainHint": "Sogeza kiashiria au kidole juu ya onyesho ili kulizungusha. Visanduku ni bloku za mfano.",
+      "flow": {
+        "nodes": [
+          "Pochi",
+          "Pool",
+          "Kamati",
+          "Bloku",
+          "Mnyororo"
+        ],
+        "steps": [
+          [
+            "Tuma",
+            "Muamala wako unaingia kwenye pool."
+          ],
+          [
+            "Pendekeza",
+            "Mwanachama wa kamati aliyechaguliwa kwa bahati nasibu anaunda bloku."
+          ],
+          [
+            "Saini",
+            "Kamati inasaini. Kuanzia theluthi mbili, bloku ni ya mwisho."
+          ],
+          [
+            "Unganisha",
+            "Nodi zinahifadhi hali ya sasa na dirisha fupi la historia, si zaidi ya MB 256."
+          ],
+          [
+            "Tuza",
+            "TOY mpya zinaenda kwa wanaosaini, kwa bahati nasibu ya kazi na kwenye mfuko wa marejesho."
+          ]
+        ]
+      }
+    },
+    "mint": {
+      "t": "Igizo la uchapaji",
+      "u": "Tuma vifaa kwenye mtandao na uone bloku zikizaliwa.",
+      "text": "Kwa urahisi: kazi na sahihi zinapita kwenye mkanda hadi kwenye pool. Ikijaa au ikipita takriban dakika moja (hapa kwa kasi zaidi), bloku inazaliwa. Katika kipindi cha kwanza, takriban TOY 35 mpya zinaongezwa kwa kila bloku: 50 % kwa wanaosaini, 40 % kwa bahati nasibu ya kazi, 10 % kwa mfuko wa marejesho."
+    },
+    "tx": {
+      "t": "Miamala",
+      "u": "Miamala 10 hadi 100 ya bure kwa kila akaunti kwa siku.",
+      "text": "Ukipita mgao, unalipa ada ndogo au unakokotoa tiketi ya ToyWork. Ada inaongezeka mara mbili kwa kila miamala 10 zaidi katika bloku ileile, hadi mara 1,024 zaidi. Ada zinaenda 40 % kwa washiriki hai, 40 % kwenye mfuko wa marejesho na 20 % kwa anayependekeza bloku."
+    },
+    "toyscan": {
+      "t": "ToyScan",
+      "u": "Taa ya kijani sheria zote zikifuatwa.",
+      "cards": [
+        [
+          "Kikomo cha juu",
+          "Kamwe si zaidi ya TOY 100,000,000. Katika kila bloku, jumla ya salio zote inalingana na jumla ya utoaji wote."
+        ],
+        [
+          "Uzinduzi wa haki",
+          "Bloku ya kwanza ina TOY 0. Kila TOY inaweza kufuatiliwa hadi kwenye utoaji."
+        ],
+        [
+          "Utoaji",
+          "Kila kipindi kinakokotolewa upya kwa fomula."
+        ],
+        [
+          "Minyororo mingine",
+          "Inaonyesha salio za anwani ileile kwenye minyororo mingine, kwa kusoma tu. Tokeni za zamani za ToyCoin zimewekwa alama “si TOY ya ToyChain”."
+        ]
+      ],
+      "flow": {
+        "nodes": [
+          "ToyChain",
+          "Nodi ya kumbukumbu",
+          "Minyororo mingine",
+          "ToyScan",
+          "Taa"
+        ],
+        "steps": [
+          [
+            "Soma data",
+            "ToyScan inasoma ugavi, vipindi na bloku za ToyChain."
+          ],
+          [
+            "Kokotoa upya",
+            "Nodi ya kumbukumbu inajumlisha salio zote yenyewe."
+          ],
+          [
+            "Onyesha",
+            "Salio za anwani ileile kwenye minyororo mingine zinaonekana kwa taarifa tu."
+          ],
+          [
+            "Taa",
+            "Kijani kila kitu kikiwa sawa. Njano kukiwa na jambo lisilo la kawaida, nyekundu sheria ikivunjwa, pamoja na ushahidi."
+          ]
+        ]
+      }
+    },
+    "ketten": {
+      "t": "Minyororo mingine",
+      "u": "Anwani ileile kila mahali, bila bridge.",
+      "rows": [
+        [
+          "Anwani ileile",
+          "Anwani yako ya ToyChain inafanya kazi pia kwenye Ethereum, Polygon, Arbitrum, Base na BNB Chain. TOYPAY inaonyesha huko salio, tokeni na NFT."
+        ],
+        [
+          "Kubadilishana bila bridge",
+          "Ubadilishanaji wa atomiki wenye kufuli ya hashi na muda: ama pande zote mbili zinapata pesa zao, ama hakuna anayepata. Umepangwa kwa hatua kuu M12."
+        ],
+        [
+          "Tokeni za zamani za ToyCoin",
+          "Tokeni zenye jina ToyCoin kwenye Polygon na Ethereum si TOY ya ToyChain na hazibadilishiki."
+        ],
+        [
+          "Bridge",
+          "Katika upeo wa sasa hakuna bridge. Ikija baadaye, ingehitaji uamuzi wake wenyewe, ukaguzi (audit) na ukaguzi wa kisheria."
+        ]
+      ]
+    },
+    "roadmap": {
+      "t": "Ramani ya njia",
+      "u": "Mpangilio ni muhimu kuliko tarehe.",
+      "progress": "ToyChain awamu ya 1: hatua kuu {done} kati ya {total} zimekamilika (hali ya {date})",
+      "milestones": {
+        "M1": "Aina za msingi na utoaji",
+        "M2": "Kriptografia na anwani",
+        "M3": "Hali, miamala, ada",
+        "M4": "Bloku na makubaliano",
+        "M5": "Hifadhi na MB 256",
+        "M6": "Mtandao",
+        "M7": "Kiolesura (RPC)",
+        "M8": "Pochi na mstari wa amri",
+        "M9": "Majukwaa na hali ya nishati",
+        "M10": "Testnet ya umma",
+        "M11": "ToyScan",
+        "M12": "Ulinzi wa akaunti, kubadilishana",
+        "M13": "Majina, funguo zinazostahimili kwanta"
+      },
+      "cards": [
+        [
+          "1 · Kiini cha ToyChain",
+          "Nodi kwa Rust: utoaji, kriptografia, miamala na ada zimekamilika, makubaliano yanafuata.",
+          "inWork"
+        ],
+        [
+          "2 · TOYPAY kama nodi",
+          "Pochi yenye ngazi na hali ya nishati kwenye majukwaa manne.",
+          "planned"
+        ],
+        [
+          "3 · Testnet ya umma",
+          "Kwanza ya ndani, kisha ya umma, pamoja na majaribio ya mzigo.",
+          "planned"
+        ],
+        [
+          "4 · ToyScan",
+          "Kichunguzi chenye taa ya tahadhari na kiolesura wazi.",
+          "planned"
+        ],
+        [
+          "5 · TOYQUEST",
+          "Ulimwengu wa kujifunza na vitu kwenye Polygon, huru kutoka kiini cha ToyChain.",
+          "inDev"
+        ],
+        [
+          "6 · ToyCash",
+          "Mfano wa awali kwa euro za majaribio, kisha pochi ya nje ya mtandao na zk-Notes.",
+          "concept"
+        ],
+        [
+          "7 · Mainnet",
+          "Baada ya ukaguzi wa nje (audit), majaribio ya mzigo na ukaguzi wa kisheria tu, na kutangazwa hadharani kabla.",
+          "afterReview"
+        ]
+      ],
+      "flow": {
+        "nodes": [
+          "Kiini cha ToyChain",
+          "TOYPAY",
+          "Testnet",
+          "ToyScan",
+          "Mainnet"
+        ],
+        "steps": [
+          [
+            "Kiini kwanza",
+            "Utoaji, kriptografia na miamala vimejengwa na kujaribiwa."
+          ],
+          [
+            "Pochi kama nodi",
+            "TOYPAY inaleta mnyororo kwenye simu, kompyuta na Raspberry Pi."
+          ],
+          [
+            "Testnet",
+            "Kwanza ya ndani, kisha ya umma, pamoja na majaribio ya mzigo na fuzzing."
+          ],
+          [
+            "Mainnet baada ya ukaguzi",
+            "Ukaguzi (audit), majaribio ya mzigo na ukaguzi wa kisheria ni lazima. TOY za testnet hazitahamishwa kamwe."
+          ]
+        ]
+      }
+    },
+    "download": {
+      "t": "Vipakuliwa",
+      "u": "Faili zitaonekana hapa zikishakuwa tayari.",
+      "items": [
+        "TOYPAY kwa Android, Windows, Linux na Raspberry Pi · inakuja",
+        "Nodi ya ToyChain · inakuja pamoja na testnet",
+        "Whitepaper · inakuja pamoja na kuchapishwa kwa msimbo chanzo"
+      ],
+      "until": "Hadi wakati huo: <a href=\"{roadmap}\">tazama ramani ya njia</a> au <a href=\"{toycoin}\">jifunze zaidi kuhusu TOY</a>."
+    },
+    "community": {
+      "t": "Jamii",
+      "u": "Mzunguko wa uchumi unaobebwa na wote.",
+      "cards": [
+        [
+          "Wafanyabiashara",
+          "Wafanyabiashara wenye akaunti ya biashara, rejista, vocha na pointi za uaminifu."
+        ],
+        [
+          "Washauri",
+          "Wachezaji wenye uzoefu wanawasaidia wageni na kupata mihuri ya maarifa kwa hilo."
+        ],
+        [
+          "Nodi za jamii",
+          "Anayetoa kifaa anaimarisha mtandao. Vifurushi vya Raspberry Pi na ramani ya nodi vimepangwa."
+        ],
+        [
+          "Dashibodi",
+          "ToyScan inaonyesha mzunguko wa uchumi kwa takwimu halisi, bila utabiri."
+        ],
+        [
+          "Kushiriki maamuzi",
+          "Inakuja baadaye. Hata hapo, hakuna atakayeweza kubadilisha katiba ya ToyChain."
+        ]
+      ],
+      "langTitle": "Lugha 45",
+      "langText": "Pochi, TOYPAY na ToyScan zinazungumza lugha 45 zilezile. Kwa sasa tovuti hii ipo katika {n} kati yake:"
+    },
+    "kontakt": {
+      "t": "Jiunge na wasiliana",
+      "u": "Tuambie unachohitaji.",
+      "cards": [
+        [
+          "Testnet",
+          "Ongeza testnet kwenye pochi yako ikishaanza.",
+          "Kwenye testnet"
+        ],
+        [
+          "Vipakuliwa",
+          "Programu na nodi zitaonekana hapa zikishakuwa tayari.",
+          "Kwenye vipakuliwa"
+        ],
+        [
+          "Jiunge",
+          "Kama mjaribu, mfanyabiashara au mshauri. Tuandikie kwa ufupi ni kuhusu nini.",
+          ""
+        ]
+      ],
+      "formTitle": "Tuandikie",
+      "topic": "Mada",
+      "topics": [
+        "Swali kuhusu mradi",
+        "Kujiunga kama mjaribu",
+        "Kuwa mfanyabiashara",
+        "Vyombo vya habari"
+      ],
+      "name": "Jina lako",
+      "message": "Ujumbe",
+      "send": "Andaa barua pepe",
+      "noMail": "Anwani ya mawasiliano bado haijawekwa (src/data/site.json).",
+      "opened": "Programu yako ya barua pepe inafunguka. Hakuna kinachohifadhiwa kupitia ukurasa huu.",
+      "security": "Tafadhali usiripoti mianya ya usalama kupitia fomu hii, bali kwa siri kwa anwani iliyo katika taarifa za kisheria, kwa kichwa cha habari “Usalama”."
+    },
+    "impressum": {
+      "t": "Taarifa za kisheria",
+      "u": "Utambulisho wa mtoa huduma chini ya § 5 DDG (sheria ya Ujerumani).",
+      "template": "Hiki ni kiolezo. Weka taarifa halisi katika src/data/site.json na uzikaguliwe kisheria.",
+      "h1": "Taarifa chini ya § 5 DDG",
+      "h2": "Mawasiliano",
+      "h3": "Usajili na kodi",
+      "h4": "Anayewajibika kwa maudhui",
+      "h5": "Kumbuka",
+      "labels": {
+        "name": "jina au kampuni pamoja na muundo wa kisheria",
+        "street": "mtaa na namba",
+        "city": "msimbo wa posta na mji",
+        "email": "anwani ya barua pepe",
+        "phone": "namba ya simu",
+        "register": "sajili na namba, ikiwa ipo",
+        "vatId": "namba ya VAT, ikiwa ipo"
+      },
+      "mail": "Barua pepe",
+      "phone": "Simu",
+      "register": "Usajili",
+      "vat": "Namba ya VAT",
+      "responsible": "Chini ya § 18 (2) MStV: {name}, anwani kama hapo juu.",
+      "note": "ToyVerse ni mradi unaojengwa. Taarifa kuhusu TOY si ushauri wa uwekezaji."
+    },
+    "datenschutz": {
+      "t": "Faragha",
+      "u": "Kinachotokea kwa data yako: kidogo iwezekanavyo.",
+      "template": "Hiki ni kiolezo. Kinafaa tovuti tuli isiyo na vidakuzi wala ufuatiliaji. Ongeza mtoa huduma wa upangishaji na kikaguliwe kisheria kabla ya kuchapishwa.",
+      "sections": [
+        [
+          "Mwenye jukumu",
+          "{name}, {street}, {city}, barua pepe: {email}."
+        ],
+        [
+          "Upangishaji na kumbukumbu za seva",
+          "Tovuti imepangishwa na {host}. Unapoitembelea, seva inashughulikia data muhimu kiufundi kama anwani ya IP, wakati na ukurasa ulioombwa, ili kuwasilisha tovuti na kuilinda dhidi ya mashambulizi (Ibara 6 (1) (f) GDPR)."
+        ],
+        [
+          "Hakuna vidakuzi, hakuna ufuatiliaji",
+          "Tovuti haiweki vidakuzi, haitumii zana za uchambuzi na haipakii maudhui kutoka kwa wahusika wengine. Fonti zinatolewa kutoka seva yetu wenyewe."
+        ],
+        [
+          "Ndani ya kivinjari chako",
+          "Maigizo yanaendeshwa ndani ya kivinjari chako tu. Hakuna kinachotumwa kwetu."
+        ],
+        [
+          "Mawasiliano",
+          "Fomu ya mawasiliano inafungua tu programu yako ya barua pepe. Tunapokea barua pepe pale tu unapoituma, na tunaitumia kukujibu tu (Ibara 6 (1) (b) na (f) GDPR)."
+        ],
+        [
+          "Viungo vya tovuti nyingine",
+          "Viungo, kwa mfano vya vichunguzi vya bloku, vinaelekea kwa watoa huduma wengine. Huko, taarifa zao za faragha ndizo zinazotumika."
+        ],
+        [
+          "Haki zako",
+          "Una haki ya kupata taarifa, kurekebisha, kufuta, kuzuia, kuhamisha data na kupinga, pamoja na haki ya kuwasilisha malalamiko kwa mamlaka ya ulinzi wa data."
+        ]
+      ]
+    }
+  },
+  "demo": {
+    "zeit": {
+      "levels": [
+        [
+          "Karakana ya kale",
+          "Fundi wa hesabu anasogeza shanga na kukagua kila sahihi kwa mkono.",
+          "Nguvu za misuli",
+          "Abakasi"
+        ],
+        [
+          "Nguvu na kuunganisha",
+          "Gurudumu la maji linaendesha nyundo, na mihuri mingi inakuwa mmoja.",
+          "Nguvu za maji",
+          "Gurudumu la maji na nyundo ya muhuri"
+        ],
+        [
+          "Wakati na kupima",
+          "Saa ya maji inaweka mdundo, kama muda wa bloku wa takriban dakika moja.",
+          "Maji na mvuto",
+          "Saa ya maji"
+        ],
+        [
+          "Kumbukumbu na uchapaji · mtazamo wa zama mpya",
+          "Mashine ya kale ya kuchapa sarafu inakuwa mashine ya mvuke: kuchapa kwa mdundo wa mashine.",
+          "Mvuke na makaa ya mawe",
+          "Injini ya mvuke"
+        ],
+        [
+          "Mashine za kujiendesha na uthibitisho · mtazamo wa zama za kisasa",
+          "Mashine ya Heron ilifuata sheria thabiti. Leo, kore nyingi zinakagua sahihi kwa wakati mmoja.",
+          "wati chache",
+          "Chipu yenye kore tisa"
+        ]
+      ],
+      "level": "Ngazi ya {n}",
+      "power": "Nguvu",
+      "start": "Anza",
+      "submit": "Wasilisha sahihi",
+      "submit10": "10 kwa pamoja",
+      "queue": "Foleni",
+      "done": "Zimeshughulikiwa",
+      "rate": "Mfano: sahihi {r} kwa dakika",
+      "drive": "Kiendeshi",
+      "machine": "Mashine ya ngazi iliyochaguliwa"
+    },
+    "gears": {
+      "title": "Mitambo ya kuzungusha",
+      "crank": "Mkono wa kuzungusha",
+      "label": "Magurudumu manne ya meno yanayoshikana",
+      "text": "Gurudumu la 4 linazunguka mara {x} kwa kasi kuliko mkono wa kuzungusha, kwa upande wa kinyume."
+    },
+    "npc": {
+      "title": "Kutana na NPC",
+      "intro": "Gusa mhusika na umuulize swali. Mazungumzo ni mifano.",
+      "hello": "Karibu! Ungependa kujua nini?",
+      "names": [
+        "Mfanyabiashara",
+        "Mlinzi",
+        "Msomi",
+        "Sultani",
+        "Kiongozi wa msafara"
+      ],
+      "qa": [
+        [
+          [
+            "Kitu kinagharimu kiasi gani?",
+            "Vitu unavipata kwa kucheza. Ni yule tu anayetaka kuchapa kimoja kama NFT ndiye analipa ada ndogo kwa gharama za mtandao."
+          ],
+          [
+            "Naweza kufanya biashara nawe?",
+            "Majengo na bidhaa zote zinaweza kuuzwa na kununuliwa. Kwa akaunti ya biashara unaweza hata kupokea malipo kwenye rejista."
+          ],
+          [
+            "TOY ni nini?",
+            "Sarafu ya ToyChain yetu wenyewe. Milioni zote 100 zinazaliwa taratibu kupitia kazi kwenye mtandao. Hakuna akiba."
+          ]
+        ],
+        [
+          [
+            "Ninapataje ukumbi wa michezo?",
+            "Jengo limefichwa. Anayetembea mjini kwa makini atalipata."
+          ],
+          [
+            "Nani anaruhusiwa kucheza?",
+            "Peke yako nje ya mtandao, au mtandaoni na wengine, kwa pamoja au dhidi ya kila mmoja. Kutazama kunawezekana katika hali ya mtazamaji."
+          ],
+          [
+            "Je, ni salama?",
+            "Kamwe usimpe mtu maneno yako ya kurejesha, hata mimi. Anayeyauliza ni mlaghai."
+          ]
+        ],
+        [
+          [
+            "Bloku inazaliwaje?",
+            "Miamala inakusanyika. Takriban kila dakika, mwanachama wa kamati anaunda bloku, na wengine wanasaini. Kuanzia theluthi mbili ni ya mwisho."
+          ],
+          [
+            "Kwa nini mnyororo unabaki mdogo?",
+            "Kila nodi inahifadhi si zaidi ya MB 256. Akaunti zisizotumika kwa muda mrefu zinapumzika na zinaweza kuamshwa wakati wowote. Hakuna kinachopotea."
+          ],
+          [
+            "ToyCash ni nini?",
+            "Pesa taslimu za kidijitali za euro ambazo kiasi chake unakiona wewe tu. Zinakusudiwa kufanya kazi hata nje ya mtandao."
+          ]
+        ],
+        [
+          [
+            "Ukoo unanifaidisha nini?",
+            "Uaminifu unatuzwa. Koo tano zinashindana au kushirikiana, na NPC wao wako katika huduma yao."
+          ],
+          [
+            "Kuna koo ngapi?",
+            "Masultani watano, wafalme na koo, zinazolingana na ramani tano."
+          ],
+          [
+            "NFT ya shujaa ni nini?",
+            "Baadaye unaweza kuchapa shujaa wako kama NFT. Ada inalipia gharama za mtandao, na maelezo bado yanasubiriwa."
+          ]
+        ],
+        [
+          [
+            "Mnasafiri pamoja vipi?",
+            "Kama genge au pamoja na wachezaji wengine wa ulimwengu wazi. Sifa, uwezo na vitu vinakamilishana."
+          ],
+          [
+            "Safari ya wakati ni nini?",
+            "Ngazi tano kutoka zama za kale hadi zama za kisasa zinaonyesha michakato ya ToyChain kwa mbinu zinazozidi kuwa bora."
+          ],
+          [
+            "Naweza kufanya mazoezi wapi?",
+            "Katika ngazi ya mafunzo. Pia kuna michezo midogo 20, misheni na ngazi za ziada."
+          ]
+        ]
+      ],
+      "quotes": [
+        "“",
+        "”"
+      ]
+    },
+    "poker": {
+      "title": "Poker mezani",
+      "modes": [
+        "Texas Hold’em",
+        "Limit-4-Card-Omaha"
+      ],
+      "buyin": "Dau: dukati {n}",
+      "pot": "Chungu",
+      "stack": "Rundo lako",
+      "net": "Hesabu",
+      "fold": "Acha",
+      "check": "Pita",
+      "call": "Fuata ({n})",
+      "bet": "Weka dau ({n})",
+      "raise": "Ongeza ({n})",
+      "nextHand": "Mkono unaofuata",
+      "you": "Wewe",
+      "opp": [
+        "Mfanyabiashara",
+        "Sultani"
+      ],
+      "hands": [
+        "Karata ya juu",
+        "Jozi moja",
+        "Jozi mbili",
+        "Tatu sawa",
+        "Mfuatano",
+        "Flush",
+        "Full House",
+        "Nne sawa",
+        "Straight Flush"
+      ],
+      "ruleHoldem": "Hold’em: unatumia karata 5 bora kutoka karata zako 2 na za mezani.",
+      "ruleOmaha": "Omaha: lazima utumie karata 2 hasa kati ya zako 4 na 3 kutoka mezani.",
+      "start": "Mkono mpya. Kila mmoja analipa ante ya {n}. Weka dau, fuata au acha.",
+      "newCards": "{street}: Karata mpya ziko mezani.",
+      "allFold": "Wengine wote wameacha. Unashinda dukati {n}.",
+      "youFold": "Umeacha. ",
+      "showdown": "Kufunua karata: {list}. Mshindi: {win} (dukati {n}).",
+      "broke": "Rundo lako limeisha. Unapata dukati mpya za mazoezi.",
+      "foot": "Poker ya kikomo yenye viwango vya dau vilivyowekwa: dau dogo kabla ya flop na kwenye flop, dau mara mbili kwenye turn na river. Wapinzani ni NPC wa mfano wenye mkakati rahisi. Mchezo ni kwa dukati tu.",
+      "unit": "dukati",
+      "npcFold": "anaacha",
+      "npcCall": "anafuata",
+      "npcBet": "anaweka {n}",
+      "npcCheck": "anapita",
+      "streets": [
+        "Flop",
+        "Turn",
+        "River"
+      ],
+      "best": "Mkono wako bora: {h}",
+      "royal": "Royal Flush",
+      "and": " na "
+    },
+    "mint": {
+      "pool": "Pool",
+      "chain": "Mnyororo",
+      "start": "Tuma vifaa kwenye mtandao na utazame pool ikijaa.",
+      "addPhone": "+ Simu",
+      "addPi": "+ Raspberry Pi",
+      "addPc": "+ Kompyuta",
+      "sign": "Tuma sahihi",
+      "spam": "Tuma spam",
+      "reset": "Anza upya",
+      "blocks": "Bloku",
+      "minted": "Mpya zilizotolewa",
+      "devices": "Vifaa",
+      "full": "Zaidi ya vifaa 8 havitoshi mezani.",
+      "phone": "Simu inakokotoa polepole, lakini kila kifaa kinahesabika. Bila salio inashiriki katika bahati nasibu ya kazi.",
+      "pi": "Raspberry Pi inafanya kazi kwa uthabiti na kwa nishati kidogo.",
+      "pc": "Kompyuta inajaza pool kwa haraka zaidi. Lakini nguvu ya kukokotoa pekee haisaidii chochote katika makubaliano.",
+      "own": "Umechangia sahihi wewe mwenyewe.",
+      "spamMsg": "Spam inajaza pool kidogo tu, lakini inagharimu ada au kazi ya kukokotoa.",
+      "block": "Bloku {k} ni ya mwisho: michango {n}, TOY {t} mpya (makubaliano {a}, kazi {b}, mfuko wa marejesho {c}).",
+      "resetMsg": "Imeanzishwa upya.",
+      "label": "Mashine ya uchapaji"
+    },
+    "tx": {
+      "load": "Mzigo wa mtandao: {n} %",
+      "free": "Bure: {a} kati ya {b}",
+      "send": "Tuma",
+      "round": "Kipindi kipya",
+      "sentFree": "Imetumwa, bila malipo.",
+      "sentFee": "Mgao umekwisha: ada takriban TOY {fee} (kipengele {f}), au tiketi ya ToyWork inaifanya bila ada.",
+      "formula": "Mgao = max(10, 100 × (1 − mzigo))"
+    },
+    "offline": {
+      "you": "Wewe",
+      "shop": "Mfanyabiashara",
+      "amount": "Kiasi: {n} €",
+      "pay": "Lipa nje ya mtandao",
+      "again": "Tumia noti ileile tena",
+      "sync": "Ingia mtandaoni na ulinganishe",
+      "month": "Tumia kwa mwezi mmoja",
+      "limit": "Kikomo cha nje ya mtandao: {used} kati ya {cap} € · ngazi {s} · siku {days}, malipo {n}",
+      "freeAmt": "Baki: {n} €",
+      "over": "Kikomo kimefikiwa: {n} € hazitoshi tena. Ingia mtandaoni ili nafasi yako iwe huru tena.",
+      "paid": "{n} € zimehamishwa zikiwa zimesimbwa kutoka kifaa hadi kifaa, bila mtandao kabisa.",
+      "first": "Kwanza lipa mara moja nje ya mtandao.",
+      "double": "Noti ileile imetoka mara ya pili. Nje ya mtandao hili bado halionekani.",
+      "nothing": "Hakuna cha kulinganisha.",
+      "okNote": "Noti {i} ({n} €) imethibitishwa",
+      "badNote": "Noti {i} ({n} €) imerudiwa: imekataliwa",
+      "caught": "Matumizi mara mbili yamegunduliwa: mtoaji anakataa noti ya pili, na ToyChain inafanya hili liweze kukaguliwa. Anayetumia mara mbili anapoteza dhamana yake kwa aliyedhurika na anashushwa ngazi.",
+      "synced": "Malipo {n} yamethibitishwa. Nafasi yako ya nje ya mtandao iko huru tena.",
+      "monthMsg": "Mwezi mmoja wa matumizi: siku 30 na malipo 60. Kikomo chako kinakua hatua kwa hatua.",
+      "label": "Simu mbili zinabadilishana malipo yaliyosimbwa nje ya mtandao"
+    },
+    "toyscan": {
+      "choose": "Chagua hali:",
+      "minted": "Zimetolewa",
+      "cap": "Kikomo cha juu",
+      "mio": "TOY milioni {n}",
+      "bigRed": "Taa kubwa nyekundu: kikomo cha juu, uzinduzi wa haki au katiba imevunjwa.",
+      "criteria": [
+        "A1 Kikomo cha juu na jumla ya salio zote",
+        "A2 Uzinduzi wa haki: kila TOY kutoka kwenye utoaji",
+        "A3 Utoaji kwa fomula",
+        "A4 Vipindi na wakati",
+        "A5 Katiba haijabadilishwa",
+        "A6 Makubaliano yako salama",
+        "A7 Awamu ya mwanzo kwa mpango",
+        "A8 Kufungia kwa ushahidi tu",
+        "A9 Data ni za sasa"
+      ],
+      "scenarios": [
+        [
+          "Kila kitu kiko sawa",
+          "Vigezo vyote vimetimizwa",
+          "Thamani za mfano."
+        ],
+        [
+          "Zaidi ya milioni 100",
+          "Nyekundu: kikomo cha juu kimepitwa",
+          "Hapa TOY nyingi zaidi zingekuwa zimetolewa kuliko inavyoruhusiwa. Hili lisitokee kamwe."
+        ],
+        [
+          "Salio bila utoaji",
+          "Nyekundu: uzinduzi wa haki umevunjwa",
+          "Salio moja haliwezi kufuatiliwa hadi kwenye utoaji wowote."
+        ],
+        [
+          "Utoaji mbele ya mpango",
+          "Njano: uangalizi unahitajika",
+          "Utoaji uko zaidi ya 3 % mbele ya mpango. Si uvunjaji wa sheria, lakini ni jambo la kuangalia."
+        ],
+        [
+          "Data zimepitwa na wakati",
+          "Njano: data zimepitwa na wakati",
+          "Data za mwisho ni za zamani kuliko dakika 10, au vyanzo viwili havikubaliani."
+        ]
+      ]
+    },
+    "voucher": {
+      "title": "Jaribu vocha",
+      "examples": "Mifano:",
+      "presets": [
+        "Zawadi kwa familia",
+        "Ofa dukani",
+        "Kadi ya kantini"
+      ],
+      "own": "Au tengeneza mwenyewe: chagua aina",
+      "types": {
+        "i": [
+          "Mmiliki",
+          "Vocha ya mmiliki",
+          "Aliye nayo anaweza kuikomboa. Mteja wa kwanza anapata kiasi chote."
+        ],
+        "m": [
+          "Matumizi mengi",
+          "Vocha ya matumizi mengi",
+          "Thamani inagawanywa kwa ukombozi kadhaa hadi itakapokwisha."
+        ],
+        "g": [
+          "Kikundi",
+          "Vocha ya kikundi",
+          "Wanachama waliochaguliwa tu wanaweza kuikomboa, kila mmoja mara moja tu kwa sehemu sawa."
+        ]
+      },
+      "value": "Thamani: {n} €",
+      "uses": "Ukombozi: {n}",
+      "members": "Wanachama wa kikundi:",
+      "create": "Tengeneza vocha",
+      "serial": "Mfululizo {s}",
+      "hint": "Baada ya kutengeneza, gusa mteja ili aikomboe.",
+      "redeemed": "Imekombolewa: {u} kati ya {n} · Baki: {r} €",
+      "double": "Komboa mara mbili (ulaghai)",
+      "needTwo": "Chagua angalau wanachama wawili.",
+      "first": "Kwanza tengeneza vocha.",
+      "created": "{type} imetengenezwa: {v} €, {n} × {s} €.",
+      "shop": "Mfanyabiashara",
+      "welcome": "Karibu!",
+      "redeems": "{name} anakomboa",
+      "doneI": "Vocha ya mmiliki tayari imekombolewa.",
+      "doneM": "Ukombozi wote {n} umetumika.",
+      "notMember": "{name} si mwanachama wa kikundi.",
+      "already": "{name} tayari amekomboa sehemu yake.",
+      "ok": "{name} anakomboa {n} €.",
+      "dblBoth": "Ukombozi wote wawili unahesabika hapa, kwa sababu vocha inaruhusu ukombozi kadhaa.",
+      "dblCaught": "Vifaa viwili, noti moja: ukombozi wa pili unakataliwa. Matumizi mara mbili yamegunduliwa.",
+      "customers": [
+        "Ali",
+        "Leyla",
+        "Omar",
+        "Samira"
+      ],
+      "foot": "Hali ya mfano. Mtoaji anafuatilia hali ya kila vocha, na ToyChain inaifanya iweze kukaguliwa. Kwa hiyo nakala haisaidii chochote.",
+      "thanks": "Asante, sawa kabisa!",
+      "sorry": "Samahani, hilo haliwezekani.",
+      "rejected": " Mtoaji anakataa."
+    }
+  }
+}

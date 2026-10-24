@@ -20,6 +20,11 @@
 }
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B0D2A;--sf:#161A45;--ink:#ECEBFA;--mu:#A9AED8;--ln:#2C3270;--l:66%;--on:#0B0D2A;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#0B0D2A;--sf:#161A45;--ink:#ECEBFA;--mu:#A9AED8;--ln:#2C3270;--l:66%;--on:#0B0D2A;color-scheme:dark}
+/* Amiri lacks Yoruba's dotted vowels (ẹ, ọ) and combining tone marks, so mixed fonts would misplace the marks:
+   Yoruba headings use the interface font, with room for stacked marks. The logo keeps Amiri. */
+html:lang(yo){--ser:"Chakra Petch",system-ui,sans-serif}
+html:lang(yo) :is(h1,h2){line-height:1.2}
+html:lang(yo) .logo{font-family:"Amiri",Georgia,serif}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-padding-top:5rem;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--sn);overflow-x:clip}

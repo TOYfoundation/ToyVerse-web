@@ -1,0 +1,1362 @@
+{
+  "meta": {
+    "description": "ToyVerse: blockchain tirẹ̀ ToyChain pẹ̀lú owó TOY, àpamọ́wọ́ TOYPAY, aṣàwárí ToyScan, owó euro àìrí ToyCash àti eré ẹ̀kọ́ TOYQUEST."
+  },
+  "ui": {
+    "skip": "Fò lọ sí àkóónú",
+    "menu": "Àkójọ",
+    "mainNav": "Àkójọ àkọ́kọ́",
+    "allPages": "Gbogbo ojú-ewé",
+    "join": "Darapọ̀",
+    "language": "Èdè",
+    "languageHint": "Lọ́wọ́lọ́wọ́, ojú-òpó yìí wà ní èdè {n} nínú èdè 45 ti àpamọ́wọ́, TOYPAY àti ToyScan. Àwọn yòókù ń bọ̀.",
+    "soon": "ń bọ̀",
+    "path": "Ọ̀nà",
+    "back": "Padà",
+    "next": "Tẹ̀síwájú",
+    "pause": "Dúró",
+    "auto": "Aládàáṣe",
+    "step": "Ìgbésẹ̀",
+    "flowTitle": "Bí ohun gbogbo ṣe so pọ̀",
+    "flowLabel": "Àwòrán ìṣàn iṣẹ́",
+    "image": "Àwòrán {n}",
+    "ctaTitle": "Darapọ̀ mọ́ ToyVerse",
+    "ctaText": "Béèrè ìbéèrè, dánwò ní kùtùkùtù, tàbí di oníṣòwò tàbí olùtọ́sọ́nà.",
+    "ctaBtn": "Darapọ̀",
+    "disclaimer": "Èyí kì í ṣe ìmọ̀ràn ìdókòwò, kò sí ìlérí èrè. ToyChain ń ṣiṣẹ́ gẹ́gẹ́ bí testnet tí a ṣì ń kọ́, TOY testnet kò sì ní iye kankan. ToyCash, ToyScan àti àwọn ohun TOYQUEST ṣì jẹ́ èrò. Àwọn nọ́ńbà nínú àwọn àfihàn jẹ́ àpẹẹrẹ.",
+    "placeholder": "Kọ {label}",
+    "example": "Àpẹẹrẹ",
+    "chooseLanguage": "Yan èdè",
+    "redirect": "Lọ sí ojú-ewé ìbẹ̀rẹ̀",
+    "machineNote": "AI ló ṣe ìtúmọ̀ yìí láti èdè Jámánì, àwọn tí ń sọ èdè náà gẹ́gẹ́ bí èdè abínibí kò sì tíì yẹ̀ ẹ́ wò. Èyí tí ó ní àṣẹ ni",
+    "machineLink": "ẹ̀dà èdè Jámánì",
+    "machineEnd": "."
+  },
+  "scenes": [
+    "Ìlú ní alẹ́",
+    "Ẹgbẹ́ arìnrìn-àjò",
+    "Nẹ́tíwọ́ọ̀kì ToyChain",
+    "Nínú gbọ̀ngàn eré",
+    "Gbọ̀ngàn ẹ̀rọ"
+  ],
+  "groups": {
+    "entdecken": {
+      "t": "Ṣàwárí",
+      "u": "Ìbẹ̀rẹ̀ àti àkópọ̀"
+    },
+    "spielen": {
+      "t": "Ṣeré",
+      "u": "TOYQUEST àti ayé rẹ̀"
+    },
+    "bezahlen": {
+      "t": "Sanwó",
+      "u": "Àpamọ́wọ́, owó àti owó ọwọ́"
+    },
+    "technik": {
+      "t": "Ìmọ̀ ẹ̀rọ",
+      "u": "Bí ẹ̀wọ̀n ṣe ń ṣiṣẹ́"
+    },
+    "mitmachen": {
+      "t": "Darapọ̀",
+      "u": "Ètò, ìgbàsílẹ̀, ìbánisọ̀rọ̀"
+    }
+  },
+  "status": {
+    "inWork": "A ń ṣiṣẹ́ lé e lórí",
+    "inDev": "A ń kọ́ ọ",
+    "planned": "A ti gbèrò rẹ̀",
+    "concept": "Èrò",
+    "built": "A ti kọ́ ọ, à ń dán an wò",
+    "afterReview": "Lẹ́yìn àyẹ̀wò"
+  },
+  "pages": {
+    "start": {
+      "t": "Ìbẹ̀rẹ̀",
+      "u": "Eré, àpamọ́wọ́ àti blockchain tirẹ̀ nínú ayé Ẹgbẹ̀rún Òru àti Òru Kan.",
+      "slides": [
+        [
+          "Ẹ kú àbọ̀ sí ToyVerse",
+          "Eré, àpamọ́wọ́ àti blockchain tirẹ̀ nínú ayé Ẹgbẹ̀rún Òru àti Òru Kan."
+        ],
+        [
+          "Ṣeré kí o sì kọ́ ẹ̀kọ́",
+          "Nínú TOYQUEST, àwọn NPC ń ṣàlàyé fún ọ bí TOY ṣe ń wáyé."
+        ],
+        [
+          "Sanwó láìsí ayélujára",
+          "A fẹ́ kí TOYPAY àti ToyCash ṣiṣẹ́ kódà láìsí ayélujára."
+        ]
+      ],
+      "discover": "Ṣàwárí",
+      "roadmap": "Ibi tí a dé",
+      "what": "Kí ni o fẹ́ ṣe?",
+      "tiles": [
+        [
+          "Ṣeré",
+          "Ṣàwárí TOYQUEST: ayé, ẹ̀yà, ìrìn-àjò àsìkò."
+        ],
+        [
+          "Sanwó",
+          "Lóye TOYPAY, TOY àti ToyCash."
+        ],
+        [
+          "Lóye",
+          "Wo bí ToyChain ṣe ń ṣiṣẹ́."
+        ]
+      ],
+      "statusTitle": "Ibi tí a dé",
+      "statusText": "A ń kọ́ ToyChain ní ìgbésẹ̀-ìgbésẹ̀ gẹ́gẹ́ bí testnet. Ìpele pàtàkì {done} nínú {total} ti parí.",
+      "statusLink": "Sí ètò ìlọsíwájú",
+      "newTitle": "Ṣé o jẹ́ tuntun níbí?",
+      "newText": "Àkópọ̀ náà fi hàn bí eré, àpamọ́wọ́ àti ẹ̀wọ̀n ṣe ń ṣiṣẹ́ papọ̀.",
+      "newBtn": "Wo gbogbo ètò náà"
+    },
+    "verse": {
+      "t": "Ètò àyíká",
+      "u": "Apá mẹ́fà lábẹ́ òrùlé kan.",
+      "cards": [
+        [
+          "ToyChain",
+          "Blockchain tirẹ̀, tí ó fúyẹ́, pẹ̀lú owó TOY. Ó ń ṣiṣẹ́ lórí fóònù àtijọ́ àti Raspberry Pi.",
+          "inWork"
+        ],
+        [
+          "TOYPAY",
+          "Àpamọ́wọ́ àti nódù nínú ọ̀kan, fún Android, Windows, Linux àti Raspberry Pi.",
+          "inDev"
+        ],
+        [
+          "ToyScan",
+          "Aṣàwárí pẹ̀lú iná ìkìlọ̀: ó ń ṣàyẹ̀wò nígbà gbogbo bóyá a ń tẹ̀lé àwọn òfin.",
+          "planned"
+        ],
+        [
+          "TOYQUEST",
+          "Eré ní àṣà Ẹgbẹ̀rún Òru àti Òru Kan, pẹ̀lú ayé ẹ̀kọ́ nípa ìmọ̀ ẹ̀rọ.",
+          "inDev"
+        ],
+        [
+          "ToyCash",
+          "Owó euro ọwọ́ aládàáni lórí ayélujára, kódà láìsí ayélujára.",
+          "concept"
+        ],
+        [
+          "ToyPost",
+          "Àpótí ìfìwéránṣẹ́ kan fún gbogbo ọ̀nà, ìwé owó ní TOY, ààbò lọ́wọ́ jìbìtì.",
+          "built"
+        ]
+      ],
+      "after": "Àwọn mìíràn tún wà: àyíká ọrọ̀ ajé tí ó ṣí sílẹ̀, àwọn oníṣòwò, àwọn olùtọ́sọ́nà àti àwọn nódù àwùjọ. <a href=\"{community}\">Púpọ̀ sí i</a>",
+      "flow": {
+        "nodes": [
+          "Olùṣeré",
+          "TOYQUEST",
+          "TOYPAY",
+          "ToyCash",
+          "Polygon",
+          "ToyChain",
+          "ToyScan"
+        ],
+        "steps": [
+          [
+            "Ṣeré",
+            "O ń parí àwọn iṣẹ́ àyànfúnni, o sì ń kọ́ nínú TOYQUEST bí ToyChain ṣe ń ṣiṣẹ́."
+          ],
+          [
+            "Tẹ̀ jáde",
+            "Bí o bá fẹ́, o lè tẹ ohun tí o rí nínú eré jáde nípasẹ̀ TOYPAY."
+          ],
+          [
+            "Àwọn ohun",
+            "Àwọn ohun tí a tẹ̀ jáde wà gẹ́gẹ́ bí NFT lórí Polygon. ToyChain fúnra rẹ̀ mọ TOY nìkan."
+          ],
+          [
+            "Kópa",
+            "Àpamọ́wọ́ náà tún jẹ́ nódù: ó ń ṣírò, ó ń buwọ́lù, ó sì lè rí TOY nípa bẹ́ẹ̀."
+          ],
+          [
+            "Ṣàyẹ̀wò",
+            "ToyScan ń ṣàyẹ̀wò ìgbéjáde, ààlà òkè àti àwọn òfin, ó sì ń fi àbájáde hàn gẹ́gẹ́ bí iná ìrìnnà."
+          ],
+          [
+            "Owó ọwọ́",
+            "Lẹ́yìn náà, ToyCash yóò wà nínú TOYPAY, kódà láìsí ayélujára."
+          ],
+          [
+            "Ẹlẹ́rìí",
+            "Fún ToyCash, ToyChain ń jẹ́rìí sí àwọn àmì àyẹ̀wò nìkan, kì í ṣe iye owó tàbí orúkọ."
+          ]
+        ]
+      }
+    },
+    "toyquest": {
+      "t": "TOYQUEST",
+      "u": "Ìrìn-àjò akọni tí ó ń ṣàlàyé ìmọ̀ ẹ̀rọ fún ọ.",
+      "rows": [
+        [
+          "Ayé",
+          "Màápù márùn-ún tí ó bá àwọn àkòrí ìrísí márùn-ún mu. A lè wọ gbogbo ilé, lò wọ́n, kí a sì tà wọ́n."
+        ],
+        [
+          "Àwọn ipò eré",
+          "Láìsí tàbí pẹ̀lú ayélujára, ní ìfọwọ́sowọ́pọ̀ tàbí ní ìdíje, pẹ̀lú ìfọ̀rọ̀wérọ̀ ohùn, ipò ewu àti ipò olùwòran."
+        ],
+        [
+          "Ẹ̀kọ́",
+          "Àwọn NPC ní ọ̀pọ̀ ibi ń ṣàlàyé ToyChain ní ìgbésẹ̀-ìgbésẹ̀: ní ṣókí, ní ọ̀nà déédé, tàbí ní ọ̀nà ìmọ̀ ẹ̀rọ pẹ̀lú àwọn nọ́ńbà gidi."
+        ],
+        [
+          "Gidi tàbí àfihàn",
+          "Bí o bá ti tan ìpele kan nínú TOYPAY, àwọn ibi inú eré yóò fi ìṣẹ̀lẹ̀ gidi ti nódù rẹ hàn. Bí bẹ́ẹ̀ kọ́, ipò àfihàn tí a sàmì sí kedere ni yóò máa ṣiṣẹ́. Eré fúnra rẹ̀ kò ṣe TOY jáde."
+        ],
+        [
+          "Àwọn ohun",
+          "Ìwọ ń rí àwọn ohun nípa ṣíṣeré, o kò lè rà wọ́n. Bí o bá fẹ́, o lè tẹ̀ wọ́n jáde gẹ́gẹ́ bí NFT lórí Polygon. Àpò owó àwùjọ ló ń san owó nẹ́tíwọ́ọ̀kì."
+        ]
+      ],
+      "toZeit": "Sí ìrìn-àjò àsìkò",
+      "toSalon": "Sí gbọ̀ngàn eré",
+      "flow": {
+        "nodes": [
+          "Olùṣeré",
+          "Iṣẹ́ àyànfúnni",
+          "Ohun",
+          "TOYPAY",
+          "Polygon"
+        ],
+        "steps": [
+          [
+            "Ṣeré",
+            "O ń parí àwọn iṣẹ́ àyànfúnni, eré kéékèèké àti àwọn ìpèníjà."
+          ],
+          [
+            "Rí i nípa ṣíṣeré",
+            "Inú eré lo ti ń rí àwọn ohun, kì í ṣe ní ṣọ́ọ̀bù. Kò sí sísanwó láti borí."
+          ],
+          [
+            "Tẹ̀ jáde",
+            "Bí o bá fẹ́, o lè tẹ ohun náà jáde. Owó kékeré náà ń bo iye owó nẹ́tíwọ́ọ̀kì."
+          ],
+          [
+            "NFT dé",
+            "A ṣẹ̀dá NFT náà lórí Polygon, àpò owó àwùjọ sì ń san gaasi."
+          ],
+          [
+            "Ní i",
+            "Ohun náà jẹ́ tìrẹ. Nínú eré, ó ń ṣiṣẹ́ kódà láìsí NFT."
+          ]
+        ]
+      }
+    },
+    "zeit": {
+      "t": "Ìrìn-àjò àsìkò",
+      "u": "Ìpele márùn-ún láti ìgbà àtijọ́ dé òde òní.",
+      "note": "Ìpele 1 sí 3 fi àwọn ẹ̀rọ ìgbà àtijọ́ hàn. Ìpele 4 àti 5 tún fi ìfò sí sànmánì tuntun hàn gẹ́gẹ́ bí ìwòye ọjọ́ iwájú. Ìpele kọ̀ọ̀kan ń yanjú ìgbésẹ̀ kan náà, àyẹ̀wò ìbuwọ́lù, pẹ̀lú ọ̀nà tí ó dára jù. Àwọn nọ́ńbà jẹ́ àpẹẹrẹ."
+    },
+    "maschinen": {
+      "t": "Àwọn ẹ̀rọ",
+      "u": "Ẹ̀rọ àtijọ́ 50, tí yóò tó 256 nínú ẹ̀dà ìkẹyìn.",
+      "slider": "Àwọn ẹ̀rọ tí a ṣí: {n} nínú 256",
+      "cards": [
+        [
+          "Olùkọ́",
+          "Ẹ̀rọ kọ̀ọ̀kan ní ọ̀gá kan tí ó ń ṣàlàyé ìlànà ToyChain tí ó bá a mu."
+        ],
+        [
+          "Èrè",
+          "Ẹni tí ó bá kó ìmọ̀ jọ yóò gba èdìdì ìmọ̀, ìwé ẹ̀rí ọ̀gá, dúkátì àti ohun ọ̀ṣọ́. A kì í fúnni ní TOY fún èyí."
+        ],
+        [
+          "Ètò",
+          "Láti ilé iṣẹ́ ọnà dé ẹ̀rọ aládàáṣe, ẹ̀rọ kọ̀ọ̀kan so mọ́ ìlànà kan, fún àpẹẹrẹ aago omi àti àkókò búlọ́ọ̀kù."
+        ]
+      ]
+    },
+    "gangs": {
+      "t": "Ẹgbẹ́ àti ẹ̀yà",
+      "u": "Ìwọ nìkan lágbára, nínú ẹgbẹ́ o lágbára jù.",
+      "cards": [
+        [
+          "Ẹgbẹ́",
+          "Àwọn akọni ń ṣe àfikún ara wọn pẹ̀lú ìwà, agbára àti àwọn ohun."
+        ],
+        [
+          "Ayé ṣíṣí",
+          "Iṣẹ́ ẹgbẹ́ pẹ̀lú àwọn olùṣeré mìíràn fún ìpèníjà àti gígòkè ìpele."
+        ],
+        [
+          "Ẹ̀yà márùn-ún",
+          "Àwọn Sultan àti ọba ń díje tàbí ń fọwọ́sowọ́pọ̀. Àwọn NPC ń sìn wọ́n, ìdúróṣinṣin rẹ sì ṣe pàtàkì."
+        ],
+        [
+          "Àwọn ìlànà gidi",
+          "Ẹnu ọ̀nà kan yóò ṣí kìkì bí ìdá méjì nínú mẹ́ta ẹgbẹ́ bá fi èdìdì wọn lé e, gẹ́gẹ́ bí ìparí (finality) ToyChain."
+        ]
+      ],
+      "flow": {
+        "nodes": [
+          "Ẹgbẹ́ rẹ",
+          "Ìbáṣepọ̀",
+          "Ìpèníjà",
+          "Ayé ṣíṣí",
+          "Ẹ̀yà"
+        ],
+        "steps": [
+          [
+            "Ṣàkópọ̀",
+            "Ìwà, agbára àti àwọn ohun ti àwọn ọmọ ẹgbẹ́ ń fún ara wọn lókun."
+          ],
+          [
+            "Yanjú ìpèníjà",
+            "Ẹgbẹ́ náà dojú kọ iṣẹ́ kan papọ̀."
+          ],
+          [
+            "Pẹ̀lú àwọn mìíràn",
+            "Iṣẹ́ ẹgbẹ́ pẹ̀lú àwọn olùṣeré mìíràn nínú ayé ṣíṣí."
+          ],
+          [
+            "Gòkè ìpele",
+            "Ẹgbẹ́ náà ń lágbára sí i."
+          ],
+          [
+            "Yan ẹ̀yà",
+            "O so ara rẹ mọ́ ọ̀kan nínú ẹ̀yà márùn-ún. Wọ́n ń díje tàbí ń fọwọ́sowọ́pọ̀."
+          ]
+        ]
+      }
+    },
+    "salon": {
+      "t": "Gbọ̀ngàn eré",
+      "u": "Ó farapamọ́ sínú eré, ó kún fún káàdì.",
+      "rows": [
+        [
+          "Àwọn eré",
+          "Texas Hold’em àti Limit-4-Card-Omaha."
+        ],
+        [
+          "Àwọn ọ̀nà",
+          "Eré tábìlì (cash games) àti ìdíje."
+        ],
+        [
+          "Owó ìfisílẹ̀",
+          "A ń fi dúkátì inú eré ṣeré. Ìfisílẹ̀ ToyCoin yóò wà kìkì nígbà tí àyẹ̀wò òfin bá fààyè gbà á."
+        ],
+        [
+          "Eré kéékèèké",
+          "Eré kéékèèké 20 pẹ̀lú àwọn iṣẹ́ àyànfúnni àti ìpele àfikún."
+        ]
+      ],
+      "flow": {
+        "nodes": [
+          "Olùṣeré",
+          "Gbọ̀ngàn eré",
+          "Tábìlì",
+          "Owó ìfisílẹ̀"
+        ],
+        "steps": [
+          [
+            "Wọlé",
+            "Gbọ̀ngàn eré jẹ́ ilé kan tí ó farapamọ́ sínú eré."
+          ],
+          [
+            "Yan eré",
+            "Texas Hold’em tàbí Limit-4-Card-Omaha, gẹ́gẹ́ bí eré tábìlì tàbí ìdíje."
+          ],
+          [
+            "Owó ìfisílẹ̀",
+            "O ń fi dúkátì ṣeré. Kò sí ìfisílẹ̀ owó gidi láìsí àyẹ̀wò òfin."
+          ]
+        ]
+      }
+    },
+    "toypay": {
+      "t": "TOYPAY",
+      "u": "Àpamọ́wọ́ fún ToyVerse, tí ó tún jẹ́ nódù ToyChain.",
+      "cards": [
+        [
+          "Àwọn pèpéle",
+          "Android, Windows, Linux àti Raspberry Pi, kódà lórí àwọn ẹ̀rọ àtijọ́."
+        ],
+        [
+          "Nódù",
+          "O ń yan ìpele kan. Ìṣirò ń wáyé kìkì nígbà tí ẹ̀rọ bá wà lórí agbára iná, lórí WiFi àti ní ìgbóná déédé."
+        ],
+        [
+          "Ìsanwó láìsí ayélujára",
+          "Tí a fi kóòdù pa mọ́, nípasẹ̀ QR, NFC tàbí Bluetooth, kódà láìsí nẹ́tíwọ́ọ̀kì."
+        ],
+        [
+          "Àkọọ́lẹ̀ iṣòwò",
+          "Pẹ̀lú ẹ̀rọ ìgbowó fún àwọn oníṣòwò."
+        ],
+        [
+          "Ààbò",
+          "Àyẹ̀wò ṣáájú ìbuwọ́lù kọ̀ọ̀kan, ààbò lọ́wọ́ pańpẹ́ àdírẹ́sì, àkójọ ìkìlọ̀ lòdì sí jìbìtì (phishing), àpamọ́wọ́ hardware."
+        ],
+        [
+          "Àwọn èdè",
+          "Èdè 45 àti ipò mẹ́rin, láti olùbẹ̀rẹ̀ dé akọ́ṣẹ́mọṣẹ́."
+        ]
+      ],
+      "toWallet": "Sopọ̀ mọ́ testnet",
+      "toDownload": "Ìgbàsílẹ̀",
+      "cardFront": [
+        "TOYPAY",
+        "ToyChain · Testnet",
+        "Tẹ̀ láti yí i padà"
+      ],
+      "cardBack": [
+        "Ìsanwó láìsí ayélujára",
+        "A fi kóòdù pa á mọ́ láti ẹ̀rọ dé ẹ̀rọ",
+        "Àyẹ̀wò ṣáájú ìbuwọ́lù kọ̀ọ̀kan"
+      ],
+      "cardLabel": "Yí káàdì padà",
+      "cardTitle": "Káàdì rẹ tí o lè fọwọ́ kàn",
+      "flow": {
+        "nodes": [
+          "Ẹ̀rọ ìgbowó",
+          "Àpamọ́wọ́ rẹ",
+          "Àyẹ̀wò",
+          "Nẹ́tíwọ́ọ̀kì",
+          "Àkọọ́lẹ̀ iṣòwò"
+        ],
+        "steps": [
+          [
+            "Fi iye owó ránṣẹ́",
+            "Ẹ̀rọ ìgbowó fi iye owó ránṣẹ́ sí àpamọ́wọ́ rẹ gẹ́gẹ́ bí ìbéèrè ìsanwó."
+          ],
+          [
+            "Ṣàyẹ̀wò",
+            "Ṣáájú kí o tó buwọ́lù, àpamọ́wọ́ fi ohun tí yóò ṣẹlẹ̀ hàn ọ́ ní kedere."
+          ],
+          [
+            "Sanwó",
+            "Ìsanwó wọ inú nẹ́tíwọ́ọ̀kì, ó sì di ìparí lẹ́yìn búlọ́ọ̀kù kan."
+          ],
+          [
+            "Ìgbàwọlé",
+            "Àkọọ́lẹ̀ iṣòwò gba ìfìdímúlẹ̀."
+          ],
+          [
+            "Láìsí ayélujára",
+            "Láìsí nẹ́tíwọ́ọ̀kì, ìsanwó tí a fi kóòdù pa mọ́ ń lọ tààrà láti ẹ̀rọ dé ẹ̀rọ."
+          ]
+        ]
+      }
+    },
+    "toycoin": {
+      "t": "TOY",
+      "u": "Owó ToyChain, fún gbogbo ènìyàn pẹ̀lú òfin kan náà.",
+      "rows": [
+        [
+          "Iye",
+          "Kò ní ju TOY 100,000,000 lọ láéláé. Ààlà yìí wà nínú òfin ìpìlẹ̀ ToyChain."
+        ],
+        [
+          "Ìbẹ̀rẹ̀ tó tọ́",
+          "Búlọ́ọ̀kù àkọ́kọ́ kò ní TOY kankan. Kò sí owó ìpamọ́, kò sí títà ṣáájú, kò sí ìpín fún ẹgbẹ́ olùdásílẹ̀."
+        ],
+        [
+          "Bí ó ṣe ń wáyé",
+          "Gbogbo TOY ń wáyé díẹ̀díẹ̀ nípasẹ̀ iṣẹ́ nínú nẹ́tíwọ́ọ̀kì: sáà àkọ́kọ́ TOY 50,500, ọdún àkọ́kọ́ nǹkan bí mílíọ̀nù 16.8, ìdajì-ìgbésí nǹkan bí ọdún 3.76, nǹkan bí 99 % lẹ́yìn ọdún 25."
+        ],
+        [
+          "Pínpín",
+          "50 % fún gbogbo àwọn tí ń buwọ́lù búlọ́ọ̀kù, 40 % fún tẹ́tẹ́ iṣẹ́, 10 % fún àpò ìdápadà fún ìdúnàádúrà ọ̀fẹ́."
+        ],
+        [
+          "A kò jó o láéláé",
+          "Lórí ToyChain, a kò pa TOY run láéláé, àkọọ́lẹ̀ kò sì ní sọnù láéláé."
+        ],
+        [
+          "Ìmọ̀ ẹ̀rọ",
+          "Dẹ́símà 18, àdírẹ́sì bí ti Ethereum. Chain-ID testnet jẹ́ 7630714, ti mainnet 7630713 lẹ́yìn àyẹ̀wò (audit) nìkan."
+        ]
+      ],
+      "chartTitle": "TOY tí ó ti jáde láti ọdún dé ọdún",
+      "chartYear": "Ọdún {y}",
+      "chartLabel": "Ọdún {y}: nǹkan bí mílíọ̀nù {m} TOY ti jáde (ètò ní ìwọ̀n 1)",
+      "chartAxis": "Mílíọ̀nù TOY",
+      "coinTitle": "Owó ẹyọ ní 3D",
+      "coinTurn": "Yí owó ẹyọ náà",
+      "warnTitle": "Ìkìlọ̀: àwọn token ToyCoin àtijọ́",
+      "warnText": "Lórí Polygon àti Ethereum, àwọn token àtijọ́ wà tí orúkọ wọn jẹ́ ToyCoin. Wọn <b>kì í ṣe TOY ToyChain</b>, a kì í pààrọ̀ wọn, a kì í sì gbé wọn kọjá pẹ̀lú bridge. Àpamọ́wọ́ àti ToyScan ń sàmì sí wọn pé “Kì í ṣe TOY ToyChain, kò ṣeé pààrọ̀”. Má ṣe rà wọ́n pẹ̀lú ìrètí pé a ó pààrọ̀ wọn.",
+      "warnPolygon": "Polygon",
+      "warnEthereum": "Ethereum",
+      "warnLink": "Wò ó lórí aṣàwárí"
+    },
+    "wallet": {
+      "t": "Sopọ̀ mọ́ testnet",
+      "u": "Ní kété tí testnet gbangba bá bẹ̀rẹ̀, o lè fi kún un níbí pẹ̀lú títẹ̀ kan.",
+      "btn": "Fi testnet kún un · ń bọ̀ pẹ̀lú ìpele pàtàkì M10",
+      "facts": [
+        [
+          "Nẹ́tíwọ́ọ̀kì",
+          "ToyChain Testnet"
+        ],
+        [
+          "Chain-ID",
+          "7630714"
+        ],
+        [
+          "Àmì",
+          "TOY, dẹ́símà 18"
+        ],
+        [
+          "Àdírẹ́sì",
+          "Àdírẹ́sì Ethereum tí o ti mọ̀ àti àwọn ọ̀rọ̀ ìmúpadàbọ̀sípò rẹ ń ṣiṣẹ́ níbí pẹ̀lú."
+        ]
+      ],
+      "text": "Fífi kún un ń ṣiṣẹ́ pẹ̀lú àpamọ́wọ́ èyíkéyìí tí ó lè fi nẹ́tíwọ́ọ̀kì kún un ní ìbámu pẹ̀lú EIP-3085, bí TOYPAY tàbí MetaMask. Ojú-ewé yìí kò ka ohunkóhun, kò sì lè fi ohunkóhun ránṣẹ́. TOY testnet kò ní iye kankan, a kò sì ní gbé wọn lọ sí mainnet láéláé.",
+      "safety": "Ojú-ewé yìí kò ní béèrè àwọn ọ̀rọ̀ ìmúpadàbọ̀sípò rẹ láéláé. Ẹnikẹ́ni tí ó bá béèrè wọn fẹ́ lù ọ́ ní jìbìtì.",
+      "flow": {
+        "nodes": [
+          "Ojú-ewé yìí",
+          "Àpamọ́wọ́ rẹ",
+          "Testnet ToyChain",
+          "TOY testnet"
+        ],
+        "steps": [
+          [
+            "Dábàá",
+            "Ojú-ewé náà dábàá nẹ́tíwọ́ọ̀kì pẹ̀lú orúkọ, Chain-ID àti ọ̀nà ìwọlé."
+          ],
+          [
+            "Fìdí múlẹ̀",
+            "Àpamọ́wọ́ rẹ fi àwọn àlàyé hàn, ìwọ sì fìdí rẹ̀ múlẹ̀. Àwọn kọ́kọ́rọ́ kì í kúrò lórí ẹ̀rọ rẹ láéláé."
+          ],
+          [
+            "Kópa",
+            "Nínú testnet, ẹ̀rọ rẹ ń ṣírò tíkẹ́ẹ̀tì fún tẹ́tẹ́ iṣẹ́ tàbí ń gba TOY ìdánwò láti orísun testnet (faucet)."
+          ],
+          [
+            "Dánwò",
+            "Pẹ̀lú TOY testnet, o lè dán ìfiránṣẹ́ owó, ìpín ọ̀fẹ́ àti àwọn ìpele wò láìsí ewu."
+          ]
+        ]
+      }
+    },
+    "toycash": {
+      "t": "ToyCash",
+      "u": "Bí owó ọwọ́ lórí ayélujára, tí euro ṣe ìdúró fún.",
+      "rows": [
+        [
+          "Ìlànà",
+          "Stablecoin euro kan. Ìwọ nìkan lo ń rí ohun tí o ní àti iye owó nínú àpamọ́wọ́ rẹ. ToyChain ń jẹ́rìí sí àwọn àmì àyẹ̀wò nìkan, kì í ṣe iye owó tàbí orúkọ."
+        ],
+        [
+          "Ìdúró",
+          "Owó ìpamọ́ euro, euro nìkan ní ìbẹ̀rẹ̀. Olùgbéjáde kan ti iṣẹ́ àkànṣe náà, lẹ́yìn náà ọ̀pọ̀ olùṣọ́ papọ̀."
+        ],
+        [
+          "Ìbẹ̀rẹ̀",
+          "Lákọ̀ọ́kọ́, àwòṣe àkọ́kọ́ ní ìlànà eCash pẹ̀lú euro ìdánwò, lẹ́yìn náà zk-Notes."
+        ],
+        [
+          "Ìwé ẹ̀bùn",
+          "Ìwé ẹ̀bùn ìlò-púpọ̀, ti ẹgbẹ́ àti ti ẹni tí ó ní i, ní ìpele-ìpele."
+        ],
+        [
+          "Ìnáwó ẹ̀ẹ̀mejì",
+          "Àkókò ìgbàpadà, ìjìyà fún jìbìtì àti ìfipamọ́, ní ìpele-ìpele."
+        ],
+        [
+          "Ipò",
+          "Èrò ni. Euro gidi yóò wà kìkì lẹ́yìn àyẹ̀wò (audit) àti àyẹ̀wò òfin."
+        ]
+      ],
+      "toOffline": "Dán ààlà àìsí-ayélujára wò",
+      "flow": {
+        "nodes": [
+          "Owó ìpamọ́ euro",
+          "Olùgbéjáde",
+          "Àpamọ́wọ́ A",
+          "Àpamọ́wọ́ B",
+          "ToyChain"
+        ],
+        "steps": [
+          [
+            "Ìdúró",
+            "Euro wà ní ìpamọ́ gẹ́gẹ́ bí ìdúró."
+          ],
+          [
+            "Gbé jáde",
+            "Àpamọ́wọ́ A gba àwọn ìwé owó tí a fi kóòdù pa mọ́."
+          ],
+          [
+            "Fi lé",
+            "A fi àwọn ìwé owó lé B lọ́wọ́, kódà láìsí ayélujára."
+          ],
+          [
+            "Pààrọ̀",
+            "B pààrọ̀ wọn lọ́dọ̀ olùgbéjáde fún ìwé owó tuntun. Olùgbéjáde ṣàyẹ̀wò pé kò sí ìwé owó tí a lò lẹ́ẹ̀mejì."
+          ],
+          [
+            "Jẹ́rìí",
+            "Ní sáà kọ̀ọ̀kan, olùgbéjáde fi àmì àyẹ̀wò àkójọ rẹ̀ sórí ToyChain. Báyìí, kò sí ohun tí a lè yí padà ní ìkọ̀kọ̀."
+          ]
+        ]
+      }
+    },
+    "offline": {
+      "t": "Ààlà àìsí-ayélujára",
+      "u": "Ààlà náà ń pọ̀ sí i díẹ̀díẹ̀ bí o ṣe ń lò ó.",
+      "tableHead": [
+        "Ìpele",
+        "Ààlà",
+        "Àmúyẹ"
+      ],
+      "steps": [
+        [
+          "1",
+          "20 €",
+          "Ìbẹ̀rẹ̀"
+        ],
+        [
+          "2",
+          "50 €",
+          "Ọjọ́ 14 àti ìsanwó 10"
+        ],
+        [
+          "3",
+          "100 €",
+          "Ọjọ́ 60 àti ìsanwó 40"
+        ],
+        [
+          "4",
+          "250 €",
+          "Ọjọ́ 180 àti ìsanwó 100, kìkì pẹ̀lú kọ́kọ́rọ́ tí a so mọ́ ẹ̀rọ"
+        ],
+        [
+          "5",
+          "500 €",
+          "Ọjọ́ 365 àti ìsanwó 250, kìkì pẹ̀lú kọ́kọ́rọ́ tí a so mọ́ ẹ̀rọ"
+        ]
+      ],
+      "text": "Nínú ìpele tí a ṣí sílẹ̀, ìwọ fúnra rẹ ló ń yan ààlà rẹ. Ààlà náà tún jẹ́ owó ìdúró: ẹni tí ó bá ná owó lẹ́ẹ̀mejì láìsí ayélujára yóò pàdánù rẹ̀ fún àwọn tí ó pa lára. Iye àwọn ìpele jẹ́ àbá."
+    },
+    "toychain": {
+      "t": "ToyChain",
+      "u": "Ó fúyẹ́ bí Mina, àdírẹ́sì bí ti Ethereum.",
+      "rows": [
+        [
+          "Ìwọ̀n",
+          "Nódù boṣewà kọ̀ọ̀kan kò ní tọ́jú ju MB 256 lọ."
+        ],
+        [
+          "Àwọn ẹ̀rọ",
+          "Ó ń ṣiṣẹ́ lórí àwọn ẹ̀rọ Android àtijọ́, Raspberry Pi, Linux àti Windows."
+        ],
+        [
+          "Àdírẹ́sì",
+          "Àdírẹ́sì kan náà àti ọ̀rọ̀ 12 tàbí 24 kan náà bí ti Ethereum."
+        ],
+        [
+          "Kópa",
+          "Ìpele 0 kò nílò owó kankan: ẹ̀rọ rẹ ń ṣírò tíkẹ́ẹ̀tì fún tẹ́tẹ́ iṣẹ́. Pẹ̀lú stake TOY 10, 100 tàbí 1,000, o lè buwọ́lù, tọ́jú tàbí fìdí múlẹ̀."
+        ],
+        [
+          "Ìfohùnṣọ̀kan",
+          "Ìgbìmọ̀ tí ó ní tó ọmọ ẹgbẹ́ 128 ń buwọ́lù búlọ́ọ̀kù kọ̀ọ̀kan. Láti ìdá méjì nínú mẹ́ta, ó di ìparí, nǹkan bí búlọ́ọ̀kù kan ní ìṣẹ́jú kọ̀ọ̀kan."
+        ],
+        [
+          "Àkọọ́lẹ̀",
+          "Àkọọ́lẹ̀ kì í sọnù láéláé. Àkọọ́lẹ̀ tí a kò lò fún ìgbà pípẹ́ ń sinmi, a sì lè jí wọn nígbàkígbà."
+        ],
+        [
+          "TOY nìkan",
+          "Kò sí token, kò sí NFT, kò sí smart contract lórí ToyChain. Iṣẹ́ kọ̀ọ̀kan ni a kọ́ sínú rẹ̀ títí láé."
+        ],
+        [
+          "Ààbò",
+          "Àwọn ọ̀nà àti ìkàwé tí a ti yẹ̀wò nìkan. Àwọn kọ́kọ́rọ́ àfikún tí ó lè dúró ti kọ̀ǹpútà kúáńtọ̀mù (ML-DSA) wà nínú ètò fún ìpele pàtàkì M13."
+        ]
+      ],
+      "toMint": "Ṣe àfihàn títẹ̀ jáde",
+      "chainTitle": "Ẹ̀wọ̀n ní 3D",
+      "chainAdd": "Fi búlọ́ọ̀kù kún un",
+      "chainHint": "Gbé atọ́ka tàbí ìka rẹ lórí àwòrán náà láti yí i. Àwọn kúbù jẹ́ búlọ́ọ̀kù àpẹẹrẹ.",
+      "flow": {
+        "nodes": [
+          "Àpamọ́wọ́",
+          "Pool",
+          "Ìgbìmọ̀",
+          "Búlọ́ọ̀kù",
+          "Ẹ̀wọ̀n"
+        ],
+        "steps": [
+          [
+            "Fi ránṣẹ́",
+            "Ìdúnàádúrà rẹ dé inú pool."
+          ],
+          [
+            "Dábàá",
+            "Ọmọ ìgbìmọ̀ kan tí a yàn láìròtẹ́lẹ̀ ṣe àkójọ búlọ́ọ̀kù."
+          ],
+          [
+            "Buwọ́lù",
+            "Ìgbìmọ̀ buwọ́lù. Láti ìdá méjì nínú mẹ́ta, búlọ́ọ̀kù di ìparí."
+          ],
+          [
+            "So mọ́",
+            "Àwọn nódù ń tọ́jú ipò lọ́wọ́lọ́wọ́ àti fèrèsé kúkúrú ti ìtàn, kò ju MB 256 lọ."
+          ],
+          [
+            "Ẹ̀san",
+            "TOY tuntun ń lọ sọ́dọ̀ àwọn olùbuwọ́lù, sí tẹ́tẹ́ iṣẹ́ àti sí àpò ìdápadà."
+          ]
+        ]
+      }
+    },
+    "mint": {
+      "t": "Àfihàn títẹ̀ jáde",
+      "u": "Fi ẹ̀rọ ránṣẹ́ sínú nẹ́tíwọ́ọ̀kì kí o sì wo bí búlọ́ọ̀kù ṣe ń wáyé.",
+      "text": "Ní ṣókí: iṣẹ́ àti ìbuwọ́lù ń rìn lórí bẹ́líìtì lọ sínú pool. Bí ó bá kún tàbí bí nǹkan bí ìṣẹ́jú kan bá ti kọjá (níbí ní ìyára), búlọ́ọ̀kù kan yóò wáyé. Ní sáà àkọ́kọ́, nǹkan bí TOY tuntun 35 ni a ń fi kún búlọ́ọ̀kù kọ̀ọ̀kan: 50 % fún àwọn olùbuwọ́lù, 40 % fún tẹ́tẹ́ iṣẹ́, 10 % fún àpò ìdápadà."
+    },
+    "tx": {
+      "t": "Ìdúnàádúrà",
+      "u": "Ìdúnàádúrà ọ̀fẹ́ 10 sí 100 fún àkọọ́lẹ̀ kọ̀ọ̀kan lójoojúmọ́.",
+      "text": "Bí o bá kọjá ìpín ọ̀fẹ́, o máa san owó iṣẹ́ kékeré tàbí o máa ṣírò tíkẹ́ẹ̀tì ToyWork. Owó iṣẹ́ ń di ìlọ́po méjì fún ìdúnàádúrà 10 mìíràn kọ̀ọ̀kan nínú búlọ́ọ̀kù kan náà, títí dé ìlọ́po 1,024. Owó iṣẹ́ ń lọ ní 40 % sọ́dọ̀ àwọn olùkópa tí ń ṣiṣẹ́, 40 % sí àpò ìdápadà àti 20 % sọ́dọ̀ ẹni tí ó dábàá búlọ́ọ̀kù."
+    },
+    "toyscan": {
+      "t": "ToyScan",
+      "u": "Iná àwọ̀ ewé nígbà tí a bá tẹ̀lé gbogbo òfin.",
+      "cards": [
+        [
+          "Ààlà òkè",
+          "Kò ní ju TOY 100,000,000 lọ láéláé. Nínú búlọ́ọ̀kù kọ̀ọ̀kan, àpapọ̀ gbogbo owó inú àkọọ́lẹ̀ dọ́gba pẹ̀lú àpapọ̀ gbogbo ìgbéjáde."
+        ],
+        [
+          "Ìbẹ̀rẹ̀ tó tọ́",
+          "Búlọ́ọ̀kù àkọ́kọ́ ní TOY 0. A lè tọpasẹ̀ TOY kọ̀ọ̀kan padà sí ìgbéjáde kan."
+        ],
+        [
+          "Ìgbéjáde",
+          "A ń ṣírò sáà kọ̀ọ̀kan lẹ́ẹ̀kan sí i pẹ̀lú àgbékalẹ̀ ìṣirò."
+        ],
+        [
+          "Ẹ̀wọ̀n mìíràn",
+          "Ó ń fi owó àdírẹ́sì kan náà hàn lórí ẹ̀wọ̀n mìíràn, fún kíkà nìkan. Àwọn token ToyCoin àtijọ́ ni a sàmì sí pé “kì í ṣe TOY ToyChain”."
+        ]
+      ],
+      "flow": {
+        "nodes": [
+          "ToyChain",
+          "Nódù ibi ìpamọ́",
+          "Ẹ̀wọ̀n mìíràn",
+          "ToyScan",
+          "Iná ìrìnnà"
+        ],
+        "steps": [
+          [
+            "Ka dátà",
+            "ToyScan ń ka iye owó tó wà, àwọn sáà àti àwọn búlọ́ọ̀kù ToyChain."
+          ],
+          [
+            "Ṣírò lẹ́ẹ̀kan sí i",
+            "Nódù ibi ìpamọ́ kan ń ṣe àròpọ̀ gbogbo owó inú àkọọ́lẹ̀ fúnra rẹ̀."
+          ],
+          [
+            "Fihàn",
+            "Owó àdírẹ́sì kan náà lórí ẹ̀wọ̀n mìíràn ń hàn fún ìmọ̀ nìkan."
+          ],
+          [
+            "Iná ìrìnnà",
+            "Àwọ̀ ewé bí ohun gbogbo bá tọ́. Àwọ̀ ìyeyè bí ohun àjèjì bá wà, pupa bí a bá rú òfin, pẹ̀lú ẹ̀rí."
+          ]
+        ]
+      }
+    },
+    "ketten": {
+      "t": "Ẹ̀wọ̀n mìíràn",
+      "u": "Àdírẹ́sì kan náà níbi gbogbo, láìsí bridge.",
+      "rows": [
+        [
+          "Àdírẹ́sì kan náà",
+          "Àdírẹ́sì ToyChain rẹ tún ń ṣiṣẹ́ lórí Ethereum, Polygon, Arbitrum, Base àti BNB Chain. TOYPAY ń fi owó, token àti NFT hàn níbẹ̀."
+        ],
+        [
+          "Pàṣípààrọ̀ láìsí bridge",
+          "Pàṣípààrọ̀ atọ́míìkì pẹ̀lú títì hash àti àkókò: bóyá ẹgbẹ́ méjèèjì gba owó wọn, tàbí kò sí ẹni tí ó gbà. A gbèrò rẹ̀ fún ìpele pàtàkì M12."
+        ],
+        [
+          "Àwọn token ToyCoin àtijọ́",
+          "Àwọn token tí orúkọ wọn jẹ́ ToyCoin lórí Polygon àti Ethereum kì í ṣe TOY ToyChain, kò sì ṣeé pààrọ̀."
+        ],
+        [
+          "Bridge",
+          "Nínú ààlà iṣẹ́ lọ́wọ́lọ́wọ́, kò sí bridge. Bí ọ̀kan bá dé lẹ́yìn náà, yóò nílò ìpinnu tirẹ̀, àyẹ̀wò (audit) àti àyẹ̀wò òfin."
+        ]
+      ]
+    },
+    "roadmap": {
+      "t": "Ètò ìlọsíwájú",
+      "u": "Ìtẹ̀léra ṣe pàtàkì ju ọjọ́ lọ.",
+      "progress": "ToyChain apá 1: ìpele pàtàkì {done} nínú {total} ti parí (bí ó ti rí ní {date})",
+      "milestones": {
+        "M1": "Irú ìpìlẹ̀ àti ìgbéjáde",
+        "M2": "Kírípítógíráfì àti àdírẹ́sì",
+        "M3": "Ipò, ìdúnàádúrà, owó iṣẹ́",
+        "M4": "Búlọ́ọ̀kù àti ìfohùnṣọ̀kan",
+        "M5": "Ìpamọ́ àti MB 256",
+        "M6": "Nẹ́tíwọ́ọ̀kì",
+        "M7": "Ìsopọ̀ (RPC)",
+        "M8": "Àpamọ́wọ́ àti ìlà àṣẹ",
+        "M9": "Àwọn pèpéle àti ipò agbára",
+        "M10": "Testnet gbangba",
+        "M11": "ToyScan",
+        "M12": "Ààbò àkọọ́lẹ̀, pàṣípààrọ̀",
+        "M13": "Orúkọ, kọ́kọ́rọ́ tí ó lè dúró ti kúáńtọ̀mù"
+      },
+      "cards": [
+        [
+          "1 · Kókó ToyChain",
+          "Nódù ní Rust: ìgbéjáde, kírípítógíráfì, ìdúnàádúrà àti owó iṣẹ́ ti parí, ìfohùnṣọ̀kan ló kàn.",
+          "inWork"
+        ],
+        [
+          "2 · TOYPAY gẹ́gẹ́ bí nódù",
+          "Àpamọ́wọ́ pẹ̀lú ìpele àti ipò agbára lórí pèpéle mẹ́rin.",
+          "planned"
+        ],
+        [
+          "3 · Testnet gbangba",
+          "Lákọ̀ọ́kọ́ ní agbègbè (local), lẹ́yìn náà ní gbangba, pẹ̀lú ìdánwò ẹrù.",
+          "planned"
+        ],
+        [
+          "4 · ToyScan",
+          "Aṣàwárí pẹ̀lú iná ìkìlọ̀ àti ìsopọ̀ tí ó ṣí sílẹ̀.",
+          "planned"
+        ],
+        [
+          "5 · TOYQUEST",
+          "Ayé ẹ̀kọ́ àti àwọn ohun lórí Polygon, láìdálé kókó ToyChain.",
+          "inDev"
+        ],
+        [
+          "6 · ToyCash",
+          "Àwòṣe àkọ́kọ́ pẹ̀lú euro ìdánwò, lẹ́yìn náà àpamọ́wọ́ àìsí-ayélujára àti zk-Notes.",
+          "concept"
+        ],
+        [
+          "7 · Mainnet",
+          "Kìkì lẹ́yìn àyẹ̀wò láti òde (audit), ìdánwò ẹrù àti àyẹ̀wò òfin, tí a ó sì kéde ní gbangba ṣáájú.",
+          "afterReview"
+        ]
+      ],
+      "flow": {
+        "nodes": [
+          "Kókó ToyChain",
+          "TOYPAY",
+          "Testnet",
+          "ToyScan",
+          "Mainnet"
+        ],
+        "steps": [
+          [
+            "Kókó ní àkọ́kọ́",
+            "A ti kọ́ ìgbéjáde, kírípítógíráfì àti ìdúnàádúrà, a sì ti dán wọn wò."
+          ],
+          [
+            "Àpamọ́wọ́ gẹ́gẹ́ bí nódù",
+            "TOYPAY mú ẹ̀wọ̀n wá sórí fóònù, kọ̀ǹpútà àti Raspberry Pi."
+          ],
+          [
+            "Testnet",
+            "Lákọ̀ọ́kọ́ ní agbègbè (local), lẹ́yìn náà ní gbangba, pẹ̀lú ìdánwò ẹrù àti fuzzing."
+          ],
+          [
+            "Mainnet lẹ́yìn àyẹ̀wò",
+            "Àyẹ̀wò (audit), ìdánwò ẹrù àti àyẹ̀wò òfin jẹ́ dandan. A kò ní gbé TOY testnet kọjá láéláé."
+          ]
+        ]
+      }
+    },
+    "download": {
+      "t": "Ìgbàsílẹ̀",
+      "u": "Àwọn fáìlì yóò hàn níbí ní kété tí wọ́n bá ti ṣetán.",
+      "items": [
+        "TOYPAY fún Android, Windows, Linux àti Raspberry Pi · ń bọ̀",
+        "Nódù ToyChain · ń bọ̀ pẹ̀lú testnet",
+        "Whitepaper · ń bọ̀ pẹ̀lú ìtẹ̀jáde kóòdù orísun"
+      ],
+      "until": "Títí di ìgbà náà: <a href=\"{roadmap}\">wo ètò ìlọsíwájú</a> tàbí <a href=\"{toycoin}\">kọ́ sí i nípa TOY</a>."
+    },
+    "community": {
+      "t": "Àwùjọ",
+      "u": "Àyíká ọrọ̀ ajé tí gbogbo ènìyàn ń gbé ró.",
+      "cards": [
+        [
+          "Àwọn oníṣòwò",
+          "Àwọn oníṣòwò pẹ̀lú àkọọ́lẹ̀ iṣòwò, ẹ̀rọ ìgbowó, ìwé ẹ̀bùn àti àmì ìdúróṣinṣin."
+        ],
+        [
+          "Àwọn olùtọ́sọ́nà",
+          "Àwọn olùṣeré tí ó ní ìrírí ń ran àwọn tuntun lọ́wọ́, wọ́n sì ń gba èdìdì ìmọ̀ fún un."
+        ],
+        [
+          "Àwọn nódù àwùjọ",
+          "Ẹni tí ó bá pèsè ẹ̀rọ kan ń fún nẹ́tíwọ́ọ̀kì lókun. A ti gbèrò àwọn àpò Raspberry Pi àti màápù nódù."
+        ],
+        [
+          "Pátákó ìṣàfihàn",
+          "ToyScan ń fi àyíká ọrọ̀ ajé hàn pẹ̀lú àwọn nọ́ńbà gidi, láìsí àsọtẹ́lẹ̀."
+        ],
+        [
+          "Ìkópa nínú ìpinnu",
+          "Ó ń bọ̀ lẹ́yìn náà. Kódà nígbà náà, kò sí ẹni tí yóò lè yí òfin ìpìlẹ̀ ToyChain padà."
+        ]
+      ],
+      "langTitle": "Èdè 45",
+      "langText": "Àpamọ́wọ́, TOYPAY àti ToyScan ń sọ èdè 45 kan náà. Lọ́wọ́lọ́wọ́, ojú-òpó yìí wà ní {n} nínú wọn:"
+    },
+    "kontakt": {
+      "t": "Darapọ̀ kí o sì kàn sí wa",
+      "u": "Sọ ohun tí o nílò fún wa.",
+      "cards": [
+        [
+          "Testnet",
+          "Fi testnet kún àpamọ́wọ́ rẹ ní kété tí ó bá bẹ̀rẹ̀.",
+          "Sí testnet"
+        ],
+        [
+          "Ìgbàsílẹ̀",
+          "Àwọn áàpù àti nódù yóò hàn níbí ní kété tí wọ́n bá ti ṣetán.",
+          "Sí ìgbàsílẹ̀"
+        ],
+        [
+          "Darapọ̀",
+          "Gẹ́gẹ́ bí olùdánwò, oníṣòwò tàbí olùtọ́sọ́nà. Kọ̀wé ṣókí sí wa nípa ohun tí ó jẹ́.",
+          ""
+        ]
+      ],
+      "formTitle": "Kọ̀wé sí wa",
+      "topic": "Kókó ọ̀rọ̀",
+      "topics": [
+        "Ìbéèrè nípa iṣẹ́ àkànṣe náà",
+        "Darapọ̀ gẹ́gẹ́ bí olùdánwò",
+        "Di oníṣòwò",
+        "Ilé iṣẹ́ ìròyìn"
+      ],
+      "name": "Orúkọ rẹ",
+      "message": "Ìfiránṣẹ́",
+      "send": "Pèsè ímeèlì sílẹ̀",
+      "noMail": "A kò tíì fi àdírẹ́sì ìbánisọ̀rọ̀ sílẹ̀ (src/data/site.json).",
+      "opened": "Ètò ímeèlì rẹ ń ṣí. A kò tọ́jú ohunkóhun nípasẹ̀ ojú-ewé yìí.",
+      "security": "Jọ̀wọ́ má ṣe ròyìn àwọn àlàfo ààbò nípasẹ̀ fọ́ọ̀mù yìí, ṣùgbọ́n ní ìkọ̀kọ̀ sí àdírẹ́sì tí ó wà nínú àkíyèsí òfin, pẹ̀lú àkọlé “Ààbò”."
+    },
+    "impressum": {
+      "t": "Àkíyèsí òfin",
+      "u": "Ìdánimọ̀ olùpèsè lábẹ́ § 5 DDG (òfin Jámánì).",
+      "template": "Àwòṣe ni èyí. Kọ àwọn àlàyé gidi sínú src/data/site.json kí o sì jẹ́ kí a yẹ̀ wọ́n wò ní ti òfin.",
+      "h1": "Àlàyé lábẹ́ § 5 DDG",
+      "h2": "Ìbánisọ̀rọ̀",
+      "h3": "Ìforúkọsílẹ̀ àti owó orí",
+      "h4": "Ẹni tí ó ní ojúṣe fún àkóónú",
+      "h5": "Àkíyèsí",
+      "labels": {
+        "name": "orúkọ tàbí ilé iṣẹ́ pẹ̀lú irú òfin rẹ̀",
+        "street": "òpópónà àti nọ́ńbà ilé",
+        "city": "kóòdù ìfìwéránṣẹ́ àti ìlú",
+        "email": "àdírẹ́sì ímeèlì",
+        "phone": "nọ́ńbà fóònù",
+        "register": "ìforúkọsílẹ̀ àti nọ́ńbà, bí ó bá wà",
+        "vatId": "nọ́ńbà VAT, bí ó bá wà"
+      },
+      "mail": "Ímeèlì",
+      "phone": "Fóònù",
+      "register": "Ìforúkọsílẹ̀",
+      "vat": "Nọ́ńbà VAT",
+      "responsible": "Lábẹ́ § 18 (2) MStV: {name}, àdírẹ́sì bí ó ti wà lókè.",
+      "note": "ToyVerse jẹ́ iṣẹ́ àkànṣe tí a ṣì ń kọ́. Àwọn àlàyé nípa TOY kì í ṣe ìmọ̀ràn ìdókòwò."
+    },
+    "datenschutz": {
+      "t": "Ìpamọ́ àṣírí",
+      "u": "Ohun tí ó ń ṣẹlẹ̀ sí dátà rẹ: díẹ̀ bí ó ti ṣeé ṣe.",
+      "template": "Àwòṣe ni èyí. Ó bá ojú-òpó aláìyípadà tí kò ní kúkì tàbí ìtọpinpin mu. Fi olùpèsè ìgbàlejò kún un, kí o sì jẹ́ kí a yẹ̀ ẹ́ wò ní ti òfin ṣáájú ìtẹ̀jáde.",
+      "sections": [
+        [
+          "Ẹni tí ó ní ojúṣe",
+          "{name}, {street}, {city}, ímeèlì: {email}."
+        ],
+        [
+          "Ìgbàlejò àti àkọsílẹ̀ olupin",
+          "{host} ló ń gba ojú-òpó náà lálejò. Nígbà tí o bá ṣàbẹ̀wò, olupin ń ṣe àwọn dátà tí ó pọndandan ní ti ìmọ̀ ẹ̀rọ, bí àdírẹ́sì IP, àkókò àti ojú-ewé tí a béèrè, láti fi ojú-òpó náà ránṣẹ́ àti láti dáàbò bò ó lọ́wọ́ ìkọlù (Art. 6 (1) (f) GDPR)."
+        ],
+        [
+          "Kò sí kúkì, kò sí ìtọpinpin",
+          "Ojú-òpó náà kò fi kúkì sílẹ̀, kò lo irinṣẹ́ ìtúpalẹ̀, kò sì gbé àkóónú láti ọ̀dọ̀ ẹlòmíràn wọlé. Olupin wa fúnra wa ló ń pèsè àwọn fọ́ǹtì."
+        ],
+        [
+          "Nínú aṣàwákiri rẹ",
+          "Àwọn àfihàn ń ṣiṣẹ́ nínú aṣàwákiri rẹ nìkan. A kò fi ohunkóhun ránṣẹ́ sí wa."
+        ],
+        [
+          "Ìbánisọ̀rọ̀",
+          "Fọ́ọ̀mù ìbánisọ̀rọ̀ ń ṣí ètò ímeèlì rẹ nìkan. Kìkì nígbà tí o bá fi ímeèlì náà ránṣẹ́ ni a ó gbà á, a ó sì lò ó láti fèsì nìkan (Art. 6 (1) (b) àti (f) GDPR)."
+        ],
+        [
+          "Àwọn ìjápọ̀ sí ojú-òpó mìíràn",
+          "Àwọn ìjápọ̀, fún àpẹẹrẹ sí àwọn aṣàwárí búlọ́ọ̀kù, ń darí sí àwọn olùpèsè mìíràn. Àkíyèsí ìpamọ́ àṣírí tiwọn ló wúlò níbẹ̀."
+        ],
+        [
+          "Àwọn ẹ̀tọ́ rẹ",
+          "O ní ẹ̀tọ́ láti rí àlàyé, láti ṣàtúnṣe, láti pa rẹ́, láti dín ìlò kù, láti gbé dátà lọ àti láti tako, àti ẹ̀tọ́ láti fi ẹ̀sùn sùn lọ́dọ̀ àjọ tí ó ń dáàbò bo dátà."
+        ]
+      ]
+    }
+  },
+  "demo": {
+    "zeit": {
+      "levels": [
+        [
+          "Ilé iṣẹ́ ọnà àtijọ́",
+          "Ọ̀gá ìṣirò ń sún àwọn ìlẹ̀kẹ̀, ó sì ń fi ọwọ́ ṣàyẹ̀wò ìbuwọ́lù kọ̀ọ̀kan.",
+          "Agbára iṣan",
+          "Pátákó ìṣirò (abacus)"
+        ],
+        [
+          "Agbára àti ìṣàkópọ̀",
+          "Kẹ̀kẹ́ omi ń wa òòlù, ọ̀pọ̀ èdìdì sì di ọ̀kan.",
+          "Agbára omi",
+          "Kẹ̀kẹ́ omi àti òòlù èdìdì"
+        ],
+        [
+          "Àkókò àti ìwọ̀n",
+          "Aago omi ló ń pinnu ìlù, bí àkókò búlọ́ọ̀kù tí ó jẹ́ nǹkan bí ìṣẹ́jú kan.",
+          "Omi àti agbára òòfà",
+          "Aago omi"
+        ],
+        [
+          "Ibi ìpamọ́ àti títẹ̀ owó · ìwòye sànmánì tuntun",
+          "Ẹ̀rọ títẹ̀ owó àtijọ́ di ẹ̀rọ ategun: títẹ̀ owó ní ìlù ẹ̀rọ.",
+          "Ategun àti èédú",
+          "Ẹ̀rọ ategun"
+        ],
+        [
+          "Ẹ̀rọ aládàáṣe àti ẹ̀rí · ìwòye òde òní",
+          "Ẹ̀rọ aládàáṣe Heron tẹ̀lé àwọn òfin tí kò yí padà. Lónìí, ọ̀pọ̀ kóò ń ṣàyẹ̀wò ìbuwọ́lù lẹ́ẹ̀kan náà.",
+          "wáàtì díẹ̀",
+          "Chip pẹ̀lú kóò mẹ́sàn-án"
+        ]
+      ],
+      "level": "Ìpele {n}",
+      "power": "Agbára",
+      "start": "Bẹ̀rẹ̀",
+      "submit": "Fi ìbuwọ́lù sílẹ̀",
+      "submit10": "10 lẹ́ẹ̀kan",
+      "queue": "Ìlà ìdúró",
+      "done": "Ti parí",
+      "rate": "Àpẹẹrẹ: ìbuwọ́lù {r} ní ìṣẹ́jú kan",
+      "drive": "Agbára ìwakọ̀",
+      "machine": "Ẹ̀rọ ìpele tí a yàn"
+    },
+    "gears": {
+      "title": "Ẹ̀rọ láti yí",
+      "crank": "Ọwọ́ ìyípo",
+      "label": "Kẹ̀kẹ́ eléyín mẹ́rin tí ó wọ inú ara wọn",
+      "text": "Kẹ̀kẹ́ eléyín 4 ń yí ní ìlọ́po {x} yára ju ọwọ́ ìyípo lọ, ní ìdakeji."
+    },
+    "npc": {
+      "title": "Pàdé àwọn NPC",
+      "intro": "Tẹ ẹ̀dá ìtàn kan kí o sì béèrè ìbéèrè lọ́wọ́ rẹ̀. Àwọn ìjíròrò jẹ́ àpẹẹrẹ.",
+      "hello": "Ẹ kú àbọ̀! Kí ni o fẹ́ mọ̀?",
+      "names": [
+        "Oníṣòwò",
+        "Olùṣọ́",
+        "Ọ̀mọ̀wé",
+        "Sultan",
+        "Olórí arìnrìn-àjò"
+      ],
+      "qa": [
+        [
+          [
+            "Èló ni ohun kan?",
+            "Ìwọ ń rí àwọn ohun nípa ṣíṣeré. Kìkì ẹni tí ó bá fẹ́ tẹ ọ̀kan jáde gẹ́gẹ́ bí NFT ló ń san owó kékeré fún iye owó nẹ́tíwọ́ọ̀kì."
+          ],
+          [
+            "Ṣé mo lè bá ọ ṣòwò?",
+            "Gbogbo ilé àti ọjà ni a lè tà kí a sì rà. Pẹ̀lú àkọọ́lẹ̀ iṣòwò, o tilẹ̀ lè gba ìsanwó ní ẹ̀rọ ìgbowó."
+          ],
+          [
+            "Kí ni TOY?",
+            "Owó ToyChain tiwa fúnra wa. Gbogbo mílíọ̀nù 100 ń wáyé díẹ̀díẹ̀ nípasẹ̀ iṣẹ́ nínú nẹ́tíwọ́ọ̀kì. Kò sí owó ìpamọ́."
+          ]
+        ],
+        [
+          [
+            "Báwo ni mo ṣe lè rí gbọ̀ngàn eré?",
+            "Ilé náà farapamọ́. Ẹni tí ó bá ń rìn nínú ìlú pẹ̀lú àfiyèsí yóò rí i."
+          ],
+          [
+            "Ta ló lè kópa nínú eré?",
+            "Ìwọ nìkan láìsí ayélujára, tàbí pẹ̀lú àwọn mìíràn lórí ayélujára, papọ̀ tàbí ní ìdíje. Wíwò ṣeé ṣe nínú ipò olùwòran."
+          ],
+          [
+            "Ṣé ó ní ààbò?",
+            "Má ṣe fún ẹnikẹ́ni ní àwọn ọ̀rọ̀ ìmúpadàbọ̀sípò rẹ láéláé, kódà èmi. Ẹni tí ó bá béèrè wọn jẹ́ onijìbìtì."
+          ]
+        ],
+        [
+          [
+            "Báwo ni búlọ́ọ̀kù ṣe ń wáyé?",
+            "Àwọn ìdúnàádúrà ń kó jọ. Ní nǹkan bí ìṣẹ́jú kọ̀ọ̀kan, ọmọ ìgbìmọ̀ kan ń ṣe àkójọ búlọ́ọ̀kù, àwọn yòókù sì ń buwọ́lù. Láti ìdá méjì nínú mẹ́ta, ó di ìparí."
+          ],
+          [
+            "Kí ló dé tí ẹ̀wọ̀n fi kéré?",
+            "Nódù kọ̀ọ̀kan kò ní tọ́jú ju MB 256 lọ. Àkọọ́lẹ̀ tí a kò lò fún ìgbà pípẹ́ ń sinmi, a sì lè jí wọn nígbàkígbà. Kò sí ohun tí ó sọnù."
+          ],
+          [
+            "Kí ni ToyCash?",
+            "Owó euro ọwọ́ oní-díjítà tí ìwọ nìkan ń rí iye rẹ̀. A fẹ́ kí ó ṣiṣẹ́ kódà láìsí ayélujára."
+          ]
+        ],
+        [
+          [
+            "Kí ni ẹ̀yà kan yóò ṣe fún mi?",
+            "A ń san ẹ̀san fún ìdúróṣinṣin. Ẹ̀yà márùn-ún ń díje tàbí ń fọwọ́sowọ́pọ̀, àwọn NPC wọn sì wà ní ìsìn wọn."
+          ],
+          [
+            "Ẹ̀yà mélòó ló wà?",
+            "Sultan márùn-ún, ọba àti ẹ̀yà, tí ó bá màápù márùn-ún mu."
+          ],
+          [
+            "Kí ni NFT akọni?",
+            "Lẹ́yìn náà, o lè tẹ akọni rẹ jáde gẹ́gẹ́ bí NFT. Owó náà ń bo iye owó nẹ́tíwọ́ọ̀kì, a kò sì tíì pinnu àwọn àlàyé rẹ̀."
+          ]
+        ],
+        [
+          [
+            "Báwo ni a ṣe ń rìnrìn-àjò papọ̀?",
+            "Gẹ́gẹ́ bí ẹgbẹ́ tàbí pẹ̀lú àwọn olùṣeré mìíràn nínú ayé ṣíṣí. Ìwà, agbára àti àwọn ohun ń ṣe àfikún ara wọn."
+          ],
+          [
+            "Kí ni ìrìn-àjò àsìkò?",
+            "Ìpele márùn-ún láti ìgbà àtijọ́ dé òde òní fi àwọn ìlànà ToyChain hàn pẹ̀lú ọ̀nà tí ó ń dára sí i."
+          ],
+          [
+            "Níbo ni mo ti lè ṣe ìdánrawò?",
+            "Nínú ìpele ìdánilẹ́kọ̀ọ́. Àwọn eré kéékèèké 20, iṣẹ́ àyànfúnni àti ìpele àfikún tún wà."
+          ]
+        ]
+      ],
+      "quotes": [
+        "“",
+        "”"
+      ]
+    },
+    "poker": {
+      "title": "Poker lórí tábìlì",
+      "modes": [
+        "Texas Hold’em",
+        "Limit-4-Card-Omaha"
+      ],
+      "buyin": "Owó ìfisílẹ̀: dúkátì {n}",
+      "pot": "Àpò",
+      "stack": "Owó rẹ",
+      "net": "Àbájáde",
+      "fold": "Jáde",
+      "check": "Kọjá",
+      "call": "Bá a dọ́gba ({n})",
+      "bet": "Tẹ́tẹ́ ({n})",
+      "raise": "Gbé e sókè ({n})",
+      "nextHand": "Ọwọ́ tó kàn",
+      "you": "Ìwọ",
+      "opp": [
+        "Oníṣòwò",
+        "Sultan"
+      ],
+      "hands": [
+        "Káàdì gíga",
+        "Méjì kan",
+        "Méjì méjì",
+        "Mẹ́ta",
+        "Títẹ̀léra",
+        "Flush",
+        "Full House",
+        "Mẹ́rin",
+        "Straight Flush"
+      ],
+      "ruleHoldem": "Hold’em: o máa lo káàdì 5 tí ó dára jù láti inú káàdì rẹ 2 àti ti orí tábìlì.",
+      "ruleOmaha": "Omaha: o gbọ́dọ̀ lo gangan káàdì 2 nínú káàdì rẹ 4 àti 3 láti orí tábìlì.",
+      "start": "Ọwọ́ tuntun. Olúkúlùkù san ante {n}. Tẹ́tẹ́, bá a dọ́gba tàbí jáde.",
+      "newCards": "{street}: Káàdì tuntun wà lórí tábìlì.",
+      "allFold": "Gbogbo àwọn yòókù ti jáde. O jèrè dúkátì {n}.",
+      "youFold": "O ti jáde. ",
+      "showdown": "Ìṣípayá: {list}. Olùborí: {win} (dúkátì {n}).",
+      "broke": "Owó rẹ ti tán. O gba dúkátì tuntun fún ìdánrawò.",
+      "foot": "Poker ààlà pẹ̀lú iye tẹ́tẹ́ tí kò yí padà: tẹ́tẹ́ kékeré ṣáájú flop àti lórí flop, tẹ́tẹ́ ìlọ́po méjì lórí turn àti river. Àwọn alátakò jẹ́ NPC àpẹẹrẹ pẹ̀lú ọgbọ́n tí ó rọrùn. Dúkátì nìkan ni a fi ń ṣeré.",
+      "unit": "dúkátì",
+      "npcFold": "jáde",
+      "npcCall": "bá a dọ́gba",
+      "npcBet": "tẹ́tẹ́ {n}",
+      "npcCheck": "kọjá",
+      "streets": [
+        "Flop",
+        "Turn",
+        "River"
+      ],
+      "best": "Ọwọ́ rẹ tí ó dára jù: {h}",
+      "royal": "Royal Flush",
+      "and": " àti "
+    },
+    "mint": {
+      "pool": "Pool",
+      "chain": "Ẹ̀wọ̀n",
+      "start": "Fi ẹ̀rọ ránṣẹ́ sínú nẹ́tíwọ́ọ̀kì kí o sì wo bí pool ṣe ń kún.",
+      "addPhone": "+ Fóònù",
+      "addPi": "+ Raspberry Pi",
+      "addPc": "+ Kọ̀ǹpútà",
+      "sign": "Fi ìbuwọ́lù ránṣẹ́",
+      "spam": "Fi spam ránṣẹ́",
+      "reset": "Tún bẹ̀rẹ̀",
+      "blocks": "Búlọ́ọ̀kù",
+      "minted": "Tuntun tí ó jáde",
+      "devices": "Ẹ̀rọ",
+      "full": "Ẹ̀rọ tí ó ju 8 lọ kò ní gbà lórí tábìlì.",
+      "phone": "Fóònù ń ṣírò díẹ̀díẹ̀, ṣùgbọ́n ẹ̀rọ kọ̀ọ̀kan ṣe pàtàkì. Láìsí owó, ó ń kópa nínú tẹ́tẹ́ iṣẹ́.",
+      "pi": "Raspberry Pi ń ṣiṣẹ́ déédé, kò sì ná agbára púpọ̀.",
+      "pc": "Kọ̀ǹpútà ló ń kún pool jù lọ ní kíákíá. Ṣùgbọ́n agbára ìṣirò nìkan kò wúlò nínú ìfohùnṣọ̀kan.",
+      "own": "Ìwọ fúnra rẹ ti fi ìbuwọ́lù kan kún un.",
+      "spamMsg": "Spam kò fi bẹ́ẹ̀ kún pool, ṣùgbọ́n ó ń náni ní owó iṣẹ́ tàbí iṣẹ́ ìṣirò.",
+      "block": "Búlọ́ọ̀kù {k} di ìparí: ìkópa {n}, TOY tuntun {t} (ìfohùnṣọ̀kan {a}, iṣẹ́ {b}, àpò ìdápadà {c}).",
+      "resetMsg": "A ti tún un bẹ̀rẹ̀.",
+      "label": "Ẹ̀rọ títẹ̀ owó"
+    },
+    "tx": {
+      "load": "Ẹrù nẹ́tíwọ́ọ̀kì: {n} %",
+      "free": "Ọ̀fẹ́: {a} nínú {b}",
+      "send": "Fi ránṣẹ́",
+      "round": "Sáà tuntun",
+      "sentFree": "A ti fi ránṣẹ́, ní ọ̀fẹ́.",
+      "sentFee": "Ìpín ọ̀fẹ́ ti tán: owó iṣẹ́ nǹkan bí TOY {fee} (ìwọ̀n {f}), tàbí tíkẹ́ẹ̀tì ToyWork yóò mú kí ó jẹ́ ọ̀fẹ́.",
+      "formula": "Ìpín = max(10, 100 × (1 − ẹrù))"
+    },
+    "offline": {
+      "you": "Ìwọ",
+      "shop": "Oníṣòwò",
+      "amount": "Iye: {n} €",
+      "pay": "Sanwó láìsí ayélujára",
+      "again": "Ná ìwé owó kan náà lẹ́ẹ̀kan sí i",
+      "sync": "Lọ sórí ayélujára kí o sì ṣe àfiwé",
+      "month": "Lò ó fún oṣù kan",
+      "limit": "Ààlà àìsí-ayélujára: {used} nínú {cap} € · ìpele {s} · ọjọ́ {days}, ìsanwó {n}",
+      "freeAmt": "Ó kù: {n} €",
+      "over": "Ààlà ti dé: {n} € kò gbà mọ́. Lọ sórí ayélujára kí ààyè rẹ lè ṣí sílẹ̀ padà.",
+      "paid": "A gbé {n} € láti ẹ̀rọ dé ẹ̀rọ, tí a fi kóòdù pa mọ́, láìsí nẹ́tíwọ́ọ̀kì rárá.",
+      "first": "Kọ́kọ́ sanwó lẹ́ẹ̀kan láìsí ayélujára.",
+      "double": "Ìwé owó kan náà jáde lẹ́ẹ̀kejì. Láìsí ayélujára, èyí kò tíì hàn.",
+      "nothing": "Kò sí ohun tí a lè fi wé.",
+      "okNote": "Ìwé owó {i} ({n} €) ti fìdí múlẹ̀",
+      "badNote": "Ìwé owó {i} ({n} €) jẹ́ ẹ̀ẹ̀mejì: a kọ̀ ọ́",
+      "caught": "A rí ìnáwó ẹ̀ẹ̀mejì: olùgbéjáde kọ ìwé owó kejì, ToyChain sì mú kí èyí ṣeé yẹ̀wò. Ẹni tí ó bá ná owó lẹ́ẹ̀mejì yóò pàdánù owó ìdúró rẹ̀ fún ẹni tí ó pa lára, a ó sì sọ ọ́ kalẹ̀ ní ìpele.",
+      "synced": "Ìsanwó {n} ti fìdí múlẹ̀. Ààyè àìsí-ayélujára rẹ ti ṣí sílẹ̀ padà.",
+      "monthMsg": "Oṣù kan ìlò: ọjọ́ 30 àti ìsanwó 60. Ààlà rẹ ń pọ̀ sí i ní ìpele-ìpele.",
+      "label": "Fóònù méjì ń pààrọ̀ ìsanwó tí a fi kóòdù pa mọ́ láìsí ayélujára"
+    },
+    "toyscan": {
+      "choose": "Yan ìṣẹ̀lẹ̀:",
+      "minted": "Ti jáde",
+      "cap": "Ààlà òkè",
+      "mio": "Mílíọ̀nù {n} TOY",
+      "bigRed": "Iná pupa ńlá: a ti rú ààlà òkè, ìbẹ̀rẹ̀ tó tọ́ tàbí òfin ìpìlẹ̀.",
+      "criteria": [
+        "A1 Ààlà òkè àti àpapọ̀ gbogbo owó àkọọ́lẹ̀",
+        "A2 Ìbẹ̀rẹ̀ tó tọ́: TOY kọ̀ọ̀kan láti inú ìgbéjáde",
+        "A3 Ìgbéjáde ní ìbámu pẹ̀lú àgbékalẹ̀",
+        "A4 Sáà àti àkókò",
+        "A5 Òfin ìpìlẹ̀ kò yí padà",
+        "A6 Ìfohùnṣọ̀kan wà ní ìlera",
+        "A7 Ìpele ìbẹ̀rẹ̀ ní ìbámu pẹ̀lú ètò",
+        "A8 Ìdádúró pẹ̀lú ẹ̀rí nìkan",
+        "A9 Dátà jẹ́ tuntun"
+      ],
+      "scenarios": [
+        [
+          "Ohun gbogbo dára",
+          "Gbogbo àmúyẹ ti pé",
+          "Iye àpẹẹrẹ."
+        ],
+        [
+          "Ó ju mílíọ̀nù 100 lọ",
+          "Pupa: a ti kọjá ààlà òkè",
+          "Níbí, TOY tí ó jáde ì bá ti ju èyí tí a gbà láàyè lọ. Èyí kò gbọdọ̀ ṣẹlẹ̀ láéláé."
+        ],
+        [
+          "Owó láìsí ìgbéjáde",
+          "Pupa: a ti rú ìbẹ̀rẹ̀ tó tọ́",
+          "A kò lè tọpasẹ̀ owó inú àkọọ́lẹ̀ kan padà sí ìgbéjáde kankan."
+        ],
+        [
+          "Ìgbéjáde ṣáájú ètò",
+          "Ìyeyè: a nílò àbójútó",
+          "Ìgbéjáde ti lọ ju 3 % ṣáájú ètò. Kì í ṣe rírú òfin, ṣùgbọ́n ó yẹ fún àfiyèsí."
+        ],
+        [
+          "Dátà ti pẹ́",
+          "Ìyeyè: dátà ti pẹ́",
+          "Dátà tí ó kẹ́yìn ti ju ìṣẹ́jú 10 lọ, tàbí orísun méjì kò fohùnṣọ̀kan."
+        ]
+      ]
+    },
+    "voucher": {
+      "title": "Dán ìwé ẹ̀bùn wò",
+      "examples": "Àwọn àpẹẹrẹ:",
+      "presets": [
+        "Ẹ̀bùn fún ẹbí",
+        "Ìpolówó ní ṣọ́ọ̀bù",
+        "Káàdì ilé oúnjẹ"
+      ],
+      "own": "Tàbí ṣe tìrẹ: yan irú",
+      "types": {
+        "i": [
+          "Ẹni tí ó ní i",
+          "Ìwé ẹ̀bùn ẹni tí ó ní i",
+          "Ẹnikẹ́ni tí ó bá ní i lè lò ó. Oníbàárà àkọ́kọ́ gba gbogbo iye náà."
+        ],
+        "m": [
+          "Ìlò-púpọ̀",
+          "Ìwé ẹ̀bùn ìlò-púpọ̀",
+          "A pín iye náà sí ìlò púpọ̀ títí yóò fi tán."
+        ],
+        "g": [
+          "Ẹgbẹ́",
+          "Ìwé ẹ̀bùn ẹgbẹ́",
+          "Kìkì àwọn ọmọ ẹgbẹ́ tí a yàn ló lè lò ó, olúkúlùkù lẹ́ẹ̀kan ṣoṣo pẹ̀lú ìpín tí ó dọ́gba."
+        ]
+      },
+      "value": "Iye: {n} €",
+      "uses": "Ìlò: {n}",
+      "members": "Àwọn ọmọ ẹgbẹ́:",
+      "create": "Ṣẹ̀dá ìwé ẹ̀bùn",
+      "serial": "Ọ̀wọ́ {s}",
+      "hint": "Lẹ́yìn ìṣẹ̀dá, tẹ oníbàárà kan kí ó lè lò ó.",
+      "redeemed": "A ti lò ó: {u} nínú {n} · Ó kù: {r} €",
+      "double": "Lò ó lẹ́ẹ̀mejì (jìbìtì)",
+      "needTwo": "Yan ọmọ ẹgbẹ́ méjì ó kéré tán.",
+      "first": "Kọ́kọ́ ṣẹ̀dá ìwé ẹ̀bùn kan.",
+      "created": "A ti ṣẹ̀dá {type}: {v} €, {n} × {s} €.",
+      "shop": "Oníṣòwò",
+      "welcome": "Ẹ kú àbọ̀!",
+      "redeems": "{name} ń lò ó",
+      "doneI": "A ti lo ìwé ẹ̀bùn ẹni tí ó ní i tẹ́lẹ̀.",
+      "doneM": "Gbogbo ìlò {n} ti tán.",
+      "notMember": "{name} kì í ṣe ọmọ ẹgbẹ́ náà.",
+      "already": "{name} ti lo ìpín rẹ̀ tẹ́lẹ̀.",
+      "ok": "{name} lo {n} €.",
+      "dblBoth": "Ìlò méjèèjì ló kà níbí, nítorí ìwé ẹ̀bùn náà gba ìlò púpọ̀ láàyè.",
+      "dblCaught": "Ẹ̀rọ méjì, ìwé owó kan: a kọ ìlò kejì. A rí ìnáwó ẹ̀ẹ̀mejì.",
+      "customers": [
+        "Ali",
+        "Leyla",
+        "Omar",
+        "Samira"
+      ],
+      "foot": "Ìṣẹ̀lẹ̀ àpẹẹrẹ. Olùgbéjáde ń tọ́jú ipò ìwé ẹ̀bùn kọ̀ọ̀kan, ToyChain sì mú kí ó ṣeé yẹ̀wò. Nítorí náà, ẹ̀dà kò wúlò rárá.",
+      "thanks": "O ṣé, ó dára!",
+      "sorry": "Ó ṣe ni láàánú, èyí kò ṣeé ṣe.",
+      "rejected": " Olùgbéjáde kọ̀ ọ́."
+    }
+  }
+}

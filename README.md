@@ -2,7 +2,7 @@
 
 Die Webseite des **ToyVerse**: ToyChain mit dem Coin TOY, TOYPAY, ToyScan, ToyCash, TOYQUEST und ToyPost. Für Community und Presse, mit interaktiven Simulationen.
 
-**Stand:** Grundgerüst vom 24.10.2026 auf Basis des Webseiten-Entwurfs (Version 2), Inhalte an den aktuellen Stand von `Safehaigit/toycoin` angepasst (Entscheidungen bis Nr. 133). Fertig: Deutsch, Englisch, Spanisch, Französisch, Portugiesisch, Italienisch, Niederländisch, Polnisch, Türkisch, Vietnamesisch, Indonesisch, Schwedisch, Norwegisch, Arabisch, Persisch, Urdu, Chinesisch, Wu-Chinesisch, Japanisch, Koreanisch (20 von 45, davon 3 von rechts nach links). Die übrigen Sprachen folgen paketweise.
+**Stand:** Grundgerüst vom 24.10.2026 auf Basis des Webseiten-Entwurfs (Version 2), Inhalte an den aktuellen Stand von `Safehaigit/toycoin` angepasst (Entscheidungen bis Nr. 133). Fertig: Deutsch, Englisch, Spanisch, Französisch, Portugiesisch, Italienisch, Niederländisch, Polnisch, Türkisch, Vietnamesisch, Indonesisch, Schwedisch, Norwegisch, Arabisch, Persisch, Urdu, Chinesisch, Wu-Chinesisch, Japanisch, Koreanisch, Suaheli, Yoruba (22 von 45, davon 3 von rechts nach links). Die übrigen Sprachen folgen paketweise.
 
 ## Grundsätze
 
