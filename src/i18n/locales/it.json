@@ -1,0 +1,682 @@
+{
+  "meta": {
+    "description": "Il ToyVerse: la blockchain ToyChain con la moneta TOY, il portafoglio TOYPAY, l’explorer ToyScan, la moneta invisibile in euro ToyCash e il gioco educativo TOYQUEST."
+  },
+  "ui": {
+    "skip": "Vai al contenuto",
+    "menu": "Menu",
+    "mainNav": "Menu principale",
+    "allPages": "Tutte le pagine",
+    "join": "Partecipa",
+    "language": "Lingua",
+    "languageHint": "Il sito è ora disponibile in {n} delle 45 lingue del portafoglio, di TOYPAY e di ToyScan. Le altre arriveranno.",
+    "soon": "in arrivo",
+    "path": "Percorso",
+    "back": "Indietro",
+    "next": "Avanti",
+    "pause": "Pausa",
+    "auto": "Auto",
+    "step": "Passo",
+    "flowTitle": "Come si incastra tutto",
+    "flowLabel": "Diagramma di flusso",
+    "image": "Immagine {n}",
+    "ctaTitle": "Entra nel ToyVerse",
+    "ctaText": "Fai domande, prova presto oppure diventa commerciante o mentore.",
+    "ctaBtn": "Partecipa",
+    "disclaimer": "Nessuna consulenza sugli investimenti, nessuna promessa di rendimento. La ToyChain funziona come rete di prova in sviluppo; i TOY di prova non hanno valore. ToyCash, ToyScan e gli oggetti di TOYQUEST sono concetti. I numeri delle simulazioni sono esempi.",
+    "placeholder": "inserisci {label}",
+    "example": "Esempio",
+    "chooseLanguage": "Scegli la lingua",
+    "redirect": "Vai alla pagina iniziale",
+    "machineNote": "Questa traduzione è stata creata con l’IA a partire dal tedesco e non è ancora stata revisionata da madrelingua. Fa fede la",
+    "machineLink": "versione tedesca"
+  },
+  "scenes": ["La città di notte", "La carovana", "La rete della ToyChain", "Nel salone da gioco", "La sala delle macchine"],
+  "groups": {
+    "entdecken": { "t": "Scopri", "u": "Inizio e panoramica" },
+    "spielen": { "t": "Gioca", "u": "TOYQUEST e il suo mondo" },
+    "bezahlen": { "t": "Paga", "u": "Portafoglio, moneta e contanti" },
+    "technik": { "t": "Tecnica", "u": "Come funziona la catena" },
+    "mitmachen": { "t": "Partecipa", "u": "Piano, download, contatti" }
+  },
+  "status": {
+    "inWork": "In corso",
+    "inDev": "In sviluppo",
+    "planned": "Pianificato",
+    "concept": "Concetto",
+    "built": "Costruito, in prova",
+    "afterReview": "Dopo verifica"
+  },
+  "pages": {
+    "start": {
+      "t": "Inizio",
+      "u": "Gioco, portafoglio e una blockchain propria in un mondo delle Mille e una notte.",
+      "slides": [
+        ["Benvenuto nel ToyVerse", "Gioco, portafoglio e una blockchain propria in un mondo delle Mille e una notte."],
+        ["Giocare e imparare", "In TOYQUEST i personaggi ti spiegano come nasce il TOY."],
+        ["Pagare senza rete", "TOYPAY e ToyCash dovranno funzionare anche offline."]
+      ],
+      "discover": "Scopri",
+      "roadmap": "Stato attuale",
+      "what": "Cosa vuoi fare?",
+      "tiles": [
+        ["Giocare", "Scopri TOYQUEST: mondo, clan, viaggio nel tempo."],
+        ["Pagare", "Capire TOYPAY, TOY e ToyCash."],
+        ["Capire", "Guarda come funziona la ToyChain."]
+      ],
+      "statusTitle": "A che punto siamo",
+      "statusText": "La ToyChain nasce passo dopo passo come rete di prova. {done} traguardi su {total} sono completati.",
+      "statusLink": "Alla tabella di marcia",
+      "newTitle": "Sei nuovo?",
+      "newText": "La panoramica mostra come gioco, portafoglio e catena lavorano insieme.",
+      "newBtn": "Vedi l’ecosistema"
+    },
+    "verse": {
+      "t": "L’ecosistema",
+      "u": "Sei elementi sotto un unico tetto.",
+      "cards": [
+        ["ToyChain", "Una blockchain propria e leggera con la moneta TOY. Gira su vecchi telefoni e Raspberry Pi.", "inWork"],
+        ["TOYPAY", "Portafoglio e nodo in uno, per Android, Windows, Linux e Raspberry Pi.", "inDev"],
+        ["ToyScan", "Explorer con semaforo di allarme che controlla di continuo se le regole sono rispettate.", "planned"],
+        ["TOYQUEST", "Il gioco nello stile delle Mille e una notte, con un mondo per imparare la tecnica.", "inDev"],
+        ["ToyCash", "Contanti privati in euro in rete, anche offline.", "concept"],
+        ["ToyPost", "Una casella per tutti i canali, fatture in TOY e protezione dalle truffe.", "built"]
+      ],
+      "after": "In più: un circuito economico aperto, commercianti, mentori e nodi della comunità. <a href=\"{community}\">Scopri di più</a>",
+      "flow": {
+        "nodes": ["Giocatore", "TOYQUEST", "TOYPAY", "ToyCash", "Polygon", "ToyChain", "ToyScan"],
+        "steps": [
+          ["Giocare", "Completi missioni e impari in TOYQUEST come funziona la ToyChain."],
+          ["Coniare", "Se vuoi, conii tramite TOYPAY un oggetto guadagnato."],
+          ["Oggetti", "Gli oggetti coniati sono NFT su Polygon. La ToyChain conosce solo il TOY."],
+          ["Partecipare", "Il portafoglio è anche un nodo: calcola, firma e può guadagnare TOY."],
+          ["Controllare", "ToyScan controlla emissione, tetto e regole e mostra il risultato come semaforo."],
+          ["Contanti", "ToyCash dovrà poi far parte di TOYPAY, anche offline."],
+          ["Notaio", "Per ToyCash, la ToyChain attesta solo somme di controllo, senza importi né nomi."]
+        ]
+      }
+    },
+    "toyquest": {
+      "t": "TOYQUEST",
+      "u": "Un’avventura che ti spiega la tecnica.",
+      "rows": [
+        ["Mondo", "Cinque mappe per cinque temi grafici; tutti gli edifici si possono visitare, usare e scambiare."],
+        ["Modalità", "Offline o online, cooperativa o competitiva, con chat vocale, modalità rischio e modalità spettatore."],
+        ["Imparare", "Personaggi in molti luoghi spiegano la ToyChain passo dopo passo: in breve, normale o tecnico con numeri reali."],
+        ["Reale o demo", "Se hai attivato un livello in TOYPAY, i luoghi del gioco mostrano eventi reali del tuo nodo. Altrimenti gira una modalità demo ben indicata. Il gioco non crea mai TOY."],
+        ["Oggetti", "Gli oggetti si guadagnano giocando; non si possono comprare. Se vuoi, li conii come NFT su Polygon. Un fondo comune paga la commissione di rete."]
+      ],
+      "toZeit": "Al viaggio nel tempo",
+      "toSalon": "Al salone da gioco",
+      "flow": {
+        "nodes": ["Giocatore", "Missione", "Oggetto", "TOYPAY", "Polygon"],
+        "steps": [
+          ["Giocare", "Completi missioni, minigiochi e sfide."],
+          ["Guadagnare", "Gli oggetti si ottengono nel gioco, non in un negozio. Niente pay-to-win."],
+          ["Coniare", "Se vuoi, conii l’oggetto. La piccola commissione copre i costi di rete."],
+          ["Nasce l’NFT", "L’NFT viene creato su Polygon; il gas lo paga il fondo comune."],
+          ["Possedere", "L’oggetto è tuo. Nel gioco funziona anche senza NFT."]
+        ]
+      }
+    },
+    "zeit": {
+      "t": "Viaggio nel tempo",
+      "u": "Cinque livelli dall’antichità a oggi.",
+      "note": "I livelli da 1 a 3 mostrano macchine antiche. I livelli 4 e 5 aggiungono il salto verso l’età moderna come prospettiva. Ogni livello risolve lo stesso passo, la verifica delle firme, con un metodo più efficiente. I numeri sono esempi."
+    },
+    "maschinen": {
+      "t": "Macchine",
+      "u": "50 macchine antiche, fino a 256 nella versione finale.",
+      "slider": "Macchine sbloccate: {n} su 256",
+      "cards": [
+        ["Maestri", "Ogni macchina ha un maestro che spiega il processo corrispondente della ToyChain."],
+        ["Ricompense", "Raccogliere conoscenza dà sigilli del sapere, diplomi di maestro, ducati e oggetti estetici. Mai TOY."],
+        ["Ordine", "Dalla bottega all’automa, ogni macchina è legata a un processo, per esempio l’orologio ad acqua e il tempo di blocco."]
+      ]
+    },
+    "gangs": {
+      "t": "Bande e clan",
+      "u": "Forte da solo, più forte in squadra.",
+      "cards": [
+        ["Banda", "I personaggi si completano con tratti, abilità e oggetti."],
+        ["Mondo aperto", "Lavoro di squadra con altri giocatori per sfide e salite di livello."],
+        ["Cinque clan", "Sultani e re si sfidano o cooperano. I personaggi li servono; la tua lealtà conta."],
+        ["Principi reali", "Una porta si apre solo quando due terzi della banda appongono il sigillo, proprio come la finalità sulla ToyChain."]
+      ],
+      "flow": {
+        "nodes": ["La tua banda", "Sinergie", "Sfida", "Mondo aperto", "Clan"],
+        "steps": [
+          ["Combinare", "Tratti, abilità e oggetti dei membri si rafforzano."],
+          ["Superare una sfida", "La banda affronta insieme un compito."],
+          ["Con altri", "Lavoro di squadra con altri giocatori del mondo aperto."],
+          ["Salire di livello", "La banda diventa più forte."],
+          ["Scegliere un clan", "Ti leghi a uno dei cinque clan. Si sfidano o cooperano."]
+        ]
+      }
+    },
+    "salon": {
+      "t": "Salone da gioco",
+      "u": "Nascosto nel gioco, pieno di carte.",
+      "rows": [
+        ["Giochi", "Texas Hold’em e Omaha a 4 carte con limite."],
+        ["Formati", "Partite cash e tornei."],
+        ["Puntate", "Si gioca con i ducati del gioco. Le puntate in ToyCoin arriveranno solo se una verifica legale le consente."],
+        ["Minigiochi", "20 minigiochi, più missioni e livelli bonus."]
+      ],
+      "flow": {
+        "nodes": ["Giocatore", "Salone da gioco", "Tavolo", "Puntata"],
+        "steps": [
+          ["Entrare", "Il salone da gioco è un edificio nascosto nel gioco."],
+          ["Scegliere il gioco", "Texas Hold’em o Omaha a 4 carte con limite, come partita cash o torneo."],
+          ["Puntata", "Punti ducati. Niente puntate con denaro reale senza una verifica legale."]
+        ]
+      }
+    },
+    "toypay": {
+      "t": "TOYPAY",
+      "u": "Il portafoglio del ToyVerse e al tempo stesso un nodo della ToyChain.",
+      "cards": [
+        ["Piattaforme", "Android, Windows, Linux e Raspberry Pi, anche su dispositivi vecchi."],
+        ["Nodo", "Scegli un livello. Calcola solo con il caricatore, il Wi-Fi e una temperatura normale."],
+        ["Pagamento offline", "Cifrato via QR, NFC o Bluetooth, anche senza rete."],
+        ["Conto aziendale", "Con modalità cassa per i commercianti."],
+        ["Sicurezza", "Anteprima prima di ogni firma, protezione dalle trappole sugli indirizzi, lista di allerta anti-phishing, portafogli hardware."],
+        ["Lingue", "45 lingue e quattro modalità, da principiante a esperto."]
+      ],
+      "toWallet": "Collegarsi alla rete di prova",
+      "toDownload": "Download",
+      "cardFront": ["TOYPAY", "ToyChain · Rete di prova", "Tocca per girare"],
+      "cardBack": ["Pagamento offline", "Cifrato da dispositivo a dispositivo", "Anteprima prima di ogni firma"],
+      "cardLabel": "Gira la carta",
+      "cardTitle": "La tua carta da toccare",
+      "flow": {
+        "nodes": ["Cassa del negozio", "Il tuo portafoglio", "Anteprima", "Rete", "Conto aziendale"],
+        "steps": [
+          ["Inviare l’importo", "La cassa invia l’importo al tuo portafoglio come richiesta di pagamento."],
+          ["Controllare", "Prima della firma il portafoglio ti mostra esattamente cosa succederà."],
+          ["Pagare", "Il pagamento va in rete ed è definitivo dopo un blocco."],
+          ["Accredito", "Il conto aziendale riceve la conferma."],
+          ["Offline", "Senza rete, il pagamento cifrato passa direttamente da un dispositivo all’altro."]
+        ]
+      }
+    },
+    "toycoin": {
+      "t": "TOY",
+      "u": "La moneta della ToyChain, con le stesse regole per tutti.",
+      "rows": [
+        ["Quantità", "Al massimo 100.000.000 TOY, mai di più. Il tetto fa parte della costituzione della ToyChain."],
+        ["Lancio equo", "Il primo blocco non contiene alcun TOY. Nessuna riserva, nessuna prevendita, nessuna quota per il team."],
+        ["Creazione", "Tutti i TOY nascono a poco a poco dal lavoro nella rete: prima epoca 50.500 TOY, primo anno circa 16,8 milioni, emivita di circa 3,76 anni, circa il 99 % dopo 25 anni."],
+        ["Ripartizione", "50 % a chi firma i blocchi, 40 % alla lotteria del lavoro, 10 % al fondo di rimborso per le transazioni gratuite."],
+        ["Mai bruciato", "Sulla ToyChain nessun TOY viene mai distrutto e nessun conto va mai perso."],
+        ["Tecnica", "18 decimali, indirizzi come su Ethereum. Chain ID della rete di prova 7630714; rete principale 7630713 solo dopo un audit."]
+      ],
+      "chartTitle": "TOY emessi negli anni",
+      "chartYear": "Anno {y}",
+      "chartLabel": "Anno {y}: circa {m} milioni di TOY emessi (piano con fattore 1)",
+      "chartAxis": "milioni di TOY",
+      "coinTitle": "La moneta in 3D",
+      "coinTurn": "Ruota la moneta",
+      "warnTitle": "Attenzione: vecchi token ToyCoin",
+      "warnText": "Su Polygon ed Ethereum esistono token più vecchi chiamati ToyCoin. <b>Non sono TOY della ToyChain</b>: non vengono scambiati né trasferiti con un ponte. Il portafoglio e ToyScan li segnalano come «Non è TOY della ToyChain, non scambiabile». Non comprarli sperando in uno scambio.",
+      "warnPolygon": "Polygon",
+      "warnEthereum": "Ethereum",
+      "warnLink": "Vedi nell’explorer"
+    },
+    "wallet": {
+      "t": "Collegarsi alla rete di prova",
+      "u": "Quando la rete di prova pubblica sarà attiva, potrai aggiungerla qui con un clic.",
+      "btn": "Aggiungi rete di prova · arriva con il traguardo M10",
+      "facts": [
+        ["Rete", "ToyChain Testnet"],
+        ["Chain ID", "7630714"],
+        ["Simbolo", "TOY, 18 decimali"],
+        ["Indirizzo", "Il tuo solito indirizzo Ethereum e la tua frase di recupero funzionano anche qui."]
+      ],
+      "text": "L’aggiunta funziona con qualsiasi portafoglio che sappia aggiungere reti secondo EIP-3085, come TOYPAY o MetaMask. La pagina non legge nulla e non può inviare nulla. I TOY di prova non hanno valore e non passano mai a una rete principale.",
+      "safety": "Questa pagina non ti chiederà mai la frase di recupero. Chi la chiede vuole truffarti.",
+      "flow": {
+        "nodes": ["Questa pagina", "Il tuo portafoglio", "Rete di prova", "TOY di prova"],
+        "steps": [
+          ["Proporre", "La pagina propone la rete con nome, Chain ID e punto di accesso."],
+          ["Confermare", "Il tuo portafoglio mostra i dati e tu confermi. Le chiavi non lasciano mai il tuo dispositivo."],
+          ["Partecipare", "Nella rete di prova il tuo dispositivo calcola biglietti per la lotteria del lavoro o riceve TOY di prova dal rubinetto."],
+          ["Provare", "Con i TOY di prova provi senza rischi trasferimenti, quota gratuita e livelli."]
+        ]
+      }
+    },
+    "toycash": {
+      "t": "ToyCash",
+      "u": "La sensazione dei contanti in rete, garantita in euro.",
+      "rows": [
+        ["Principio", "Una stablecoin in euro. Solo tu vedi possesso e importi, nel tuo portafoglio. La ToyChain attesta solo somme di controllo, senza importi né nomi."],
+        ["Copertura", "Riserve in euro, all’inizio solo euro. Emittente proprio, in seguito più custodi insieme."],
+        ["Avvio", "Prima un prototipo secondo il principio eCash con euro di prova, poi zk-notes."],
+        ["Buoni", "Buoni multiuso, di gruppo e al portatore, per gradi."],
+        ["Doppia spesa", "Termine di recupero, sanzione per la frode e prenotazione, per gradi."],
+        ["Stato", "Concetto. Euro veri solo dopo un audit e una verifica legale."]
+      ],
+      "toOffline": "Prova il limite offline",
+      "flow": {
+        "nodes": ["Riserva in euro", "Emittente", "Portafoglio A", "Portafoglio B", "ToyChain"],
+        "steps": [
+          ["Copertura", "Gli euro sono tenuti come copertura."],
+          ["Emettere", "Il portafoglio A riceve note cifrate."],
+          ["Passare", "A passa le note a B, anche offline."],
+          ["Riscattare", "B le cambia presso l’emittente con note nuove. L’emittente controlla che nessuna nota venga usata due volte."],
+          ["Attestare", "A ogni epoca l’emittente ancora sulla ToyChain una somma di controllo della sua lista, così nulla può essere cambiato in segreto."]
+        ]
+      }
+    },
+    "offline": {
+      "t": "Limite offline",
+      "u": "Il limite cresce lentamente con l’uso.",
+      "tableHead": ["Livello", "Limite", "Condizione"],
+      "steps": [
+        ["1", "20 €", "Inizio"],
+        ["2", "50 €", "14 giorni e 10 pagamenti"],
+        ["3", "100 €", "60 giorni e 40 pagamenti"],
+        ["4", "250 €", "180 giorni e 100 pagamenti, solo con chiave legata al dispositivo"],
+        ["5", "500 €", "365 giorni e 250 pagamenti, solo con chiave legata al dispositivo"]
+      ],
+      "text": "All’interno del livello sbloccato scegli tu il limite. Il limite è anche una cauzione: chi spende due volte offline la perde a favore dei danneggiati. I valori dei livelli sono una proposta."
+    },
+    "toychain": {
+      "t": "ToyChain",
+      "u": "Leggera come Mina, indirizzi come Ethereum.",
+      "rows": [
+        ["Dimensione", "Ogni nodo standard memorizza al massimo 256 MB."],
+        ["Dispositivi", "Gira su vecchi dispositivi Android, Raspberry Pi, Linux e Windows."],
+        ["Indirizzi", "Gli stessi indirizzi e le stesse 12 o 24 parole di Ethereum."],
+        ["Partecipare", "Il livello 0 non richiede saldo: il tuo dispositivo calcola biglietti per la lotteria del lavoro. Con 10, 100 o 1.000 TOY in stake firmi, archivi o validi."],
+        ["Consenso", "Un comitato fino a 128 membri firma ogni blocco. Con due terzi è definitivo; circa un blocco al minuto."],
+        ["Conti", "I conti non vanno mai persi. Quelli inutilizzati a lungo vanno a riposo e si possono risvegliare in qualsiasi momento."],
+        ["Solo TOY", "Niente token, niente NFT, niente smart contract sulla ToyChain. Ogni funzione è integrata."],
+        ["Sicurezza", "Solo metodi e librerie verificati. Chiavi aggiuntive post-quantistiche (ML-DSA) sono previste per il traguardo M13."]
+      ],
+      "toMint": "Simula il conio",
+      "chainTitle": "La catena in 3D",
+      "chainAdd": "Aggiungi blocco",
+      "chainHint": "Muovi il puntatore o il dito sulla scena per ruotarla. I cubi sono blocchi di esempio.",
+      "flow": {
+        "nodes": ["Portafoglio", "Pool", "Comitato", "Blocco", "Catena"],
+        "steps": [
+          ["Inviare", "La tua transazione arriva nel pool."],
+          ["Proporre", "Un membro del comitato estratto a sorte compone il blocco."],
+          ["Firmare", "Il comitato firma. Con due terzi il blocco è definitivo."],
+          ["Aggiungere", "I nodi conservano lo stato e una breve finestra, al massimo 256 MB."],
+          ["Ricompensare", "I nuovi TOY vanno ai firmatari, alla lotteria del lavoro e al fondo di rimborso."]
+        ]
+      }
+    },
+    "mint": {
+      "t": "Simulazione di conio",
+      "u": "Manda dispositivi nella rete e guarda nascere i blocchi.",
+      "text": "In breve: lavoro e firme scorrono sul nastro fino al pool. Quando è pieno o è passato circa un minuto (qui accelerato), nasce un blocco. Nella prima epoca ogni blocco aggiunge circa 35 nuovi TOY: 50 % ai firmatari, 40 % alla lotteria del lavoro, 10 % al fondo di rimborso."
+    },
+    "tx": {
+      "t": "Transazioni",
+      "u": "Da 10 a 100 transazioni gratuite per conto al giorno.",
+      "text": "Oltre la quota paghi una piccola commissione oppure calcoli un biglietto ToyWork. La commissione raddoppia ogni 10 transazioni in più nello stesso blocco, fino a 1.024 volte. Le commissioni vanno per il 40 % ai partecipanti attivi, il 40 % al fondo di rimborso e il 20 % a chi propone il blocco."
+    },
+    "toyscan": {
+      "t": "ToyScan",
+      "u": "Luce verde quando tutte le regole sono rispettate.",
+      "cards": [
+        ["Tetto", "Mai più di 100.000.000 TOY. In ogni blocco la somma di tutti i saldi è uguale alla somma di tutte le emissioni."],
+        ["Lancio equo", "Il primo blocco contiene 0 TOY. Ogni TOY è riconducibile a un’emissione."],
+        ["Emissione", "Ogni epoca viene ricalcolata secondo la formula."],
+        ["Altre catene", "Mostra in sola lettura i saldi dello stesso indirizzo su altre catene. I vecchi token ToyCoin sono segnati come «non è TOY della ToyChain»."]
+      ],
+      "flow": {
+        "nodes": ["ToyChain", "Nodo d’archivio", "Altre catene", "ToyScan", "Semaforo"],
+        "steps": [
+          ["Leggere i dati", "ToyScan legge offerta, epoche e blocchi della ToyChain."],
+          ["Ricalcolare", "Un nodo d’archivio somma da sé tutti i saldi."],
+          ["Mostrare", "I saldi dello stesso indirizzo su altre catene compaiono solo a titolo informativo."],
+          ["Semaforo", "Verde se tutto torna. Giallo in caso di anomalie, rosso se una regola è violata, con prova."]
+        ]
+      }
+    },
+    "ketten": {
+      "t": "Altre catene",
+      "u": "Lo stesso indirizzo ovunque, senza ponte.",
+      "rows": [
+        ["Stesso indirizzo", "Il tuo indirizzo ToyChain funziona anche su Ethereum, Polygon, Arbitrum, Base e BNB Chain. TOYPAY mostra lì saldi, token e NFT."],
+        ["Scambio senza ponte", "Uno scambio atomico con blocco hash a tempo: o entrambe le parti ricevono il denaro, o nessuna. Previsto per il traguardo M12."],
+        ["Vecchi token ToyCoin", "I token chiamati ToyCoin su Polygon ed Ethereum non sono TOY della ToyChain e non sono scambiabili."],
+        ["Ponte", "Nell’ambito attuale non c’è nessun ponte. Se ne arrivasse uno in futuro, servirebbero una decisione apposita, un audit e una verifica legale."]
+      ]
+    },
+    "roadmap": {
+      "t": "Tabella di marcia",
+      "u": "L’ordine conta più delle date.",
+      "progress": "ToyChain fase 1: {done} traguardi su {total} completati (al {date})",
+      "milestones": {
+        "M1": "Tipi di base ed emissione",
+        "M2": "Crittografia e indirizzi",
+        "M3": "Stato, transazioni, commissioni",
+        "M4": "Blocchi e consenso",
+        "M5": "Archiviazione e 256 MB",
+        "M6": "Rete",
+        "M7": "Interfaccia (RPC)",
+        "M8": "Portafoglio e riga di comando",
+        "M9": "Piattaforme e modalità energia",
+        "M10": "Rete di prova pubblica",
+        "M11": "ToyScan",
+        "M12": "Protezione dei conti, scambio",
+        "M13": "Nomi, chiavi post-quantistiche"
+      },
+      "cards": [
+        ["1 · Nucleo della ToyChain", "Nodo in Rust: emissione, crittografia, transazioni e commissioni sono pronte; segue il consenso.", "inWork"],
+        ["2 · TOYPAY come nodo", "Portafoglio con livelli e modalità energia su quattro piattaforme.", "planned"],
+        ["3 · Rete di prova pubblica", "Prima locale, poi pubblica, con test di carico.", "planned"],
+        ["4 · ToyScan", "Explorer con semaforo di allarme e interfaccia aperta.", "planned"],
+        ["5 · TOYQUEST", "Mondo didattico e oggetti su Polygon, indipendenti dal nucleo della ToyChain.", "inDev"],
+        ["6 · ToyCash", "Prototipo con euro di prova, poi portafoglio offline e zk-notes.", "concept"],
+        ["7 · Rete principale", "Solo dopo un audit esterno, test di carico e una verifica legale, annunciata pubblicamente in anticipo.", "afterReview"]
+      ],
+      "flow": {
+        "nodes": ["Nucleo ToyChain", "TOYPAY", "Rete di prova", "ToyScan", "Rete principale"],
+        "steps": [
+          ["Prima il nucleo", "Emissione, crittografia e transazioni sono costruite e testate."],
+          ["Portafoglio come nodo", "TOYPAY porta la catena su telefono, PC e Raspberry Pi."],
+          ["Rete di prova", "Prima locale, poi pubblica, con test di carico e fuzzing."],
+          ["Rete principale solo dopo verifica", "Audit, test di carico e verifica legale sono obbligatori. I TOY di prova non vengono mai trasferiti."]
+        ]
+      }
+    },
+    "download": {
+      "t": "Download",
+      "u": "I file compariranno qui non appena saranno pronti.",
+      "items": [
+        "TOYPAY per Android, Windows, Linux e Raspberry Pi · in arrivo",
+        "Nodo ToyChain · arriva con la rete di prova",
+        "White paper · arriva con la pubblicazione del codice sorgente"
+      ],
+      "until": "Nel frattempo: <a href=\"{roadmap}\">guarda la tabella di marcia</a> o <a href=\"{toycoin}\">scopri di più sul TOY</a>."
+    },
+    "community": {
+      "t": "Comunità",
+      "u": "Un circuito economico sostenuto da tutti.",
+      "cards": [
+        ["Commercianti", "Commercianti con conto aziendale, cassa, buoni e punti fedeltà."],
+        ["Mentori", "Giocatori esperti aiutano i nuovi e ricevono per questo sigilli del sapere."],
+        ["Nodi della comunità", "Chi mette a disposizione un dispositivo rafforza la rete. Sono previsti kit Raspberry Pi e una mappa dei nodi."],
+        ["Pannello", "ToyScan mostra il circuito economico con numeri reali, senza previsioni."],
+        ["Governance", "Arriverà più avanti. Nemmeno allora nessuno potrà cambiare la costituzione della ToyChain."]
+      ],
+      "langTitle": "45 lingue",
+      "langText": "Il portafoglio, TOYPAY e ToyScan parlano le stesse 45 lingue. Il sito è ora disponibile in {n} di esse:"
+    },
+    "kontakt": {
+      "t": "Partecipa e contatti",
+      "u": "Dicci di cosa hai bisogno.",
+      "cards": [
+        ["Rete di prova", "Aggiungi la rete di prova al tuo portafoglio appena è attiva.", "Alla rete di prova"],
+        ["Download", "App e nodi compariranno qui appena pronti.", "Ai download"],
+        ["Partecipare", "Come tester, commerciante o mentore. Scrivici in breve di cosa si tratta.", ""]
+      ],
+      "formTitle": "Scrivici",
+      "topic": "Argomento",
+      "topics": ["Domanda sul progetto", "Partecipare come tester", "Diventare commerciante", "Stampa"],
+      "name": "Il tuo nome",
+      "message": "Messaggio",
+      "send": "Prepara l’e-mail",
+      "noMail": "L’indirizzo di contatto non è ancora impostato (src/data/site.json).",
+      "opened": "Si apre il tuo programma di posta. Questa pagina non salva nulla.",
+      "security": "Non segnalare falle di sicurezza tramite questo modulo, ma in modo riservato all’indirizzo delle note legali, con l’oggetto «Sicurezza»."
+    },
+    "impressum": {
+      "t": "Note legali",
+      "u": "Identificazione del fornitore ai sensi del § 5 DDG (legge tedesca).",
+      "template": "Questo è un modello. Inserisci i dati reali in src/data/site.json e falli verificare legalmente.",
+      "h1": "Informazioni ai sensi del § 5 DDG",
+      "h2": "Contatti",
+      "h3": "Registro e fisco",
+      "h4": "Responsabile dei contenuti",
+      "h5": "Nota",
+      "labels": {
+        "name": "nome o ditta con forma giuridica",
+        "street": "via e numero civico",
+        "city": "CAP e città",
+        "email": "indirizzo e-mail",
+        "phone": "numero di telefono",
+        "register": "registro e numero, se presenti",
+        "vatId": "partita IVA, se presente"
+      },
+      "mail": "E-mail",
+      "phone": "Telefono",
+      "register": "Iscrizione al registro",
+      "vat": "Partita IVA",
+      "responsible": "Ai sensi del § 18 (2) MStV: {name}, indirizzo come sopra.",
+      "note": "Il ToyVerse è un progetto in costruzione. Le informazioni sul TOY non sono consulenza sugli investimenti."
+    },
+    "datenschutz": {
+      "t": "Privacy",
+      "u": "Cosa succede ai tuoi dati: il meno possibile.",
+      "template": "Questo è un modello. Si adatta a un sito statico senza cookie e senza tracciamento. Aggiungi il fornitore di hosting e fallo verificare legalmente prima della pubblicazione.",
+      "sections": [
+        ["Titolare", "{name}, {street}, {city}, e-mail: {email}."],
+        ["Hosting e log del server", "Il sito è ospitato da {host}. Durante la visita il server tratta dati tecnicamente necessari come indirizzo IP, ora e pagina richiesta, per fornire il sito e proteggerlo dagli attacchi (art. 6, par. 1, lett. f GDPR)."],
+        ["Niente cookie, niente tracciamento", "Il sito non usa cookie né strumenti di analisi e non carica contenuti di terzi. I caratteri sono serviti dal nostro server."],
+        ["Nel tuo browser", "Le simulazioni girano solo nel tuo browser. Non ci viene inviato nulla."],
+        ["Contatti", "Il modulo di contatto apre soltanto il tuo programma di posta. Riceviamo l’e-mail solo quando la invii e la usiamo solo per rispondere (art. 6, par. 1, lett. b e f GDPR)."],
+        ["Link ad altri siti", "I link, per esempio agli explorer di blocchi, portano ad altri fornitori. Lì valgono le loro informative sulla privacy."],
+        ["I tuoi diritti", "Hai diritto di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione, e di proporre reclamo a un’autorità di protezione dei dati."]
+      ]
+    }
+  },
+  "demo": {
+    "zeit": {
+      "levels": [
+        ["Bottega antica", "Il maestro di calcolo sposta le palline e verifica ogni firma a mano.", "forza muscolare", "Abaco"],
+        ["Forza e raggruppamento", "Una ruota idraulica muove il martello, e molti sigilli diventano uno solo.", "energia idraulica", "Ruota idraulica e martello dei sigilli"],
+        ["Tempo e misura", "L’orologio ad acqua dà il ritmo, come il tempo di blocco di circa un minuto.", "acqua e gravità", "Orologio ad acqua"],
+        ["Archivio e conio · prospettiva moderna", "L’antica pressa per monete diventa pressa a vapore: coniare al ritmo della macchina.", "vapore e carbone", "Macchina a vapore"],
+        ["Automi e prove · prospettiva odierna", "L’automa di Erone seguiva regole fisse. Oggi molti core verificano firme contemporaneamente.", "pochi watt", "Chip a nove core"]
+      ],
+      "level": "Livello {n}",
+      "power": "Potenza",
+      "start": "Avvia",
+      "submit": "Invia firma",
+      "submit10": "10 in una volta",
+      "queue": "In coda",
+      "done": "Elaborate",
+      "rate": "Esempio: {r} firme al minuto",
+      "drive": "Azionamento",
+      "machine": "Macchina del livello scelto"
+    },
+    "gears": {
+      "title": "Meccanica da girare",
+      "crank": "Manovella",
+      "label": "Quattro ingranaggi che si incastrano",
+      "text": "L’ingranaggio 4 gira {x} volte più veloce della manovella, in senso opposto."
+    },
+    "npc": {
+      "title": "Incontra i personaggi",
+      "intro": "Tocca una figura e falle una domanda. I dialoghi sono esempi.",
+      "hello": "Benvenuto! Cosa vuoi sapere?",
+      "names": ["Mercante", "Guardia", "Studioso", "Sultano", "Capocarovana"],
+      "qa": [
+        [
+          ["Quanto costa un oggetto?", "Gli oggetti si guadagnano nel gioco. Solo se vuoi coniarne uno come NFT paghi una piccola commissione per i costi di rete."],
+          ["Posso commerciare con te?", "Tutti gli edifici e le merci si possono scambiare. Con un conto aziendale puoi persino incassare alla cassa."],
+          ["Che cos’è il TOY?", "La moneta della ToyChain. I 100 milioni nascono a poco a poco dal lavoro nella rete. Non esiste una riserva."]
+        ],
+        [
+          ["Come trovo il salone da gioco?", "L’edificio è nascosto. Gira per la città con attenzione e lo scoprirai."],
+          ["Chi può giocare?", "Da solo offline, online con altri, insieme o uno contro l’altro. Si può guardare in modalità spettatore."],
+          ["È sicuro?", "Non dare mai la tua frase di recupero, nemmeno a me. Chi la chiede è un truffatore."]
+        ],
+        [
+          ["Come nasce un blocco?", "Le transazioni si raccolgono. Più o meno ogni minuto un membro del comitato compone un blocco e gli altri firmano. Con due terzi è definitivo."],
+          ["Perché la catena resta piccola?", "Ogni nodo memorizza al massimo 256 MB. I conti inutilizzati a lungo vanno a riposo e si risvegliano quando vuoi. Non si perde nulla."],
+          ["Che cos’è ToyCash?", "Contanti digitali in euro i cui importi vedi solo tu. Dovranno funzionare anche offline."]
+        ],
+        [
+          ["Cosa mi dà un clan?", "La lealtà viene premiata. Cinque clan si sfidano o cooperano, e i loro personaggi sono al loro servizio."],
+          ["Quanti clan ci sono?", "Cinque sultani, re e clan, abbinati alle cinque mappe."],
+          ["Che cos’è un NFT dell’eroe?", "Più avanti potrai coniare il tuo eroe come NFT. La commissione copre i costi di rete; i dettagli sono ancora da definire."]
+        ],
+        [
+          ["Come si viaggia insieme?", "Come banda o con altri giocatori del mondo aperto. Tratti, abilità e oggetti si completano."],
+          ["Che cos’è il viaggio nel tempo?", "Cinque livelli dall’antichità a oggi mostrano i processi della ToyChain con metodi sempre migliori."],
+          ["Dove posso allenarmi?", "Nel livello di allenamento. Ci sono anche 20 minigiochi, missioni e livelli bonus."]
+        ]
+      ],
+      "quotes": ["«", "»"]
+    },
+    "poker": {
+      "title": "Poker al tavolo",
+      "modes": ["Texas Hold’em", "Omaha a 4 carte con limite"],
+      "buyin": "Buy-in: {n} ducati",
+      "pot": "Piatto",
+      "stack": "Il tuo stack",
+      "net": "Bilancio",
+      "fold": "Lascia",
+      "check": "Check",
+      "call": "Vedi ({n})",
+      "bet": "Punta ({n})",
+      "raise": "Rilancia ({n})",
+      "nextHand": "Mano successiva",
+      "you": "Tu",
+      "opp": ["Mercante", "Sultano"],
+      "hands": ["Carta alta", "Coppia", "Doppia coppia", "Tris", "Scala", "Colore", "Full", "Poker", "Scala colore"],
+      "ruleHoldem": "Hold’em: usi le 5 carte migliori tra le tue 2 e quelle sul tavolo.",
+      "ruleOmaha": "Omaha: devi usare esattamente 2 delle tue 4 carte e 3 del tavolo.",
+      "start": "Nuova mano. Ognuno paga {n} di ante. Punta, vedi o lascia.",
+      "newCards": "{street}: ci sono nuove carte sul tavolo.",
+      "allFold": "Tutti gli altri hanno lasciato. Vinci {n} ducati.",
+      "youFold": "Hai lasciato. ",
+      "showdown": "Showdown: {list}. Vince: {win} ({n} ducati).",
+      "broke": "Il tuo stack è vuoto. Ricevi nuovi ducati per allenarti.",
+      "foot": "Poker con limite e puntate fisse: puntata piccola prima del flop e sul flop, doppia al turn e al river. Gli avversari sono personaggi di esempio con una strategia semplice. Si gioca solo con ducati.",
+      "unit": "ducati",
+      "npcFold": "lascia",
+      "npcCall": "vede",
+      "npcBet": "punta {n}",
+      "npcCheck": "fa check",
+      "streets": ["Flop", "Turn", "River"],
+      "best": "La tua mano migliore: {h}",
+      "royal": "Scala reale",
+      "and": " e "
+    },
+    "mint": {
+      "pool": "Pool",
+      "chain": "Catena",
+      "start": "Manda dispositivi nella rete e guarda il pool riempirsi.",
+      "addPhone": "+ Telefono",
+      "addPi": "+ Raspberry Pi",
+      "addPc": "+ PC",
+      "sign": "Invia firma",
+      "spam": "Invia spam",
+      "reset": "Azzera",
+      "blocks": "Blocchi",
+      "minted": "Appena emessi",
+      "devices": "Dispositivi",
+      "full": "Più di 8 dispositivi non entrano sul tavolo.",
+      "phone": "Un telefono calcola lentamente, ma ogni dispositivo conta. Senza saldo partecipa alla lotteria del lavoro.",
+      "pi": "Un Raspberry Pi lavora in modo costante e parsimonioso.",
+      "pc": "Un PC riempie il pool più in fretta. Ma la sola potenza di calcolo non porta nulla nel consenso.",
+      "own": "Hai contribuito tu stesso con una firma.",
+      "spamMsg": "Lo spam riempie appena il pool, ma costa una commissione o lavoro di calcolo.",
+      "block": "Blocco {k} definitivo: {n} contributi, {t} nuovi TOY (consenso {a}, lavoro {b}, fondo di rimborso {c}).",
+      "resetMsg": "Azzerato.",
+      "label": "Macchina di conio"
+    },
+    "tx": {
+      "load": "Carico della rete: {n} %",
+      "free": "Gratuite: {a} su {b}",
+      "send": "Invia",
+      "round": "Nuova epoca",
+      "sentFree": "Inviato, gratis.",
+      "sentFee": "Quota esaurita: commissione di circa {fee} TOY (fattore {f}), oppure un biglietto ToyWork la rende gratuita.",
+      "formula": "Quota = max(10, 100 × (1 − carico))"
+    },
+    "offline": {
+      "you": "Tu",
+      "shop": "Commerciante",
+      "amount": "Importo: {n} €",
+      "pay": "Paga offline",
+      "again": "Spendi di nuovo la stessa nota",
+      "sync": "Vai online e sincronizza",
+      "month": "Usa per un mese",
+      "limit": "Limite offline: {used} su {cap} € · livello {s} · {days} giorni, {n} pagamenti",
+      "freeAmt": "Libero: {n} €",
+      "over": "Limite raggiunto: {n} € non ci stanno più. Vai online per liberare di nuovo il limite.",
+      "paid": "{n} € trasferiti cifrati da dispositivo a dispositivo, senza alcuna rete.",
+      "first": "Prima paga una volta offline.",
+      "double": "La stessa nota è uscita una seconda volta. Offline nessuno se ne accorge ancora.",
+      "nothing": "Non c’è niente da sincronizzare.",
+      "okNote": "Nota {i} ({n} €) confermata",
+      "badNote": "Nota {i} ({n} €) doppia: rifiutata",
+      "caught": "Doppia spesa rilevata: l’emittente rifiuta la seconda nota e la ToyChain lo rende verificabile. Chi spende due volte perde la cauzione a favore del danneggiato e scende di livello.",
+      "synced": "{n} pagamento/i confermato/i. Il tuo limite offline è di nuovo libero.",
+      "monthMsg": "Un mese di uso: 30 giorni e 60 pagamenti. Il tuo limite cresce di livello in livello.",
+      "label": "Due telefoni si scambiano offline un pagamento cifrato"
+    },
+    "toyscan": {
+      "choose": "Scegli uno scenario:",
+      "minted": "Emesso",
+      "cap": "Tetto",
+      "mio": "{n} milioni di TOY",
+      "bigRed": "Grande luce rossa: tetto, lancio equo o costituzione violati.",
+      "criteria": [
+        "A1 Tetto e somma di tutti i saldi",
+        "A2 Lancio equo: ogni TOY da un’emissione",
+        "A3 Emissione secondo la formula",
+        "A4 Epoche e tempo",
+        "A5 Costituzione invariata",
+        "A6 Consenso sano",
+        "A7 Fase iniziale secondo il piano",
+        "A8 Sanzioni solo con prova",
+        "A9 Dati aggiornati"
+      ],
+      "scenarios": [
+        ["Tutto a posto", "Tutti i criteri sono soddisfatti", "Valori di esempio."],
+        ["Più di 100 milioni", "Rosso: tetto superato", "Sarebbero stati emessi più TOY del consentito. Non deve mai succedere."],
+        ["Saldo senza emissione", "Rosso: lancio equo violato", "Un saldo non è riconducibile ad alcuna emissione."],
+        ["Emissione in anticipo sul piano", "Giallo: da tenere d’occhio", "L’emissione è oltre il 3 % in anticipo sul piano. Non è una regola violata, ma è insolito."],
+        ["Dati vecchi", "Giallo: dati non aggiornati", "Gli ultimi dati hanno più di 10 minuti o due fonti non concordano."]
+      ]
+    },
+    "voucher": {
+      "title": "Prova i buoni",
+      "examples": "Esempi:",
+      "presets": ["Regalo per la famiglia", "Promozione in negozio", "Tessera mensa"],
+      "own": "Oppure crealo tu: scegli un tipo",
+      "types": {
+        "i": ["Al portatore", "Buono al portatore", "Chi lo possiede può riscattarlo. Il primo cliente riceve l’importo intero."],
+        "m": ["Multiuso", "Buono multiuso", "Il valore si divide su più riscatti finché non si esaurisce."],
+        "g": ["Gruppo", "Buono di gruppo", "Solo i membri scelti possono riscattarlo, ognuno una sola volta e con la stessa quota."]
+      },
+      "value": "Valore: {n} €",
+      "uses": "Riscatti: {n}",
+      "members": "Membri del gruppo:",
+      "create": "Crea buono",
+      "serial": "Serie {s}",
+      "hint": "Dopo averlo creato, tocca un cliente per farlo riscattare.",
+      "redeemed": "Riscattato: {u} su {n} · Resto: {r} €",
+      "double": "Riscatta due volte (frode)",
+      "needTwo": "Scegli almeno due membri.",
+      "first": "Prima crea un buono.",
+      "created": "{type} creato: {v} €, {n} × {s} €.",
+      "shop": "Commerciante",
+      "welcome": "Benvenuto!",
+      "redeems": "{name} riscatta",
+      "doneI": "Il buono al portatore è già stato riscattato.",
+      "doneM": "Tutti i {n} riscatti sono esauriti.",
+      "notMember": "{name} non fa parte del gruppo.",
+      "already": "{name} ha già riscattato la sua quota.",
+      "ok": "{name} riscatta {n} €.",
+      "dblBoth": "Qui valgono entrambi i riscatti, perché il buono ne consente più di uno.",
+      "dblCaught": "Due dispositivi, una nota: il secondo riscatto viene rifiutato. Doppia spesa rilevata.",
+      "customers": ["Ali", "Leyla", "Omar", "Samira"],
+      "foot": "Scenario di esempio. L’emittente tiene lo stato di ogni buono e la ToyChain lo rende verificabile, quindi una copia non serve a nulla.",
+      "thanks": "Grazie, va bene!",
+      "sorry": "Mi dispiace, così non si può.",
+      "rejected": " L’emittente rifiuta."
+    }
+  }
+}

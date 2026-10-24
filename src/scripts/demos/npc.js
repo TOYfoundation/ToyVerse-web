@@ -6,8 +6,8 @@ const $ = (id) => document.getElementById(id);
 export function init() {
   const el = $('npcs');
   if (!el) return;
-  const { T, lang } = setup(el);
-  const [qo, qc] = lang === 'de' ? ['„', '“'] : ['“', '”'];
+  const { T } = setup(el);
+  const [qo, qc] = T.quotes;
   let cur = -1;
   let typing;
   function say(text, fig) {

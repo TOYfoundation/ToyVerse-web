@@ -9,7 +9,7 @@
     "allPages": "All pages",
     "join": "Join",
     "language": "Language",
-    "languageHint": "The website starts in German and English. The other of the 45 languages of wallet, TOYPAY and ToyScan will follow.",
+    "languageHint": "The website is currently available in {n} of the 45 languages of wallet, TOYPAY and ToyScan. The others will follow.",
     "soon": "coming",
     "path": "Path",
     "back": "Back",
@@ -27,7 +27,9 @@
     "placeholder": "enter {label}",
     "example": "Example",
     "chooseLanguage": "Choose language",
-    "redirect": "Continue to the start page"
+    "redirect": "Continue to the start page",
+    "machineNote": "This translation was created from German with AI and has not yet been reviewed by native speakers. The authoritative version is the",
+    "machineLink": "German version"
   },
   "scenes": [
     "The city at night",
@@ -906,7 +908,7 @@
         ]
       ],
       "langTitle": "45 languages",
-      "langText": "Wallet, TOYPAY and ToyScan speak the same 45 languages. The website starts in German and English:"
+      "langText": "Wallet, TOYPAY and ToyScan speak the same 45 languages. The website is currently available in {n} of them:"
     },
     "kontakt": {
       "t": "Join and contact",
@@ -1137,6 +1139,10 @@
             "In the training level. There are also 20 mini games, missions and bonus levels."
           ]
         ]
+      ],
+      "quotes": [
+        "“",
+        "”"
       ]
     },
     "poker": {

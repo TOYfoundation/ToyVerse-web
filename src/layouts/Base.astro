@@ -6,7 +6,7 @@ import '@fontsource/chakra-petch/400.css';
 import '@fontsource/chakra-petch/600.css';
 import '@fontsource/chakra-petch/700.css';
 import '../styles/global.css';
-import { AVAILABLE, LANGUAGES, language, t } from '../i18n';
+import { AVAILABLE, LANGUAGES, SOURCE, language, t } from '../i18n';
 import { GROUPS, href, page } from '../data/pages';
 
 interface Props {
@@ -68,7 +68,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
                   )}
                 </li>
               ))}
-              <li class="hint" lang={lang}>{t(lang, 'ui.languageHint')}</li>
+              <li class="hint" lang={lang}>{t(lang, 'ui.languageHint', { n: AVAILABLE.length })}</li>
             </ul>
           </details>
           <a class="btn hc" href={href(lang, 'kontakt')}>{t(lang, 'ui.join')}</a>
@@ -93,7 +93,14 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
       </div>
     </header>
     <slot name="hero" />
-    <main id="inhalt"><div class="w"><slot /></div></main>
+    <main id="inhalt">
+      <div class="w">
+        {lang !== SOURCE && (
+          <p class="mt">{t(lang, 'ui.machineNote')} <a href={href(SOURCE, id)} hreflang={SOURCE} lang={SOURCE}>{t(lang, 'ui.machineLink')}</a>.</p>
+        )}
+        <slot />
+      </div>
+    </main>
     <footer>
       <div class="w">
         <div id="ft">
