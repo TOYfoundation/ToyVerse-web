@@ -38,7 +38,12 @@ npm run check          # Typen und Übersetzungen
 npm run build          # fertige Seite in dist/
 npm run check:links    # interne Links in dist/ prüfen
 npm run sync:toycoin -- ../toycoin   # Sprachen, Begriffe und Meilensteine aus toycoin übernehmen
+npm run build:offline  # Testversion ohne Server in offline/ToyVerse-Testversion/
 ```
+
+## Testversion ohne Server
+
+`npm run build:offline` baut die Seite und erzeugt daraus mit `tools/make-offline.mjs` eine Fassung, die sich per Doppelklick auf `index.html` direkt im Browser öffnet, ohne Webserver. Dafür werden alle Pfade relativ gemacht und die Skripte mit rolldown (MIT) zu klassischen Skripten gebündelt, weil Browser Module von `file://` blockieren. Eine `LIES-MICH.txt` mit Stand und Version liegt bei. Den Ordner `offline/` nicht committen; zum Weitergeben als ZIP packen.
 
 ## Neue Sprache hinzufügen
 
