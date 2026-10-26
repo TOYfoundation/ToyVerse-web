@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Copies shared data from a checkout of Safehaigit/toycoin into the website:
+// Copies shared data from a checkout of TOYfoundation/toycoin into the website:
 //   i18n/sprachen.tsv, i18n/begriffe.tsv  -> src/i18n/
 //   docs/STATUS.md (table "Überblick Meilensteine") -> src/data/status.json
 //   shared/toyverse.json (fixed values, decision 135)  -> src/data/toyverse.json
@@ -40,6 +40,6 @@ try {
 const date = status.match(/^Stand:\s*([0-9.]+)/m)?.[1] ?? '';
 writeFileSync(
   join(root, 'src', 'data', 'status.json'),
-  JSON.stringify({ source: `Safehaigit/toycoin docs/STATUS.md (commit ${rev})`, date, milestones }, null, 2) + '\n',
+  JSON.stringify({ source: `TOYfoundation/toycoin docs/STATUS.md (commit ${rev})`, date, milestones }, null, 2) + '\n',
 );
 console.log(`Synced 45 languages, glossary, toyverse.json and ${milestones.length} milestones (${milestones.filter((m) => m.done).length} done) from ${rev}.`);

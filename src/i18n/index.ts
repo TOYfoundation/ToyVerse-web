@@ -1,5 +1,5 @@
 // Languages and texts of the website.
-// sprachen.tsv and begriffe.tsv are copied from Safehaigit/toycoin (i18n/) by
+// sprachen.tsv and begriffe.tsv are copied from TOYfoundation/toycoin (i18n/) by
 // tools/sync-toycoin.mjs, so the website uses the same 45 languages and terms
 // as wallet, TOYPAY and ToyScan (decision 103 of the Toy projects).
 import sprachenTsv from './sprachen.tsv?raw';
