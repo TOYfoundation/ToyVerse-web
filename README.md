@@ -2,11 +2,11 @@
 
 Die Webseite des **ToyVerse**: ToyChain mit dem Coin TOY, TOYPAY, ToyScan, ToyCash, TOYQUEST und ToyPost. Für Community und Presse, mit interaktiven Simulationen.
 
-**Stand:** Grundgerüst vom 24.10.2026 auf Basis des Webseiten-Entwurfs (Version 2), Inhalte an den aktuellen Stand von `Safehaigit/toycoin` angepasst (Entscheidungen bis Nr. 135). 24 Seiten, darunter ToySafe (Schutz- und Prüf-App, Nr. 134) und auf jeder Seite „Passt dazu“-Verweise zu den Teilen, die zusammenarbeiten. Fertig: Deutsch, Englisch, Spanisch, Französisch, Portugiesisch, Italienisch, Niederländisch, Polnisch, Türkisch, Vietnamesisch, Indonesisch, Schwedisch, Norwegisch, Arabisch, Persisch, Urdu, Chinesisch, Wu-Chinesisch, Japanisch, Koreanisch, Suaheli, Yoruba (22 von 45, davon 3 von rechts nach links). Die übrigen Sprachen folgen paketweise.
+**Stand:** Grundgerüst vom 24.10.2026 auf Basis des Webseiten-Entwurfs (Version 2), Inhalte an den aktuellen Stand von `TOYfoundation/toycoin` angepasst (Entscheidungen bis Nr. 135). 24 Seiten, darunter ToySafe (Schutz- und Prüf-App, Nr. 134) und auf jeder Seite „Passt dazu“-Verweise zu den Teilen, die zusammenarbeiten. Fertig: Deutsch, Englisch, Spanisch, Französisch, Portugiesisch, Italienisch, Niederländisch, Polnisch, Türkisch, Vietnamesisch, Indonesisch, Schwedisch, Norwegisch, Arabisch, Persisch, Urdu, Chinesisch, Wu-Chinesisch, Japanisch, Koreanisch, Suaheli, Yoruba (22 von 45, davon 3 von rechts nach links). Die übrigen Sprachen folgen paketweise.
 
 ## Grundsätze
 
-- **Nur, was stimmt.** Zahlen und Regeln kommen aus der Spezifikation und dem Entscheidungsprotokoll in `Safehaigit/toycoin`. Bei Widerspruch gilt toycoin.
+- **Nur, was stimmt.** Zahlen und Regeln kommen aus der Spezifikation und dem Entscheidungsprotokoll in `TOYfoundation/toycoin`. Bei Widerspruch gilt toycoin.
 - **Keine Renditeversprechen, keine Anlageberatung.** Testnet-TOY haben keinen Wert.
 - **Alte ToyCoin-Token** auf Polygon und Ethereum sind kein ToyChain-TOY (Entscheidung 63). Die Seite warnt davor und verspricht keinen Tausch.
 - **Poker** nur mit Dukaten, ToyCoin-Einsätze erst nach rechtlicher Prüfung (Entscheidung 131).
@@ -44,11 +44,11 @@ npm run build:offline  # Testversion ohne Server in offline/ToyVerse-Testversion
 
 ## Automatischer Abgleich mit toycoin
 
-Der Workflow `.github/workflows/sync-toycoin.yml` läuft täglich (und auf Knopfdruck unter „Actions“), holt `Safehaigit/toycoin`, startet `npm run sync:toycoin`, prüft alles und öffnet bei Änderungen einen Pull Request „Abgleich mit toycoin“. Zusammenführen bleibt Handarbeit.
+Der Workflow `.github/workflows/sync-toycoin.yml` läuft täglich (und auf Knopfdruck unter „Actions“), holt `TOYfoundation/toycoin`, startet `npm run sync:toycoin`, prüft alles und öffnet bei Änderungen einen Pull Request „Abgleich mit toycoin“. Zusammenführen bleibt Handarbeit.
 
 Einmalig nötig, weil die Repositories privat sind:
 
-1. Auf GitHub unter „Settings → Developer settings → Personal access tokens → Fine-grained tokens“ einen Schlüssel anlegen: nur Repository `Safehaigit/toycoin`, Recht „Contents: Read-only“.
+1. Auf GitHub unter „Settings → Developer settings → Personal access tokens → Fine-grained tokens“ einen Schlüssel anlegen: nur Repository `TOYfoundation/toycoin`, Recht „Contents: Read-only“.
 2. In diesem Repository unter „Settings → Secrets and variables → Actions“ als `TOYCOIN_READ_TOKEN` speichern.
 3. Unter „Settings → Actions → General“ das Häkchen „Allow GitHub Actions to create and approve pull requests“ setzen.
 

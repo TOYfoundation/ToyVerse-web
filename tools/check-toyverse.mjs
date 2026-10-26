@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Checks the website against the shared ToyVerse values (src/data/toyverse.json,
-// copied from Safehaigit/toycoin shared/toyverse.json by `npm run sync:toycoin`).
+// copied from TOYfoundation/toycoin shared/toyverse.json by `npm run sync:toycoin`).
 // Texts that repeat protocol values (chain IDs, decimals) must match in every language.
 import { readFileSync, readdirSync } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';

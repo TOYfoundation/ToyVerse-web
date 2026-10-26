@@ -1,6 +1,6 @@
 # CLAUDE.md – Webseite des ToyVerse
 
-Diese Webseite stellt das ToyVerse vor (ToyChain, TOY, TOYPAY, ToyScan, ToyCash, TOYQUEST, ToyPost). Fachlich maßgeblich sind `docs/01-spezifikation.md` und `docs/02-entscheidungen.md` im Repository `Safehaigit/toycoin`. Bei Widersprüchen gilt toycoin. Bei offenen Punkten nicht raten, sondern den Nutzer fragen.
+Diese Webseite stellt das ToyVerse vor (ToyChain, TOY, TOYPAY, ToyScan, ToyCash, TOYQUEST, ToyPost). Fachlich maßgeblich sind `docs/01-spezifikation.md` und `docs/02-entscheidungen.md` im Repository `TOYfoundation/toycoin`. Bei Widersprüchen gilt toycoin. Bei offenen Punkten nicht raten, sondern den Nutzer fragen.
 
 ## Sprache
 
